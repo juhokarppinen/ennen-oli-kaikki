@@ -4,8 +4,8 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create
 
 
 function preload() {
-    game.load.image('button', '/assets/images/button.png');
-    game.load.image('background', '/assets/images/background.jpg');
+    game.load.image('button', '../assets/img/button.png');
+    game.load.image('background', '../assets/img/background.jpg');
 }
 
 var leftText;
