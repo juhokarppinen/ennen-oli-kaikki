@@ -5,6 +5,7 @@ var load_state = {
     preload: function() {
         game.load.image('button', 'assets/img/button.png');
         game.load.image('background', 'assets/img/background.jpg');
+        game.load.image('schoolbackground', 'assets/img/school.jpg');
     },
     create: function() {
         game.state.start('menu');

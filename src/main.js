@@ -12,6 +12,7 @@ function preload() {
     game.state.add('load', load_state);  
     game.state.add('menu', menu_state);  
     game.state.add('beginning', beginning_state);
+    game.state.add('school', school_state);
     // Start with the 'load' state
     game.state.start('load');
 }
