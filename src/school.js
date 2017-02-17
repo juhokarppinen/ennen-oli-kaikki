@@ -5,7 +5,15 @@ var school_state = {
         
         var style = {font: "25px verdana", fill: "#FFFFFF"};
         var text1 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.5, "Kävit kansakoulun.", style);
-        var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Se meni vähän heikosti, koska perheestä ei ollut apua.", style);
+        if(player.class === "poor") {
+            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Välillä oli vaikeaa, koska perheesi on köyhä.", style);
+        }
+        if(player.class === "middle") {
+            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Se meni ihan hyvin, perheestä oli apua.", style);
+        }
+        if(player.class === "rich") {
+            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Se meni loistavasti, perheen tukemana.", style);
+        }
 
         var continueButton = game.add.button(game.world.centerX, game.world.centerY, 'button');
         continueButton.anchor.set(0.5);
