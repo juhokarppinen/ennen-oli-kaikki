@@ -3,7 +3,7 @@
  */
 var load_state = {
     preload: function() {
-        game.load.image('button', 'assets/img/button.png');
+        game.load.image('button', 'assets/img/buttongray.png');
         game.load.image('background', 'assets/img/background.jpg');
         game.load.image('menubackground', 'assets/img/menu.jpg');
         game.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
