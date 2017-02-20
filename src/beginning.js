@@ -4,7 +4,7 @@ var beginning_state = {
     preload: function () {
     },
     create: function () {
-        var style = {font: "24px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 500};
+        var style = {font: "23px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 520};
         var background;
         
         createPlayerStats();

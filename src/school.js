@@ -6,7 +6,7 @@ var school_state = {
         
         var continueButton = game.add.sprite(game.world.centerX*0.1, game.world.centerY*0.2, 'box');
         
-        var style = {font: "24px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 500};
+        var style = {font: "23px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 520};
         
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä oppivelvollisuudesta, joten aloitat koulutiesi sinä syksynä, kun täytät seitsemän vuotta.";
         
