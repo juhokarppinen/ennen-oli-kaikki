@@ -4,7 +4,7 @@ var beginning_state = {
     preload: function () {
     },
     create: function () {
-        var style = {font: "25px verdana", fill: "#1e1711"};
+        var style = {font: "24px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 500};
         var background;
         
         createPlayerStats();
@@ -15,22 +15,24 @@ var beginning_state = {
         }
         background.alpha = 0;
         
+        var text = "Tervetuloa maailmaan!";
+        
         var continueButton = game.add.sprite(game.world.centerX*0.2, game.world.centerY*0.2, 'box');
         
+        if(player.location === "city") {
+            text += " Synnyit porvarisperheen kolmanneksi pojaksi Jyväskylään Suomen itsenäisyyden alkumetreillä.";
+        } else {
+            text += " Synnyit talonpoikaisperheeseen Hankasalmelle Suomen itsenäisyyden alkumetreillä.";
+        }
+        
         if(player.sex === "male") {
-            var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, "Synnyit poikavauvaksi vuoteen 1917.", style);
+            text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu pojannimi vuonna 1917.";
         } else {
-            var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, "Synnyit tyttövauvaksi vuoteen 1917.", style);
+            text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu tytönnimi vuonna 1917.";
         }
+
+        var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, text, style);
         text1.alpha = 0;
-        var text2 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.4, "Nimesi on "+player.name+".", style);
-        text2.alpha = 0;
-        if(player.location == "city") {
-            var text3 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.5, "Elät kaupungissa.", style);
-        } else {
-            var text3 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.5, "Elät maalla.", style);
-        }
-        text3.alpha = 0;
 
         var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.2, 'button');
         continueButton.anchor.set(0.5);
@@ -44,8 +46,6 @@ var beginning_state = {
         //fade in
         game.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(text1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(text2).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(text3).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(continueButton).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(t1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         

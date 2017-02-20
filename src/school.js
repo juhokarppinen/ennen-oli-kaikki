@@ -6,21 +6,24 @@ var school_state = {
         
         var continueButton = game.add.sprite(game.world.centerX*0.1, game.world.centerY*0.2, 'box');
         
-        var style = {font: "25px verdana", fill: "#1e1711"};
-        var text1 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.5, "Kävit kansakoulun.", style);
-        text1.alpha = 0;
+        var style = {font: "24px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 500};
+        
+        var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä oppivelvollisuudesta, joten aloitat koulutiesi sinä syksynä, kun täytät seitsemän vuotta.";
+        
         if(player.class === "poor") {
-            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Välillä oli vaikeaa, koska perheesi on köyhä.", style);
+            text += " Olet terävä oppilas, mutta äitisi tarvitsee apuasi pikkusisaruksiesi hoidossa, joten koulutiesi päättyy tähän.";
         }
         if(player.class === "middle") {
-            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Se meni ihan hyvin, perheestä oli apua.", style);
+            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun.";
         }
         if(player.class === "rich") {
-            var text2 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.6, "Se meni loistavasti, perheen tukemana.", style);
+            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun.";
         }
-        text2.alpha = 0;
+        
+        var text1 = game.add.text(game.world.centerX * 0.2, game.world.centerY * 0.3, text, style);
+        text1.alpha = 0;
 
-        var continueButton = game.add.button(game.world.centerX * 0.8, game.world.centerY * 1.2, 'button');
+        var continueButton = game.add.button(game.world.centerX * 0.8, game.world.centerY * 1.22, 'button');
         continueButton.anchor.set(0.5);
         var t1 = game.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
         t1.anchor.set(0.5);
@@ -30,7 +33,6 @@ var school_state = {
         //fade in
         game.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(text1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(text2).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(continueButton).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
         game.add.tween(t1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
 
