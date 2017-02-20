@@ -4,7 +4,7 @@ var beginning_state = {
     preload: function () {
     },
     create: function () {
-        var style = {font: "25px verdana", fill: "#FFFFFF"};
+        var style = {font: "25px verdana", fill: "#1e1711"};
         
         createPlayerStats();
         if(player.location === "country") {
@@ -12,6 +12,8 @@ var beginning_state = {
         } else {
             game.add.sprite(0, 0, 'beginningcitybackground');
         }
+        
+        var continueButton = game.add.sprite(game.world.centerX*0.2, game.world.centerY*0.2, 'box');
         
         if(player.sex === "male") {
             var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, "Synnyit poikavauvaksi vuoteen 1917.", style);
@@ -25,7 +27,7 @@ var beginning_state = {
             var text3 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.5, "Elät maalla.", style);
         }
 
-        var continueButton = game.add.button(game.world.centerX, game.world.centerY, 'button');
+        var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.2, 'button');
         continueButton.anchor.set(0.5);
         var t1 = game.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
         t1.anchor.set(0.5);
