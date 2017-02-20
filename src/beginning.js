@@ -5,13 +5,15 @@ var beginning_state = {
     },
     create: function () {
         var style = {font: "25px verdana", fill: "#1e1711"};
+        var background;
         
         createPlayerStats();
         if(player.location === "country") {
-            game.add.sprite(0, 0, 'beginningcountrybackground');
+            background = game.add.sprite(0, 0, 'beginningcountrybackground');
         } else {
-            game.add.sprite(0, 0, 'beginningcitybackground');
+            background = game.add.sprite(0, 0, 'beginningcitybackground');
         }
+        background.alpha = 0;
         
         var continueButton = game.add.sprite(game.world.centerX*0.2, game.world.centerY*0.2, 'box');
         
@@ -20,19 +22,33 @@ var beginning_state = {
         } else {
             var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, "Synnyit tyttövauvaksi vuoteen 1917.", style);
         }
+        text1.alpha = 0;
         var text2 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.4, "Nimesi on "+player.name+".", style);
+        text2.alpha = 0;
         if(player.location == "city") {
             var text3 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.5, "Elät kaupungissa.", style);
         } else {
             var text3 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.5, "Elät maalla.", style);
         }
+        text3.alpha = 0;
 
         var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.2, 'button');
         continueButton.anchor.set(0.5);
+        continueButton.alpha = 0;
         var t1 = game.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
         t1.anchor.set(0.5);
+        t1.alpha = 0;
         continueButton.inputEnabled = true;
         continueButton.events.onInputDown.add(goToSchool, this);
+        
+        //fade in
+        game.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(text1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(text2).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(text3).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(continueButton).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(t1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        
 
     },
     update: function () {
