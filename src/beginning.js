@@ -20,7 +20,7 @@ var beginning_state = {
         var continueButton = game.add.sprite(game.world.centerX*0.2, game.world.centerY*0.2, 'box');
         
         if(player.location === "city") {
-            text += " Synnyit porvarisperheen kolmanneksi pojaksi Jyväskylään Suomen itsenäisyyden alkumetreillä.";
+            text += " Synnyit porvarisperheeseen Jyväskylään Suomen itsenäisyyden alkumetreillä.";
         } else {
             text += " Synnyit talonpoikaisperheeseen Hankasalmelle Suomen itsenäisyyden alkumetreillä.";
         }
