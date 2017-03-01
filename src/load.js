@@ -3,16 +3,16 @@
  */
 var load_state = {
     preload: function() {
-        game.load.image('button', 'assets/img/buttonsepia.png');
-        game.load.image('box', 'assets/img/box.png');
-        game.load.image('background', 'assets/img/background.jpg');
-        game.load.image('menubackground', 'assets/img/menu.jpg');
-        game.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
-        game.load.image('beginningcountrybackground', 'assets/img/beginningcountry.jpg');
-        game.load.image('schoolbackground', 'assets/img/school.jpg');
-        game.load.image('deathbackground', 'assets/img/death.jpg');
+        GAME.load.image('button', 'assets/img/buttonsepia.png');
+        GAME.load.image('box', 'assets/img/box.png');
+        GAME.load.image('background', 'assets/img/background.jpg');
+        GAME.load.image('menubackground', 'assets/img/menu.jpg');
+        GAME.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
+        GAME.load.image('beginningcountrybackground', 'assets/img/beginningcountry.jpg');
+        GAME.load.image('schoolbackground', 'assets/img/school.jpg');
+        GAME.load.image('deathbackground', 'assets/img/death.jpg');
     },
     create: function() {
-        game.state.start('menu');
+        GAME.state.start('menu');
     }
 };

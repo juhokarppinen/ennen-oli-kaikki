@@ -9,15 +9,15 @@ var beginning_state = {
         
         createPlayerStats();
         if(player.location.name === "Jyväskylä") {
-            background = game.add.sprite(0, 0, 'beginningcitybackground');
+            background = GAME.add.sprite(0, 0, 'beginningcitybackground');
         } else {
-            background = game.add.sprite(0, 0, 'beginningcountrybackground');
+            background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
         }
         background.alpha = 0;
         
         var text = "Tervetuloa maailmaan!";
         
-        var box = game.add.sprite(game.world.centerX*0.3, game.world.centerY*0.2, 'box');
+        var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
         
         if(player.class === "poor") {
@@ -34,13 +34,13 @@ var beginning_state = {
             text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu tytönnimi vuonna 1917.";
         }
 
-        var text1 = game.add.text(game.world.centerX * 0.4, game.world.centerY * 0.3, text, style);
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, style);
         text1.alpha = 0;
 
-        var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.4, 'button');
+        var continueButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 1.4, 'button');
         continueButton.anchor.set(0.5);
         continueButton.alpha = 0;
-        var t1 = game.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
+        var t1 = GAME.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
         t1.anchor.set(0.5);
         t1.alpha = 0;
         continueButton.inputEnabled = true;
@@ -58,7 +58,7 @@ var beginning_state = {
 function goToSchool() {
     //18% die before going to school
     //country children receive 20% chance to not go to school
-    game.state.start('school');
+    GAME.state.start('school');
 }
 
 function createPlayerStats() {

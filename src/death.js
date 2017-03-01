@@ -4,25 +4,25 @@ var death_state = {
     },
     
     create: function() {
-        var background = game.add.sprite(0, 0, 'deathbackground');
+        var background = GAME.add.sprite(0, 0, 'deathbackground');
         background.alpha = 0;
         
         var style = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 700};
         
-        var box = game.add.sprite(game.world.centerX*0.3, game.world.centerY*0.2, 'box');
+        var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
         
-        var text1 = game.add.text(game.world.centerX * 0.4, game.world.centerY * 0.3, "Kuolit...", style);
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, "Kuolit...", style);
         text1.alpha = 0;
 
-        var startButton = game.add.button(game.world.centerX, game.world.centerY * 1.4, 'button');
+        var startButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 1.4, 'button');
         startButton.anchor.set(0.5);
-        var t1 = game.add.text(startButton.centerX, startButton.centerY, 'Pelaa uudestaan');
+        var t1 = GAME.add.text(startButton.centerX, startButton.centerY, 'Pelaa uudestaan');
         t1.anchor.set(0.5);
         t1.alpha = 0;
         
         startButton.inputEnabled = true;
-        startButton.events.onInputDown.add(startGame, this);
+        startButton.events.onInputDown.add(startGAME, this);
         
         startButton.alpha = 0;
         
@@ -33,7 +33,7 @@ var death_state = {
     }
 }
 
-function startGame () {
-    game.state.start('beginning');
+function startGAME () {
+    GAME.state.start('beginning');
 
 }
