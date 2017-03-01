@@ -1,5 +1,5 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, '', { preload: preload, create: create, update: update });
-var player = {};
+var PLAYER = {};
 
 /*
  * Phaser many-state tutorials for possible reference:

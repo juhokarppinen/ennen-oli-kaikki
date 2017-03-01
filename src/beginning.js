@@ -1,37 +1,35 @@
-/* global player */
-
 var beginning_state = {
     preload: function () {
     },
     create: function () {
         var style = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 700};
         var background;
-        
+
         createPlayerStats();
-        if(player.location.name === "Jyväskylä") {
+        if(PLAYER.location.name === "Jyväskylä") {
             background = GAME.add.sprite(0, 0, 'beginningcitybackground');
         } else {
             background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
         }
         background.alpha = 0;
-        
+
         var text = "Tervetuloa maailmaan!";
-        
+
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
-        
-        if(player.class === "poor") {
-            text += " Synnyit vähävaraiseen perheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
-        } else if(player.class === "middle") {
-            text += " Synnyit keskiluokkaiseen perheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
+
+        if(PLAYER.class === "poor") {
+            text += " Synnyit vähävaraiseen perheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
+        } else if(PLAYER.class === "middle") {
+            text += " Synnyit keskiluokkaiseen perheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
         } else {
-            text += " Synnyit porvarisperheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
+            text += " Synnyit porvarisperheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
         }
-        
-        if(player.sex === "male") {
-            text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu pojannimi vuonna 1917.";
+
+        if(PLAYER.sex === "male") {
+            text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu pojannimi vuonna 1917.";
         } else {
-            text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu tytönnimi vuonna 1917.";
+            text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu tytönnimi vuonna 1917.";
         }
 
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, style);
@@ -45,10 +43,10 @@ var beginning_state = {
         t1.alpha = 0;
         continueButton.inputEnabled = true;
         continueButton.events.onInputDown.add(goToSchool, this);
-        
+
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
-        
+
 
     },
     update: function () {
@@ -62,21 +60,21 @@ function goToSchool() {
 }
 
 function createPlayerStats() {
-    //player.sex = calculateOdds([0.495, 0.515], ["female", "male"]); //todo: fix this
+    //PLAYER.sex = calculateOdds([0.495, 0.515], ["female", "male"]); //todo: fix this
     var sexes = ["male", "female"];
-    player.sex = sexes[Math.floor(Math.random()*sexes.length)];
-    console.log(player.sex);
-    player.name = pickName(player.sex);
-    console.log(player.name);
-    //player.location = calculateOdds([0.85, 0.15], ["country", "city"]); // <---these odds are not 100% certain yet
+    PLAYER.sex = sexes[Math.floor(Math.random()*sexes.length)];
+    console.log(PLAYER.sex);
+    PLAYER.name = pickName(PLAYER.sex);
+    console.log(PLAYER.name);
+    //PLAYER.location = calculateOdds([0.85, 0.15], ["country", "city"]); // <---these odds are not 100% certain yet
     var locations = [{name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"}, {name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
         {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
-    player.location = locations[Math.floor(Math.random()*locations.length)];
-    console.log(player.location);
-    //player.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---these odds are not 100% certain yet
+    PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
+    console.log(PLAYER.location);
+    //PLAYER.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---these odds are not 100% certain yet
     var classes = ["poor", "middle", "rich"];
-    player.class = classes[Math.floor(Math.random()*classes.length)];
-    console.log(player.class);
+    PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
+    console.log(PLAYER.class);
 }
 
 //todo: fix this; right now it sometimes gives undefined

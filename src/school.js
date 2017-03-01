@@ -11,13 +11,13 @@ var school_state = {
         
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä oppivelvollisuudesta, joten aloitat koulutiesi sinä syksynä, kun täytät seitsemän vuotta.";
         
-        if(player.class === "poor") {
+        if(PLAYER.class === "poor") {
             text += " Olet terävä oppilas, mutta äitisi tarvitsee apuasi pikkusisaruksiesi hoidossa, joten koulutiesi päättyy tähän.";
         }
-        if(player.class === "middle") {
+        if(PLAYER.class === "middle") {
             text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun.";
         }
-        if(player.class === "rich") {
+        if(PLAYER.class === "rich") {
             text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun.";
         }
         
