@@ -4,25 +4,27 @@ var beginning_state = {
     preload: function () {
     },
     create: function () {
-        var style = {font: "23px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 520};
         var background;
         
         createPlayerStats();
-        if(player.location === "country") {
-            background = game.add.sprite(0, 0, 'beginningcountrybackground');
-        } else {
+        if(player.location.name === "Jyväskylä") {
             background = game.add.sprite(0, 0, 'beginningcitybackground');
+        } else {
+            background = game.add.sprite(0, 0, 'beginningcountrybackground');
         }
         background.alpha = 0;
         
         var text = "Tervetuloa maailmaan!";
         
-        var continueButton = game.add.sprite(game.world.centerX*0.2, game.world.centerY*0.2, 'box');
+        var box = game.add.sprite(game.world.centerX*0.3, game.world.centerY*0.2, 'box');
+        box.alpha = 0;
         
-        if(player.location === "city") {
-            text += " Synnyit porvarisperheeseen Jyväskylään Suomen itsenäisyyden alkumetreillä.";
+        if(player.class === "poor") {
+            text += " Synnyit vähävaraiseen perheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
+        } else if(player.class === "middle") {
+            text += " Synnyit keskiluokkaiseen perheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
         } else {
-            text += " Synnyit talonpoikaisperheeseen Hankasalmelle Suomen itsenäisyyden alkumetreillä.";
+            text += " Synnyit porvarisperheeseen "+player.location.to+" Suomen itsenäisyyden alkumetreillä.";
         }
         
         if(player.sex === "male") {
@@ -31,10 +33,10 @@ var beginning_state = {
             text += " Sinut kastettiin nimellä "+player.name+", joka oli suosittu tytönnimi vuonna 1917.";
         }
 
-        var text1 = game.add.text(game.world.centerX * 0.3, game.world.centerY * 0.3, text, style);
+        var text1 = game.add.text(game.world.centerX * 0.4, game.world.centerY * 0.3, text, style);
         text1.alpha = 0;
 
-        var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.2, 'button');
+        var continueButton = game.add.button(game.world.centerX, game.world.centerY * 1.4, 'button');
         continueButton.anchor.set(0.5);
         continueButton.alpha = 0;
         var t1 = game.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
@@ -45,9 +47,10 @@ var beginning_state = {
         
         //fade in
         game.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(text1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(continueButton).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(t1).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
+        game.add.tween(box).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+        game.add.tween(continueButton).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+        game.add.tween(text1).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+        game.add.tween(t1).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
         
 
     },
@@ -69,7 +72,8 @@ function createPlayerStats() {
     player.name = pickName(player.sex);
     console.log(player.name);
     //player.location = calculateOdds([0.85, 0.15], ["country", "city"]); // <---these odds are not 100% certain yet
-    var locations = ["country", "city"];
+    var locations = [{name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"}, {name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
+        {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
     player.location = locations[Math.floor(Math.random()*locations.length)];
     console.log(player.location);
     //player.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---these odds are not 100% certain yet

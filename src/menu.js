@@ -6,7 +6,7 @@ var menu_state = {
     create: function() {
         game.add.sprite(0, 0, 'menubackground');
         var style = {font: "25px verdana", fill: "#FFFFFF"};
-        var text1 = game.add.text(game.world.centerX * 0.75, game.world.centerY * 0.2, "Ennen oli kaikki...", style);
+        var text1 = game.add.text(game.world.centerX * 0.825, game.world.centerY * 0.2, "Ennen oli kaikki...", style);
 
         var startButton = game.add.button(game.world.centerX, game.world.centerY * 0.6, 'button');
         startButton.anchor.set(0.5);
