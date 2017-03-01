@@ -2,7 +2,6 @@ var beginning_state = {
     preload: function () {
     },
     create: function () {
-        var style = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 700};
         var background;
 
         createPlayerStats();
@@ -32,7 +31,7 @@ var beginning_state = {
             text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu tytönnimi vuonna 1917.";
         }
 
-        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, style);
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
         text1.alpha = 0;
 
         var continueButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 1.4, 'button');

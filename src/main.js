@@ -1,5 +1,6 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 var PLAYER = {};
+var STYLE = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 
 /*
  * Phaser many-state tutorials for possible reference:
