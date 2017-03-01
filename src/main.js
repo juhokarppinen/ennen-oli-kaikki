@@ -1,4 +1,4 @@
-var GAME = new Phaser.GAME(1280, 720, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 var player = {};
 
 /*
