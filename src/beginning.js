@@ -47,11 +47,7 @@ var beginning_state = {
         continueButton.events.onInputDown.add(goToSchool, this);
         
         //fade in
-        game.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
-        game.add.tween(box).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
-        game.add.tween(continueButton).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
-        game.add.tween(text1).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
-        game.add.tween(t1).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+        tweenElements(background, [box, continueButton, text1, t1]);
         
 
     },
