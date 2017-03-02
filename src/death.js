@@ -34,7 +34,7 @@ var death_state = {
         t2.anchor.set(0.5);
         t2.alpha = 0;
         menuButton.inputEnabled = true;
-        menuButton.events.onInputDown.add(startGame, this);
+        menuButton.events.onInputDown.add(goToMenu, this);
         menuButton.alpha = 0;
 
         tweenElements(background, [box, startButton, menuButton, text1, t1, t2]);
