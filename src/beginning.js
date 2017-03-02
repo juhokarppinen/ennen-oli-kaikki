@@ -11,6 +11,8 @@ var beginning_state = {
             background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
         }
         background.alpha = 0;
+        
+        displayNameAndAge();
 
         var text = "Tervetuloa maailmaan!";
 
@@ -58,6 +60,7 @@ function goToSchool() {
 
 function createPlayerStats() {
     PLAYER.name = pickName(PLAYER.gender);
+    PLAYER.age = 0;
     var locations = [{name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"}, {name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
         {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
     //todo: 20% in Jyväskylä, the remaining ones at equal chances

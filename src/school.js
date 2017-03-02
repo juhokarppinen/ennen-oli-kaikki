@@ -3,6 +3,9 @@ var school_state = {
     create: function() {
         var background = GAME.add.sprite(0, 0, 'schoolbackground');
         background.alpha = 0;
+        
+        PLAYER.age = 7;
+        displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;

@@ -10,7 +10,7 @@ var death_state = {
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
 
-        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, "Kuolit...", STYLE);
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, "Kuolit... Olit kuollessasi "+PLAYER.age+"-vuotias.", STYLE);
         text1.alpha = 0;
 
         var startButton = GAME.add.button(GAME.world.centerX * 0.7, GAME.world.centerY * 1.4, 'button');
