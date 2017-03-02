@@ -92,11 +92,11 @@ function calculateOdds(weights, results) {
 
 function pickName(gender) {
     if(gender === "male") {
-        var maleNames = ["Eino", "Toivo", "Veikko", "Väinö", "Tauno", "Erkki"];
+        var maleNames = ["Eino", "Toivo", "Veikko", "Väinö", "Tauno", "Erkki", "Reino", "Lauri", "Viljo", "Martti"];
         return maleNames[Math.floor(Math.random()*maleNames.length)];
     }
     if(gender === "female") {
-        var femaleNames = ["Anna", "Aino", "Aili", "Tyyne", "Aune", "Helvi"];
+        var femaleNames = ["Anna", "Aino", "Aili", "Aune", "Helvi", "Tyyne", "Kerttu", "Helmi", "Martta", "Toini"];
         return femaleNames[Math.floor(Math.random()*femaleNames.length)];
     }
 }
