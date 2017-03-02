@@ -25,7 +25,7 @@ var beginning_state = {
             text += " Synnyit porvarisperheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
         }
 
-        if(PLAYER.sex === "male") {
+        if(PLAYER.gender === "male") {
             text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu pojannimi vuonna 1917.";
         } else {
             text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu tytönnimi vuonna 1917.";
@@ -45,8 +45,6 @@ var beginning_state = {
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
-
-
     },
     update: function () {
     }
@@ -59,21 +57,14 @@ function goToSchool() {
 }
 
 function createPlayerStats() {
-    //PLAYER.sex = calculateOdds([0.495, 0.515], ["female", "male"]); //todo: fix this
-    var sexes = ["male", "female"];
-    PLAYER.sex = sexes[Math.floor(Math.random()*sexes.length)];
-    console.log(PLAYER.sex);
-    PLAYER.name = pickName(PLAYER.sex);
-    console.log(PLAYER.name);
-    //PLAYER.location = calculateOdds([0.85, 0.15], ["country", "city"]); // <---these odds are not 100% certain yet
+    PLAYER.name = pickName(PLAYER.gender);
     var locations = [{name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"}, {name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
         {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
+    //todo: 20% in Jyväskylä, the remaining ones at equal chances
     PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
-    console.log(PLAYER.location);
-    //PLAYER.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---these odds are not 100% certain yet
+    //PLAYER.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---find out the odds for these; also, does Jyväskylä have more rich people?
     var classes = ["poor", "middle", "rich"];
     PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
-    console.log(PLAYER.class);
 }
 
 //todo: fix this; right now it sometimes gives undefined
@@ -90,12 +81,12 @@ function calculateOdds(weights, results) {
     }
 }
 
-function pickName(sex) {
-    if(sex === "male") {
+function pickName(gender) {
+    if(gender === "male") {
         var maleNames = ["Eino", "Toivo", "Veikko", "Väinö", "Tauno", "Erkki"];
         return maleNames[Math.floor(Math.random()*maleNames.length)];
     }
-    if(sex === "female") {
+    if(gender === "female") {
         var femaleNames = ["Anna", "Aino", "Aili", "Tyyne", "Aune", "Helvi"];
         return femaleNames[Math.floor(Math.random()*femaleNames.length)];
     }

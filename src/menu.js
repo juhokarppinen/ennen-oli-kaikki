@@ -13,7 +13,7 @@ var menu_state = {
         var t1 = GAME.add.text(startButton.centerX, startButton.centerY, 'Aloita');
         t1.anchor.set(0.5);
         startButton.inputEnabled = true;
-        startButton.events.onInputDown.add(startGAME, this);
+        startButton.events.onInputDown.add(pickGender, this);
 
 },
 
@@ -21,7 +21,6 @@ var menu_state = {
     }
 }
 
-function startGAME () {
-    GAME.state.start('beginning');
-
+function pickGender () {
+    GAME.state.start('gender');
 }

@@ -7,6 +7,7 @@ var load_state = {
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('background', 'assets/img/background.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
+        GAME.load.image('genderbackground', 'assets/img/gender.jpg');
         GAME.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
         GAME.load.image('beginningcountrybackground', 'assets/img/beginningcountry.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');

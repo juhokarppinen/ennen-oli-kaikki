@@ -13,6 +13,7 @@ function preload() {
     // Define all the states
     GAME.state.add('load', load_state);
     GAME.state.add('menu', menu_state);
+    GAME.state.add('gender', gender_state);
     GAME.state.add('beginning', beginning_state);
     GAME.state.add('school', school_state);
     GAME.state.add('death', death_state);
