@@ -32,7 +32,7 @@ var school_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(die, this);
+        continueButton.events.onInputDown.add(continueFromSchool, this);
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
@@ -43,6 +43,7 @@ var school_state = {
     }
 }
 
-function die () {
+function continueFromSchool () {
+    //todo: add different branches
     GAME.state.start('death');
 }

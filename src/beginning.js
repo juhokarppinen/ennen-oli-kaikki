@@ -43,7 +43,7 @@ var beginning_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(goToSchool, this);
+        continueButton.events.onInputDown.add(continueFromBeginning, this);
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
@@ -52,9 +52,15 @@ var beginning_state = {
     }
 }
 
-function goToSchool() {
+function continueFromBeginning() {
+    //to do: add childhood death
     //18% die before going to school
-    //country children receive 20% chance to not go to school
+    /*if(death) {
+        PLAYER.causeofdeath = "keuhkokuume";
+        GAME.state.start('death');
+    }*/
+    
+    //have to check what percentage of children in Jyväskylä, Hankasalmi, Jämsä and Saarijärvi didn't go to school
     GAME.state.start('school');
 }
 
