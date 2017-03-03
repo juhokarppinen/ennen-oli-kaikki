@@ -11,6 +11,11 @@ var load_state = {
         GAME.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
         GAME.load.image('beginningcountrybackground', 'assets/img/beginningcountry.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
+        GAME.load.image('homechorecountrybackground', 'assets/img/homechorescountry.jpg');
+        GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
+        GAME.load.image('studies1background', 'assets/img/studies1.jpg');
+        GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');
+        GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
         GAME.load.image('deathbackground', 'assets/img/death.jpg');
     },
     create: function() {

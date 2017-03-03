@@ -61,7 +61,7 @@ function continueFromBeginning() {
     }*/
     
     //have to check what percentage of children in Jyväskylä, Hankasalmi, Jämsä and Saarijärvi didn't go to school
-    GAME.state.start('school');
+    GAME.state.start('school1');
 }
 
 function createPlayerStats() {

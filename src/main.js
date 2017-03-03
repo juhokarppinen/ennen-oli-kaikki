@@ -15,7 +15,11 @@ function preload() {
     GAME.state.add('menu', menu_state);
     GAME.state.add('gender', gender_state);
     GAME.state.add('beginning', beginning_state);
-    GAME.state.add('school', school_state);
+    GAME.state.add('school1', school1_state);
+    GAME.state.add('school2', school2_state);
+    GAME.state.add('homechores1', homechores1_state);
+    GAME.state.add('youthwork1', youthwork1_state);
+    GAME.state.add('studies1', studies1_state);
     GAME.state.add('death', death_state);
     // Start with the 'load' state
     GAME.state.start('load');
