@@ -10,8 +10,10 @@ var death_state = {
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
 
+        // Default description.
         var causeOfDeathText = "Kuolit...";
 
+        // Childhood death
         if (PLAYER.causeofdeath === "keuhkokuume") {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella "
             + "yksi yleisimmistä kuolinsyistä muiden kulkutautien lisäksi. "
