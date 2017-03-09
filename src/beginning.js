@@ -53,15 +53,14 @@ var beginning_state = {
 }
 
 function continueFromBeginning() {
-    //to do: add childhood death
     //18% die before going to school
-    /*if(death) {
+    if (Math.random() <= 0.18) {
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');
-    }*/
-    
+    } else {
     //have to check what percentage of children in Jyväskylä, Hankasalmi, Jämsä and Saarijärvi didn't go to school
     GAME.state.start('school1');
+    }
 }
 
 function createPlayerStats() {

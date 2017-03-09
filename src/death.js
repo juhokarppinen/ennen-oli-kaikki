@@ -10,7 +10,15 @@ var death_state = {
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
 
-        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, "Kuolit... Olit kuollessasi "+PLAYER.age+"-vuotias.", STYLE);
+        var causeOfDeathText = "Kuolit...";
+
+        if (PLAYER.causeofdeath === "keuhkokuume") {
+            causeOfDeathText = "Kuolit keuhkokuumeeseen. Suomen itsenäisyyden alkutaipaleella noin joka viides lapsi kuoli ennen kouluikää.";
+            PLAYER.age = Math.floor(Math.random() * 6); // Is there any data showing actual ages of deceased children? 
+        }
+
+        var deathText = causeOfDeathText + " Olit kuollessasi "+PLAYER.age+"-vuotias.";
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, deathText, STYLE);
         text1.alpha = 0;
 
         var startButton = GAME.add.button(GAME.world.centerX * 0.7, GAME.world.centerY * 1.4, 'button');
