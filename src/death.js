@@ -13,7 +13,11 @@ var death_state = {
         var causeOfDeathText = "Kuolit...";
 
         if (PLAYER.causeofdeath === "keuhkokuume") {
-            causeOfDeathText = "Kuolit keuhkokuumeeseen. Suomen itsenäisyyden alkutaipaleella noin joka viides lapsi kuoli ennen kouluikää.";
+            causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella "
+            + "yksi yleisimmistä kuolinsyistä muiden kulkutautien lisäksi. "
+            + "Vielä 1920-luvun lopulla se tappoi tuhansia ihmisiä joka vuosi. "
+            + "Keuhkotuberkuloosi koitui sinunkin kohtalokseksi. Lepää "
+            + "rauhassa, " + PLAYER.name + "!";
             PLAYER.age = Math.floor(Math.random() * 6); // Is there any data showing actual ages of deceased children? 
         }
 
