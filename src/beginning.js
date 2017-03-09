@@ -53,12 +53,13 @@ var beginning_state = {
 }
 
 function continueFromBeginning() {
-    //18% die before going to school
+    // 18% die before going to school
     if (Math.random() <= 0.18) {
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');
+    } else if (PLAYER.location.name != "Jyväskylä" && Math.random() <= 0.20) {
+        GAME.state.start('school0'); // 20% rural children didn't go to school.
     } else {
-    //have to check what percentage of children in Jyväskylä, Hankasalmi, Jämsä and Saarijärvi didn't go to school
     GAME.state.start('school1');
     }
 }
