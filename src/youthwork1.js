@@ -2,7 +2,7 @@ var youthwork1_state = {
 
     create: function() {
         var text = "";
-        if(PLAYER.location === "Jyväskylä") {
+        if(PLAYER.location.name === "Jyväskylä") {
             var background = GAME.add.sprite(0, 0, 'youthworkcitybackground');
             text = "Saat töitä apurina verstaalla. Päivät ovat pitkiä mutta olet nopea oppimaan.";
         } else {
@@ -40,5 +40,9 @@ var youthwork1_state = {
 
 function continueFromYouthwork1 () {
     //todo: add different branches
-    GAME.state.start('death');
+    if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+        GAME.state.start('servant1');
+    } else {
+        GAME.state.start('death');
+    }
 }

@@ -57,7 +57,7 @@ function continueFromBeginning() {
     if (Math.random() <= 0.18) {
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');
-    } else if (PLAYER.location.name != "Jyväskylä" && Math.random() <= 0.20) {
+    } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
         GAME.state.start('school0'); // 20% rural children didn't go to school.
     } else {
     GAME.state.start('school1');
@@ -88,16 +88,5 @@ function calculateOdds(weights, results) {
         if (num < s) {
             return results[i];
         }
-    }
-}
-
-function pickName(gender) {
-    if(gender === "male") {
-        var maleNames = ["Eino", "Toivo", "Veikko", "Väinö", "Tauno", "Erkki", "Reino", "Lauri", "Viljo", "Martti"];
-        return maleNames[Math.floor(Math.random()*maleNames.length)];
-    }
-    if(gender === "female") {
-        var femaleNames = ["Anna", "Aino", "Aili", "Aune", "Helvi", "Tyyne", "Kerttu", "Helmi", "Martta", "Toini"];
-        return femaleNames[Math.floor(Math.random()*femaleNames.length)];
     }
 }

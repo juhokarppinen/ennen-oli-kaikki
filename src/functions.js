@@ -14,3 +14,14 @@ function displayNameAndAge() {
     nameText.alpha=0;
     GAME.add.tween(nameText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
 }
+
+function pickName(gender) {
+    if(gender === "male") {
+        var maleNames = ["Eino", "Toivo", "Veikko", "Väinö", "Tauno", "Erkki", "Reino", "Lauri", "Viljo", "Martti"];
+        return maleNames[Math.floor(Math.random()*maleNames.length)];
+    }
+    if(gender === "female") {
+        var femaleNames = ["Anna", "Aino", "Aili", "Aune", "Helvi", "Tyyne", "Kerttu", "Helmi", "Martta", "Toini"];
+        return femaleNames[Math.floor(Math.random()*femaleNames.length)];
+    }
+}

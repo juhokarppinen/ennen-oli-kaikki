@@ -42,5 +42,9 @@ var homechores1_state = {
 }
 
 function continueFromHomechores () {
-    GAME.state.start('death');
+    if(PLAYER.class === "poor") {
+            GAME.state.start('servant1');
+    } else {
+        GAME.state.start('death');
+    }
 }
