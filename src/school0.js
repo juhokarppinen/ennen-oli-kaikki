@@ -1,11 +1,7 @@
 var school0_state = {
 
     create: function() {
-        if(PLAYER.location.name === "Jyväskylä") {
-            background = GAME.add.sprite(0, 0, 'beginningcitybackground');
-        } else {
-            background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
-        }
+        background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
         background.alpha = 0;
         
         PLAYER.age = 7;
@@ -16,7 +12,7 @@ var school0_state = {
 
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä "
         + "oppivelvollisuudesta, mutta osa maalaiskylien lapsista ei päässyt "
-        + "aloittamaan kansakoulua. Jäit kotiin auttamaan vanhempiasi töissä." 
+        + "aloittamaan kansakoulua. Jäit kotiin auttamaan vanhempiasi töissä. " 
         + "Vuosi on 1924.";
 
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
