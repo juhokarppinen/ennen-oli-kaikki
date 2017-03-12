@@ -14,7 +14,7 @@ var homechores1_state = {
         }
         background.alpha = 0;
         
-        PLAYER.age = 13;
+        PLAYER.age = 12;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
@@ -42,9 +42,16 @@ var homechores1_state = {
 }
 
 function continueFromHomechores () {
-    if(PLAYER.class === "poor") {
+    if(PLAYER.location.name !== "Jyväskylä") {
+        if(PLAYER.class === "poor") {
             GAME.state.start('servant1');
+        } else if (PLAYER.class === "middle") {
+            GAME.state.start('homechores2');
+        } else {
+            GAME.state.start('death');
+        }
     } else {
-        GAME.state.start('death');
+            GAME.state.start('death');
     }
+    
 }

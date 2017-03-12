@@ -5,7 +5,7 @@ var barn2_state = {
         if(PLAYER.gender === "male") {
             text = "Kuhertelu heinäladossa oli ikimuistoista, mutta pian " + PLAYER.crush + " kertoo olevansa raskaana! Pyydätkö häntä vaimoksesi?";
         } else {
-            text = "Kuhertelu heinäladossa oli ikimuistoista, mutta pian huomaat olevasi raskaana! " + PLAYER.crush + " kysyy onko kaikki hyvin, kerrotko raskaudesta?";
+            text = "Kuhertelu heinäladossa oli ikimuistoista, mutta pian huomaat olevasi raskaana! " + PLAYER.crush + " tulee vastaan ladon edustalla, kerrotko raskaudesta?";
         }
 
         var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');

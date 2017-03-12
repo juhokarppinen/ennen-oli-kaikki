@@ -11,7 +11,7 @@ var youthwork1_state = {
         }
         background.alpha = 0;
         
-        PLAYER.age = 13;
+        PLAYER.age = 12;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
