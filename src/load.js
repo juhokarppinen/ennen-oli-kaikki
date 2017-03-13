@@ -17,6 +17,7 @@ var load_state = {
         GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');
         GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
         GAME.load.image('deathbackground', 'assets/img/death.jpg');
+        GAME.load.image('citybackground', 'assets/img/city.jpg');
 
 
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');

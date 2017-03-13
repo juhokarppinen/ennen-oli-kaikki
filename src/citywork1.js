@@ -1,11 +1,11 @@
-var servant3_state = {
+var citywork1_state = {
 
     create: function() {
-        var text = "Vaikka olet tottunut kovaan työhön pienestä pitäen, piikana oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan. Paljoa et ehdi kovaa kohtaloasi surkutella, sillä iltaisin, kun olet saanut päivän työt tehtyä, nukahdat samoin tein.";
-        var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
+        var text = "Kävipä tuuri! Pääsit kauppa-apulaiseksi Osuusliike Mäki-Mattiin. Työhösi kuuluu kaikenlaista, mutta onneksi olet nopea oppimaan.";
+        var background = GAME.add.sprite(0, 0, 'citybackground');
         background.alpha = 0;
         
-        PLAYER.age = 14;
+        PLAYER.age = 16;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
@@ -24,7 +24,7 @@ var servant3_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(continueFromServant3, this);
+        continueButton.events.onInputDown.add(continueFromCitywork, this);
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
@@ -35,6 +35,6 @@ var servant3_state = {
     }
 }
 
-function continueFromServant3 () {
-    GAME.state.start('barn1');
+function continueFromCitywork () {
+    GAME.state.start('dance1');
 }

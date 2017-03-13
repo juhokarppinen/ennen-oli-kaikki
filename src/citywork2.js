@@ -1,21 +1,23 @@
-var youthwork1_state = {
+var citywork2_state = {
 
     create: function() {
         var text = "";
-        if(PLAYER.location.name === "Jyväskylä") {
-            var background = GAME.add.sprite(0, 0, 'youthworkcitybackground');
-            text = "Saat töitä apurina verstaalla. Päivät ovat pitkiä mutta olet nopea oppimaan.";
+        if(PLAYER.class === "rich") {
+            text = "Pääsit isäsi suhteilla myyjäksi vaateliikkeeseen. Vaikka tehtävää riittää, olet oikein tyytyväinen työhösi.";
         } else {
-            var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
-            text = "Autat isääsi pellolla. Päivät ovat pitkiä mutta sinusta kasvaa vahva nuorimies.";
+            text = "Ompelutaidoillasi pääsit töihin ompeluliikkeeseen. Vaikka tehtävää riittää, olet oikein tyytyväinen työhösi.";
         }
+        var background = GAME.add.sprite(0, 0, 'homechores1background');
         background.alpha = 0;
         
-        PLAYER.age = 12;
+        PLAYER.age = 16;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
+
+        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
+        text1.alpha = 0;
 
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
         text1.alpha = 0;
@@ -27,7 +29,7 @@ var youthwork1_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(continueFromYouthwork1, this);
+        continueButton.events.onInputDown.add(continueFromCitywork, this);
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
@@ -38,11 +40,9 @@ var youthwork1_state = {
     }
 }
 
-function continueFromYouthwork1 () {
-    if(PLAYER.location.name === "Jyväskylä") {
-        GAME.state.start('apprentice');
-    } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
-        GAME.state.start('servant1');
+function continueFromCitywork () {
+    if(PLAYER.class !== "rich") {
+        GAME.state.start('dance1');
     } else {
         GAME.state.start('death');
     }

@@ -10,13 +10,8 @@ var studies1_state = {
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
 
-        var text = "Aloitat oppikoulun Jyväskylän lyseossa.";
-        
-        if(PLAYER.location === "Jyväskylä") {
-            text += " Onneksi perheesi asuu Jyväskylässä, joten koulua on helppo käydä kotoa.";
-        } else {
-            text += " Joudut matkustamaan pitkiä matkoja ja asumaan asuntolassa, mutta onneksi opiskelu on antoisaa.";
-        }
+        var text = "Aloitat oppikoulun Jyväskylän lyseossa. Opiskelu osoittautuu paljon vaikeammaksi kuin olit odottanut ja pian kadut kouluun tuloa. "
+        + "Jatkatko opintoja vai lähdetkö mieluummin leskeksi jääneen apteekkarienosi apupojaksi kaupunkiin?";
 
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
         text1.alpha = 0;

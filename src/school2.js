@@ -14,16 +14,16 @@ var school2_state = {
         var buttonText;
 
         if(PLAYER.gender === "female") {
-            text += " Olet terävä oppilas, mutta tyttöjä ei tuolloin ollut tapana kouluttaa, joten jäät kotiin auttamaan askareissa.";
+            text += " Olet terävä oppilas, mutta tyttöjä ei tuolloin ollut tapana kouluttaa enempää, joten jäät kotiin auttamaan askareissa.";
             buttonText = "Kotitöihin";
         } else if(PLAYER.class === "poor") {
-            text += " Olet terävä oppilas, mutta perheelläsi ei ole varaa oppikouluun. Apuasi tarvitaan kotona, joten koulutiesi päättyy tähän.";
+            text += " Olet terävä oppilas, mutta perheelläsi ei ole varaa oppikouluun ja kotona tarvitaan apuasi, joten koulutiesi päättyy tähän.";
             buttonText = "Töihin";
         } else if(PLAYER.class === "middle") {
             text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Perheesi ei kuitenkaan syty idealle, vaan haluaa sinut töihin.";
             buttonText = "Töihin";
         } else if(PLAYER.class === "rich" && PLAYER.gender === "male") {
-            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Vanhempasi ovat ylpeitä ja lähettävät sinut oppikouluun mielellään.";
+            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja lähettävät sinut oppikouluun mielellään.";
             buttonText = "Oppikouluun";
         }
 

@@ -10,7 +10,7 @@ var studies2_state = {
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
 
-        var text = "Menestyt opinnoissa erinomaisesti ja valmistut hyvin arvosanoin. Nyt voisit jatkaa opintoja Helsingin yliopistossa, tai sitten aloittaa uran virkamiehenä. Kumman valitset?";
+        var text = "Onneksi olkoon, tuore ylioppilas! Jatkatko opiskelemaan Helsingin yliopistoon vai otatko ohjat isäsi kaupassa?";
 
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
         text1.alpha = 0;

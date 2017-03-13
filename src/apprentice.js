@@ -1,17 +1,17 @@
-var youthwork1_state = {
+var apprentice_state = {
 
     create: function() {
         var text = "";
-        if(PLAYER.location.name === "Jyväskylä") {
+        if(PLAYER.class === "rich") {
             var background = GAME.add.sprite(0, 0, 'youthworkcitybackground');
-            text = "Saat töitä apurina verstaalla. Päivät ovat pitkiä mutta olet nopea oppimaan.";
+            text = "Apteekkarin apupoikana toimiminen on kiinnostavaa. Koulutustaustasi vuoksi olet erittäin pätevä työssäsi.";
         } else {
-            var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
-            text = "Autat isääsi pellolla. Päivät ovat pitkiä mutta sinusta kasvaa vahva nuorimies.";
+            var background = GAME.add.sprite(0, 0, 'youthworkcitybackground');
+            text = "Kätevyytesi huomataan. Pääset eräälle verstaalle oppipojaksi. Kuulet kehuja, että muutaman vuoden päästä sinulla voisi hyvinkin olla oma verstas.";
         }
         background.alpha = 0;
         
-        PLAYER.age = 12;
+        PLAYER.age = 16;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
@@ -39,9 +39,8 @@ var youthwork1_state = {
 }
 
 function continueFromYouthwork1 () {
-    if(PLAYER.location.name === "Jyväskylä") {
-        GAME.state.start('apprentice');
-    } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+    //todo: add different branches
+    if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
         GAME.state.start('servant1');
     } else {
         GAME.state.start('death');

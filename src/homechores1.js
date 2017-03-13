@@ -4,7 +4,7 @@ var homechores1_state = {
         var text = "";
         if(PLAYER.class === "poor") {
             var background = GAME.add.sprite(0, 0, 'homechorescountrybackground');
-            text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva, eikä kaikille riitä ruokaa. Sinut lähetetään piiaksi naapuripitäjään.";
+            text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. Perheesi rahatilanne on niin tiukka, että joudut pian etsimään työtä muualta.";
         } else if(PLAYER.class === "middle") {
             var background = GAME.add.sprite(0, 0, 'homechores1background');
             text = "Opit kotona kaiken kotiaskareista. Äitisi opettaa sinut laittamaan ruokaa ja ompelemaan vaatteita.";
@@ -45,13 +45,17 @@ function continueFromHomechores () {
     if(PLAYER.location.name !== "Jyväskylä") {
         if(PLAYER.class === "poor") {
             GAME.state.start('servant1');
-        } else if (PLAYER.class === "middle") {
+        } else if(PLAYER.class === "middle") {
             GAME.state.start('homechores2');
         } else {
             GAME.state.start('death');
         }
     } else {
-            GAME.state.start('death');
+        if(PLAYER.class === "poor") {
+            GAME.state.start('citywork1');
+        } else {
+            GAME.state.start('citywork2');
+        }
     }
     
 }

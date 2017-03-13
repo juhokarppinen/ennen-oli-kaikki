@@ -1,11 +1,12 @@
-var servant1_state = {
+var dance1_state = {
 
     create: function() {
-        var text = "Saat mahdollisuuden lähteä rengiksi naapuripitäjään. Otatko tilaisuuden vastaan?";
-        var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
+        PLAYER.crush = pickName("male");
+        var text = "Livahdat tansseihin, joissa tapaatkin erään vakioasiakkaan. Tanssien päätteeksi " + PLAYER.crush + " haluaa saattaa sinut kotiin, suostutko ehdotukseen?";
+        var background = GAME.add.sprite(0, 0, 'citybackground');
         background.alpha = 0;
         
-        PLAYER.age = 16;
+        PLAYER.age = 19;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
@@ -21,7 +22,7 @@ var servant1_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         yesButton.inputEnabled = true;
-        yesButton.events.onInputDown.add(continueFromServant1Y, this);
+        yesButton.events.onInputDown.add(continueFromBarn1Y, this);
         var noButton = GAME.add.button(GAME.world.centerX * 1.5, GAME.world.centerY * 1.4, 'button');
         noButton.anchor.set(0.5);
         noButton.alpha = 0;
@@ -29,7 +30,7 @@ var servant1_state = {
         t2.anchor.set(0.5);
         t2.alpha = 0;
         noButton.inputEnabled = true;
-        noButton.events.onInputDown.add(continueFromServant1N, this);
+        noButton.events.onInputDown.add(continueFromBarn1N, this);
 
         //fade in
         tweenElements(background, [box, yesButton, noButton, text1, t1, t2]);
@@ -40,10 +41,10 @@ var servant1_state = {
     }
 }
 
-function continueFromServant1Y () {
-    GAME.state.start('servant2');
+function continueFromBarn1Y () {
+    GAME.state.start('barn2');
 }
 
-function continueFromServant1N () {
-    GAME.state.start('youthwork2');
+function continueFromBarn1N () {
+    GAME.state.start('death');
 }
