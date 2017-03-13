@@ -4,6 +4,8 @@ var menu_state = {
     },
 
     create: function() {
+        GAME.add.audio('music-Bittersweet').play();
+
         GAME.add.sprite(0, 0, 'menubackground');
         var menuStyle = {font: "25px verdana", fill: "#FFFFFF"};
         var text1 = GAME.add.text(GAME.world.centerX * 0.825, GAME.world.centerY * 0.2, "Ennen oli kaikki...", menuStyle);
