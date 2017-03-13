@@ -44,7 +44,7 @@ var homechores1_state = {
 function continueFromHomechores () {
     if(PLAYER.location.name !== "Jyväskylä") {
         if(PLAYER.class === "poor") {
-            GAME.state.start('servant1');
+            GAME.state.start('homechores1choice');
         } else if(PLAYER.class === "middle") {
             GAME.state.start('homechores2');
         } else {

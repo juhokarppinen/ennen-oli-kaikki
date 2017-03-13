@@ -41,7 +41,7 @@ var homechores1choice_state = {
 }
 
 function continueFromServant1City () {
-    GAME.state.start('servant2');
+    GAME.state.start('citywork1');
 }
 
 function continueFromServant1Country () {

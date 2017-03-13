@@ -22,7 +22,7 @@ var dance1_state = {
         t1.anchor.set(0.5);
         t1.alpha = 0;
         yesButton.inputEnabled = true;
-        yesButton.events.onInputDown.add(continueFromBarn1Y, this);
+        yesButton.events.onInputDown.add(continueFromDance1Y, this);
         var noButton = GAME.add.button(GAME.world.centerX * 1.5, GAME.world.centerY * 1.4, 'button');
         noButton.anchor.set(0.5);
         noButton.alpha = 0;
@@ -30,7 +30,7 @@ var dance1_state = {
         t2.anchor.set(0.5);
         t2.alpha = 0;
         noButton.inputEnabled = true;
-        noButton.events.onInputDown.add(continueFromBarn1N, this);
+        noButton.events.onInputDown.add(continueFromDance1N, this);
 
         //fade in
         tweenElements(background, [box, yesButton, noButton, text1, t1, t2]);
@@ -41,10 +41,10 @@ var dance1_state = {
     }
 }
 
-function continueFromBarn1Y () {
-    GAME.state.start('barn2');
+function continueFromDance1Y () {
+    GAME.state.start('death');
 }
 
-function continueFromBarn1N () {
+function continueFromDance1N () {
     GAME.state.start('death');
 }
