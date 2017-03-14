@@ -1,7 +1,12 @@
 var homechores2_state = {
 
     create: function() {
-        var text = "Vuosien kuluessa saat lisää vastuuta ja pääset auttamaan tilan hoitamiseen liittyvissä tehtävissä.";
+        var text = "";
+        if(PLAYER.gender === "male") {
+            text = "Raadat isäsi rinnalla kotitilalla, muttet voi lakata jossittelemasta, millaiseksi elämäsi olisi muuttunut, jos olisit jatkanut opintoja.";
+        } else {
+            text = "Vuosien kuluessa saat lisää vastuuta ja pääset auttamaan tilan hoitamiseen liittyvissä tehtävissä.";
+        }
         var background = GAME.add.sprite(0, 0, 'homechorescountrybackground');
         background.alpha = 0;
         

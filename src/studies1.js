@@ -16,17 +16,25 @@ var studies1_state = {
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
         text1.alpha = 0;
 
-        var continueButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 1.4, 'button');
-        continueButton.anchor.set(0.5);
-        continueButton.alpha = 0;
-        var t1 = GAME.add.text(continueButton.centerX, continueButton.centerY, 'Jatka');
+        var studyButton = GAME.add.button(GAME.world.centerX * 0.5, GAME.world.centerY * 1.4, 'button');
+        studyButton.anchor.set(0.5);
+        studyButton.alpha = 0;
+        var t1 = GAME.add.text(studyButton.centerX, studyButton.centerY, "Opintoja");
         t1.anchor.set(0.5);
         t1.alpha = 0;
-        continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(continueFromStudies1, this);
+        studyButton.inputEnabled = true;
+        studyButton.events.onInputDown.add(continueFromStudies1Study, this);
+        var workButton = GAME.add.button(GAME.world.centerX * 1.5, GAME.world.centerY * 1.4, 'button');
+        workButton.anchor.set(0.5);
+        workButton.alpha = 0;
+        var t2 = GAME.add.text(workButton.centerX, workButton.centerY, "Apupojaksi");
+        t2.anchor.set(0.5);
+        t2.alpha = 0;
+        workButton.inputEnabled = true;
+        workButton.events.onInputDown.add(continueFromStudies1Work, this);
 
         //fade in
-        tweenElements(background, [box, continueButton, text1, t1]);
+        tweenElements(background, [box, studyButton, workButton, text1, t1, t2]);
 
     },
 
@@ -34,6 +42,9 @@ var studies1_state = {
     }
 }
 
-function continueFromStudies1 () {
+function continueFromStudies1Study () {
     GAME.state.start('studies2');
+}
+function continueFromStudies1Work () {
+    GAME.state.start('apprentice');
 }

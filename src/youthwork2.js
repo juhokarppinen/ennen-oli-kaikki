@@ -1,11 +1,17 @@
 var youthwork2_state = {
 
     create: function() {
-        var text = "Isäsi ei ole kovin tyytyväinen valintaasi, ja laittaa sinut rehkimään entistä kovempaa. Äitisi sen sijaan on tyytyväinen että pysyit kotona.";
-        var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
+        var text = "";
+        if(PLAYER.location.name === "Jyväskylä") {
+            text = "Joku muu saa oppipojan paikan, ja joudut etsimään uutta työtä.";
+            var background = GAME.add.sprite(0, 0, 'youthworkcitybackground');
+        } else {
+            text = "Isäsi ei ole kovin tyytyväinen valintaasi, ja laittaa sinut rehkimään entistä kovempaa. Äitisi sen sijaan on tyytyväinen että pysyit kotona.";
+            var background = GAME.add.sprite(0, 0, 'youthworkcountrybackground');
+        }
         background.alpha = 0;
         
-        PLAYER.age = 17;
+        PLAYER.age = 13;
         displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
@@ -33,5 +39,9 @@ var youthwork2_state = {
 }
 
 function continueFromYouthwork2 () {
-    GAME.state.start('barn1');
+    if(PLAYER.location.name === "Jyväskylä") {
+        GAME.state.start('death');
+    } else {
+        GAME.state.start('barn1');
+    }
 }

@@ -58,7 +58,12 @@ function continueFromBeginning() {
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');
     } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
-        GAME.state.start('school0'); // 20% rural children didn't go to school.
+        if(PLAYER.class === "rich") {
+            GAME.state.start('school1');
+        } else {
+            PLAYER.noschool = true;
+            GAME.state.start('school0'); // 20% of rural children didn't go to school.
+        }
     } else {
     GAME.state.start('school1');
     }
@@ -68,13 +73,19 @@ function createPlayerStats() {
     PLAYER.name = pickName(PLAYER.gender);
     PLAYER.age = 0;
     PLAYER.causeofdeath = "";
-    var locations = [{name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"}, {name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
+    var locations = [{name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
         {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
-    //todo: 20% in Jyväskylä, the remaining ones at equal chances
-    PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
-    //PLAYER.class = calculateOdds([0.75, 0.2, 0.05], ["poor", "middle", "rich"]); // <---find out the odds for these; also, does Jyväskylä have more rich people?
-    var classes = ["poor", "middle", "rich"];
-    PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
+    if (Math.random() <= 0.20) { 
+        PLAYER.location = {name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"};
+    } else {
+        PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
+    }
+    var classes = ["poor", "middle"];
+    if (Math.random() <= 0.10) { 
+        PLAYER.class = "rich";
+    } else {
+        PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
+    }
 }
 
 //todo: fix this; right now it sometimes gives undefined
