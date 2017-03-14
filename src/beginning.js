@@ -65,7 +65,8 @@ function continueFromBeginning() {
             GAME.state.start('school0'); // 20% of rural children didn't go to school.
         }
     } else {
-    GAME.state.start('school1');
+        PLAYER.noschool = false;
+        GAME.state.start('school1');
     }
 }
 
