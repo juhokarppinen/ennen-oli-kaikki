@@ -23,7 +23,19 @@ var death_state = {
             PLAYER.age = Math.floor(Math.random() * 6); // Is there any data showing actual ages of deceased children? 
         }
 
-        var deathText = "Kuolit... " + causeOfDeathText + " Olit kuollessasi "+PLAYER.age+"-vuotias.";
+        var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
+                           "seitsemän","kahdeksan","yhdeksän","kymmenen"];
+        var ageOfDeathText;
+        if (PLAYER.age === 0) {
+            ageOfDeathText = "vain muutaman kuukauden ikäinen.";
+        } else if (PLAYER.age <= 10) {
+            ageOfDeathText = numberTexts[PLAYER.age - 1] + "vuotias.";
+        } else {
+            ageOfDeathText = PLAYER.age + "-vuotias.";
+        }
+
+
+        var deathText = "Kuolit... " + causeOfDeathText + " Olit kuollessasi " + ageOfDeathText;
         var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, deathText, STYLE);
         text1.alpha = 0;
 
