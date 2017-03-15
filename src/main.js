@@ -1,4 +1,4 @@
-var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preload, create: create, update: update });
 var PLAYER = {};
 var STYLE = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 
@@ -40,6 +40,9 @@ function preload() {
 }
 
 function create() {
+    GAME.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; // SHOW_ALL // RESIZE
+    GAME.scale.pageAlignHorizontally = true;
+    GAME.scale.pageAlignVertically = true;
 }
 
 function update() {
