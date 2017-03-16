@@ -33,6 +33,7 @@ var homechores1choice_state = {
 
         //fade in
         tweenElements(background, [box, cityButton, countryButton, text1, t1, t2]);
+        displayTimeline(PLAYER.age);
 
     },
 

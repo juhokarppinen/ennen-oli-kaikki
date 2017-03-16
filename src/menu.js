@@ -14,7 +14,6 @@ var menu_state = {
         t1.anchor.set(0.5);
         startButton.inputEnabled = true;
         startButton.events.onInputDown.add(pickGender, this);
-
 },
 
     update: function() {

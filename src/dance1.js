@@ -34,6 +34,7 @@ var dance1_state = {
 
         //fade in
         tweenElements(background, [box, yesButton, noButton, text1, t1, t2]);
+        displayTimeline(PLAYER.age);
 
     },
 

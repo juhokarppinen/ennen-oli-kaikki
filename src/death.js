@@ -64,6 +64,8 @@ var death_state = {
         menuButton.alpha = 0;
 
         tweenElements(background, [box, startButton, menuButton, text1, t1, t2]);
+        displayTimeline(PLAYER.age);
+
 },
 
     update: function() {

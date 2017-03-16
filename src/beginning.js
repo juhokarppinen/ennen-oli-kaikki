@@ -47,6 +47,9 @@ var beginning_state = {
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
+        displayTimeline(PLAYER.age);
+
+
     },
     update: function () {
     }

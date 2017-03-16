@@ -35,6 +35,7 @@ var studies1_state = {
 
         //fade in
         tweenElements(background, [box, studyButton, workButton, text1, t1, t2]);
+        displayTimeline(PLAYER.age);
 
     },
 
