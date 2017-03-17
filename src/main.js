@@ -1,6 +1,12 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preload, create: create, update: update });
 var PLAYER = {};
-var STYLE = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
+var CENTER;
+
+/* Global text styles here */
+var TITLE_STYLE  = {font: "25px verdana", fill: "#FFFFFF"};
+var STYLE        = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
+var INFO_STYLE   = {fill: "#FFFFFF"};
+var BUTTON_STYLE = {};
 
 /*
  * Phaser many-state tutorials for possible reference:
@@ -43,6 +49,7 @@ function create() {
     GAME.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; // SHOW_ALL // RESIZE
     GAME.scale.pageAlignHorizontally = true;
     GAME.scale.pageAlignVertically = true;
+    CENTER = { x: GAME.world.centerX, y: GAME.world.centerY };
 }
 
 function update() {

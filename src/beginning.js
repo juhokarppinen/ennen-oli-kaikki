@@ -1,38 +1,36 @@
 var beginning_state = {
     preload: function () {
     },
+
     create: function () {
         createPlayerStats();
-
         var text = createText();
-        
         var background;
         var pictureInfo;
         if(PLAYER.location.name === "Jyväskylä") {
-            background = GAME.add.sprite(0, 0, 'beginningcitybackground');
-            pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
+            background = drawBackground('beginningcitybackground');
+            pictureInfo = drawPictureInfo("");
         } else {
-            background = GAME.add.sprite(0, 0, 'beginningcountrybackground');
-            pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
+            background = drawBackground('beginningcountrybackground');
+            pictureInfo = drawPictureInfo("");
         }
-        background.alpha = 0;
         
         var nameText = displayNameAndAge();
-        var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
-        box.alpha = 0;
-        var boxedText = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
-        boxedText.alpha = 0;
-        var continueButton = createButton(GAME.world.centerX, GAME.world.centerY * 1.4, 'Jatka', {}, continueFromBeginning, this);
+        var box = drawBox();
+        var boxedText = drawText(text);
+        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromBeginning, this);
         var timeline = drawTimeline(PLAYER.age);
-        timeline.text.alpha = 0;      // This is the only time when the timeline is tweened in.
+        timeline.text.alpha = 0;
         timeline.timeline.alpha = 0;
         var UIelements = [boxedText, box, nameText, continueButton.button, continueButton.text, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
         var toggleUIbutton = drawToggleUIbutton(UIelements);
         tweenElements(background, [box, continueButton.button, continueButton.text, boxedText, timeline.timeline, timeline.text]);
     },
+
     update: function () {
     }
 }
+
 
 function continueFromBeginning() {
     // 18% die before going to school
@@ -51,6 +49,7 @@ function continueFromBeginning() {
         GAME.state.start('school1');
     }
 }
+
 
 function createText() {
     var text = "Tervetuloa maailmaan! Synnyit ";
@@ -91,6 +90,7 @@ function createPlayerStats() {
         PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
     }
 }
+
 
 //todo: fix this; right now it sometimes gives undefined
 function calculateOdds(weights, results) {

@@ -118,7 +118,7 @@ function drawPictureInfoBackdrop() {
 }
 
 
-function drawPictureInfo(infoText, style) {
+function drawPictureInfo(infoText) {
     var background = GAME.add.graphics(0, 0);
     background.lineStyle(0,0x000000, 0);
     background.beginFill(0x000000, 0.5);
@@ -127,7 +127,7 @@ function drawPictureInfo(infoText, style) {
     background.alpha = 0;
 
     if (!infoText) infoText = "Ei tekijätietoja";
-    var text = GAME.add.text(GAME.world.centerX, GAME.world.height - 42, infoText, style);
+    var text = GAME.add.text(GAME.world.centerX, GAME.world.height - 42, infoText, INFO_STYLE);
     text.anchor.setTo(0.5, 0.5);
     text.alpha = 0;
     return {background: background, text: text};
@@ -153,22 +153,49 @@ function drawToggleUIbutton(UIelements) {
 }
 
 
+function drawBox() {
+    var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
+    box.alpha = 0;
+    return box;
+}
+
+
+function drawText(text) {
+    var boxedText = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
+    boxedText.alpha = 0;
+    return boxedText;
+}
+
+
+function drawBackground(image) {
+    var background = GAME.add.sprite(0, 0, image);
+    background.alpha = 0;
+    return background;
+}
+
 /**
  * Luo napin keskitettynä koordinaatteihin (x,y).
  * buttonText ja style määrittävät tekstin ja sen tyylin.
  * handler on funktio, joka napista laukeaa, ja context on aina this.
  */
-function createButton(x, y, buttonText, style, handler, context) {
+function createButton(x, y, buttonText, handler, context) {
     var button = GAME.add.button(x, y, 'button');
     button.anchor.set(0.5);
     button.inputEnabled = true;
     button.events.onInputDown.add(handler, context);
     button.alpha = 0;
 
-    var text = GAME.add.text(button.centerX, button.centerY, buttonText, style);
+    var text = GAME.add.text(button.centerX, button.centerY, buttonText, BUTTON_STYLE);
     text.anchor.set(0.5);
     text.alpha = 0;
 
-    // var returnValue = {button: button, text: text}
     return {button: button, text: text};
+}
+
+
+function drawTitle(x, y, text) {
+    var titleText = GAME.add.text(x, y, text, TITLE_STYLE);
+    titleText.alpha = 0;
+    titleText.anchor.setTo(0.5);
+    return titleText;
 }
