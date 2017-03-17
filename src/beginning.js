@@ -4,20 +4,7 @@ var beginning_state = {
     create: function () {
         createPlayerStats();
 
-        var text = "Tervetuloa maailmaan!";
-        if(PLAYER.class === "poor") {
-            text += " Synnyit vähävaraiseen perheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
-        } else if(PLAYER.class === "middle") {
-            text += " Synnyit keskiluokkaiseen perheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
-        } else {
-            text += " Synnyit porvarisperheeseen "+PLAYER.location.to+" Suomen itsenäisyyden alkumetreillä.";
-        }
-
-        if(PLAYER.gender === "male") {
-            text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu pojannimi vuonna 1917.";
-        } else {
-            text += " Sinut kastettiin nimellä "+PLAYER.name+", joka oli suosittu tytönnimi vuonna 1917.";
-        }
+        var text = createText();
         
         var background;
         var pictureInfo;
@@ -64,6 +51,27 @@ function continueFromBeginning() {
         GAME.state.start('school1');
     }
 }
+
+function createText() {
+    var text = "Tervetuloa maailmaan! Synnyit ";
+    if (PLAYER.class === "poor") {
+        text += "vähävaraiseen ";
+    } else if (PLAYER.class === "middle") {
+        text += "keskiluokkaiseen ";
+    } else {
+        text += "porvaris";
+    }
+    text += "perheeseen " + PLAYER.location.to + " Suomen itsenäisyyden alkumetreillä. " +
+            "Sinut kastettiin nimellä " + PLAYER.name + ", joka oli suosittu ";
+    if (PLAYER.gender === "male") {
+        text += "pojan";
+    } else {
+        text += "tytön";
+    }
+    text += "nimi vuonna 1917.";
+    return text;
+}
+
 
 function createPlayerStats() {
     PLAYER.name = pickName(PLAYER.gender);
