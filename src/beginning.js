@@ -19,11 +19,11 @@ var beginning_state = {
         
         var nameText = displayNameAndAge();
         var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
+        var timeline = drawTimeline(PLAYER.age); timeline[0].alpha = 0; timeline[1].alpha = 0;
         
         var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromBeginning, this);
       
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
+        var tweenedElements = [nameText].concat(boxedText, continueButton, timeline);
         var UIelements = tweenedElements.concat(pictureInfo, timeline);
         var toggleUIbutton = drawToggleUIbutton(UIelements);
         tweenElements(background, tweenedElements);
