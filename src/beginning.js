@@ -4,9 +4,11 @@ var beginning_state = {
 
     create: function () {
         createPlayerStats();
+
         var text = createText();
         var background;
         var pictureInfo;
+        
         if(PLAYER.location.name === "Jyväskylä") {
             background = drawBackground('beginningcitybackground');
             pictureInfo = drawPictureInfo("");
@@ -16,15 +18,15 @@ var beginning_state = {
         }
         
         var nameText = displayNameAndAge();
-        var box = drawBox();
-        var boxedText = drawText(text);
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromBeginning, this);
+        var boxedText = drawBoxedText(text);
         var timeline = drawTimeline(PLAYER.age);
-        timeline.text.alpha = 0;
-        timeline.timeline.alpha = 0;
-        var UIelements = [boxedText, box, nameText, continueButton.button, continueButton.text, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        
+        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromBeginning, this);
+      
+        var tweenedElements = [nameText].concat(boxedText, continueButton);
+        var UIelements = tweenedElements.concat(pictureInfo, timeline);
         var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, [box, continueButton.button, continueButton.text, boxedText, timeline.timeline, timeline.text]);
+        tweenElements(background, tweenedElements);
     },
 
     update: function () {

@@ -4,11 +4,8 @@ var death_state = {
     },
 
     create: function() {
-        var background = GAME.add.sprite(0, 0, 'deathbackground');
-        background.alpha = 0;
-
-        var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
-        box.alpha = 0;
+        var background = drawBackground('deathbackground');
+        var pictureInfo = drawPictureInfo("");
 
         // Default description.
         var causeOfDeathText = "";
@@ -34,40 +31,26 @@ var death_state = {
             ageOfDeathText = PLAYER.age + "-vuotias.";
         }
 
-
         var deathText = "Kuolit... " + causeOfDeathText + " Olit kuollessasi " + ageOfDeathText;
-        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, deathText, STYLE);
-        text1.alpha = 0;
 
-        var startButton = GAME.add.button(GAME.world.centerX * 0.7, GAME.world.centerY * 1.4, 'button');
-        startButton.anchor.set(0.5);
-        var gendertext;
+        var genderText;
         if(PLAYER.gender === "female") {
-            gendertext = "Pelaa poikana";
+            genderText = "Pelaa poikana";
         } else {
-            gendertext = "Pelaa tyttönä";
+            genderText = "Pelaa tyttönä";
         }
-        var t1 = GAME.add.text(startButton.centerX, startButton.centerY, gendertext);
-        t1.anchor.set(0.5);
-        t1.alpha = 0;
-        startButton.inputEnabled = true;
-        startButton.events.onInputDown.add(startGame, this);
-        startButton.alpha = 0;
-        
-        var menuButton = GAME.add.button(GAME.world.centerX * 1.3, GAME.world.centerY * 1.4, 'button');
-        menuButton.anchor.set(0.5);
-        var t2 = GAME.add.text(menuButton.centerX, menuButton.centerY, "Palaa valikkoon");
-        t2.anchor.set(0.5);
-        t2.alpha = 0;
-        menuButton.inputEnabled = true;
-        menuButton.events.onInputDown.add(goToMenu, this);
-        menuButton.alpha = 0;
 
-        tweenElements(background, [box, startButton, menuButton, text1, t1, t2]);
+        var nameText = displayNameAndAge();
+        var boxedText = drawBoxedText(deathText);
         var timeline = drawTimeline(PLAYER.age);
-        var pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
-        var UIelements = [box, text1, startButton, t1, menuButton, t2, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        
+        var startGameButton = createButton(CENTER.x * 0.5, CENTER.y * 1.4, genderText, startGame, this);
+        var goToMenuButton = createButton(CENTER.x * 1.5, CENTER.y * 1.4, "Valikkoon", goToMenu, this);
+
+        var tweenedElements = [nameText].concat(boxedText, startGameButton, goToMenuButton);
+        var UIelements = tweenedElements.concat(pictureInfo, timeline);
         var toggleUIbutton = drawToggleUIbutton(UIelements);
+        tweenElements(background, tweenedElements);
 
 },
 

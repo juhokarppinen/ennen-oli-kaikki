@@ -103,7 +103,7 @@ function drawTimeline(age) {
     var yearText = GAME.add.text(circleX, timelineY - 33, age + 1917, textStyle);
     yearText.anchor.setTo(0.5);
 
-    return {text: yearText, timeline: graphics}    
+    return [yearText, graphics];    
 }
 
 
@@ -130,7 +130,7 @@ function drawPictureInfo(infoText) {
     var text = GAME.add.text(GAME.world.centerX, GAME.world.height - 42, infoText, INFO_STYLE);
     text.anchor.setTo(0.5, 0.5);
     text.alpha = 0;
-    return {background: background, text: text};
+    return [background, text];
 }
 
 
@@ -153,17 +153,12 @@ function drawToggleUIbutton(UIelements) {
 }
 
 
-function drawBox() {
+function drawBoxedText(text) {
     var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
     box.alpha = 0;
-    return box;
-}
-
-
-function drawText(text) {
     var boxedText = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
     boxedText.alpha = 0;
-    return boxedText;
+    return [box, boxedText];
 }
 
 
@@ -189,7 +184,7 @@ function createButton(x, y, buttonText, handler, context) {
     text.anchor.set(0.5);
     text.alpha = 0;
 
-    return {button: button, text: text};
+    return [button, text];
 }
 
 

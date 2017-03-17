@@ -1,44 +1,35 @@
 var homechores1_state = {
 
     create: function() {
-        var text = "";
+        PLAYER.age = 12;
+
+        var text;
+        var background;
+        var pictureInfo;
         if(PLAYER.class === "poor") {
-            var background = GAME.add.sprite(0, 0, 'homechorescountrybackground');
+            background = drawBackground('homechorescountrybackground');
+            pictureInfo = drawPictureInfo("");
             text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. Perheesi rahatilanne on niin tiukka, että joudut pian etsimään työtä muualta.";
         } else if(PLAYER.class === "middle") {
-            var background = GAME.add.sprite(0, 0, 'homechores1background');
+            background = drawBackground('homechores1background');
+            pictureInfo = drawPictureInfo("");
             text = "Opit kotona kaiken kotiaskareista. Äitisi opettaa sinut laittamaan ruokaa ja ompelemaan vaatteita.";
         } else if(PLAYER.class === "rich") {
-            var background = GAME.add.sprite(0, 0, 'homechores1background');
+            background = drawBackground('homechores1background');
+            pictureInfo = drawPictureInfo("");
             text = "Äitisi opettaa sinut laittamaan ruokaa ja ompelemaan vaatteita. Lisäksi isäsi harjoittaa lukutaitoasi lukemalla sanomalehteä ja kirjoja kanssasi.";
         }
-        background.alpha = 0;
         
-        PLAYER.age = 12;
         var nameText = displayNameAndAge();
+        var boxedText = drawBoxedText(text);
+        var timeline = drawTimeline(PLAYER.age);  
+        
+        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromHomechores, this);
 
-        var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
-        box.alpha = 0;
-
-        var text1 = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
-        text1.alpha = 0;
-
-        var continueButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 1.4, 'button');
-        continueButton.anchor.set(0.5);
-        continueButton.alpha = 0;
-        var t1 = GAME.add.text(continueButton.centerX, continueButton.centerY, "Jatka");
-        t1.anchor.set(0.5);
-        t1.alpha = 0;
-        continueButton.inputEnabled = true;
-        continueButton.events.onInputDown.add(continueFromHomechores, this);
-
-        //fade in
-        tweenElements(background, [box, continueButton, text1, t1]);
-        var timeline = drawTimeline(PLAYER.age);
-        var pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
-        var UIelements = [nameText, box, text1, continueButton, t1, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        var tweenedElements = [nameText].concat(boxedText, continueButton);
+        var UIelements = tweenedElements.concat(pictureInfo, timeline);
         var toggleUIbutton = drawToggleUIbutton(UIelements);
-
+        tweenElements(background, tweenedElements);
     },
 
     update: function() {

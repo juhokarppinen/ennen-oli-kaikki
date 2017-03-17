@@ -5,12 +5,16 @@ var menu_state = {
 
     create: function() {
         var background = drawBackground('menubackground');
-        var titleText = drawTitle(CENTER.x, CENTER.y * 0.25, "Ennen oli kaikki...");
-        var startButton = createButton(CENTER.x, CENTER.y * 0.6, 'Aloita', pickGender, this);
         var pictureInfo = drawPictureInfo("Hugo Simberg: Poika");
-        var UIelements = [titleText, startButton.button, startButton.text, pictureInfo.text, pictureInfo.background];
+        
+        var titleText = drawTitle(CENTER.x, CENTER.y * 0.25, "Ennen oli kaikki...");
+        
+        var startButton = createButton(CENTER.x, CENTER.y * 0.6, 'Aloita', pickGender, this);
+        
+        var tweenedElements = [titleText].concat(startButton);
+        var UIelements = tweenedElements.concat(pictureInfo);
         var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, [titleText, startButton.button, startButton.text]);
+        tweenElements(background, tweenedElements);
     },
 
     update: function() {
