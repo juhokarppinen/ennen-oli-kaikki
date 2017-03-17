@@ -4,17 +4,17 @@ var menu_state = {
     },
 
     create: function() {
-        GAME.add.sprite(0, 0, 'menubackground');
-        var menuStyle = {font: "25px verdana", fill: "#FFFFFF"};
-        var text1 = GAME.add.text(GAME.world.centerX * 0.825, GAME.world.centerY * 0.2, "Ennen oli kaikki...", menuStyle);
-
-        var startButton = GAME.add.button(GAME.world.centerX, GAME.world.centerY * 0.6, 'button');
-        startButton.anchor.set(0.5);
-        var t1 = GAME.add.text(startButton.centerX, startButton.centerY, 'Aloita');
-        t1.anchor.set(0.5);
-        startButton.inputEnabled = true;
-        startButton.events.onInputDown.add(pickGender, this);
-},
+        var background = GAME.add.sprite(0, 0, 'menubackground');
+        background.alpha = 0;
+        var titleStyle = {font: "25px verdana", fill: "#FFFFFF"};
+        var titleText = GAME.add.text(GAME.world.centerX * 0.825, GAME.world.centerY * 0.2, "Ennen oli kaikki...", titleStyle);
+        titleText.alpha = 0;
+        var startButton = createButton(GAME.world.centerX, GAME.world.centerY * 0.6, 'Aloita', {}, pickGender, this);
+        var pictureInfo = drawPictureInfo("Hugo Simberg: Poika", {fill: "#FFFFFF"});
+        var UIelements = [titleText, startButton.button, startButton.text, pictureInfo.text, pictureInfo.background];
+        var toggleUIbutton = drawToggleUIbutton(UIelements);
+        tweenElements(background, [titleText, startButton.button, startButton.text]);
+    },
 
     update: function() {
     }

@@ -11,7 +11,7 @@ var homechores2_state = {
         background.alpha = 0;
         
         PLAYER.age = 16;
-        displayNameAndAge();
+        var nameText = displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
@@ -30,7 +30,10 @@ var homechores2_state = {
 
         //fade in
         tweenElements(background, [box, continueButton, text1, t1]);
-        displayTimeline(PLAYER.age);
+        var timeline = drawTimeline(PLAYER.age);
+        var pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
+        var UIelements = [nameText, box, text1, continueButton, t1, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        var toggleUIbutton = drawToggleUIbutton(UIelements);
 
     },
 

@@ -64,7 +64,10 @@ var death_state = {
         menuButton.alpha = 0;
 
         tweenElements(background, [box, startButton, menuButton, text1, t1, t2]);
-        displayTimeline(PLAYER.age);
+        var timeline = drawTimeline(PLAYER.age);
+        var pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
+        var UIelements = [box, text1, startButton, t1, menuButton, t2, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        var toggleUIbutton = drawToggleUIbutton(UIelements);
 
 },
 

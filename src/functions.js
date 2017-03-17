@@ -8,12 +8,15 @@ function tweenElements(background, otherElements) {
     });
 }
 
+
 function displayNameAndAge() {
     var nameStyle = {font: "25px verdana", fill: "#FFFFFF"};
     var nameText = GAME.add.text(GAME.world.centerX*1.75, GAME.world.centerY * 0.075, PLAYER.name+" "+PLAYER.age+"v.", nameStyle);
     nameText.alpha=0;
     GAME.add.tween(nameText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+    return nameText;
 }
+
 
 function pickName(gender) {
     if(gender === "male") {
@@ -26,7 +29,21 @@ function pickName(gender) {
     }
 }
 
-function displayTimeline(age) {
+
+function toggleUI(UIelements) {
+    UIelements.forEach(switchAlpha);
+
+    function switchAlpha(item) {
+        if (item.alpha) {
+            GAME.add.tween(item).to( { alpha: 0 }, 0, Phaser.Easing.Linear.None, true, 0);
+        } else {
+            GAME.add.tween(item).to( { alpha: 1 }, 0, Phaser.Easing.Linear.None, true, 0);
+        }
+    }
+}
+
+
+function drawTimeline(age) {
     var lineWidth = 2;
     var lineAlpha = 1;
     var lineColor = 0xffffff;
@@ -47,7 +64,7 @@ function displayTimeline(age) {
     var endpointOffset   = 4 * lineWidth;
     var midpointOffset   = 3 * lineWidth;
 
-    var intervalCount = 20;
+    var intervalCount = 10;
     var timelineWidth = width - 2 * horizontalMargin;
     var intervalWidth = timelineWidth / intervalCount;
 
@@ -82,13 +99,76 @@ function displayTimeline(age) {
     graphics.drawCircle(circleX, timelineY, circleDiameter);
     graphics.endFill();
 
-    // graphics.alpha = 0;
-    // GAME.add.tween(graphics).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 1000);
-
     var textStyle = {font: "30px verdana", fill: "#FFFFFF"};
     var yearText = GAME.add.text(circleX, timelineY - 33, age + 1917, textStyle);
     yearText.anchor.setTo(0.5);
-    
-    // yearText.alpha=0;
-    // GAME.add.tween(yearText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 1000);
+
+    return {text: yearText, timeline: graphics}    
+}
+
+
+function drawPictureInfoBackdrop() {
+    pictureInfoBackdrop = GAME.add.graphics(0, 0);
+    pictureInfoBackdrop.lineStyle(0,0x000000, 0);
+    pictureInfoBackdrop.beginFill(0x000000, 0.5);
+    pictureInfoBackdrop.drawRect(0, GAME.world.height - 85, GAME.world.width, 85);
+    pictureInfoBackdrop.endFill();
+    pictureInfoBackdrop.alpha = 0;
+    return pictureInfoBackdrop;
+}
+
+
+function drawPictureInfo(infoText, style) {
+    var background = GAME.add.graphics(0, 0);
+    background.lineStyle(0,0x000000, 0);
+    background.beginFill(0x000000, 0.5);
+    background.drawRect(0, GAME.world.height - 85, GAME.world.width, 85);
+    background.endFill();
+    background.alpha = 0;
+
+    if (!infoText) infoText = "Ei tekijätietoja";
+    var text = GAME.add.text(GAME.world.centerX, GAME.world.height - 42, infoText, style);
+    text.anchor.setTo(0.5, 0.5);
+    text.alpha = 0;
+    return {background: background, text: text};
+}
+
+
+function drawToggleUIbutton(UIelements) {
+    var gfx = GAME.add.graphics(0, 0);
+    gfx.beginFill(0xffffff,0.25);
+    gfx.drawCircle(50, 50, 80);
+    gfx.endFill();
+
+    var toggleUIbutton = GAME.add.button(50, 50, 'toggleUIbutton');
+    toggleUIbutton.scale.setTo(0.1);
+    toggleUIbutton.anchor.setTo(0.5);
+    toggleUIbutton.tint = 0x000000;
+    toggleUIbutton.alpha = 0.66;
+    toggleUIbutton.inputEnabled = true;
+
+    toggleUIbutton.events.onInputDown.add(function() { toggleUI(UIelements); });
+
+    return toggleUIbutton;
+}
+
+
+/**
+ * Luo napin keskitettynä koordinaatteihin (x,y).
+ * buttonText ja style määrittävät tekstin ja sen tyylin.
+ * handler on funktio, joka napista laukeaa, ja context on aina this.
+ */
+function createButton(x, y, buttonText, style, handler, context) {
+    var button = GAME.add.button(x, y, 'button');
+    button.anchor.set(0.5);
+    button.inputEnabled = true;
+    button.events.onInputDown.add(handler, context);
+    button.alpha = 0;
+
+    var text = GAME.add.text(button.centerX, button.centerY, buttonText, style);
+    text.anchor.set(0.5);
+    text.alpha = 0;
+
+    // var returnValue = {button: button, text: text}
+    return {button: button, text: text};
 }

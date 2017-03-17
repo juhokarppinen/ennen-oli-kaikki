@@ -5,7 +5,7 @@ var studies2_state = {
         background.alpha = 0;
         
         PLAYER.age = 16;
-        displayNameAndAge();
+        var nameText = displayNameAndAge();
 
         var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
         box.alpha = 0;
@@ -34,7 +34,10 @@ var studies2_state = {
 
         //fade in
         tweenElements(background, [box, universityButton, workButton, text1, t1, t2]);
-        displayTimeline(PLAYER.age);
+        var timeline = drawTimeline(PLAYER.age);
+        var pictureInfo = drawPictureInfo("", {fill: "#FFFFFF"});
+        var UIelements = [nameText, box, text1, universityButton, t1, workButton, t2, pictureInfo.text, pictureInfo.background, timeline.timeline, timeline.text];
+        var toggleUIbutton = drawToggleUIbutton(UIelements);
 
     },
 

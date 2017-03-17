@@ -4,6 +4,7 @@
 var load_state = {
     preload: function() {
         GAME.load.image('button', 'assets/img/buttonsepia.png');
+        GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('background', 'assets/img/background.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
@@ -18,7 +19,6 @@ var load_state = {
         GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
         GAME.load.image('deathbackground', 'assets/img/death.jpg');
         GAME.load.image('citybackground', 'assets/img/city.jpg');
-
 
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
 
