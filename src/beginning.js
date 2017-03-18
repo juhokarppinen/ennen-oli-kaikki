@@ -5,28 +5,35 @@ var beginning_state = {
     create: function () {
         createPlayerStats();
 
-        var text = createText();
-        var background;
-        var pictureInfo;
+        var classText;
+        if (PLAYER.class === "poor")        classText = "vähävaraiseen ";
+        else if (PLAYER.class === "middle") classText = "keskiluokkaiseen ";
+        else                                classText = "porvaris";
+
+        var genderText;
+        if (PLAYER.gender === "male") genderText = "pojan";
+        else                          genderText = "tytön";
+
+        var text = "Tervetuloa maailmaan! Synnyit " + classText + "perheeseen " + 
+                   PLAYER.location.to + " Suomen itsenäisyyden alkumetreillä. " +
+                   "Sinut kastettiin nimellä " + PLAYER.name + ", joka oli suosittu " +
+                   genderText + "nimi vuonna 1917.";
         
         if(PLAYER.location.name === "Jyväskylä") {
-            background = drawBackground('beginningcitybackground');
-            pictureInfo = drawPictureInfo("");
+            var image     = 'beginningcitybackground';
+            var imageInfo = "";
         } else {
-            background = drawBackground('beginningcountrybackground');
-            pictureInfo = drawPictureInfo("");
+            var image     = 'beginningcountrybackground';
+            var imageInfo = "";
         }
-        
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age); timeline[0].alpha = 0; timeline[1].alpha = 0;
-        
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromBeginning, this);
-      
-        var tweenedElements = [nameText].concat(boxedText, continueButton, timeline);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline);
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+
+        var centerButtonLabel   = "Jatka";
+        var centerButtonHandler = continueFromBeginning;
+
+        drawUIsingleButton(image, imageInfo, text, PLAYER.age, 
+                           CENTER_BUTTON.x, CENTER_BUTTON.y, 
+                           centerButtonLabel, centerButtonHandler,
+                           this);
     },
 
     update: function () {
@@ -35,8 +42,7 @@ var beginning_state = {
 
 
 function continueFromBeginning() {
-    // 18% die before going to school
-    if (Math.random() <= 0.18) {
+    if (Math.random() <= 0.18) {     // 18% die before going to school
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');
     } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
@@ -44,33 +50,12 @@ function continueFromBeginning() {
             GAME.state.start('school1');
         } else {
             PLAYER.noschool = true;
-            GAME.state.start('school0'); // 20% of rural children didn't go to school.
+            GAME.state.start('school0'); // 20% of non-rich rural children didn't go to school.
         }
     } else {
         PLAYER.noschool = false;
         GAME.state.start('school1');
     }
-}
-
-
-function createText() {
-    var text = "Tervetuloa maailmaan! Synnyit ";
-    if (PLAYER.class === "poor") {
-        text += "vähävaraiseen ";
-    } else if (PLAYER.class === "middle") {
-        text += "keskiluokkaiseen ";
-    } else {
-        text += "porvaris";
-    }
-    text += "perheeseen " + PLAYER.location.to + " Suomen itsenäisyyden alkumetreillä. " +
-            "Sinut kastettiin nimellä " + PLAYER.name + ", joka oli suosittu ";
-    if (PLAYER.gender === "male") {
-        text += "pojan";
-    } else {
-        text += "tytön";
-    }
-    text += "nimi vuonna 1917.";
-    return text;
 }
 
 
