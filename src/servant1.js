@@ -15,10 +15,7 @@ var servant1_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function () {
+      GAME.state.start('barn1');
     }
-}
-
-function centerButtonHandler () {
-    GAME.state.start('barn1');
 }

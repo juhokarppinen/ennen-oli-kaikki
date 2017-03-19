@@ -14,10 +14,7 @@ var citywork1_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function () {
+        GAME.state.start('dance1');
     }
-}
-
-function centerButtonHandler() {
-    GAME.state.start('dance1');
 }

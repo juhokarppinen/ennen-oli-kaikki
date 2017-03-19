@@ -18,14 +18,11 @@ var citywork2_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
-
-function centerButtonHandler () {
-    if(PLAYER.class !== "rich") {
-        GAME.state.start('dance1');
-    } else {
-        GAME.state.start('death');
+    centerButtonHandler: function () {
+        if(PLAYER.class !== "rich") {
+            GAME.state.start('dance1');
+        } else {
+            GAME.state.start('death');
+        }
     }
 }

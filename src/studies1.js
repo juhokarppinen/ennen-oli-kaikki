@@ -22,13 +22,11 @@ var studies1_state = {
         drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
+    leftButtonHandler: function () {
+        GAME.state.start('studies2');
+    },
 
-function leftButtonHandler() {
-    GAME.state.start('studies2');
-}
-function rightButtonHandler() {
-    GAME.state.start('apprentice');
+    rightButtonHandler: function () {
+        GAME.state.start('apprentice');
+    }
 }

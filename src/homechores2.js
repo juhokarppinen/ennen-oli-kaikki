@@ -12,15 +12,17 @@ var homechores2_state = {
                        "tilan hoitamiseen liittyvissä tehtävissä.";
         }
         
+        var image = "homechorescountrybackground";
+        var imageInfo = "";
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
-    }
-}
+    },
 
-function centerButtonHandler () {
-    GAME.state.start('barn1');
+    centerButtonHandler: function () {
+        GAME.state.start('barn1');
+    }
 }

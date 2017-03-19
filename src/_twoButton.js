@@ -12,14 +12,11 @@ var unnamed_state = {
         drawUIsingleButton(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    update: function() {
+    leftButtonHandler: function () {
+        GAME.state.start("");    
+    },
+
+    rightButtonHandler: function () {
+        GAME.state.start("");
     }
-}
-
-function leftButtonHandler() {
-    GAME.state.start("");    
-}
-
-function rightButtonHandler() {
-    GAME.state.start("");
 }

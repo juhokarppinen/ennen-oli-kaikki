@@ -11,10 +11,7 @@ var unnamed_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function () {
+        GAME.state.start("");
     }
-}
-
-function centerButtonHandler() {
-    GAME.state.start("");
 }

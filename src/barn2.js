@@ -19,14 +19,11 @@ var barn2_state = {
         drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    update: function() {
+    leftButtonHandler: function () {
+        GAME.state.start('death');
+    },
+
+    rightButtonHandler: function () {
+        GAME.state.start('death');
     }
-}
-
-function leftButtonHandler() {
-    GAME.state.start('death');
-}
-
-function rightButtonHandler() {
-    GAME.state.start('death');
 }

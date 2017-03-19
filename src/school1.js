@@ -14,10 +14,7 @@ var school1_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function() {
+        GAME.state.start('school2');
     }
-}
-
-function centerButtonHandler () {
-    GAME.state.start('school2');
 }

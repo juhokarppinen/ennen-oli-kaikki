@@ -19,14 +19,11 @@ var youthwork2_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
-
-function centerButtonHandler () {
-    if(PLAYER.location.name === "Jyväskylä") {
-        GAME.state.start('death');
-    } else {
-        GAME.state.start('barn1');
-    }
+    centerButtonHandler: function () {  
+        if(PLAYER.location.name === "Jyväskylä") {
+            GAME.state.start('death');
+        } else {
+            GAME.state.start('barn1');
+        }
+    }   
 }

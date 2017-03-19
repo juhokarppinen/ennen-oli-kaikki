@@ -15,13 +15,10 @@ var school0_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function () {
+        if (PLAYER.gender === "male")
+            GAME.state.start('youthwork1');
+        else
+            GAME.state.start('homechores1');    
     }
-}
-
-function centerButtonHandler () {
-    if (PLAYER.gender === "male")
-        GAME.state.start('youthwork1');
-    else
-        GAME.state.start('homechores1');
 }

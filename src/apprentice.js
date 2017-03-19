@@ -20,10 +20,7 @@ var apprentice_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
+    centerButtonHandler: function () {
+        GAME.state.start('death');
     }
-}
-
-function centerButtonHandler() {
-    GAME.state.start('death');
 }

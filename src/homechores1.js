@@ -27,25 +27,21 @@ var homechores1_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
-
-function centerButtonHandler () {
-    if(PLAYER.location.name !== "Jyväskylä") {
-        if(PLAYER.class === "poor") {
-            GAME.state.start('homechores1choice');
-        } else if(PLAYER.class === "middle") {
-            GAME.state.start('homechores2');
+    centerButtonHandler: function () {
+        if (PLAYER.location.name !== "Jyväskylä") {
+            if (PLAYER.class === "poor") {
+                GAME.state.start('homechores1choice');
+            } else if (PLAYER.class === "middle") {
+                GAME.state.start('homechores2');
+            } else {
+                GAME.state.start('death');
+            }
         } else {
-            GAME.state.start('death');
+            if (PLAYER.class === "poor") {
+                GAME.state.start('citywork1');
+            } else {
+                GAME.state.start('citywork2');
+            }
         }
-    } else {
-        if(PLAYER.class === "poor") {
-            GAME.state.start('citywork1');
-        } else {
-            GAME.state.start('citywork2');
-        }
-    }
-    
+    }    
 }

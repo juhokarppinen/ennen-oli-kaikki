@@ -202,7 +202,7 @@ function drawUIsingleButton(bg, info, txt, label, context) {
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
     var timeline     = drawTimeline(PLAYER.age); 
-    var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, centerButtonHandler, context);
+    var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
       
     var tweenedElements = [nameText].concat(boxedText, centerButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
@@ -217,10 +217,10 @@ function drawUItwoButtons(bg, info, txt, label1, label2, context) {
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
     var timeline     = drawTimeline(PLAYER.age); 
-    var centerButton = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, leftButtonHandler, context);
-    var centerButton = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, rightButtonHandler, context);
+    var leftButton   = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, context.leftButtonHandler, context);
+    var rightButton  = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, context.rightButtonHandler, context);
       
-    var tweenedElements = [nameText].concat(boxedText, centerButton, timeline);
+    var tweenedElements = [nameText].concat(boxedText, leftButton, rightButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     var toggleUIbutton  = drawToggleUIbutton(UIelements);
     tweenElements(background, tweenedElements);

@@ -15,9 +15,6 @@ var gender_state = {
         var toggleUIbutton = drawToggleUIbutton(UIelements);
         tweenElements(background, tweenedElements);
     },
-
-    update: function() {
-    }
 }
 
 function startGameAsGirl () {

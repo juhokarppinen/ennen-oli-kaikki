@@ -32,17 +32,13 @@ var school2_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
-
-function centerButtonHandler () {
-    
-    if(PLAYER.class === "rich") {
-        GAME.state.start('studies1');
-    } else if(PLAYER.gender === "female") {
-        GAME.state.start('homechores1');
-    } else {
-        GAME.state.start('youthwork1');
-    }
+    centerButtonHandler: function () {
+        if (PLAYER.class === "rich") {
+            GAME.state.start('studies1');
+        } else if (PLAYER.gender === "female") {
+            GAME.state.start('homechores1');
+        } else {
+            GAME.state.start('youthwork1');
+        }
+    }   
 }

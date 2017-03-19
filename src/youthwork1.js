@@ -28,26 +28,23 @@ var youthwork1_state = {
         drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    update: function() {
-    }
-}
+    leftButtonHandler: function () {
+        if(PLAYER.location.name === "Jyväskylä") {
+            GAME.state.start('apprentice');
+        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            GAME.state.start('servant2');
+        } else {
+            GAME.state.start('servant1');
+        }
+    },
 
-function leftButtonHandler() {
-    if(PLAYER.location.name === "Jyväskylä") {
-        GAME.state.start('apprentice');
-    } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
-        GAME.state.start('servant2');
-    } else {
-        GAME.state.start('servant1');
-    }
-}
-
-function rightButtonHandler() {
-    if(PLAYER.location.name === "Jyväskylä") {
-        GAME.state.start('youthwork2');
-    } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
-        GAME.state.start('youthwork2');
-    } else {
-        GAME.state.start('homechores2');
+    rightButtonHandler: function () {
+        if(PLAYER.location.name === "Jyväskylä") {
+            GAME.state.start('youthwork2');
+        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            GAME.state.start('youthwork2');
+        } else {
+            GAME.state.start('homechores2');
+        }
     }
 }

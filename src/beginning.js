@@ -32,27 +32,25 @@ var beginning_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function () {
-    }
-}
-
-
-function centerButtonHandler() {
-    if (Math.random() <= 0.18) {     // 18% die before going to school
-        PLAYER.causeofdeath = "keuhkokuume";
-        GAME.state.start('death');
-    } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
-        if(PLAYER.class === "rich") {
-            GAME.state.start('school1');
+    centerButtonHandler: function () {
+        if (Math.random() <= 0.18) {     // 18% die before going to school
+            PLAYER.causeofdeath = "keuhkokuume";
+            GAME.state.start('death');
+        } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
+            if(PLAYER.class === "rich") {
+                GAME.state.start('school1');
+            } else {
+                PLAYER.noschool = true;
+                GAME.state.start('school0'); // 20% of non-rich rural children didn't go to school.
+            }
         } else {
-            PLAYER.noschool = true;
-            GAME.state.start('school0'); // 20% of non-rich rural children didn't go to school.
+            PLAYER.noschool = false;
+            GAME.state.start('school1');
         }
-    } else {
-        PLAYER.noschool = false;
-        GAME.state.start('school1');
     }
 }
+
+
 
 
 function createPlayerStats() {

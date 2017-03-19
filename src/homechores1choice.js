@@ -14,14 +14,11 @@ var homechores1choice_state = {
         drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    update: function() {
+    leftButtonHandler: function () {
+        GAME.state.start('citywork1');
+    },
+
+    rightButtonHandler: function () {
+        GAME.state.start('servant3');
     }
-}
-
-function leftButtonHandler() {
-    GAME.state.start('citywork1');
-}
-
-function rightButtonHandler() {
-    GAME.state.start('servant3');
 }
