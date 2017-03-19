@@ -194,3 +194,18 @@ function drawTitle(x, y, text) {
     titleText.anchor.setTo(0.5);
     return titleText;
 }
+
+
+function drawUIsingleButton(bg, info, txt, label, context) {
+    var background  = drawBackground(bg);
+    var pictureInfo = drawPictureInfo(info);
+    var nameText    = displayNameAndAge();
+    var boxedText   = drawBoxedText(txt);
+    var timeline    = drawTimeline(PLAYER.age); 
+    var centerButton = createButton(CENTER_BUTTON.x,CENTER_BUTTON.y,label,centerButtonHandler,context);
+      
+    var tweenedElements = [nameText].concat(boxedText, centerButton, timeline);
+    var UIelements      = tweenedElements.concat(pictureInfo, timeline);
+    var toggleUIbutton  = drawToggleUIbutton(UIelements);
+    tweenElements(background, tweenedElements);
+}

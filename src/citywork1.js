@@ -3,20 +3,19 @@ var citywork1_state = {
     create: function() {
         PLAYER.age = 16;
 
-        var text = "Kävipä tuuri! Pääsit kauppa-apulaiseksi Osuusliike Mäki-Mattiin. Työhösi kuuluu kaikenlaista, mutta onneksi olet nopea oppimaan.";
-        var background = drawBackground('citybackground');
-        var pictureInfo = drawPictureInfo("");
+        var text      = "Kävipä tuuri! Pääsit kauppa-apulaiseksi Osuusliike " +
+                        "Mäki-Mattiin. Työhösi kuuluu kaikenlaista, mutta " +
+                        "onneksi olet nopea oppimaan.";
+        var image     = 'citybackground';
+        var imageInfo = "";
             
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
-        
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromCitywork, this);
+        var centerButtonLabel   = "Jatka";
+        var centerButtonHandler = continueFromCitywork;
 
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline);
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+        drawUIsingleButton(image, imageInfo, text, PLAYER.age, 
+                           CENTER_BUTTON.x, CENTER_BUTTON.y, 
+                           centerButtonLabel, centerButtonHandler,
+                           this);
     },
 
     update: function() {

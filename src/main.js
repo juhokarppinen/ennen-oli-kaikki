@@ -1,8 +1,13 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preload, create: create, update: update });
 var PLAYER = {};
+
 var CENTER;
 
-/* Global text styles here */
+var CENTER_BUTTON;
+var LEFT_BUTTON;
+var RIGHT_BUTTON;
+
+/* Global text styles are defined here */
 var TITLE_STYLE  = {font: "25px verdana", fill: "#FFFFFF"};
 var STYLE        = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 var INFO_STYLE   = {fill: "#FFFFFF"};
@@ -46,10 +51,16 @@ function preload() {
 }
 
 function create() {
-    GAME.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL; // SHOW_ALL // RESIZE
+    GAME.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     GAME.scale.pageAlignHorizontally = true;
     GAME.scale.pageAlignVertically = true;
-    CENTER = { x: GAME.world.centerX, y: GAME.world.centerY };
+
+    // Define global variables for button positions relative to the center of the world
+    var defaultElevation = 1.4; // 0 == top, 1 == center, 2 == bottom
+    CENTER        = {x: GAME.world.centerX, y: GAME.world.centerY};
+    CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
+    LEFT_BUTTON   = {x: CENTER.x * 0.5,     y: CENTER.y * defaultElevation};
+    RIGHT_BUTTON  = {x: CENTER.x * 1.5,     y: CENTER.y * defaultElevation};
 }
 
 function update() {
