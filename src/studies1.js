@@ -15,9 +15,9 @@ var studies1_state = {
             var rightButtonLabel = "Aputytöksi";
         }
 
-        var image            = 'studies1background';
-        var imageInfo        = "";
-        var leftButtonLabel  = "Opintoja";
+        var image           = 'studies1background';
+        var imageInfo       = "";
+        var leftButtonLabel = "Opintoja";
 
         drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },

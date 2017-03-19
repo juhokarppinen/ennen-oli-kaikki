@@ -26,8 +26,8 @@ var school2_state = {
                     "töihin.";
         }
 
-        var image             = 'schoolbackground';
-        var imageInfo         = "";
+        var image     = 'schoolbackground';
+        var imageInfo = "";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },

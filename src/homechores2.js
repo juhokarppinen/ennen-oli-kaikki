@@ -12,7 +12,7 @@ var homechores2_state = {
                        "tilan hoitamiseen liittyvissä tehtävissä.";
         }
         
-        var centerButtonLabel   = "Jatka";
+        var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
