@@ -1,6 +1,4 @@
 var beginning_state = {
-    preload: function () {
-    },
 
     create: function () {
         createPlayerStats();
@@ -49,9 +47,6 @@ var beginning_state = {
         }
     }
 }
-
-
-
 
 function createPlayerStats() {
     PLAYER.name = pickName(PLAYER.gender);

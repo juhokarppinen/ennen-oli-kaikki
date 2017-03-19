@@ -19,9 +19,6 @@ var homechores2_state = {
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
-    update: function() {
-    },
-
     centerButtonHandler: function () {
         GAME.state.start('barn1');
     }

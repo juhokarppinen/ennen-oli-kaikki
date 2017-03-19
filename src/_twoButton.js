@@ -9,7 +9,7 @@ var unnamed_state = {
         var leftButtonLabel  = "";
         var rightButtonLabel = "";
 
-        drawUIsingleButton(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {
