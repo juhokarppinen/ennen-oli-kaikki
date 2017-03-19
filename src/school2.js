@@ -6,8 +6,11 @@ var school2_state = {
         var text = "Vuonna 1928 pääset kansakoulusta.";
         var buttonText;
 
-        if(PLAYER.gender === "female") {
-            text += " Olet terävä oppilas, mutta tyttöjä ei tuolloin ollut tapana kouluttaa enempää, joten jäät kotiin auttamaan askareissa.";
+        if(PLAYER.class === "rich") {
+            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja lähettävät sinut oppikouluun mielellään.";
+            buttonText = "Oppikouluun";
+        } else if(PLAYER.gender === "female") {
+            text += " Olet terävä oppilas, mutta tuohon aikaan harvat tytöt menivät kouluun kansakoulun jälkeen. Jäät kotiin auttamaan askareissa.";
             buttonText = "Kotitöihin";
         } else if(PLAYER.class === "poor") {
             text += " Olet terävä oppilas, mutta perheelläsi ei ole varaa oppikouluun ja kotona tarvitaan apuasi, joten koulutiesi päättyy tähän.";
@@ -15,9 +18,6 @@ var school2_state = {
         } else if(PLAYER.class === "middle") {
             text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Perheesi ei kuitenkaan syty idealle, vaan haluaa sinut töihin.";
             buttonText = "Töihin";
-        } else if(PLAYER.class === "rich" && PLAYER.gender === "male") {
-            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja lähettävät sinut oppikouluun mielellään.";
-            buttonText = "Oppikouluun";
         }
 
         var background = drawBackground('schoolbackground');
@@ -41,10 +41,10 @@ var school2_state = {
 
 function continueFromSchool2 () {
     
-    if(PLAYER.gender === "female") {
-        GAME.state.start('homechores1');
-    } else if(PLAYER.class === "rich") {
+    if(PLAYER.class === "rich") {
         GAME.state.start('studies1');
+    } else if(PLAYER.gender === "female") {
+        GAME.state.start('homechores1');
     } else {
         GAME.state.start('youthwork1');
     }

@@ -9,10 +9,10 @@ var apprentice_state = {
 
         if(PLAYER.class === "rich") {
             background = drawBackground('youthworkcitybackground');
-            text = "Apteekkarin apupoikana toimiminen on kiinnostavaa. Koulutustaustasi vuoksi olet erittäin pätevä työssäsi.";
+            text = "Apteekkarin apulaisena toimiminen on kiinnostavaa. Koulutustaustasi vuoksi olet erittäin pätevä työssäsi.";
         } else {
             background = drawBackground('youthworkcitybackground');
-            text = "Kätevyytesi huomataan. Pääset eräälle verstaalle oppipojaksi. Kuulet kehuja, että muutaman vuoden päästä sinulla voisi hyvinkin olla oma verstas.";
+            text = "Kätevyytesi huomataan. Kuulet kehuja, että muutaman vuoden päästä sinulla voisi hyvinkin olla oma verstas.";
         }
         
         var nameText = displayNameAndAge();
@@ -31,11 +31,6 @@ var apprentice_state = {
     }
 }
 
-function continueFromYouthwork1 () {
-    //todo: add different branches
-    if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
-        GAME.state.start('servant1');
-    } else {
-        GAME.state.start('death');
-    }
+function continueFromApprentice () {
+    GAME.state.start('death');
 }
