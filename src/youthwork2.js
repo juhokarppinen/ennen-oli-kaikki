@@ -3,38 +3,27 @@ var youthwork2_state = {
     create: function() {
         PLAYER.age = 13;
 
-        var text;
-        var background;
-        var pictureInfo;
-
         if(PLAYER.location.name === "Jyväskylä") {
-            text = "Joku muu saa oppipojan paikan, ja joudut etsimään uutta työtä.";
-            background = drawBackground('youthworkcitybackground');
-            pictureInfo = drawPictureInfo("");
+            var text = "Joku muu saa oppipojan paikan, ja joudut etsimään uutta työtä.";
+            var image = 'youthworkcitybackground';
+            var imageInfo = "";
         } else {
-            text = "Isäsi ei ole kovin tyytyväinen valintaasi, ja laittaa sinut " +
+            var text = "Isäsi ei ole kovin tyytyväinen valintaasi, ja laittaa sinut " +
                    "rehkimään entistä kovempaa. Äitisi sen sijaan on tyytyväinen että pysyit kotona.";
-            background = drawBackground('youthworkcountrybackground');
-            pictureInfo = drawPictureInfo("");
+            var image = 'youthworkcountrybackground';
+            var imageInfo = "";
         }
         
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
-        
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromYouthwork2, this);
+        var centerButtonLabel = "Jatka";
 
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline)
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromYouthwork2 () {
+function centerButtonHandler () {
     if(PLAYER.location.name === "Jyväskylä") {
         GAME.state.start('death');
     } else {

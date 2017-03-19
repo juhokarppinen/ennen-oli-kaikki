@@ -3,27 +3,20 @@ var servant2_state = {
     create: function() {
         PLAYER.age = 17;
 
-        var text = "Olet tyytyväinen valintaasi. Elämä tuntuu hymyilevän ja saat lähetettyä kotiinkin muutaman lantin.";
+        var text = "Olet tyytyväinen valintaasi. Elämä tuntuu hymyilevän ja " +
+                   "saat lähetettyä kotiinkin muutaman lantin.";
         
-        var background = drawBackground('youthworkcountrybackground');
-        var pictureInfo = drawPictureInfo("");
-        
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
-        
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromServant2, this);
+        var image             = 'youthworkcountrybackground';
+        var imageInfo         = "";
+        var centerButtonLabel = "Jatka";
 
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline)
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromServant2 () {
+function centerButtonHandler () {
     GAME.state.start('barn1');
 }

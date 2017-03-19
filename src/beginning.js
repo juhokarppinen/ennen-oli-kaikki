@@ -27,7 +27,7 @@ var beginning_state = {
             var imageInfo = "";
         }
 
-        var centerButtonLabel   = "Jatka";
+        var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },

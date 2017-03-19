@@ -3,43 +3,40 @@ var school2_state = {
     create: function() {
         PLAYER.age = 11;
 
-        var text = "Vuonna 1928 pääset kansakoulusta.";
-        var buttonText;
+        var text = "Vuonna 1928 pääset kansakoulusta. Olet terävä oppilas, ";
+        var centerButtonLabel;
 
         if(PLAYER.class === "rich") {
-            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja lähettävät sinut oppikouluun mielellään.";
-            buttonText = "Oppikouluun";
+            centerButtonLabel = "Oppikouluun";
+            text += "ja opettajasi kannustaa sinua jatkamaan oppikouluun. " +
+                    "Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja " +
+                    "lähettävät sinut oppikouluun mielellään.";
         } else if(PLAYER.gender === "female") {
-            text += " Olet terävä oppilas, mutta tuohon aikaan harvat tytöt menivät kouluun kansakoulun jälkeen. Jäät kotiin auttamaan askareissa.";
-            buttonText = "Kotitöihin";
+            centerButtonLabel = "Kotitöihin";
+            text += "mutta tuohon aikaan harvat tytöt menivät kouluun " +
+                    "kansakoulun jälkeen. Jäät kotiin auttamaan askareissa.";
         } else if(PLAYER.class === "poor") {
-            text += " Olet terävä oppilas, mutta perheelläsi ei ole varaa oppikouluun ja kotona tarvitaan apuasi, joten koulutiesi päättyy tähän.";
-            buttonText = "Töihin";
-        } else if(PLAYER.class === "middle") {
-            text += " Olet terävä oppilas, ja opettajasi kannustaa sinua jatkamaan oppikouluun. Perheesi ei kuitenkaan syty idealle, vaan haluaa sinut töihin.";
-            buttonText = "Töihin";
+            centerButtonLabel = "Töihin";
+            text += "mutta perheelläsi ei ole varaa oppikouluun ja kotona " +
+                    "tarvitaan apuasi, joten koulutiesi päättyy tähän.";
+        } else {
+            centerButtonLabel = "Töihin";
+            text += "ja opettajasi kannustaa sinua jatkamaan oppikouluun. " +
+                    "Perheesi ei kuitenkaan syty idealle, vaan haluaa sinut " +
+                    "töihin.";
         }
 
-        var background = drawBackground('schoolbackground');
-        var pictureInfo = drawPictureInfo("");
+        var image             = 'schoolbackground';
+        var imageInfo         = "";
 
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
-        
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, buttonText, continueFromSchool2, this);
-
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline)
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromSchool2 () {
+function centerButtonHandler () {
     
     if(PLAYER.class === "rich") {
         GAME.state.start('studies1');

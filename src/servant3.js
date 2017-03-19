@@ -8,25 +8,17 @@ var servant3_state = {
                    "Paljoa et ehdi kovaa kohtaloasi surkutella, sillä iltaisin, kun " + 
                    "olet saanut päivän työt tehtyä, nukahdat samoin tein.";
 
-        var background = drawBackground('youthworkcountrybackground');
-        var pictureInfo = drawPictureInfo("");
+        var image             = 'youthworkcountrybackground';
+        var imageInfo         = "";
+        var centerButtonLabel = "Jatka";
 
-        var nameText = displayNameAndAge();
-        var boxedText = drawBoxedText(text);
-        var timeline = drawTimeline(PLAYER.age);
-
-        var continueButton = createButton(CENTER.x, CENTER.y * 1.4, 'Jatka', continueFromServant3, this);
-
-        var tweenedElements = [nameText].concat(boxedText, continueButton);
-        var UIelements = tweenedElements.concat(pictureInfo, timeline)
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
-        tweenElements(background, tweenedElements);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromServant3 () {
+function centerButtonHandler () {
     GAME.state.start('barn1');
 }

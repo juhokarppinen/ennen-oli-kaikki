@@ -9,19 +9,15 @@ var citywork1_state = {
         var image     = 'citybackground';
         var imageInfo = "";
             
-        var centerButtonLabel   = "Jatka";
-        var centerButtonHandler = continueFromCitywork;
+        var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, PLAYER.age, 
-                           CENTER_BUTTON.x, CENTER_BUTTON.y, 
-                           centerButtonLabel, centerButtonHandler,
-                           this);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromCitywork () {
+function centerButtonHandler() {
     GAME.state.start('dance1');
 }

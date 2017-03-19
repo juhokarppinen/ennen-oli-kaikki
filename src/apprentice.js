@@ -3,10 +3,6 @@ var apprentice_state = {
     create: function() {
         PLAYER.age = 16;
 
-        var text;
-        var background;
-        var pictureInfo = drawPictureInfo("");
-
         if (PLAYER.class === "rich") {
             var image     = 'youthworkcitybackground';
             var imageInfo = "";
@@ -19,19 +15,15 @@ var apprentice_state = {
                             "päästä sinulla voisi hyvinkin olla oma verstas.";
         }
         
-        var centerButtonLabel   = "Jatka";
-        var centerButtonHandler = continueFromApprentice;
+        var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, PLAYER.age, 
-                           CENTER_BUTTON.x, CENTER_BUTTON.y, 
-                           centerButtonLabel, centerButtonHandler,
-                           this);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function() {
     }
 }
 
-function continueFromApprentice () {
+function centerButtonHandler() {
     GAME.state.start('death');
 }
