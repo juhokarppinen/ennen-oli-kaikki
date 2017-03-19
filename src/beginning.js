@@ -28,12 +28,8 @@ var beginning_state = {
         }
 
         var centerButtonLabel   = "Jatka";
-        var centerButtonHandler = continueFromBeginning;
 
-        drawUIsingleButton(image, imageInfo, text, PLAYER.age, 
-                           CENTER_BUTTON.x, CENTER_BUTTON.y, 
-                           centerButtonLabel, centerButtonHandler,
-                           this);
+        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },
 
     update: function () {
@@ -41,7 +37,7 @@ var beginning_state = {
 }
 
 
-function continueFromBeginning() {
+function centerButtonHandler() {
     if (Math.random() <= 0.18) {     // 18% die before going to school
         PLAYER.causeofdeath = "keuhkokuume";
         GAME.state.start('death');

@@ -196,13 +196,13 @@ function drawTitle(x, y, text) {
 }
 
 
-function drawUIsingleButton(bg, info, txt, age, x, y, label, handler, context) {
+function drawUIsingleButton(bg, info, txt, label, context) {
     var background  = drawBackground(bg);
     var pictureInfo = drawPictureInfo(info);
     var nameText    = displayNameAndAge();
     var boxedText   = drawBoxedText(txt);
-    var timeline    = drawTimeline(age); 
-    var centerButton = createButton(x,y,label,handler,context);
+    var timeline    = drawTimeline(PLAYER.age); 
+    var centerButton = createButton(CENTER_BUTTON.x,CENTER_BUTTON.y,label,centerButtonHandler,context);
       
     var tweenedElements = [nameText].concat(boxedText, centerButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
