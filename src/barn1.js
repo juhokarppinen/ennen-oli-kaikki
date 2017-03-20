@@ -11,7 +11,8 @@ var barn1_state = {
             var servant = "renki ";
         }
 
-        var text = "Talon " + servant + PLAYER.crush + " on silmäillyt sinua " +
+        var text = "Vuodet ovat kuluneet nopeasti ja lähiympäristöön on alkanut muodostunut nuoria pareja. "
+        +"Viime aikoina talon " + servant + PLAYER.crush + " on silmäillyt sinuakin " +
                    "vihjailevasti. Kutsutko hänet kanssasi heinälatoon?";
 
         var image            = 'youthworkcountrybackground';
