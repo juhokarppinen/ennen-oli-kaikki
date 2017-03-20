@@ -8,19 +8,23 @@ var LEFT_BUTTON;
 var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
-var TITLE_STYLE  = {font: "48px verdana", fill: "#FFFFFF"};
-var STYLE        = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
-var INFO_STYLE   = {fill: "#FFFFFF"};
-var BUTTON_STYLE = {};
+var TITLE_STYLE  = {font: "64px Britannic Bold", fill: "#FFFFFF"};
+var STYLE        = {font: "42px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
+var INFO_STYLE   = {font: "42px Alegreya Sans", fill: "#FFFFFF"};
+var BUTTON_STYLE = {font: "42px Alegreya Sans", fill: "#1e1711"};
 
-/*
- * Phaser many-state tutorials for possible reference:
- * http://www.emanueleferonato.com/2014/08/28/phaser-tutorial-understanding-phaser-states/
- * http://perplexingtech.weebly.com/GAME-dev-blog/using-states-in-phaserjs-javascript-GAME-developement
- */
+// https://phaser.io/examples/v2/text/google-webfonts
+WebFontConfig = {
+    active: function() { GAME.time.events.add(Phaser.Timer.SECOND, createText, this); },
+    google: {
+      families: ['Alegreya Sans', 'Britannic Bold']
+    }
+};
 
 
 function preload() {
+    GAME.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
+
     // Define all the states
     GAME.state.add('load', load_state);
     GAME.state.add('menu', menu_state);
@@ -46,6 +50,7 @@ function preload() {
     GAME.state.add('dance1', dance1_state);
     GAME.state.add('apprentice', apprentice_state);
     GAME.state.add('death', death_state);
+    
     // Start with the 'load' state
     GAME.state.start('load');
 }
