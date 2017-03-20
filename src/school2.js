@@ -27,7 +27,7 @@ var school2_state = {
         }
 
         var image     = 'schoolbackground';
-        var imageInfo = "";
+        var imageInfo = "Signe Brander";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
     },

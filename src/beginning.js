@@ -19,10 +19,10 @@ var beginning_state = {
         
         if(PLAYER.location.name === "Jyväskylä") {
             var image     = 'beginningcitybackground';
-            var imageInfo = "";
+            var imageInfo = "Väinö Kannisto";
         } else {
             var image     = 'beginningcountrybackground';
-            var imageInfo = "";
+            var imageInfo = "Hugo Simberg";
         }
 
         var centerButtonLabel = "Jatka";

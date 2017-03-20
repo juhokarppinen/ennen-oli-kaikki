@@ -8,7 +8,7 @@ var LEFT_BUTTON;
 var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
-var TITLE_STYLE  = {font: "64px Britannic Bold", fill: "#FFFFFF"};
+var TITLE_STYLE  = {font: "64px Candal", fill: "#FFFFFF"};
 var STYLE        = {font: "42px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 var INFO_STYLE   = {font: "42px Alegreya Sans", fill: "#FFFFFF"};
 var BUTTON_STYLE = {font: "42px Alegreya Sans", fill: "#1e1711"};
@@ -18,7 +18,7 @@ var HIGHLIGHT_COLOR = "#3333ff";
 WebFontConfig = {
     active: function() { GAME.time.events.add(Phaser.Timer.SECOND, createText, this); },
     google: {
-      families: ['Alegreya Sans', 'Britannic Bold']
+      families: ['Alegreya Sans', 'Candal']
     }
 };
 

@@ -16,7 +16,7 @@ var barn1_state = {
                    "vihjailevasti. Kutsutko hänet kanssasi heinälatoon?";
 
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "";
+        var imageInfo        = "Juhani Ahola";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

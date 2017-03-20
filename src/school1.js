@@ -8,7 +8,7 @@ var school1_state = {
                    "syksynä, kun täytät seitsemän vuotta. Vuosi on 1924.";
 
         var image             = 'schoolbackground';
-        var imageInfo         = "";
+        var imageInfo         = "Signe Brander";
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);

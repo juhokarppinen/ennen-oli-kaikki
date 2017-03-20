@@ -24,7 +24,7 @@ var death_state = {
         var text = "Kuolit... " + causeOfDeathText + " Olit kuollessasi " + ageOfDeathText;
 
         var image            = "deathbackground";
-        var imageInfo        = "";
+        var imageInfo        = "Väinö Kannisto";
         var rightButtonLabel = "Valikkoon";
         
         if(PLAYER.gender === "female") var leftButtonLabel = "Pelaa poikana";

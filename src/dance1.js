@@ -9,7 +9,7 @@ var dance1_state = {
                    "sinut kotiin, suostutko ehdotukseen?";
         
         var image            = 'citybackground';
-        var imageInfo        = "";
+        var imageInfo        = "Sakari Pälsi";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

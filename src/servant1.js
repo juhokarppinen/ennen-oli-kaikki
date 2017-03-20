@@ -9,7 +9,7 @@ var servant1_state = {
                    "Päädyt rengiksi naapuripitäjään.";
         
         var image             = 'youthworkcountrybackground';
-        var imageInfo         = "";        
+        var imageInfo         = "Hugo Simberg";        
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);

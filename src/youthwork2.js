@@ -6,12 +6,12 @@ var youthwork2_state = {
         if(PLAYER.location.name === "Jyväskylä") {
             var text = "Joku muu saa oppipojan paikan, ja joudut etsimään uutta työtä.";
             var image = 'youthworkcitybackground';
-            var imageInfo = "";
+            var imageInfo = "P. Jänis";
         } else {
             var text = "Isäsi ei ole kovin tyytyväinen valintaasi, ja laittaa sinut " +
                    "rehkimään entistä kovempaa. Äitisi sen sijaan on tyytyväinen että pysyit kotona.";
             var image = 'youthworkcountrybackground';
-            var imageInfo = "";
+            var imageInfo = "Juhani Ahola";
         }
         
         var centerButtonLabel = "Jatka";

@@ -126,7 +126,7 @@ function drawPictureInfo(infoText) {
     background.endFill();
     background.alpha = 0;
 
-    if (!infoText) infoText = "Ei tekijätietoja";
+    if (!infoText) infoText = "Tuntematon";
     var text = GAME.add.text(GAME.world.centerX, GAME.world.height - 42, infoText, INFO_STYLE);
     text.anchor.setTo(0.5, 0.5);
     text.alpha = 0;

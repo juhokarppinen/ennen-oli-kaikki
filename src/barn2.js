@@ -12,7 +12,7 @@ var barn2_state = {
         }
 
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "";
+        var imageInfo        = "Juhani Ahola";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

@@ -5,7 +5,7 @@ var menu_state = {
 
     create: function() {
         var background = drawBackground('menubackground');
-        var pictureInfo = drawPictureInfo("Hugo Simberg: Poika");
+        var pictureInfo = drawPictureInfo("Hugo Simberg");
         
         var titleText = drawTitle(CENTER.x, CENTER.y * 0.5, "Ennen oli kaikki...");
         
