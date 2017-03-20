@@ -12,6 +12,7 @@ var TITLE_STYLE  = {font: "64px Britannic Bold", fill: "#FFFFFF"};
 var STYLE        = {font: "42px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 var INFO_STYLE   = {font: "42px Alegreya Sans", fill: "#FFFFFF"};
 var BUTTON_STYLE = {font: "42px Alegreya Sans", fill: "#1e1711"};
+var HIGHLIGHT_COLOR = "#3333ff";
 
 // https://phaser.io/examples/v2/text/google-webfonts
 WebFontConfig = {

@@ -156,8 +156,16 @@ function drawToggleUIbutton(UIelements) {
 function drawBoxedText(text) {
     var box = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, 'box');
     box.alpha = 0;
+
     var boxedText = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
     boxedText.alpha = 0;
+
+    // Esimerkki tekstin osien värityksestä. Pitänee muuttaa APIa, jotta voi
+    // vapaasti valita, mitä väritetään ja millä värillä...
+    var n = text.indexOf(" ");
+    boxedText.addColor(HIGHLIGHT_COLOR, 0);
+    boxedText.addColor(STYLE.fill, n + 1);
+
     return [box, boxedText];
 }
 
