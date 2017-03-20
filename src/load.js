@@ -3,6 +3,8 @@
  */
 var load_state = {
     preload: function() {
+        this.addLoadingScreen();
+
         GAME.load.image('button', 'assets/img/buttonsepia.png');
         GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
         GAME.load.image('box', 'assets/img/box.png');
@@ -28,11 +30,19 @@ var load_state = {
             Bittersweet Kevin MacLeod (incompetech.com)
             Licensed under Creative Commons: By Attribution 3.0 License
             http://creativecommons.org/licenses/by/3.0/ */
-
-
     },
+
     create: function() {
         GAME.add.audio('music-Bittersweet').play();
         GAME.state.start('menu');
+    },
+
+    // Could do better than this... :)
+    addLoadingScreen: function () {
+        var loadingText = GAME.add.text(CENTER.x, CENTER.y, "Peli latautuu...", TITLE_STYLE);
+        loadingText.anchor.setTo(0.5);
+        loadingText.alpha = 0.25;
+        GAME.add.tween(loadingText).to({ alpha: 1 }, 2000, Phaser.Easing.Linear.None, true, 0, 0, true)
+                                   .loop();
     }
 };

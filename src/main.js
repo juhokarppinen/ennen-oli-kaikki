@@ -8,7 +8,7 @@ var LEFT_BUTTON;
 var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
-var TITLE_STYLE  = {font: "25px verdana", fill: "#FFFFFF"};
+var TITLE_STYLE  = {font: "48px verdana", fill: "#FFFFFF"};
 var STYLE        = {font: "32px verdana", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
 var INFO_STYLE   = {fill: "#FFFFFF"};
 var BUTTON_STYLE = {};
