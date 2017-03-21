@@ -1,4 +1,4 @@
-var studies2_state = {
+var studies3_state = {
 
     create: function() {
         PLAYER.age = 16;
