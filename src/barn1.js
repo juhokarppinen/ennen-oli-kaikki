@@ -28,6 +28,6 @@ var barn1_state = {
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('barn4');
     }
 }

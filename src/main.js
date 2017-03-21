@@ -48,8 +48,14 @@ function preload() {
     GAME.state.add('servant3', servant3_state);
     GAME.state.add('barn1', barn1_state);
     GAME.state.add('barn2', barn2_state);
+    GAME.state.add('barn3', barn3_state);
+    GAME.state.add('barn4', barn4_state);
+    GAME.state.add('child1', child1_state);
     GAME.state.add('dance1', dance1_state);
     GAME.state.add('apprentice', apprentice_state);
+    GAME.state.add('workaway', workaway_state);
+    GAME.state.add('workhome', workhome_state);
+    GAME.state.add('beginwar', beginwar_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

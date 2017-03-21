@@ -13,6 +13,10 @@ var death_state = {
             // Is there any data showing actual ages of deceased children? 
             PLAYER.age = Math.floor(Math.random() * 6); 
         }
+        // War death
+        if (PLAYER.causeofdeath === "sota") {
+            causeOfDeathText = "Sota koitui surmaksesi. Lepää rauhassa, " + PLAYER.name + "!";
+        }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
                            "seitsemän","kahdeksan","yhdeksän","kymmenen"];

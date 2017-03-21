@@ -20,10 +20,14 @@ var barn2_state = {
     },
 
     leftButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('barn3');
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.gender === "male") {
+            GAME.state.start('workaway');
+        } else {
+            GAME.state.start('child1');
+        }
     }
 }
