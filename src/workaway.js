@@ -6,10 +6,9 @@ var workaway_state = {
         +" Etsit töitä renkinä, ja onneksi löydät niitä tilalta, jolla ei kysytä ylimääräisiä kysymyksiä.";
         
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "Juhani Ahola";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

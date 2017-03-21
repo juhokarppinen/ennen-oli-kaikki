@@ -9,10 +9,9 @@ var servant3_state = {
                    "olet saanut päivän työt tehtyä, nukahdat samoin tein.";
 
         var image             = 'youthworkcountrybackground';
-        var imageInfo         = "Hugo Simberg";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

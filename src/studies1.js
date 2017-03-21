@@ -27,9 +27,8 @@ var studies1_state = {
         }
 
         var image           = 'studies1background';
-        var imageInfo       = "";
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {

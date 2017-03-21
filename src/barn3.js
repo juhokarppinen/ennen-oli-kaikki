@@ -19,10 +19,9 @@ var barn3_state = {
         
         //todo: country wedding picture
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "Juhani Ahola";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

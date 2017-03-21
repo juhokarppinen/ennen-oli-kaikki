@@ -9,10 +9,9 @@ var school0_state = {
                    "Vuosi on 1924.";
 
         var image             = 'beginningcountrybackground';
-        var imageInfo         = "Hugo Simberg";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

@@ -9,11 +9,10 @@ var dance1_state = {
                    "sinut kotiin, suostutko ehdotukseen?";
         
         var image            = 'citybackground';
-        var imageInfo        = "Sakari Pälsi";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {

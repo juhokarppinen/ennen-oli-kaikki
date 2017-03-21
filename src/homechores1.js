@@ -6,7 +6,6 @@ var homechores1_state = {
         if (PLAYER.class === "poor") {
             //todo: add city/country split
             var image     = 'homechorescountrybackground';
-            var imageInfo = "Hugo Simberg";
             var text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. "
                         +"Perheesi rahatilanne on niin tiukka, että joudut etsimään työtä muualta. "
                         +"Hankkiudutko piiaksi naapuritilalle vai lähdetkö kaupunkiin?";
@@ -14,21 +13,19 @@ var homechores1_state = {
             var rightButtonLabel = "Naapuritilalle";
         } else if(PLAYER.noschool === false) {
             var image     = 'homechores1background';
-            var imageInfo = "Väinö Kannisto";
             var text      = "Vaikka perheesi tyrmäsi koulunkäynnin, sinulle tarjottiin vapaapaikkaa oppikoulusta. "
                             +"Sairaanhoitajaunelmasi voisi sittenkin toteutua! Yritätkö vakuuttaa isäsi opinnoistasi?";
             var leftButtonLabel  = "Kyllä";
             var rightButtonLabel = "Ei";
         } else {
             var image     = 'homechores1background';
-            var imageInfo = "Väinö Kannisto";
             var text      = "Veljesi teki tihutöitä naapurissa, ja nyt naapuri tuli vihaisena käymään. "
             + "Äitisi ei tiedä ketä uskoa, mutta sinä näit mitä tapahtui. Ilmiannatko veljesi?";
             var leftButtonLabel  = "Kyllä";
             var rightButtonLabel = "Ei";
         }
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {

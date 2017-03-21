@@ -204,9 +204,9 @@ function drawTitle(x, y, text) {
 }
 
 
-function drawUIsingleButton(bg, info, txt, label, context) {
+function drawUIsingleButton(bg, txt, label, context) {
     var background   = drawBackground(bg);
-    var pictureInfo  = drawPictureInfo(info);
+    var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
     var timeline     = drawTimeline(PLAYER.age); 
@@ -219,9 +219,9 @@ function drawUIsingleButton(bg, info, txt, label, context) {
 }
 
 
-function drawUItwoButtons(bg, info, txt, label1, label2, context) {
+function drawUItwoButtons(bg, txt, label1, label2, context) {
     var background   = drawBackground(bg);
-    var pictureInfo  = drawPictureInfo(info);
+    var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
     var timeline     = drawTimeline(PLAYER.age); 

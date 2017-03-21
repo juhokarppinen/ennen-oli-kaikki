@@ -28,14 +28,13 @@ var death_state = {
         var text = "Kuolit... " + causeOfDeathText + " Olit kuollessasi " + ageOfDeathText;
 
         var image            = "deathbackground";
-        var imageInfo        = "Väinö Kannisto";
         var rightButtonLabel = "Valikkoon";
         
         if(PLAYER.gender === "female") var leftButtonLabel = "Pelaa poikana";
         else var leftButtonLabel = "Pelaa tyttönä";
 
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {

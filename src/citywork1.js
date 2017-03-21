@@ -7,11 +7,10 @@ var citywork1_state = {
                         "Mäki-Mattiin. Työhösi kuuluu kaikenlaista, mutta " +
                         "onneksi olet nopea oppimaan.";
         var image     = 'citybackground';
-        var imageInfo = "Sakari Pälsi";
             
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

@@ -27,9 +27,8 @@ var school2_state = {
         }
 
         var image     = 'schoolbackground';
-        var imageInfo = "Signe Brander";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

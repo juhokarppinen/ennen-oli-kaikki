@@ -12,11 +12,10 @@ var barn2_state = {
         }
 
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "Juhani Ahola";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {

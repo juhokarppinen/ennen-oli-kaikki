@@ -7,10 +7,9 @@ var servant2_state = {
                    "saat lähetettyä kotiinkin muutaman lantin.";
         
         var image             = 'youthworkcountrybackground';
-        var imageInfo         = "Hugo Simberg";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

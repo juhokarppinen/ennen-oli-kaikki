@@ -13,10 +13,9 @@ var homechores2_state = {
         }
         
         var image = "homechorescountrybackground";
-        var imageInfo = "Hugo Simberg";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

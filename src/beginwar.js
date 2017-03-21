@@ -7,10 +7,9 @@ var beginwar_state = {
         
         // todo: pick war picture
         var image            = 'youthworkcountrybackground';
-        var imageInfo        = "Juhani Ahola";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

@@ -1,3 +1,18 @@
+// Add photo authors here as you add more background photographs.
+var authors = {};
+authors["menubackground"]              = "Hugo Simberg";
+authors["genderbackground"]            = "";
+authors["beginningcitybackground"]     = "Väinö Kannisto";
+authors["beginningcountrybackground"]  = "Hugo Simberg";
+authors["schoolbackground"]            = "Signe Brander";
+authors["homechorescountrybackground"] = "Hugo Simberg";
+authors["homechores1background"]       = "Väinö Kannisto";
+authors["studies1background"]          = "Tuntematon";
+authors["youthworkcitybackground"]     = "P.Jänis";
+authors["youthworkcountrybackground"]  = "Juhani Ahola";
+authors["deathbackground"]             = "Väinö Kannisto";
+authors["citybackground"]              = "Sakari Pälsi";
+
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
  */

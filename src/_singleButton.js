@@ -5,10 +5,9 @@ var unnamed_state = {
 
         var text              = "";
         var image             = "";
-        var imageInfo         = "";
         var centerButtonLabel = "";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

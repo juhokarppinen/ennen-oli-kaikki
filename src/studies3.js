@@ -13,10 +13,9 @@ var studies3_state = {
         }
         
         var image     = 'studies1background';
-        var imageInfo = "";
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function() {

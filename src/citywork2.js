@@ -12,10 +12,9 @@ var citywork2_state = {
         }
 
         var image               = 'homechores1background';
-        var imageInfo           = "Väinö Kannisto";        
         var centerButtonLabel   = "Jatka";
 
-        drawUIsingleButton(image, imageInfo, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

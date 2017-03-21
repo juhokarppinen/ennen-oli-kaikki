@@ -5,11 +5,10 @@ var unnamed_state = {
 
         var text             = "";
         var image            = "";
-        var imageInfo        = "";
         var leftButtonLabel  = "";
         var rightButtonLabel = "";
 
-        drawUItwoButtons(image, imageInfo, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {
