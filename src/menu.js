@@ -7,9 +7,9 @@ var menu_state = {
         var background = drawBackground('menubackground');
         var pictureInfo = drawPictureInfo("Hugo Simberg");
         
-        var titleText = drawTitle(CENTER.x, CENTER.y * 0.5, "Ennen oli kaikki...");
-        
         var startButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, 'Aloita', pickGender, this);
+        
+        var titleText = drawTitle(CENTER.x, CENTER.y * 0.4, "Ennen oli kaikki...");
         
         var tweenedElements = [titleText].concat(startButton);
         var UIelements = tweenedElements.concat(pictureInfo);
