@@ -8,10 +8,13 @@ var LEFT_BUTTON;
 var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
-var TITLE_STYLE  = {font: "64px Diplomata SC", fill: "#FFFFFF"};
 var STYLE        = {font: "40px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
-var INFO_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
 var BUTTON_STYLE = {font: "40px Alegreya Sans", fill: "#1e1711"};
+var INFO_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
+var YEAR_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
+var NAME_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
+var TITLE_STYLE  = {font: "64px Diplomata SC",  fill: "#FFFFFF"};
+
 var HIGHLIGHT_COLOR = "#3333ff";
 
 // https://phaser.io/examples/v2/text/google-webfonts
@@ -73,6 +76,7 @@ function create() {
     CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
     LEFT_BUTTON   = {x: CENTER.x * 0.5,     y: CENTER.y * defaultElevation};
     RIGHT_BUTTON  = {x: CENTER.x * 1.5,     y: CENTER.y * defaultElevation};
+    NAME_POSITION = {x: CENTER.x * 1.95,    y: CENTER.y * 0.075}
 }
 
 function update() {

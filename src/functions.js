@@ -10,11 +10,24 @@ function tweenElements(background, otherElements) {
 
 
 function displayNameAndAge() {
-    var nameStyle = {font: "25px verdana", fill: "#FFFFFF"};
-    var nameText = GAME.add.text(GAME.world.centerX*1.75, GAME.world.centerY * 0.075, PLAYER.name+" "+PLAYER.age+"v.", nameStyle);
-    nameText.alpha=0;
-    GAME.add.tween(nameText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
-    return nameText;
+    var nameAgeString = PLAYER.name + ", " + PLAYER.age + " vuotta";
+
+    var tempText = GAME.add.text(0,0, nameAgeString, NAME_STYLE);
+    var backgroundWidth = tempText.width * 1.2;
+    var backgroundHeight = tempText.height * 1.2;
+    tempText.destroy();
+
+    var background = GAME.add.graphics(0, 0);
+    background.lineStyle(0,0x000000, 0);
+    background.beginFill(0x000000, 0.5);
+    background.drawRect(CENTER.x * 2 - backgroundWidth, 0, backgroundWidth, backgroundHeight);
+    background.endFill();
+
+    var nameText = GAME.add.text(CENTER.x*2 - backgroundWidth / 2, backgroundHeight / 2, nameAgeString, NAME_STYLE);
+    nameText.anchor.setTo(0.5);
+    // nameText.alpha=0;
+    // GAME.add.tween(nameText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+    return [nameText, background];
 }
 
 
@@ -99,8 +112,7 @@ function drawTimeline(age) {
     graphics.drawCircle(circleX, timelineY, circleDiameter);
     graphics.endFill();
 
-    var textStyle = {font: "30px verdana", fill: "#FFFFFF"};
-    var yearText = GAME.add.text(circleX, timelineY - 33, age + 1917, textStyle);
+    var yearText = GAME.add.text(circleX, timelineY - 33, age + 1917, YEAR_STYLE);
     yearText.anchor.setTo(0.5);
 
     return [yearText, graphics];    
@@ -212,7 +224,7 @@ function drawUIsingleButton(bg, txt, label, context) {
     var timeline     = drawTimeline(PLAYER.age); 
     var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
       
-    var tweenedElements = [nameText].concat(boxedText, centerButton, timeline);
+    var tweenedElements = nameText.concat(boxedText, centerButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     var toggleUIbutton  = drawToggleUIbutton(UIelements);
     tweenElements(background, tweenedElements);
@@ -228,7 +240,7 @@ function drawUItwoButtons(bg, txt, label1, label2, context) {
     var leftButton   = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, context.leftButtonHandler, context);
     var rightButton  = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, context.rightButtonHandler, context);
       
-    var tweenedElements = [nameText].concat(boxedText, leftButton, rightButton, timeline);
+    var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     var toggleUIbutton  = drawToggleUIbutton(UIelements);
     tweenElements(background, tweenedElements);
