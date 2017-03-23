@@ -58,6 +58,7 @@ function preload() {
     GAME.state.add('apprentice', apprentice_state);
     GAME.state.add('workaway', workaway_state);
     GAME.state.add('workhome', workhome_state);
+    GAME.state.add('conscript', conscript_state);
     GAME.state.add('beginwar', beginwar_state);
     GAME.state.add('death', death_state);
     

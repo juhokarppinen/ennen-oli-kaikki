@@ -9,7 +9,7 @@ var studies2_state = {
             var leftButtonLabel  = "Yliopistoon";
             var rightButtonLabel = "Töihin";
         } else {
-            var text = "Onneksi olkoon, tuore ylioppilas! Jatkatko opiskelemaan " +
+            var text = "Onneksi olkoon, tuore keskikoulusta valmistunut! Jatkatko opiskelemaan " +
                    "sairaanhoitajaksi Kuopioon vai jäätkö kotiin auttamaan perheyrityksessä?";
             var leftButtonLabel  = "Sairaanhoitajaksi";
             var rightButtonLabel = "Kotiin";

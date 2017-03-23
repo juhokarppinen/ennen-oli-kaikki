@@ -12,6 +12,6 @@ var workaway_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('beginwar');
+        GAME.state.start('conscript');
     }
 }

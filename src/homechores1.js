@@ -5,12 +5,21 @@ var homechores1_state = {
 
         if (PLAYER.class === "poor") {
             //todo: add city/country split
-            var image     = 'homechorescountrybackground';
-            var text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. "
+            if(PLAYER.location.name === "Jyväskylä") {
+                var image     = 'homechores1background';
+                var text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. "
+                        +"Perheesi rahatilanne on niin tiukka, että joudut etsimään työtä. "
+                        +"Lähdetkö töihin vaneritehtaalle vai kivääritehtaalle?";
+                var leftButtonLabel  = "Vaneri";
+                var rightButtonLabel = "Kivääri";
+            } else {
+                var image     = 'homechorescountrybackground';
+                var text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. "
                         +"Perheesi rahatilanne on niin tiukka, että joudut etsimään työtä muualta. "
                         +"Hankkiudutko piiaksi naapuritilalle vai lähdetkö kaupunkiin?";
-            var leftButtonLabel  = "Kaupunkiin";
-            var rightButtonLabel = "Naapuritilalle";
+                var leftButtonLabel  = "Kaupunkiin";
+                var rightButtonLabel = "Naapuritilalle";
+            }
         } else if(PLAYER.noschool === false) {
             var image     = 'homechores1background';
             var text      = "Vaikka perheesi tyrmäsi koulunkäynnin, sinulle tarjottiin vapaapaikkaa oppikoulusta. "
@@ -30,7 +39,11 @@ var homechores1_state = {
 
     leftButtonHandler: function () {
         if(PLAYER.class === "poor") {
-            GAME.state.start('citywork1');
+            if(PLAYER.location.name === "Jyväskylä") {
+                GAME.state.start('death');
+            } else {
+                GAME.state.start('citywork1');
+            }
         } else if(PLAYER.noschool === true) {
             GAME.state.start('death');
         } else {
@@ -40,7 +53,11 @@ var homechores1_state = {
 
     rightButtonHandler: function () {
         if(PLAYER.class === "poor") {
-            GAME.state.start('servant3');
+            if(PLAYER.location.name === "Jyväskylä") {
+                GAME.state.start('death');
+            } else {
+                GAME.state.start('servant3');
+            }
         } else if(PLAYER.noschool === true) {
             GAME.state.start('death');
         } else {
