@@ -1,0 +1,9 @@
+Player properties:
+
+name    -   type    -   example file    -   purpose
+---------------------------------------------------
+noschool    bool        beginning.js        Tells whether player's character got to go to school or not
+crush       string      barn1.js            Name of a person that player had flirt with
+spouse      string      barn3.js            Name of a person that player married
+children    array       child1.js           Array that contains the player's children
+friend      string      studies1.js         Name of a person that player befriended
