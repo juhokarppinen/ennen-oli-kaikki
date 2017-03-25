@@ -4,24 +4,24 @@ var beginning_state = {
         createPlayerStats();
 
         var classText;
-        if (PLAYER.class === "poor")        classText = "vähävaraiseen ";
-        else if (PLAYER.class === "middle") classText = "keskiluokkaiseen ";
-        else                                classText = "porvaris";
-
         var genderText;
         if (PLAYER.gender === "male") genderText = "pojan";
         else                          genderText = "tytön";
-
-        var text = "Tervetuloa maailmaan! Synnyit " + classText + "perheeseen " + 
-                   PLAYER.location.to + " Suomen itsenäisyyden alkumetreillä. " +
-                   "Sinut kastettiin nimellä " + PLAYER.name + ", joka oli suosittu " +
-                   genderText + "nimi vuonna 1917.";
-        
-        if(PLAYER.location.name === "Jyväskylä") {
-            var image     = 'beginningcitybackground';
-        } else {
+        if(PLAYER.location.name !== "Jyväskylä") {
             var image     = 'beginningcountrybackground';
+            if (PLAYER.class === "poor")        classText = "mäkitupalaiseksi ";
+            else if (PLAYER.class === "middle") classText = "torpparin esikoiseksi ";
+            else                                classText = "pappilan kolmanneksi lapseksi";
+        } else {
+            var image     = 'beginningcitybackground';
+            if (PLAYER.class === "rich")        classText = "toiseksi lapseksi opettajaperheeseen ";
+            else                                classText = "työläisperheeseen ";
         }
+        
+        var text = "Tervetuloa maailmaan! Synnyit " + classText + 
+        PLAYER.location.to + " Suomen itsenäisyyden alkumetreillä. " +
+        "Sinut kastettiin nimellä " + PLAYER.name + ", joka oli yksi suosituimmista " +
+        genderText + "nimistä vuonna 1917.";
 
         var centerButtonLabel = "Jatka";
 
@@ -30,7 +30,11 @@ var beginning_state = {
 
     centerButtonHandler: function () {
         if (Math.random() <= 0.18) {     // 18% die before going to school
-            PLAYER.causeofdeath = "keuhkokuume";
+            if(Math.random() <= 0.60) {
+                PLAYER.causeofdeath = "keuhkokuume";
+            } else {
+                PLAYER.causeofdeath = "espanjantauti";
+            }
             GAME.state.start('death');
         } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
             if(PLAYER.class === "rich") {
@@ -51,14 +55,15 @@ function createPlayerStats() {
     PLAYER.age = 0;
     PLAYER.causeofdeath = "";
     var locations = [{name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
-        {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}];
+        {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}, 
+        {name: "Jyväskylän maalaiskunta", to: "Jyväskylän maalaiskuntaan", at: "Jyväskylän maalaiskunnassa"}];
     if (Math.random() <= 0.20) { 
         PLAYER.location = {name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"};
     } else {
         PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
     }
     var classes = ["poor", "middle"];
-    if (Math.random() <= 0.10) { 
+    if (Math.random() <= 0.10 && PLAYER.location.name !== "Hankasalmi") { 
         PLAYER.class = "rich";
     } else {
         PLAYER.class = classes[Math.floor(Math.random()*classes.length)];

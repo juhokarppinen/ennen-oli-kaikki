@@ -6,12 +6,18 @@ var death_state = {
         // Childhood death
         if (PLAYER.causeofdeath === "keuhkokuume") {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella "
-            + "yksi yleisimmistä kuolinsyistä muiden kulkutautien lisäksi. "
+            + "yksi yleisimmistä kuolinsyistä. "
             + "Vielä 1920-luvun lopulla se tappoi tuhansia ihmisiä joka vuosi. "
-            + "Keuhkotuberkuloosi koitui sinunkin kohtalokseksi. Lepää "
-            + "rauhassa, " + PLAYER.name + "!";
+            + "Keuhkotuberkuloosi koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"!";
             // Is there any data showing actual ages of deceased children? 
-            PLAYER.age = Math.floor(Math.random() * 6); 
+            PLAYER.age = Math.floor(Math.random() * 6);
+        }
+        if(PLAYER.causeofdeath === "espanjantauti") {
+            causeOfDeathText = "1900-luvun tuhoisin influenssapandemia, espanjantauti, tappoi 10 ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
+            + "Suomeen tauti rantautui pahimpaan mahdolliseen aikaan, keskelle sisällissodan jälkeistä sekasortoa. "
+            + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"!";
+            // Is there any data showing actual ages of deceased children? 
+            PLAYER.age = Math.floor(Math.random() * 6);
         }
         // War death
         if (PLAYER.causeofdeath === "sota") {
