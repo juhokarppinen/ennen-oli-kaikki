@@ -36,13 +36,9 @@ var beginning_state = {
                 PLAYER.causeofdeath = "espanjantauti";
             }
             GAME.state.start('death');
-        } else if (PLAYER.location.name !== "Jyväskylä" && Math.random() <= 0.20) {
-            if(PLAYER.class === "rich") {
-                GAME.state.start('school1');
-            } else {
-                PLAYER.noschool = true;
-                GAME.state.start('school0'); // 20% of non-rich rural children didn't go to school.
-            }
+        } else if (PLAYER.location.name === "Saarijärvi" && PLAYER.class === "poor") {            
+            PLAYER.noschool = true;
+            GAME.state.start('school0'); // poor Saarijärvi children were too far from school and were relieved
         } else {
             PLAYER.noschool = false;
             GAME.state.start('school1');

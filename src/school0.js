@@ -4,9 +4,9 @@ var school0_state = {
         PLAYER.age = 7;
 
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä " +
-                   "oppivelvollisuudesta, mutta osa maalaiskylien lapsista ei päässyt " +
-                   "aloittamaan kansakoulua. Jäit kotiin auttamaan vanhempiasi töissä. " +
-                   "Vuosi on 1924.";
+                   "oppivelvollisuudesta, mutta lähimpään kouluun on yli viisi kilometriä " +
+                   "joten sinut on vapautettu oppivelvollisuudesta Saarijärven valtuuston päätöksen mukaisesti. " +
+                   "Jäät kotiin auttamaan vanhempiasi kuten tähänkin asti.";
 
         var image             = 'beginningcountrybackground';
         var centerButtonLabel = "Jatka";
