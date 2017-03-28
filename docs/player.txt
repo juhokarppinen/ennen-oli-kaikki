@@ -1,4 +1,14 @@
-Player properties:
+Player properties the player is born with in beginning.js:
+
+name        -   type    -   possible values
+-------------------------------------------------------------
+gender          string      "male", "female"
+name            string      name from a list
+age             int         starts at 0
+class           string      "poor", "middle", "rich"
+location        object      city's conjugations; name, to, at
+
+Other player properties during the game:
 
 name        -   type    -   example file    -   purpose
 -------------------------------------------------------------
