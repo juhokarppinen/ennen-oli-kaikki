@@ -41,6 +41,7 @@ function preload() {
     GAME.state.add('homechores2', homechores2_state);
     GAME.state.add('youthwork1', youthwork1_state);
     GAME.state.add('youthwork2', youthwork2_state);
+    GAME.state.add('citywork0', citywork0_state);
     GAME.state.add('citywork1', citywork1_state);
     GAME.state.add('citywork2', citywork2_state);
     GAME.state.add('studies1', studies1_state);
