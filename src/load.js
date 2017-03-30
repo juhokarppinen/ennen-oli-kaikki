@@ -20,7 +20,7 @@ var load_state = {
     preload: function() {
         this.addLoadingScreen();
 
-        GAME.load.image('button', 'assets/img/buttonsepia.png');
+        GAME.load.image('button', 'assets/img/button.png');
         GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('background', 'assets/img/background.jpg');

@@ -79,8 +79,8 @@ function create() {
     var defaultElevation = 1.4; // 0 == top, 1 == center, 2 == bottom
     CENTER        = {x: GAME.world.centerX, y: GAME.world.centerY};
     CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
-    LEFT_BUTTON   = {x: CENTER.x * 0.5,     y: CENTER.y * defaultElevation};
-    RIGHT_BUTTON  = {x: CENTER.x * 1.5,     y: CENTER.y * defaultElevation};
+    LEFT_BUTTON   = {x: CENTER.x * 0.6,     y: CENTER.y * defaultElevation};
+    RIGHT_BUTTON  = {x: CENTER.x * 1.4,     y: CENTER.y * defaultElevation};
     NAME_POSITION = {x: CENTER.x * 1.95,    y: CENTER.y * 0.075}
 }
 

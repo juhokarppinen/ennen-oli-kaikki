@@ -12,7 +12,7 @@ var barn1_state = {
         }
 
         var text = "Kauan odotetut tanssit saapuvat, ja kaikki seudun nuoret ovat paikalla. "
-        +"Se tuttu " + servant + PLAYER.crush + " on silmäillyt sinua " +
+        +"Tuttu " + servant + PLAYER.crush + " on silmäillyt sinua " +
         "merkitsevästi koko illan. Lähdetkö hänen kanssaan heinälatoon?";
 
         var image            = 'youthworkcountrybackground';
