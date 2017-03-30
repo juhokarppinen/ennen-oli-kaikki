@@ -3,12 +3,12 @@ var studies3_state = {
     create: function() {
         PLAYER.age = 16;
 
-        if (PLAYER.friend === "Hilda") {
-            var text = "Hildaa auttaessasi teistä tuli parhaat ystävät ja valmistutte tyttökoulusta "+
+        if (PLAYER.friend === "Hilja") {
+            var text = "Hiljaa auttaessasi teistä tuli parhaat ystävät ja valmistutte tyttökoulusta "+
                         "yhdessä erinomaisin arvosanoin. Suuntaatte molemmat sairaanhoitajakouluun " +
                         "hymyssä suin.";
         } else {
-            var text = "Hilda joutui jättämään koulun kesken, mutta sinä valmistut oppikoulusta hyvin arvosanoin. " +
+            var text = "Hilja joutui jättämään koulun kesken, mutta sinä valmistut oppikoulusta hyvin arvosanoin. " +
                        "Seuraat unelmaasi ja lähdet sairaanhoitajakouluun.";
         }
         

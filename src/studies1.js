@@ -20,7 +20,7 @@ var studies1_state = {
         } else {
             var text = "Isäsi myöntyy, ja aloitat oppikoulun Jyväskylän tyttökoulussa. Opiskelu osoittautuu " +
                "paljon vaikeammaksi kuin olit odottanut, mutta et aio luovuttaa. " +
-               "Luokkatoverillasi Hildalla on vaikeuksia pysytellä perässä, autatko häntä " + 
+               "Luokkatoverillasi Hiljalla on vaikeuksia pysytellä perässä, autatko häntä " + 
                "koulutöissä?";
             var leftButtonLabel = "Kyllä";
             var rightButtonLabel = "Ei";
@@ -35,7 +35,7 @@ var studies1_state = {
         if(PLAYER.class === "rich") {
             GAME.state.start('studies2');
         } else {
-            PLAYER.friend = "Hilda";
+            PLAYER.friend = "Hilja";
             GAME.state.start('studies3');
         }
     },
