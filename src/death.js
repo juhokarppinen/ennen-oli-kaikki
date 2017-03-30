@@ -14,7 +14,7 @@ var death_state = {
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "1900-luvun tuhoisin influenssapandemia, espanjantauti, tappoi 10 ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
-            + "Suomeen tauti rantautui pahimpaan mahdolliseen aikaan, keskelle sisällissodan jälkeistä sekasortoa. "
+            + "Suomeen tauti rantautui keskelle sisällissodan jälkeistä sekasortoa. "
             + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"!";
             // Is there any data showing actual ages of deceased children? 
             PLAYER.age = Math.floor(Math.random() * 6);
