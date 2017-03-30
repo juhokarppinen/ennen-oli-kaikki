@@ -13,7 +13,7 @@ var barn2_state = {
             +"Hän pyytää sinut puheilleen ja haluaa tietää, kuka on isä. Kerrotko?";
         }
 
-        var image            = 'youthworkcountrybackground';
+        var image            = 'barnbackground';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

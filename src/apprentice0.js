@@ -5,7 +5,7 @@ var apprentice0_state = {
 
         var text = "Kun opiskelu ei vaan tunnu sujuvan, vanhempasi lähettävät sinut apteekkarienosi apulaiseksi.";
         
-        var image = 'youthworkcitybackground';
+        var image = 'apprenticebackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

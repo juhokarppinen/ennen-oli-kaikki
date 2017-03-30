@@ -8,12 +8,12 @@ var beginning_state = {
         if (PLAYER.gender === "male") genderText = "pojan";
         else                          genderText = "tytön";
         if(PLAYER.location.name !== "Jyväskylä") {
-            var image     = 'beginningcountrybackground';
+            var image     = 'countrybackground';
             if (PLAYER.class === "poor")        classText = "mäkitupalaiseksi ";
             else if (PLAYER.class === "middle") classText = "torpparin esikoiseksi ";
             else                                classText = "pappilan kolmanneksi lapseksi ";
         } else {
-            var image     = 'beginningcitybackground';
+            var image     = 'citybackground';
             if (PLAYER.class === "rich")        classText = "toiseksi lapseksi opettajaperheeseen ";
             else                                classText = "työläisperheeseen ";
         }

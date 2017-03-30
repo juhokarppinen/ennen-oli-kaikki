@@ -15,7 +15,7 @@ var dance1_state = {
                    "sinut kotiin, suostutko ehdotukseen?";
         }
         
-        var image            = 'citybackground';
+        var image            = 'dancebackground';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

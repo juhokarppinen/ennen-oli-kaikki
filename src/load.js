@@ -33,9 +33,17 @@ var load_state = {
         GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
         GAME.load.image('studies1background', 'assets/img/studies1.jpg');
         GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');
+        GAME.load.image('childworkcountrybackground', 'assets/img/childworkcountry.jpg');
         GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
         GAME.load.image('deathbackground', 'assets/img/death.jpg');
-        GAME.load.image('citybackground', 'assets/img/city.jpg');
+        GAME.load.image('citybackground', 'assets/img/jyvaskyla_city.jpg');
+        GAME.load.image('countrybackground', 'assets/img/jyvaskyla_country.jpg');
+        GAME.load.image('apprenticebackground', 'assets/img/apprentice.jpg');
+        GAME.load.image('barnbackground', 'assets/img/barn.jpg');
+        GAME.load.image('dancebackground', 'assets/img/dance.jpg');
+        GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
+        GAME.load.image('familybackground', 'assets/img/family.jpg');
+        GAME.load.image('childbackground', 'assets/img/child.jpg');
 
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
 

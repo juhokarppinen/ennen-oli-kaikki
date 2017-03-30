@@ -11,7 +11,7 @@ var youthwork1_state = {
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
         } else if(PLAYER.noschool === true) {
-            var image = 'youthworkcountrybackground';
+            var image = 'childworkcountrybackground';
             if(PLAYER.gender === "female") {
                     var gendertext = "pikkupiiaksi";
                 } else {
@@ -23,7 +23,7 @@ var youthwork1_state = {
             var leftButtonLabel  = "Tilalle";
             var rightButtonLabel = "Kaupunkiin";
         } else {
-            var image = 'youthworkcountrybackground';
+            var image = 'childworkcountrybackground';
             var text = "Vaikka perheesi tyrmäsi koulunkäynnin, vapaapaikka oppikoulusta " +
                    "on vielä hetken avoinna. Otatko sen salaa vastaan?";
            var leftButtonLabel  = "Kyllä";

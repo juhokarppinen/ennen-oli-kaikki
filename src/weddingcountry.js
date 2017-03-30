@@ -12,8 +12,7 @@ var weddingcountry_state = {
         }
         text += " Päätätte perustaa oman perheen.";
         
-        //todo: country wedding picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'weddingbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

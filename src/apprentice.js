@@ -4,7 +4,7 @@ var apprentice_state = {
         PLAYER.age = 16;
 
         if (PLAYER.class === "rich") {
-            var image     = 'youthworkcitybackground';
+            var image     = 'apprenticebackground';
             var text      = "Apteekkarin apulaisena toimiminen on kiinnostavaa. "+
                             "Koulutustaustasi vuoksi olet erittäin pätevä työssäsi.";
         } else {

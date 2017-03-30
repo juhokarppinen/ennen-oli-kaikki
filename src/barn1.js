@@ -15,7 +15,7 @@ var barn1_state = {
         +"Tuttu " + servant + PLAYER.crush + " on silmäillyt sinua " +
         "merkitsevästi koko illan. Lähdetkö hänen kanssaan heinälatoon?";
 
-        var image            = 'youthworkcountrybackground';
+        var image            = 'barnbackground';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 
