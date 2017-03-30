@@ -9,8 +9,9 @@ var studies2_state = {
             var leftButtonLabel  = "Yliopistoon";
             var rightButtonLabel = "Töihin";
         } else {
-            var text = "Onneksi olkoon, tuore keskikoulusta valmistunut! Jatkatko opiskelemaan " +
-                   "sairaanhoitajaksi Kuopioon vai jäätkö kotiin auttamaan perheyrityksessä?";
+            var text = "Onneksi olkoon, tuore keskikoulusta valmistunut! Haaveilet sairaanhoitajan ammatista, mutta "
+            +"opiskellaksesi sairaanhoitajaksi sinun pitäisi muuttaa Kuopioon. Vanhempasi toivoisivat sinun jäävän kotiin. "
+            +"Lähdetkö vai jäätkö?";
             var leftButtonLabel  = "Sairaanhoitajaksi";
             var rightButtonLabel = "Kotiin";
         }
@@ -21,7 +22,7 @@ var studies2_state = {
     },
 
     leftButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('homechores0');
     },
 
     rightButtonHandler: function () {

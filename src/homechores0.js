@@ -1,7 +1,7 @@
 var homechores0_state = {
 
     create: function() {
-        PLAYER.age = 14;
+        PLAYER.age = 16;
 
         var text = "Päiväsi kuluvat kapiopitsejä ommellen, pianoa soittaen ja säätyläisneidon käytöstapoja opetellen. Pitkästyt kuitenkin pian ja liityt pikkulottiin.";
         
