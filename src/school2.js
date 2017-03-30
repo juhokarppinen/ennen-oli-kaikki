@@ -21,10 +21,8 @@ var school2_state = {
                 //centerButtonLabel = "Kouluun";
                 //text += "Lukeminen ei ole lempipuuhaasi, mutta vanhempasi haluavat silti sinun jatkavan koulussa.";
             } else { //rich
-                centerButtonLabel = "Oppikouluun";
-                text += "Opettajasi kannustaa sinua jatkamaan oppikouluun. " +
-                    "Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja " +
-                    "lähettävät sinut oppikouluun mielellään.";
+                centerButtonLabel = "Jatka";
+                text += "Koulu ei kiinnosta, etkä selviä oppikoulun pääsykokeista ensi yrittämällä. Vanhempasi ovat kuolla häpeästä.";
             }
         } else {
             if(PLAYER.class ==="poor") {
@@ -45,10 +43,8 @@ var school2_state = {
                centerButtonLabel = "Töihin";
                text += "Sinulle tarjotaan vapaa-oppilaan paikkaa oppikouluun, jonka ottaisit mieluusti vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin.";
             } else { //rich
-                centerButtonLabel = "Oppikouluun";
-                text += "Opettajasi kannustaa sinua jatkamaan oppikouluun. " +
-                    "Pääsykokeista selvittyäsi vanhempasi ovat ylpeitä ja " +
-                    "lähettävät sinut oppikouluun mielellään.";
+                centerButtonLabel = "Jatka";
+                text += "Koulu ei kiinnosta, etkä selviä oppikoulun pääsykokeista ensi yrittämällä. Vanhempasi ovat kuolla häpeästä.";
             }
         }
 
@@ -72,7 +68,7 @@ var school2_state = {
                     GAME.state.start('youthwork1');
                 }
             } else { //rich
-                GAME.state.start('studies1');
+                GAME.state.start('studies0');
             }
         } else {
             if(PLAYER.class ==="poor") {
@@ -84,7 +80,7 @@ var school2_state = {
                     GAME.state.start('youthwork1');
                 }
             } else { //rich
-                GAME.state.start('studies1');
+                GAME.state.start('studies0');
             }
         }        
     }
