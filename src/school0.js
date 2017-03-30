@@ -8,7 +8,7 @@ var school0_state = {
                    "joten sinut on vapautettu oppivelvollisuudesta Saarijärven valtuuston päätöksen mukaisesti. " +
                    "Jäät kotiin auttamaan vanhempiasi kuten tähänkin asti.";
 
-        var image             = 'beginningcountrybackground';
+        var image             = 'countrybackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

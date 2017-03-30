@@ -6,7 +6,7 @@ var studies0_state = {
 
         var leftButtonLabel = "Kyllä";
         var rightButtonLabel = "Ei";
-        var image           = 'studies1background';
+        var image           = 'schoolbackground';
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
