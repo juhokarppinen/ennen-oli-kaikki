@@ -47,7 +47,7 @@ var youthwork1_state = {
         if(PLAYER.location.name === "Jyväskylä") {
             GAME.state.start('youthwork2');
         } else if(PLAYER.noschool === true) {
-            GAME.state.start('youthwork0');
+            GAME.state.start('citywork0');
         } else {
             GAME.state.start('homechores2');
         }
