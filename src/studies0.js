@@ -16,6 +16,10 @@ var studies0_state = {
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('apprentice');
+        if(PLAYER.gender === "female" && PLAYER.location.name !== "Jyväskylä") {
+            GAME.state.start('homechores0');
+        } else {
+            GAME.state.start('apprentice0');
+        }
     }
 }

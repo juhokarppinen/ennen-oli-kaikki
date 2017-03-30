@@ -12,6 +12,6 @@ var homechores0_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('lotta0');
     }
 }
