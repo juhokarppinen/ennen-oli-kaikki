@@ -5,7 +5,7 @@ var studies2_state = {
 
         if (PLAYER.gender === "male") {
             var text = "Onneksi olkoon, tuore ylioppilas! Jatkatko opiskelemaan " +
-                   "Helsingin yliopistoon vai otatko ohjat isäsi kaupassa?";
+                   "Helsingin yliopistoon vai otatko ohjat sukulaisesi kaupassa?";
             var leftButtonLabel  = "Yliopistoon";
             var rightButtonLabel = "Töihin";
         } else {
@@ -22,10 +22,14 @@ var studies2_state = {
     },
 
     leftButtonHandler: function () {
-        GAME.state.start('homechores0');
+        GAME.state.start('death');
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.gender === "female") {
+            GAME.state.start('homechores0');
+        } else {
+            GAME.state.start('death');
+        }
     }
 }
