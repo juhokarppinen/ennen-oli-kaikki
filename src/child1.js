@@ -26,6 +26,14 @@ var child1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.gender === "male") {
+            GAME.state.start('conscript');
+        } else {
+            if ("undefined" === typeof PLAYER.spouse) {
+                GAME.state.start('beginwar');
+        } else {
+            GAME.state.start('conscriptwife');
+        }
+        }
     }
 }

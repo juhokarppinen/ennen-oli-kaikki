@@ -55,12 +55,14 @@ function preload() {
     GAME.state.add('barn2', barn2_state);
     GAME.state.add('barn3', barn3_state);
     GAME.state.add('barn4', barn4_state);
+    GAME.state.add('weddingcountry', weddingcountry_state);
     GAME.state.add('child1', child1_state);
     GAME.state.add('dance1', dance1_state);
     GAME.state.add('apprentice', apprentice_state);
     GAME.state.add('workaway', workaway_state);
     GAME.state.add('workhome', workhome_state);
     GAME.state.add('conscript', conscript_state);
+    GAME.state.add('conscriptwife', conscriptwife_state);
     GAME.state.add('beginwar', beginwar_state);
     GAME.state.add('death', death_state);
     

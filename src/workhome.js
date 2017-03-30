@@ -12,6 +12,10 @@ var workhome_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('conscript');
+        if(PLAYER.gender === "male") {
+            GAME.state.start('conscript');
+        } else {
+            GAME.state.start('beginwar');
+        }
     }
 }

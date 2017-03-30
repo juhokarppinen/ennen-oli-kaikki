@@ -15,9 +15,6 @@ var school0_state = {
     },
 
     centerButtonHandler: function () {
-        if (PLAYER.gender === "male")
-            GAME.state.start('youthwork1');
-        else
-            GAME.state.start('homechores1');    
+        GAME.state.start('youthwork1');
     }
 }
