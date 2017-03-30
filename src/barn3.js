@@ -8,12 +8,12 @@ var barn3_state = {
             PLAYER.spouse = PLAYER.crush;
         } else {
             if (Math.random() <= 0.50) {     // 50% chance for dramatic effect
-            var text = PLAYER.crush + " toimii onneksi tilanteessa kuin herrasmies ja pyytää sinua vaimokseen. Pidätte pikaiset häät ja " + 
+            var text = "Kuultuaan kuka oli syyllinen, emäntä etsii rengin käsiinsä. Onneksi " + PLAYER.crush + " toimii tilanteessa kuin herrasmies ja pyytää sinua vaimokseen. Pidätte pikaiset häät ja " + 
                        "muutatte asumaan pieneen mökkiin hänen isänsä tontin laidalle.";
             PLAYER.spouse = PLAYER.crush;
             } else {
-                var text = PLAYER.crush + " kieltää tapahtuneen täysin. Seuraavana päivänä hän on kadonnut kokonaan, sanomatta sinulle sanaakaan. "
-                        + "Sukulaiset kertovat miehen muuttaneen muualle töiden perässä.";
+                var text = "Kuultuaan kuka oli syyllinen, emäntä yrittää etsiä rengin käsiinsä. "+PLAYER.crush + " on kuitenkin viikkoa aiemmin muuttanut muualle töiden perässä. "
+                        + "Hänen löytämisensä on nyt mahdotonta.";
             }
         }
         

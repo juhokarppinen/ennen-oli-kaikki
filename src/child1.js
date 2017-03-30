@@ -10,7 +10,7 @@ var child1_state = {
             var baby = "tyttövauvan";
         }
         if ("undefined" === typeof PLAYER.spouse) {
-            var text = "Häpeissäsi asut perheesi luona ja vältät ulkona liikkumista. " + 
+            var text = "Häpeissäsi asut nyt perheesi luona ja vältät ulkona liikkumista. " + 
                        "Onneksi synnytät terveen "+baby+"! Lapsi saa nimekseen "+PLAYER.children[0].name
                        +" ja äitisi ihastuu lapsenlapseen ikihyviksi.";
         } else {

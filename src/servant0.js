@@ -1,8 +1,7 @@
-var servant2_state = {
+var servant0_state = {
 
     create: function() {
-        PLAYER.age = 17;
-
+        PLAYER.age = 12;
         if(PLAYER.gender === "female") {
             var gendertext = "piikana";
         } else {
@@ -11,8 +10,9 @@ var servant2_state = {
 
         var text = "Vaikka olet tottunut kovaan työhön pienestä pitäen, "+gendertext +
                    " oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan. " +
-                   "Olet silti tyytyväinen valintaasi, ja saat lähetettyä kotiinkin muutaman lantin.";
-        
+                   "Paljoa et ehdi kovaa kohtaloasi surkutella, sillä iltaisin, kun " + 
+                   "olet saanut päivän työt tehtyä, nukahdat samoin tein.";
+
         var image             = 'youthworkcountrybackground';
         var centerButtonLabel = "Jatka";
 
@@ -20,6 +20,6 @@ var servant2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('barn1');
+        GAME.state.start('servant3');
     }
 }

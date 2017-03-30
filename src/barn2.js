@@ -2,13 +2,15 @@ var barn2_state = {
 
     create: function() {
         if(PLAYER.gender === "male") {
-            var text = "Kuhertelu heinäladossa oli ikimuistoista, mutta pian " + 
-                       PLAYER.crush + " kertoo olevansa raskaana! Pyydätkö " +
-                       "häntä vaimoksesi?";
+            var text = "Talon emäntä pyytää sinut puheilleen kesken työpäivän. "
+            +"Kun saavut talolle hattu kourassa, kohtaat heilasi, jota et ole tavannut sitten tanssien. "
+            +"Käy ilmi, että hän on raskaana. Talon emäntä on tiukkana. Sinun on kannettava vastuu. "
+            + "Pyydätkö häntä vaimoksesi?";
         } else {
-            var text = "Kuhertelu heinäladossa oli ikimuistoista, mutta pian " +
-                       "huomaat olevasi raskaana! " + PLAYER.crush + " tulee " +
-                       "vastaan ladon edustalla, kerrotko raskaudesta?";
+            var text = "Yö ladossa kaduttaa ja olet vältellyt renkiä sen jälkeen. "
+            +"Muutaman kuukauden kuluttua huomaat kauhuksesi olevasi raskaana. "
+            +"Et voi piilotella raskauttasi enää kauaa, ja huhut tilastasi kantautuvat talon emännän korviin. "
+            +"Hän pyytää sinut puheilleen ja haluaa tietää, kuka on isä. Kerrotko?";
         }
 
         var image            = 'youthworkcountrybackground';

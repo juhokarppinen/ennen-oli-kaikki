@@ -11,7 +11,7 @@ var beginning_state = {
             var image     = 'beginningcountrybackground';
             if (PLAYER.class === "poor")        classText = "mäkitupalaiseksi ";
             else if (PLAYER.class === "middle") classText = "torpparin esikoiseksi ";
-            else                                classText = "pappilan kolmanneksi lapseksi";
+            else                                classText = "pappilan kolmanneksi lapseksi ";
         } else {
             var image     = 'beginningcitybackground';
             if (PLAYER.class === "rich")        classText = "toiseksi lapseksi opettajaperheeseen ";

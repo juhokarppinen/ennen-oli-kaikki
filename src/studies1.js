@@ -14,7 +14,7 @@ var studies1_state = {
                 var text = "Aloitat oppikoulun Jyväskylän tyttökoulussa. Opiskelu osoittautuu " +
                    "paljon vaikeammaksi kuin olit odottanut ja pian kadut kouluun tuloa. " +
                    "Jatkatko opintoja vai lähdetkö mieluummin leskeksi jääneen " + 
-                   "apteekkarienosi apupojaksi?";
+                   "apteekkarienosi aputytöksi?";
                     var rightButtonLabel = "Aputytöksi";
             }
         } else {

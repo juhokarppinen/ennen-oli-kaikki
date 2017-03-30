@@ -6,9 +6,9 @@ var youthwork1_state = {
         if(PLAYER.location.name === "Jyväskylä") {
             var image = 'youthworkcitybackground';
             text = "Saat töitä apurina verstaalla. Päivät ovat pitkiä mutta olet " +
-                   "nopea oppimaan. Pian sinulle tarjotaan oppipojan paikkaa; " +
-                   "otatko sen vastaan?";
-        } else if(PLAYER.location.name !== "Jyväskylä" && (PLAYER.class === "poor" || PLAYER.noschool === true)) {
+                   "nopea oppimaan. Pian sinulle tarjotaan oppipojan paikkaa. " +
+                   "Otatko sen vastaan?";
+        } else if(PLAYER.noschool === true) {
             var image = 'youthworkcountrybackground';
             text = "Perheesi rahatilanne on niin tiukka, että joudut etsimään työtä " +
                    "muualta. Sinulle tarjotaan rengin paikkaa naapuripitäjästä. " +

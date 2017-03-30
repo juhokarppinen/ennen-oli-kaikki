@@ -1,20 +1,32 @@
 var servant3_state = {
 
     create: function() {
-        PLAYER.age = 14;
+        PLAYER.age = 16;
 
-        var text = "Vaikka olet tottunut kovaan työhön pienestä pitäen, piikana " +
-                   "oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan. " +
-                   "Paljoa et ehdi kovaa kohtaloasi surkutella, sillä iltaisin, kun " + 
-                   "olet saanut päivän työt tehtyä, nukahdat samoin tein.";
+        if(PLAYER.gender === "female") {
+            var gendertext = "emäntä";
+        } else {
+            var gendertext = "isäntä";
+        }
+        
+        var leftButtonLabel  = "Jää";
+        var rightButtonLabel = "Kaupunkiin";
+
+        var text = "Talon "+ gendertext +" on lupaillut sinulle kevyempiä töitä ja samalla päiväpalkkasikin nousisi. "
+        +"Lupaukset ovat kuitenkin hyvin epämääräisiä, etkä tiedä, toteutuvatko ne koskaan. "
+        +"Jäätkö odottamaan vai lähdetkö etsimään töitä Jyväskylästä, josta moni on palannut kotiin entistä köyhempänä?";
 
         var image             = 'youthworkcountrybackground';
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    centerButtonHandler: function () {
-        GAME.state.start('barn1');
+    leftButtonHandler: function () {
+        GAME.state.start('servant4');
+    },
+
+    rightButtonHandler: function () {
+        GAME.state.start('citywork1');
     }
 }
