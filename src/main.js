@@ -13,7 +13,7 @@ var BUTTON_STYLE = {font: "40px Alegreya Sans", fill: "#1e1711"};
 var INFO_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
 var YEAR_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
 var NAME_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
-var TITLE_STYLE  = {font: "64px Diplomata SC",  fill: "#FFFFFF"};
+var TITLE_STYLE  = {font: "70px Roboto",  fill: "#FFFFFF"};
 
 var HIGHLIGHT_COLOR = "#3333ff";
 
@@ -21,7 +21,7 @@ var HIGHLIGHT_COLOR = "#3333ff";
 WebFontConfig = {
     active: function() { GAME.time.events.add(Phaser.Timer.SECOND, createText, this); },
     google: {
-      families: ['Alegreya Sans', 'Diplomata SC']
+      families: ['Alegreya Sans', 'Roboto']
     }
 };
 
