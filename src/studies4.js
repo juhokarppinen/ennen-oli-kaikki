@@ -3,11 +3,15 @@ var studies4_state = {
     create: function() {
         var text = "Vanhempasi kieltävät sinulta kaikki vapaa-ajan huvitukset ja "
         +"palkkaavat sinulle yksityisopettajan iltojesi ratoksi. Kotiopetus tuottaa "
+        +"tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun ";
 
         if(PLAYER.location.name === "Jämsä") {
+            text += "Jämsän yhteiskoulussa."
         }else {
             if(PLAYER.gender === "female") {
+                text += "Jyväskylän tyttökoulussa."
             } else {
+                text += "Jyväskylän lyseossa."
             }
         }
 
