@@ -181,6 +181,13 @@ function drawBoxedText(text) {
     return [box, boxedText];
 }
 
+function drawArticle(img) {
+    var article = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, img);
+    article.alpha = 0;
+
+    return [article];
+}
+
 
 function drawBackground(image) {
     var background = GAME.add.sprite(0, 0, image);
@@ -230,6 +237,19 @@ function drawUIsingleButton(bg, txt, label, context) {
     tweenElements(background, tweenedElements);
 }
 
+function drawUIsingleButtonArticle(bg, img, txt, label, context) {
+    var background   = drawBackground(bg);
+    var pictureInfo  = drawPictureInfo(authors[bg]);
+    var nameText     = displayNameAndAge();
+    var article      = drawArticle(img);
+    var timeline     = drawTimeline(PLAYER.age); 
+    var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
+      
+    var tweenedElements = nameText.concat(article, centerButton, timeline);
+    var UIelements      = tweenedElements.concat(pictureInfo, timeline);
+    var toggleUIbutton  = drawToggleUIbutton(UIelements);
+    tweenElements(background, tweenedElements);
+}
 
 function drawUItwoButtons(bg, txt, label1, label2, context) {
     var background   = drawBackground(bg);

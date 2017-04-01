@@ -5,11 +5,12 @@ var beginwar_state = {
         var text = "Keski-Suomalainen: SOTA ALKAA!";
         PLAYER.causeofdeath = "sota";
         
-        // todo: pick war picture
+        // todo: pick war background picture
         var image            = 'youthworkcountrybackground';
+        var article          = 'articlewinterwar';
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButtonArticle(image, article, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {
