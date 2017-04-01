@@ -68,7 +68,7 @@ var school2_state = {
                     GAME.state.start('youthwork1');
                 }
             } else { //rich
-                GAME.state.start('studies0');
+                GAME.state.start('studies4');
             }
         } else {
             if(PLAYER.class ==="poor") {
@@ -80,7 +80,10 @@ var school2_state = {
                     GAME.state.start('youthwork1');
                 }
             } else { //rich
-                GAME.state.start('studies0');
+                if(PLAYER.gender === "female") {
+                    GAME.state.start('studies0');
+                }
+                    GAME.state.start('studies4');
             }
         }        
     }

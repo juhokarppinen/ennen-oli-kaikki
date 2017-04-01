@@ -3,7 +3,7 @@ var homechores3_state = {
     create: function() {
         PLAYER.age = 16;
 
-        var image     = 'homechores1background';
+        var image     = 'homechorescountrybackground';
         var text = "Välisi vanhempiesi kanssa viilenevät, ja haluaisit jättää torpan ja lähteä kaupunkiin. "
         +"Lähtö tarkoittaisi kuitenkin lopullista välirikkoa vanhempiisi, ja joutuisit hyvästelemään myös sinulle rakkaat sisaruksesi. "
         +"Lähdetkö vai jäätkö?";
