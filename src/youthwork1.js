@@ -39,7 +39,11 @@ var youthwork1_state = {
         } else if(PLAYER.noschool === true) {
             GAME.state.start('servant2');
         } else {
-            GAME.state.start('servant1');
+            if (Math.random() <= 0.50) {     // 50% chance for dramatic effect
+                GAME.state.start('studies5');
+            } else {
+                GAME.state.start('servant1');
+            }
         }
     },
 

@@ -4,8 +4,13 @@ var studies2_state = {
         PLAYER.age = 16;
 
         if (PLAYER.gender === "male") {
-            var text = "Onneksi olkoon, tuore ylioppilas! " 
-            if(PLAYER.location.name === "Jyväskylä") {
+            var text = "Onneksi olkoon, tuore ylioppilas! ";
+            if(PLAYER.class === "middle") {
+                "Tähän keskiluokkalaiselle jotain jatkoa.";
+                var leftButtonLabel  = "Jotain";
+                var rightButtonLabel = "Jotain";
+            } else {
+                if(PLAYER.location.name === "Jyväskylä") {
                 text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän seminaariin kouluttautumaan opettajaksi, vai...";
                 var leftButtonLabel  = "Seminaariin";
                 var rightButtonLabel = "Vai";
@@ -15,6 +20,7 @@ var studies2_state = {
                 +" Mitä teet?";
                 var leftButtonLabel  = "Yliopistoon";
                 var rightButtonLabel = "Armeijaan";
+            }
             }
         } else {
             var text = "Onneksi olkoon, tuore keskikoulusta valmistunut! Haaveilet sairaanhoitajan ammatista, mutta "

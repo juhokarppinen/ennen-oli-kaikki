@@ -1,12 +1,18 @@
 var studies5_state = {
 
     create: function() {
-        var text = "Ahkera opiskelusi tuottaa tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun ";
+        if(PLAYER.gender === "male") {
+            var text = "Muutat oppikoulun asuntolaan ja välit perheeseesi viilenevät. "
+            +"Kun toverisi lähtevät viikonlopuiksi koteihinsa, jäät asuntolaan yksin. "
+            +"Pakenet yksinäisyyttä ja koti-ikävää kirjojen maailmaan ja alat haaveilla yliopisto-opinnoista.";
+        } else {
+            var text = "Ahkera opiskelusi tuottaa tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun ";
 
-        if(PLAYER.location.name === "Jämsä") {
-            text += "Jämsän yhteiskoulussa."
-        }   else {
-            text += "Jyväskylän tyttökoulussa."
+            if(PLAYER.location.name === "Jämsä") {
+                text += "Jämsän yhteiskoulussa."
+            }   else {
+                text += "Jyväskylän tyttökoulussa."
+            }
         }
 
         var centerButtonLabel = "Jatka";
