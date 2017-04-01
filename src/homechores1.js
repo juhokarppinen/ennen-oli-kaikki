@@ -12,8 +12,8 @@ var homechores1_state = {
             var rightButtonLabel = "Kivääri";
         } else if(PLAYER.noschool === false) {
             var image     = 'homechores1background';
-            var text      = "Vaikka perheesi tyrmäsi koulunkäynnin, haluaisit ottaa vapaapaikan vastaan. "
-                            +"Sairaanhoitajaunelmasi voisi sittenkin toteutua! Yritätkö vakuuttaa isäsi opinnoistasi?";
+            var text      = "Haluaisit ottaa vapaapaikan vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin. "
+                            +"Olisi unelmiesi täyttymys, jos pääsisit opiskelemaan sairaanhoitajaksi! Yritätkö vakuuttaa isäsi opinnoistasi?";
             var leftButtonLabel  = "Kyllä";
             var rightButtonLabel = "Ei";
         }

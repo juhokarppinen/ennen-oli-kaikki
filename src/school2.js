@@ -16,7 +16,7 @@ var school2_state = {
                     "tarvitaan apuasi, joten koulutiesi päättyy tähän.";
             } else if(PLAYER.class === "middle") {
                 centerButtonLabel = "Töihin";
-                text += "Sinulle tarjotaan vapaa-oppilaan paikkaa oppikouluun, jonka ottaisit mieluusti vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin.";
+                text += "Olet viihtynyt koulussa ja opit nopeasti. Sinulle tarjotaan vapaaoppilaan paikkaa oppikouluun.";
                 //todo:
                 //centerButtonLabel = "Kouluun";
                 //text += "Lukeminen ei ole lempipuuhaasi, mutta vanhempasi haluavat silti sinun jatkavan koulussa.";
@@ -41,7 +41,7 @@ var school2_state = {
                 }
             } else if(PLAYER.class === "middle") {
                centerButtonLabel = "Töihin";
-               text += "Sinulle tarjotaan vapaa-oppilaan paikkaa oppikouluun, jonka ottaisit mieluusti vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin.";
+               text += "Olet viihtynyt koulussa ja opit nopeasti. Sinulle tarjotaan vapaaoppilaan paikkaa oppikouluun.";
             } else { //rich
                 centerButtonLabel = "Jatka";
                 text += "Koulu ei kiinnosta, etkä selviä oppikoulun pääsykokeista ensi yrittämällä. Vanhempasi ovat kuolla häpeästä.";

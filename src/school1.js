@@ -5,7 +5,7 @@ var school1_state = {
 
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä " + 
                    "oppivelvollisuudesta, joten aloitat koulutiesi sinä " + 
-                   "syksynä, kun täytät seitsemän vuotta. Vuosi on 1924.";
+                   "syksynä, kun täytät seitsemän vuotta.";
 
         var image             = 'schoolbackground';
         var centerButtonLabel = "Jatka";

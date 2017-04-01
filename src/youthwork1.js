@@ -24,10 +24,10 @@ var youthwork1_state = {
             var rightButtonLabel = "Kaupunkiin";
         } else {
             var image = 'childworkcountrybackground';
-            var text = "Vaikka perheesi tyrmäsi koulunkäynnin, vapaapaikka oppikoulusta " +
-                   "on vielä hetken avoinna. Otatko sen salaa vastaan?";
-           var leftButtonLabel  = "Kyllä";
-           var rightButtonLabel = "Ei";
+            var text = "Haluaisit ottaa vapaapaikan vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin. "
+                   + "Kunnioitatko isäsi tahtoa vai jatkatko opintoja?";
+           var leftButtonLabel  = "Opinnot";
+           var rightButtonLabel = "Isän tahto";
         }
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);

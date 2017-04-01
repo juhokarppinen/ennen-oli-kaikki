@@ -14,12 +14,17 @@ var citywork0_state = {
         
         var image     = 'citybackground';
             
-        var centerButtonLabel = "Jatka";
+        var leftButtonLabel = "Kotiin";
+        var rightButtonLabel = "Makeistehtaalle";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
-    centerButtonHandler: function () {
-        GAME.state.start('dance1');
+    leftButtonHandler: function () {
+        GAME.state.start('death');
+    },
+
+    rightButtonHandler: function () {
+        GAME.state.start('death');
     }
 }
