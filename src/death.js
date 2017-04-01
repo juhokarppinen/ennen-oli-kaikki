@@ -5,17 +5,16 @@ var death_state = {
 
         // Childhood death
         if (PLAYER.causeofdeath === "keuhkokuume") {
-            causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella "
-            + "yksi yleisimmistä kuolinsyistä. "
-            + "Vielä 1920-luvun lopulla se tappoi tuhansia ihmisiä joka vuosi. "
-            + "Keuhkotuberkuloosi koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"!";
+            causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
+            +"Tauti koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"! "
+            +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             // Is there any data showing actual ages of deceased children? 
             PLAYER.age = Math.floor(Math.random() * 6);
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
-            causeOfDeathText = "1900-luvun tuhoisin influenssapandemia, espanjantauti, tappoi 10 ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
-            + "Suomeen tauti rantautui keskelle sisällissodan jälkeistä sekasortoa. "
-            + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"!";
+            causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
+            + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"! "
+            + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             // Is there any data showing actual ages of deceased children? 
             PLAYER.age = Math.floor(Math.random() * 6);
         }
@@ -31,7 +30,7 @@ var death_state = {
         else if (PLAYER.age <= 10) var ageOfDeathText = numberTexts[PLAYER.age - 1] + "vuotias.";
         else var ageOfDeathText = PLAYER.age + "-vuotias.";
 
-        var text = "Kuolit... " + causeOfDeathText + " Olit kuollessasi " + ageOfDeathText;
+        var text = "Kuolit... " + causeOfDeathText;
 
         var image            = "deathbackground";
         var rightButtonLabel = "Valikkoon";
