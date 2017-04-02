@@ -2,7 +2,7 @@ var conscript_state = {
 
     create: function() {
         PLAYER.age = 20;
-        var text = "Saat valtiolta kirjeen: Sinun on ilmoittauduttava asepalvelukseen. 350-päiväinen varusmiespalveluksesi alkaa pian.";
+        var text = "Saat valtiolta kirjeen: Sinun on ilmoittauduttava asepalvelukseen.";
         
         //todo: add army picture
         var image            = 'youthworkcountrybackground';
@@ -12,6 +12,6 @@ var conscript_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('beginwar');
+        GAME.state.start('conscript2');
     }
 }
