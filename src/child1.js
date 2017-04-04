@@ -16,7 +16,7 @@ var child1_state = {
             var image            = 'childbackground';
         } else {
             var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
-                    ". Sukulaiset ihastelevat suloista nyyttiä ja elämä hymyilee.";
+                    ". Sukulaiset ihastelevat pienokaista ja elämä hymyilee.";
             var image            = 'familybackground';
         }
         

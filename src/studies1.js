@@ -4,7 +4,7 @@ var studies1_state = {
         PLAYER.age = 12;
         var text = "Isäsi myöntyy, ja aloitat oppikoulun Jyväskylän tyttökoulussa. Opiskelu osoittautuu " +
            "paljon vaikeammaksi kuin olit odottanut, mutta et aio luovuttaa. " +
-           "Luokkatoverillasi Hiljalla on vaikeuksia pysytellä perässä, autatko häntä " + 
+           "Luokkatoverillasi Hiljalla on vaikeuksia pysytellä perässä. Autatko häntä " + 
            "koulutöissä?";
         var leftButtonLabel = "Kyllä";
         var rightButtonLabel = "Ei";

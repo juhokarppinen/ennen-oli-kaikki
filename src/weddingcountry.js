@@ -15,7 +15,7 @@ var weddingcountry_state = {
             text += "muutatte asumaan pieneen mökkiin hänen setänsä tontin laidalle.";
             PLAYER.spouse = PLAYER.crush;
         }
-        text += " Päätätte perustaa oman perheen.";
+        text += " Haluatte perustaa oman perheen.";
         
         var image            = 'weddingbackground';
         var centerButtonLabel = "Jatka";

@@ -15,7 +15,7 @@ var school2_state = {
                 text += "Perheelläsi ei ole varaa oppikouluun ja kotona " +
                     "tarvitaan apuasi, joten koulutiesi päättyy tähän.";
             } else if(PLAYER.class === "middle") {
-                centerButtonLabel = "Töihin";
+                centerButtonLabel = "Jatka";
                 text += "Olet viihtynyt koulussa ja opit nopeasti. Sinulle tarjotaan vapaaoppilaan paikkaa oppikouluun.";
                 //todo:
                 //centerButtonLabel = "Kouluun";
@@ -40,7 +40,7 @@ var school2_state = {
                     +"Vanhemmillasi ei kuitenkaan ole varaa elättää sinua, ja sinut lähetetään "+servanttext+" Kartanoon, jonka mailla asutte.";
                 }
             } else if(PLAYER.class === "middle") {
-               centerButtonLabel = "Töihin";
+               centerButtonLabel = "Jatka";
                text += "Olet viihtynyt koulussa ja opit nopeasti. Sinulle tarjotaan vapaaoppilaan paikkaa oppikouluun.";
             } else { //rich
                 centerButtonLabel = "Jatka";
