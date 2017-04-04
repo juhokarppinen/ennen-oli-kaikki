@@ -13,6 +13,10 @@ var beginwar_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('war1');
+        if(PLAYER.gender === "male") {
+            GAME.state.start('war1');
+        } else {
+            GAME.state.start('wartime1');
+        }
     }
 }
