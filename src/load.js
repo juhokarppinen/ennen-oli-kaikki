@@ -22,6 +22,8 @@ var load_state = {
 
         GAME.load.image('button', 'assets/img/button.png');
         GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
+        GAME.load.image('soundOnButton', 'assets/img/sound-on-button.png');
+        GAME.load.image('soundOffButton', 'assets/img/sound-off-button.png');
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('background', 'assets/img/background.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
