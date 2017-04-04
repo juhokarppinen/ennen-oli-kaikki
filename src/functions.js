@@ -1,6 +1,8 @@
 /*
- * This file includes functions that are commonly needed in every state
+ * This file contains global functions that are commonly needed in most states
  */
+
+
 function tweenElements(background, otherElements) {
     GAME.add.tween(background).to( { alpha: 1 }, 2000, Phaser.Easing.Linear.None, true);
     otherElements.forEach(function(element) {
@@ -12,6 +14,7 @@ function tweenElements(background, otherElements) {
 function displayNameAndAge() {
     var nameAgeString = PLAYER.name + ", " + PLAYER.age + " vuotta";
 
+    // Get the text's dimensions.
     var tempText = GAME.add.text(0,0, nameAgeString, NAME_STYLE);
     var backgroundWidth = tempText.width * 1.2;
     var backgroundHeight = tempText.height * 1.2;
@@ -25,8 +28,7 @@ function displayNameAndAge() {
 
     var nameText = GAME.add.text(CENTER.x*2 - backgroundWidth / 2, backgroundHeight / 2, nameAgeString, NAME_STYLE);
     nameText.anchor.setTo(0.5);
-    // nameText.alpha=0;
-    // GAME.add.tween(nameText).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 2000);
+
     return [nameText, background];
 }
 
@@ -181,6 +183,7 @@ function drawBoxedText(text) {
     return [box, boxedText];
 }
 
+
 function drawArticle(img) {
     var article = GAME.add.sprite(GAME.world.centerX*0.3, GAME.world.centerY*0.2, img);
     article.alpha = 0;
@@ -237,6 +240,7 @@ function drawUIsingleButton(bg, txt, label, context) {
     tweenElements(background, tweenedElements);
 }
 
+
 function drawUIsingleButtonArticle(bg, img, txt, label, context) {
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
@@ -250,6 +254,7 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
     var toggleUIbutton  = drawToggleUIbutton(UIelements);
     tweenElements(background, tweenedElements);
 }
+
 
 function drawUItwoButtons(bg, txt, label1, label2, context) {
     var background   = drawBackground(bg);
