@@ -1,11 +1,13 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preload, create: create, update: update });
 var PLAYER = {};
+var BACKGROUND_MUSIC;
 
 var CENTER;
 
 var CENTER_BUTTON;
 var LEFT_BUTTON;
 var RIGHT_BUTTON;
+var NAME_POSITION;
 
 /* Global text styles are defined here */
 var STYLE        = {font: "40px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
