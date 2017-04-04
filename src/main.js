@@ -73,6 +73,7 @@ function preload() {
     GAME.state.add('conscript3', conscript3_state);
     GAME.state.add('conscriptwife', conscriptwife_state);
     GAME.state.add('beginwar', beginwar_state);
+    GAME.state.add('war1', war1_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

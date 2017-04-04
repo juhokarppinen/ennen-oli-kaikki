@@ -11,8 +11,7 @@ var conscript3_state = {
             + PLAYER.spouse + " huikkaa \"Tule sitten pian kotiin!\"";
         }
         
-        //todo: add army picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'conscriptbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

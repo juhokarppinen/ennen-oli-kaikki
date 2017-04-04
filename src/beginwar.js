@@ -5,8 +5,7 @@ var beginwar_state = {
         var text = "Keski-Suomalainen: SOTA ALKAA!";
         PLAYER.causeofdeath = "sota";
         
-        // todo: pick war background picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'conscriptbackground';
         var article          = 'articlewinterwar';
         var centerButtonLabel = "Jatka";
 

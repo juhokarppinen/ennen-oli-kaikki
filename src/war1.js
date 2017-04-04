@@ -4,11 +4,10 @@ var war1_state = {
         var text = "Lokakuussa 1939 alkaa liikekannallepano. Lähdet suoraan suurharjoituksista valmistautumaan sotaan. " 
         
         if("undefined" !== typeof PLAYER.spouse) {
-            text += "Samalla perheeltäsi otetaan hevoset pois Puolustusvoimien käyttöön ";
+            text += "Samalla perheeltäsi otetaan hevoset pois Puolustusvoimien käyttöön. ";
         }
                 
-        //todo: add army picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'warbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

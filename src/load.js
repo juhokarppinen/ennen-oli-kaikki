@@ -44,6 +44,8 @@ var load_state = {
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
         GAME.load.image('familybackground', 'assets/img/family.jpg');
         GAME.load.image('childbackground', 'assets/img/child.jpg');
+        GAME.load.image('conscriptbackground', 'assets/img/conscript.jpg');
+        GAME.load.image('warbackground', 'assets/img/war.jpg');
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
 
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');

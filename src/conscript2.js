@@ -9,8 +9,7 @@ var conscript2_state = {
             +"helpottunut hymy kasvoillaan.";
         }
         
-        //todo: add army picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'conscriptbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

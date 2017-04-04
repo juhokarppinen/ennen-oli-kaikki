@@ -4,8 +4,7 @@ var conscript_state = {
         PLAYER.age = 20;
         var text = "Saat valtiolta kirjeen: Sinun on ilmoittauduttava asepalvelukseen.";
         
-        //todo: add army picture
-        var image            = 'youthworkcountrybackground';
+        var image            = 'conscriptbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);
