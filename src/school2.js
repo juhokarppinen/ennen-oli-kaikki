@@ -82,8 +82,9 @@ var school2_state = {
             } else { //rich
                 if(PLAYER.gender === "female") {
                     GAME.state.start('studies0');
-                }
+                } else {
                     GAME.state.start('studies4');
+                }
             }
         }        
     }
