@@ -7,7 +7,6 @@ var CENTER;
 var CENTER_BUTTON;
 var LEFT_BUTTON;
 var RIGHT_BUTTON;
-var NAME_POSITION;
 
 /* Global text styles are defined here */
 var STYLE        = {font: "40px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
@@ -94,7 +93,6 @@ function create() {
     CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
     LEFT_BUTTON   = {x: CENTER.x * 0.6,     y: CENTER.y * defaultElevation};
     RIGHT_BUTTON  = {x: CENTER.x * 1.4,     y: CENTER.y * defaultElevation};
-    NAME_POSITION = {x: CENTER.x * 1.95,    y: CENTER.y * 0.075}
 }
 
 function update() {

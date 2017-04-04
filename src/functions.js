@@ -23,10 +23,10 @@ function displayNameAndAge() {
     var background = GAME.add.graphics(0, 0);
     background.lineStyle(0,0x000000, 0);
     background.beginFill(0x000000, 0.5);
-    background.drawRect(CENTER.x * 2 - backgroundWidth, 0, backgroundWidth, backgroundHeight);
+    background.drawRect(CENTER.x - backgroundWidth / 2, 0, backgroundWidth, backgroundHeight);
     background.endFill();
 
-    var nameText = GAME.add.text(CENTER.x*2 - backgroundWidth / 2, backgroundHeight / 2, nameAgeString, NAME_STYLE);
+    var nameText = GAME.add.text(CENTER.x, backgroundHeight / 2, nameAgeString, NAME_STYLE);
     nameText.anchor.setTo(0.5);
 
     return [nameText, background];
