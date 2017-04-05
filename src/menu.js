@@ -6,7 +6,7 @@ var menu_state = {
     create: function() {
         var background = drawBackground('menubackground');
         var pictureInfo = drawPictureInfo("Hugo Simberg");
-        
+
         var startButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, 'Aloita', pickGender, this);
         
         var titleText = drawTitle(CENTER.x, CENTER.y * 0.4, "Ennen oli kaikki...");

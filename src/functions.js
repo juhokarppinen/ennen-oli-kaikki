@@ -239,9 +239,16 @@ function drawArticle(img) {
 
 function drawBackground(image) {
     var background = GAME.add.sprite(0, 0, image);
+    PREVIOUS_BACKGROUND = image;
     background.alpha = 0;
     return background;
 }
+
+
+function showPreviousBackground() {
+    GAME.add.sprite(0, 0, PREVIOUS_BACKGROUND);
+}
+
 
 /**
  * Luo napin keskitettynä koordinaatteihin (x,y).
@@ -272,6 +279,8 @@ function drawTitle(x, y, text) {
 
 
 function drawUIsingleButton(bg, txt, label, context) {
+    showPreviousBackground();
+
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
@@ -288,6 +297,8 @@ function drawUIsingleButton(bg, txt, label, context) {
 
 
 function drawUIsingleButtonArticle(bg, img, txt, label, context) {
+    showPreviousBackground();
+
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
@@ -305,6 +316,8 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
 
 
 function drawUItwoButtons(bg, txt, label1, label2, context) {
+    showPreviousBackground();
+
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();

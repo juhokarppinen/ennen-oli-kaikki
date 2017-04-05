@@ -4,6 +4,7 @@ var gender_state = {
     },
 
     create: function() {
+        showPreviousBackground();
         var background = drawBackground('genderbackground');
         var pictureInfo = drawPictureInfo("");
 
