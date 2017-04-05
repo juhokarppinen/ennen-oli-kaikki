@@ -103,7 +103,7 @@ function drawTimeline(age) {
     graphics.moveTo(width - horizontalMargin, timelineY - endpointOffset);
     graphics.lineTo(width - horizontalMargin, timelineY + endpointOffset);
 
-    for (i = 1; i < intervalCount; i++) {
+    for (var i = 1; i < intervalCount; i++) {
         var x = leftEndpoint + i * intervalWidth;
         graphics.moveTo(x, timelineY - midpointOffset);
         graphics.lineTo(x, timelineY + midpointOffset);
@@ -118,17 +118,6 @@ function drawTimeline(age) {
     yearText.anchor.setTo(0.5);
 
     return [yearText, graphics];    
-}
-
-
-function drawPictureInfoBackdrop() {
-    var pictureInfoBackdrop = GAME.add.graphics(0, 0);
-    pictureInfoBackdrop.lineStyle(0,0x000000, 0);
-    pictureInfoBackdrop.beginFill(0x000000, 0.5);
-    pictureInfoBackdrop.drawRect(0, GAME.world.height - 85, GAME.world.width, 85);
-    pictureInfoBackdrop.endFill();
-    pictureInfoBackdrop.alpha = 0;
-    return pictureInfoBackdrop;
 }
 
 
@@ -202,13 +191,8 @@ function toggleSound(soundOnButton, soundOffButton) {
 
 
 function setButtonVisibility(soundOnButton, soundOffButton) {
-    if (GAME.sound.mute) {
-        soundOnButton.visible = false;
-        soundOffButton.visible = true;
-    } else {
-        soundOnButton.visible = true;
-        soundOffButton.visible = false;
-    }
+    soundOnButton.visible = !GAME.sound.mute;
+    soundOffButton.visible = GAME.sound.mute;
 }
 
 
@@ -291,8 +275,8 @@ function drawUIsingleButton(bg, txt, label, context) {
       
     var tweenedElements = nameText.concat(boxedText, centerButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
-    var toggleUIbutton  = drawToggleUIbutton(UIelements);
-    var toggleSoundButton = drawToggleSoundButton();
+    drawToggleUIbutton(UIelements);
+    drawToggleSoundButton();
     tweenElements(background, tweenedElements);
 }
 
@@ -309,8 +293,8 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
       
     var tweenedElements = nameText.concat(article, centerButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
-    var toggleUIbutton  = drawToggleUIbutton(UIelements);
-    var toggleSoundButton = drawToggleSoundButton();
+    drawToggleUIbutton(UIelements);
+    drawToggleSoundButton();
 
     tweenElements(background, tweenedElements);
 }
@@ -329,8 +313,8 @@ function drawUItwoButtons(bg, txt, label1, label2, context) {
       
     var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
-    var toggleUIbutton  = drawToggleUIbutton(UIelements);
-    var toggleSoundButton = drawToggleSoundButton();
+    drawToggleUIbutton(UIelements);
+    drawToggleSoundButton();
 
     tweenElements(background, tweenedElements);
 }
