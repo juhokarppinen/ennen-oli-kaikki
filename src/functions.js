@@ -221,9 +221,10 @@ function drawBoxedText(text) {
 
     // Esimerkki tekstin osien värityksestä. Pitänee muuttaa APIa, jotta voi
     // vapaasti valita, mitä väritetään ja millä värillä...
-    var n = text.indexOf(" ");
+    var n = text.indexOf(" ");                  // Ekan välin indeksi
+    var m = text.slice(n+1).indexOf(" ") + n;   // Tokan välin indeksi
     boxedText.addColor(HIGHLIGHT_COLOR, 0);
-    boxedText.addColor(STYLE.fill, n + 1);
+    boxedText.addColor(STYLE.fill, m + 1);      // Väritetään kaksi ekaa sanaa
 
     return [box, boxedText];
 }
