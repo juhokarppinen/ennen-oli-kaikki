@@ -1,5 +1,5 @@
 /*
- * This file contains global functions that are commonly needed in most states
+ * This file contains global functions that are commonly needed in most states.
  */
 
 
@@ -93,14 +93,11 @@ function drawTimeline(age) {
     graphics.endFill();
 
     graphics.lineStyle(lineWidth, lineColor, lineAlpha);
-    // Horizontal line
-    graphics.moveTo(leftEndpoint, timelineY);
+    graphics.moveTo(leftEndpoint, timelineY);                               // Horizontal line
     graphics.lineTo(rightEndpoint, timelineY);
-    // Left vertical bar
-    graphics.moveTo(leftEndpoint, timelineY - endpointOffset);
+    graphics.moveTo(leftEndpoint, timelineY - endpointOffset);              // Left vertical bar
     graphics.lineTo(leftEndpoint, timelineY + endpointOffset);
-    // Right vertical bar
-    graphics.moveTo(width - horizontalMargin, timelineY - endpointOffset);
+    graphics.moveTo(width - horizontalMargin, timelineY - endpointOffset);  // Right vertical bar
     graphics.lineTo(width - horizontalMargin, timelineY + endpointOffset);
 
     for (var i = 1; i < intervalCount; i++) {
@@ -139,7 +136,7 @@ function drawPictureInfo(infoText) {
 
 function drawToggleUIbutton(UIelements) {
     var gfx = GAME.add.graphics(0, 0);
-    gfx.beginFill(0xffffff,0.25);
+    gfx.beginFill(0xffffff, 0.25);
     gfx.drawCircle(50, 50, 80);
     gfx.endFill();
 
@@ -158,7 +155,7 @@ function drawToggleUIbutton(UIelements) {
 
 function drawToggleSoundButton() {
     var gfx = GAME.add.graphics(CENTER.x * 2 - 100, 0);
-    gfx.beginFill(0xffffff,0.25);
+    gfx.beginFill(0xffffff, 0.25);
     gfx.drawCircle(50, 50, 80);
     gfx.endFill();
 
@@ -203,8 +200,6 @@ function drawBoxedText(text) {
     var boxedText = GAME.add.text(GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, text, STYLE);
     boxedText.alpha = 0;
 
-    // Esimerkki tekstin osien värityksestä. Pitänee muuttaa APIa, jotta voi
-    // vapaasti valita, mitä väritetään ja millä värillä...
     var n = text.indexOf(" ");                  // Ekan välin indeksi
     var m = text.slice(n+1).indexOf(" ") + n;   // Tokan välin indeksi
     boxedText.addColor(HIGHLIGHT_COLOR, 0);
@@ -244,16 +239,22 @@ function createButton(x, y, buttonText, handler, context) {
     var button = GAME.add.button(x, y, 'button');
     button.anchor.set(0.5);
     button.inputEnabled = true;
-    //button.events.onInputDown.add()
+    button.events.onInputDown.add(depressButton, {btn: button});
     button.events.onInputUp.add(handler, context);
     button.alpha = 0;
 
     var text = GAME.add.text(button.centerX, button.centerY, buttonText, BUTTON_STYLE);
     text.anchor.set(0.5);
     text.alpha = 0;
-    button.bindedText = text;
+    button.label = text;
 
     return [button, text];
+}
+
+
+function depressButton() {
+    this.btn.tint = 0xCCCCCC;
+    this.btn.label.fill = BUTTON_CLICK.fill;
 }
 
 
