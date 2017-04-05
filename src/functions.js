@@ -244,12 +244,14 @@ function createButton(x, y, buttonText, handler, context) {
     var button = GAME.add.button(x, y, 'button');
     button.anchor.set(0.5);
     button.inputEnabled = true;
-    button.events.onInputDown.add(handler, context);
+    //button.events.onInputDown.add()
+    button.events.onInputUp.add(handler, context);
     button.alpha = 0;
 
     var text = GAME.add.text(button.centerX, button.centerY, buttonText, BUTTON_STYLE);
     text.anchor.set(0.5);
     text.alpha = 0;
+    button.bindedText = text;
 
     return [button, text];
 }
