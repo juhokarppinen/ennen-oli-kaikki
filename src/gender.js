@@ -13,7 +13,10 @@ var gender_state = {
 
         var tweenedElements = girlButton.concat(boyButton);
         var UIelements = tweenedElements.concat([pictureInfo]);
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
+
+        drawToggleUIbutton(UIelements);
+        drawToggleSoundButton();
+
         tweenElements(background, tweenedElements);
     },
 }

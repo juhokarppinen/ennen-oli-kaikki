@@ -6,7 +6,7 @@
 function tweenElements(background, otherElements) {
     GAME.add.tween(background).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true);
     otherElements.forEach(function(element) {
-        GAME.add.tween(element).to( { alpha: 1 }, 1000, Phaser.Easing.Linear.None, true, 1000);
+        GAME.add.tween(element).to( { alpha: 1 }, 500, Phaser.Easing.Linear.None, true, 1000);
     });
 }
 
@@ -50,9 +50,9 @@ function toggleUI(UIelements) {
 
     function switchAlpha(item) {
         if (item.alpha) {
-            GAME.add.tween(item).to( { alpha: 0 }, 0, Phaser.Easing.Linear.None, true, 0);
+            GAME.add.tween(item).to( { alpha: 0 }, 200, Phaser.Easing.Linear.None, true, 0);
         } else {
-            GAME.add.tween(item).to( { alpha: 1 }, 0, Phaser.Easing.Linear.None, true, 0);
+            GAME.add.tween(item).to( { alpha: 1 }, 200, Phaser.Easing.Linear.None, true, 0);
         }
     }
 }

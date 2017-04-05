@@ -5,7 +5,7 @@ var menu_state = {
 
     create: function() {
         var background = drawBackground('menubackground');
-        var pictureInfo = drawPictureInfo("Hugo Simberg");
+        var pictureInfo = drawPictureInfo(authors['menubackground']);
 
         var startButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, 'Aloita', pickGender, this);
         
@@ -13,7 +13,9 @@ var menu_state = {
         
         var tweenedElements = [titleText].concat(startButton);
         var UIelements = tweenedElements.concat(pictureInfo);
-        var toggleUIbutton = drawToggleUIbutton(UIelements);
+        drawToggleUIbutton(UIelements);
+        drawToggleSoundButton();
+
         tweenElements(background, tweenedElements);
     },
 
