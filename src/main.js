@@ -1,6 +1,7 @@
 var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preload, create: create, update: update });
 var PLAYER = {};
 var BACKGROUND_MUSIC;
+var PREVIOUS_BACKGROUND;
 
 var CENTER;
 
