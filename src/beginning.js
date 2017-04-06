@@ -29,7 +29,8 @@ var beginning_state = {
     },
 
     centerButtonHandler: function () {
-        if (Math.random() <= 0.18) {     // 18% die before going to school
+        if (Math.random() <= 0.18 && !PLAYER.diedInChildhood) {     // 18% die before going to school
+            PLAYER.diedInChildhood = true;
             if(Math.random() <= 0.60) {
                 PLAYER.causeofdeath = "keuhkokuume";
             } else {

@@ -8,14 +8,12 @@ var death_state = {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
             +"Tauti koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"! "
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
-            // Is there any data showing actual ages of deceased children? 
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
             + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"! "
             + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
-            // Is there any data showing actual ages of deceased children? 
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
@@ -54,10 +52,10 @@ var death_state = {
 
     getChildhoodDeathAge: function () {
         var odds = Math.random() * 18;
-        if (odds <= 0.15) PLAYER.age = 5 + Math.floor(Math.random() * 2);
-        else if (odds <= 1.3) PLAYER.age = 3 + Math.floor(Math.random() * 2);
-        else if (odds <= 2.0) PLAYER.age = 2 + Math.floor(Math.random());
-        else if (odds <= 4.1) PLAYER.age = 1 + Math.floor(Math.random());
-        else PLAYER.age = Math.floor(Math.random());
+        if (odds <= 0.15) return 5 + Math.floor(Math.random() * 2);
+        else if (odds <= 1.3) return 3 + Math.floor(Math.random() * 2);
+        else if (odds <= 2.0) return 2 + Math.floor(Math.random());
+        else if (odds <= 4.1) return 1 + Math.floor(Math.random());
+        else return Math.floor(Math.random());
     }
 }
