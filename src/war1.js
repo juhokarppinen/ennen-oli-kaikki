@@ -14,6 +14,6 @@ var war1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('war2');
     }
 }
