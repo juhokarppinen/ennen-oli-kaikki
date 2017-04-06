@@ -49,6 +49,7 @@ var beginning_state = {
 function createPlayerStats() {
     PLAYER.name = pickName(PLAYER.gender);
     PLAYER.age = 0;
+    PLAYER.previousAge = 0;
     PLAYER.causeofdeath = "";
     var locations = [{name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
         {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}, 

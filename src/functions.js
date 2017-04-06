@@ -83,7 +83,9 @@ function drawTimeline(age) {
     var timelineWidth = width - 2 * horizontalMargin;
     var intervalWidth = timelineWidth / intervalCount;
 
-    var circleX = leftEndpoint + timelineWidth / 100 * age;
+    var oldCircleX = leftEndpoint + timelineWidth / 100 * PLAYER.previousAge;
+    var circleXdelta = timelineWidth / 100 * (PLAYER.age - PLAYER.previousAge);
+    var circleX = timelineWidth / 100 * PLAYER.age;
 
     var graphics = GAME.add.graphics(0,0);
 
@@ -106,15 +108,17 @@ function drawTimeline(age) {
         graphics.lineTo(x, timelineY + midpointOffset);
     }
 
-    graphics.lineStyle(circleLineWidth, circleLineColor, circleLineAlpha);
-    graphics.beginFill(circleFillColor);
-    graphics.drawCircle(circleX, timelineY, circleDiameter);
-    graphics.endFill();
+    var animatedCircle = GAME.add.graphics(0,0);
+    animatedCircle.lineStyle(circleLineWidth, circleLineColor, circleLineAlpha);
+    animatedCircle.beginFill(circleFillColor);
+    animatedCircle.drawCircle(oldCircleX, timelineY, circleDiameter);
+    animatedCircle.endFill();
+    GAME.add.tween(animatedCircle).to( {x: circleXdelta}, 1200, Phaser.Easing.Linear.None, true, 0);
 
-    var yearText = GAME.add.text(circleX, timelineY - 33, age + 1917, YEAR_STYLE);
+    var yearText = GAME.add.text(circleX + leftEndpoint, timelineY - 33, age + 1917, YEAR_STYLE);
     yearText.anchor.setTo(0.5);
 
-    return [yearText, graphics];    
+    return [yearText, graphics, animatedCircle];
 }
 
 
@@ -281,6 +285,8 @@ function drawUIsingleButton(bg, txt, label, context) {
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
     tweenElements(background, tweenedElements);
+
+    PLAYER.previousAge = PLAYER.age;
 }
 
 
@@ -298,7 +304,6 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
-
     tweenElements(background, tweenedElements);
 }
 
@@ -318,6 +323,7 @@ function drawUItwoButtons(bg, txt, label1, label2, context) {
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
-
     tweenElements(background, tweenedElements);
+
+    PLAYER.previousAge = PLAYER.age;
 }
