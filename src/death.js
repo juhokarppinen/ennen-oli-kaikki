@@ -54,10 +54,10 @@ var death_state = {
 
     getChildhoodDeathAge: function () {
         var odds = Math.random() * 18;
-        if (odds <= 0.15) PLAYER.age = 5 + Math.floor(Math.random() * 2);
-        else if (odds <= 1.3) PLAYER.age = 3 + Math.floor(Math.random() * 2);
-        else if (odds <= 2.0) PLAYER.age = 2 + Math.floor(Math.random());
-        else if (odds <= 4.1) PLAYER.age = 1 + Math.floor(Math.random());
-        else PLAYER.age = Math.floor(Math.random());
+        if (odds <= 0.15) return 5 + Math.floor(Math.random() * 2);
+        else if (odds <= 1.3) return 3 + Math.floor(Math.random() * 2);
+        else if (odds <= 2.0) return 2 + Math.floor(Math.random());
+        else if (odds <= 4.1) return 1 + Math.floor(Math.random());
+        else return Math.floor(Math.random());
     }
 }
