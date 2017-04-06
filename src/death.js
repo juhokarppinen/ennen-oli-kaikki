@@ -9,14 +9,14 @@ var death_state = {
             +"Tauti koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"! "
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             // Is there any data showing actual ages of deceased children? 
-            PLAYER.age = Math.floor(Math.random() * 6);
+            PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
             + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"! "
             + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             // Is there any data showing actual ages of deceased children? 
-            PLAYER.age = Math.floor(Math.random() * 6);
+            PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
         if (PLAYER.causeofdeath === "sota") {
@@ -50,5 +50,14 @@ var death_state = {
 
     rightButtonHandler: function () {
         GAME.state.start('menu');
+    },
+
+    getChildhoodDeathAge: function () {
+        var odds = Math.random() * 18;
+        if (odds <= 0.15) PLAYER.age = 5 + Math.floor(Math.random() * 2);
+        else if (odds <= 1.3) PLAYER.age = 3 + Math.floor(Math.random() * 2);
+        else if (odds <= 2.0) PLAYER.age = 2 + Math.floor(Math.random());
+        else if (odds <= 4.1) PLAYER.age = 1 + Math.floor(Math.random());
+        else PLAYER.age = Math.floor(Math.random());
     }
 }
