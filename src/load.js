@@ -9,9 +9,19 @@ authors["homechorescountrybackground"] = "Hugo Simberg";
 authors["homechores1background"]       = "Väinö Kannisto";
 authors["studies1background"]          = "Tuntematon";
 authors["youthworkcitybackground"]     = "P.Jänis";
+authors["childworkcountrybackground"]  = "N. Verronen";
 authors["youthworkcountrybackground"]  = "Juhani Ahola";
 authors["deathbackground"]             = "Väinö Kannisto";
-authors["citybackground"]              = "Sakari Pälsi";
+authors["citybackground"]              = "Tuntematon (Keski-Suomen Museo)";
+authors["countrybackground"]           = "Antti Pänkäläinen (Keski-Suomen Museo)";
+authors["apprenticebackground"]        = "Tuntematon";
+authors["barnbackground"]              = "Väinö Kannisto";
+authors["dancebackground"]             = "Väinö Kannisto";
+authors["weddingbackground"]           = "Väinö Kannisto";
+authors["familybackground"]            = "Tuntematon";
+authors["childbackground"]             = "Pekka Kyytinen";
+authors["conscriptbackground"]         = "Tuntematon";
+authors["warbackground"]               = "K. Borg";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -19,12 +29,13 @@ authors["citybackground"]              = "Sakari Pälsi";
 var load_state = {
     preload: function() {
         this.addLoadingScreen();
-
+        //common
         GAME.load.image('button', 'assets/img/button.png');
         GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
         GAME.load.image('soundOnButton', 'assets/img/sound-on-button.png');
         GAME.load.image('soundOffButton', 'assets/img/sound-off-button.png');
         GAME.load.image('box', 'assets/img/box.png');
+        //backgrounds
         GAME.load.image('background', 'assets/img/background.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
@@ -48,8 +59,9 @@ var load_state = {
         GAME.load.image('childbackground', 'assets/img/child.jpg');
         GAME.load.image('conscriptbackground', 'assets/img/conscript.jpg');
         GAME.load.image('warbackground', 'assets/img/war.jpg');
+        //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
-
+        //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
 
         /*  This needs to be mentioned in the credits if it remains in the final
