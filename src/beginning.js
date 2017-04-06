@@ -1,7 +1,7 @@
 var beginning_state = {
 
     create: function () {
-        createPlayerStats();
+        createPlayerStats(PLAYER.gender);
 
         var classText;
         var genderText;
@@ -47,7 +47,10 @@ var beginning_state = {
     }
 }
 
-function createPlayerStats() {
+function createPlayerStats(gender) {
+    //get rid of possible "ghosts"
+    for (var member in PLAYER) delete PLAYER[member];
+    PLAYER.gender = gender;
     PLAYER.name = pickName(PLAYER.gender);
     PLAYER.age = 0;
     PLAYER.previousAge = 0;

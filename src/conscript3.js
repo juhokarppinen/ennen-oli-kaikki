@@ -5,7 +5,7 @@ var conscript3_state = {
         var text = "Et pääse kotiutumaan pitkäksi aikaa, sillä syksyllä 1939 "+
         "sinut kutsutaan suurharjoituksiin. ";
 
-        if ("undefined" !== typeof PLAYER.children[0].name) {
+        if ("undefined" !== typeof PLAYER.children) {
             text += (1939-PLAYER.children[0].year) + "-vuotias " + PLAYER.children[0].name + " vilkuttaa oven suussa lähtiessäsi ja "
             + PLAYER.spouse + " huikkaa \"Tule sitten pian kotiin!\"";
         }
