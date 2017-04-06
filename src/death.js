@@ -8,14 +8,12 @@ var death_state = {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
             +"Tauti koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"! "
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
-            // Is there any data showing actual ages of deceased children? 
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
             + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"! "
             + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
-            // Is there any data showing actual ages of deceased children? 
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death

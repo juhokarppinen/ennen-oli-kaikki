@@ -95,6 +95,8 @@ function create() {
     CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
     LEFT_BUTTON   = {x: CENTER.x * 0.6,     y: CENTER.y * defaultElevation};
     RIGHT_BUTTON  = {x: CENTER.x * 1.4,     y: CENTER.y * defaultElevation};
+
+    PLAYER.diedInChildhood = false;
 }
 
 function update() {
