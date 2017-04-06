@@ -3,9 +3,17 @@ var child1_state = {
     create: function() {
         PLAYER.age = 20;
         if (Math.random() <= 0.50) {
-            PLAYER.children = [{name: pickName("male"), gender: "male", year: 1937}];
+            var name = pickName("male");
+            while(name === PLAYER.name || name === PLAYER.spouse) {
+                name = pickName("male");
+            }
+            PLAYER.children = [{name: name, gender: "male", year: 1937}];
             var baby = "poikavauvan";
         } else {
+            var name = pickName("female");
+            while(name === PLAYER.name || name === PLAYER.spouse) {
+                name = pickName("female");
+            }
             PLAYER.children = [{name: pickName("female"), gender: "female", year: 1937}];
             var baby = "tyttövauvan";
         }
