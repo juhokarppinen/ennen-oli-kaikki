@@ -2,24 +2,22 @@ var studies1_state = {
 
     create: function() {
         PLAYER.age = 12;
-        var text = "Isäsi myöntyy, ja aloitat oppikoulun Jyväskylän tyttökoulussa. Opiskelu osoittautuu " +
-           "paljon vaikeammaksi kuin olit odottanut, mutta et aio luovuttaa. " +
-           "Luokkatoverillasi Hiljalla on vaikeuksia pysytellä perässä. Autatko häntä " + 
-           "koulutöissä?";
-        var leftButtonLabel = "Kyllä";
-        var rightButtonLabel = "Ei";
+        if(PLAYER.gender === "female") {
+            var gendertext = "Jyväskylän tyttökoulussa";
+            var image      = 'studieswomenbackground';
+        } else {
+            var gendertext = "Jyväskylän lyseossa";
+            var image      = 'studies1background';
+        }
+        var text = "Myönnyt vanhempiesi tahtoon ja aloitat opiskelun " + gendertext
+        + ". Opiskelu osoittautuu paljon vaikeammaksi kuin olit odottanut, mutta et aio luovuttaa.";
 
-        var image           = 'studies1background';
+        var centerButtonLabel = "Jatka";
 
-        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
-    leftButtonHandler: function () {
-        PLAYER.friend = "Hilja";
-        GAME.state.start('studies3');
-    },
-
-    rightButtonHandler: function () {
-        GAME.state.start('studies3');
+    centerButtonHandler: function() {
+        GAME.state.start('studies6');
     }
 }

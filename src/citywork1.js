@@ -15,10 +15,10 @@ var citywork1_state = {
         } else {
             if(PLAYER.gender === "male") {
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi vaneritehtaalla on tasaisen tappavaa, "
-                +"mutta saat uutta sisältöä elämään vasta perustetun kansalaisopiston kursseilta, joilla vietät kaiken vapaa-aikasi.";
+                +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi laskentoa ja koneenpiirustusta.";
             } else {
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi kotiapulaisena ei juuri poikkea töistäsi kotona, "
-                +"mutta saat uutta sisältöä elämään vasta perustetun kansalaisopiston kursseilta, joilla vietät kaiken vapaa-aikasi.";
+                +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi englantia ja kuorolaulua.";
             }
         }
         

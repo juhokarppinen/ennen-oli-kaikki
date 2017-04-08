@@ -7,22 +7,12 @@ var school2_state = {
         var centerButtonLabel;
         
         if(PLAYER.location.name === "Jyväskylä") {
-            if(PLAYER.class ==="poor") {
-                //todo:
-                //centerButtonLabel = "Kouluun";
-                //text += "Lukeminen ei ole lempipuuhaasi, mutta vanhempasi haluavat silti sinun jatkavan koulussa.";
-                centerButtonLabel = "Töihin";
-                text += "Perheelläsi ei ole varaa oppikouluun ja kotona " +
-                    "tarvitaan apuasi, joten koulutiesi päättyy tähän.";
-            } else if(PLAYER.class === "middle") {
-                centerButtonLabel = "Jatka";
-                text += "Olet viihtynyt koulussa ja opit nopeasti. Sinulle tarjotaan vapaaoppilaan paikkaa oppikouluun.";
-                //todo:
-                //centerButtonLabel = "Kouluun";
-                //text += "Lukeminen ei ole lempipuuhaasi, mutta vanhempasi haluavat silti sinun jatkavan koulussa.";
-            } else { //rich
+            if(PLAYER.class ==="rich") {
                 centerButtonLabel = "Jatka";
                 text += "Koulu ei kiinnosta, etkä selviä oppikoulun pääsykokeista ensi yrittämällä. Vanhempasi ovat kuolla häpeästä.";
+            } else {
+                text += "Lukeminen ei ole lempipuuhaasi, mutta vanhempasi haluavat silti sinun jatkavan koulussa.";
+                centerButtonLabel = "Jatka";
             }
         } else {
             if(PLAYER.class ==="poor") {
@@ -61,20 +51,10 @@ var school2_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.location.name === "Jyväskylä") {
-            if(PLAYER.class ==="poor") {
-                if(PLAYER.gender === "female") {
-                    GAME.state.start('homechores1');
-                } else {
-                    GAME.state.start('youthwork1');
-                }
-            } else if(PLAYER.class === "middle") {
-                if(PLAYER.gender === "female") {
-                    GAME.state.start('homechores1');
-                } else {
-                    GAME.state.start('youthwork1');
-                }
-            } else { //rich
+            if(PLAYER.class ==="rich") {
                 GAME.state.start('studies4');
+            } else {
+                GAME.state.start('homechores1');
             }
         } else {
             if(PLAYER.class ==="poor") {

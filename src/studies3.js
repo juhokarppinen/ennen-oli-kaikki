@@ -12,7 +12,7 @@ var studies3_state = {
                        "Seuraat unelmaasi ja lähdet sairaanhoitajakouluun.";
         }
         
-        var image     = 'studies1background';
+        var image     = 'studieswomenbackground';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);
