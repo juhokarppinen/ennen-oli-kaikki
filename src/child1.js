@@ -21,11 +21,21 @@ var child1_state = {
             var text = "Häpeissäsi asut nyt perheesi luona ja vältät ulkona liikkumista. " + 
                        "Onneksi synnytät terveen "+baby+"! Lapsi saa nimekseen "+PLAYER.children[0].name
                        +" ja äitisi ihastuu lapsenlapseen ikihyviksi.";
-            var image            = 'childbackground';
+            var image = 'childbackground';
         } else {
-            var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
-                    ". Sukulaiset ihastelevat pienokaista ja elämä hymyilee.";
             var image            = 'familybackground';
+            if(PLAYER.class === "poor") {
+                if(PLAYER.gender === "male") {
+                    text += PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
+                    +"Sinun on kuitenkin tehtävä kahta kauheammin töitä elättääksesi pikkuperheesi.";
+                } else {
+                    text += "Synnytys oli vaikea, ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "
+                    +"Miehesi joutuu kuitenkin paiskimaan kahta kauheammin töitä, eikä hän ehdi kotiin kuin nukkumaan.";
+                }
+            } else {
+                var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
+                ". Sukulaiset ihastelevat pienokaista ja elämä hymyilee.";
+            }
         }
         
         var centerButtonLabel = "Jatka";

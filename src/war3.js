@@ -5,7 +5,7 @@ var war3_state = {
         if("undefined" !== typeof PLAYER.spouse) {
             var text = "Olet päässyt pitkään odotetulle lomalle. Tulet kotiin, mutta huomaat, että kaikki ei ole hyvin kotirintamalla. "
             +"Vaimosi ja lapsesi kärsivät nälästä. Kotityöt ovat tekemättä. Autatko niissä vai käytätkö lomasi lepoon?";
-            var image     = 'warkworkbackground';
+            var image     = 'warworkbackground';
             var leftButtonLabel = "Auta";
             var rightButtonLabel = "Lomaile";
         } else {

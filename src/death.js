@@ -17,8 +17,12 @@ var death_state = {
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
-        if (PLAYER.causeofdeath === "sota") {
-            causeOfDeathText = "Sota koitui surmaksesi. Lepää rauhassa, " + PLAYER.name + "!";
+        if (PLAYER.causeofdeath === "sota1") {
+            if(PLAYER.gender === "female") {
+                causeOfDeathText = "Tuberkuloosi koitui surmaksesi. Kulkutaudit olivat syynä yli puolelle ikäluokkasi kuolemista sotavuosina. Lepää rauhassa, " + PLAYER.name + "!";
+            } else {
+                causeOfDeathText = "Ikäluokkasi miehistä kuoli hieman alle kymmenes talvisodassa. Muun muassa Taipeen taistoissa kuoli paljon keskisuomalaisia miehiä. Lepää rauhassa, " + PLAYER.name + "!";
+            }
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",

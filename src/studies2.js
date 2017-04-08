@@ -11,9 +11,10 @@ var studies2_state = {
                 var rightButtonLabel = "Jotain";
             } else {
                 if(PLAYER.location.name === "Jyväskylä") {
-                text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän seminaariin kouluttautumaan opettajaksi, vai...";
-                var leftButtonLabel  = "Seminaariin";
-                var rightButtonLabel = "Vai";
+                text += "Jatkatko isäsi jalanjäljillä ja menet Jyväskylän kasvatusopilliseen korkeakouluun jatkamaan opintojasi vai "
+                +"seuraatko sydäntäsi ja haet Helsingin yliopistoon opiskelemaan lääketiedettä?";
+                var leftButtonLabel  = "Kasvatusoppi";
+                var rightButtonLabel = "Lääketiede";
             } else {
                 text += "Haaveilet urasta puolustusvoimissa ja haluaisit ilmoittautua "
                 +"vapaaehtoisena armeijaan, mutta isäsi toivoisi sinun jatkavan opintojasi Helsingin yliopistossa. "

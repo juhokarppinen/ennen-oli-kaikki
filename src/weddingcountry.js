@@ -5,15 +5,20 @@ var weddingcountry_state = {
         var text = "Pidätte pienimuotoiset mutta romanttiset häät ja ";
         if (PLAYER.gender === "male") {
             if(PLAYER.class === "poor") {
-                text += "muutatte asumaan pieneen mökkiin työnantajasi tontin laidalle.";
+                text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
                 PLAYER.spouse = PLAYER.crush;
             } else {
                 text += "muutatte asumaan pieneen mökkiin isäsi tontin laidalle.";
                 PLAYER.spouse = PLAYER.crush;
             }
         } else {
-            text += "muutatte asumaan pieneen mökkiin hänen setänsä tontin laidalle.";
-            PLAYER.spouse = PLAYER.crush;
+            if(PLAYER.class === "poor") {
+                text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
+                PLAYER.spouse = PLAYER.crush;
+            } else {
+                text += "muutatte asumaan pieneen mökkiin hänen isänsä tontin laidalle.";
+                PLAYER.spouse = PLAYER.crush;
+            }
         }
         text += " Haluatte perustaa oman perheen.";
         

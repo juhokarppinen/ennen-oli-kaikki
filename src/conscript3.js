@@ -2,7 +2,7 @@ var conscript3_state = {
 
     create: function() {
         PLAYER.age = 22;
-        var text = "Et pääse kotiutumaan pitkäksi aikaa, sillä syksyllä 1939 "+
+        var text = "Et pääse kotiutumaan pitkäksi aikaa, sillä jo syksyllä 1939 "+
         "sinut kutsutaan suurharjoituksiin. ";
 
         if ("undefined" !== typeof PLAYER.children) {
