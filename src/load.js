@@ -8,7 +8,8 @@ authors["schoolbackground"]            = "Signe Brander";
 authors["homechorescountrybackground"] = "Hugo Simberg";
 authors["homechores1background"]       = "Väinö Kannisto";
 authors["studies1background"]          = "Tuntematon";
-authors["youthworkcitybackground"]     = "P.Jänis";
+authors["studieswomenbackground"]      = "Pietinen";
+authors["youthworkcitybackground"]     = "P. Jänis";
 authors["childworkcountrybackground"]  = "N. Verronen";
 authors["youthworkcountrybackground"]  = "Juhani Ahola";
 authors["deathbackground"]             = "Väinö Kannisto";
@@ -46,6 +47,7 @@ var load_state = {
         GAME.load.image('homechorescountrybackground', 'assets/img/homechorescountry.jpg');
         GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
         GAME.load.image('studies1background', 'assets/img/studies1.jpg');
+        GAME.load.image('studieswomenbackground', 'assets/img/studieswomen.jpg');
         GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');
         GAME.load.image('childworkcountrybackground', 'assets/img/childworkcountry.jpg');
         GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
