@@ -34,7 +34,7 @@ var studies2_state = {
             GAME.state.start('studies7');
         } else {
             if(PLAYER.location.name === "Jyväskylä") {
-                GAME.state.start('death');
+                GAME.state.start('studies8');
             } else {
                 GAME.state.start('studies7');
             }
@@ -46,7 +46,7 @@ var studies2_state = {
             GAME.state.start('homechores0');
         } else {
             if(PLAYER.location.name === "Jyväskylä") {
-                GAME.state.start('death');
+                GAME.state.start('studies7');
             } else {
                 GAME.state.start('death');
             }

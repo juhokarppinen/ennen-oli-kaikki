@@ -1,11 +1,18 @@
 var studies8_state = {
 
     create: function() {
-        PLAYER.age = 22;
-        var image     = 'studieswomenbackground';
-        var text = "Käytännön harjoittelu Kuopion lääninsairaalan kirurgisella osastolla sai sinut hetkeksi epäilemään, valitsitko sittenkin väärän alan. "
-        +"Leikkausten jälkeisistä kivuista kärsivien potilaiden vaikerrus saa sinut voimaan pahoin. "
-        +"Karaistuit kuitenkin pian, ja valmistuttuasi saat työpaikan Jyväskylän yleisestä sairaalasta.";
+        if(PLAYER.gender === "female") {
+            PLAYER.age = 22;
+            var image     = 'studieswomenbackground';
+            var text = "Käytännön harjoittelu Kuopion lääninsairaalan kirurgisella osastolla sai sinut hetkeksi epäilemään, valitsitko sittenkin väärän alan. "
+            +"Leikkausten jälkeisistä kivuista kärsivien potilaiden vaikerrus saa sinut voimaan pahoin. "
+            +"Karaistuit kuitenkin pian, ja valmistuttuasi saat työpaikan Jyväskylän yleisestä sairaalasta.";
+        } else {
+            PLAYER.age = 19;
+            var image     = 'teacherschoolbackground';
+            var text = "Opintosi Jyväskylän kasvatusopillisessa korkeakoulussa alkavat mallikkaasti. "
+            +"Isäsi on tyytyväinen valintaasi ja keskustelette paljon opinnoistasi.";
+        }
 
         var centerButtonLabel = "Jatka";
 
@@ -13,6 +20,10 @@ var studies8_state = {
     },
 
     centerButtonHandler: function() {
-        GAME.state.start('beginwar');
+        if(PLAYER.gender === "female") {
+            GAME.state.start('beginwar');
+        } else {
+            GAME.state.start('conscript');
+        }
     }
 }

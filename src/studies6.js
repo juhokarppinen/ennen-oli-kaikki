@@ -8,7 +8,7 @@ var studies6_state = {
         } else {
             PLAYER.age = 16;
             var gendertext = "töihin vaneritehtaalle, kuten isäsi.";
-            var image      = 'studies1background';
+            var image      = 'plywoodfactorybackground';
         }
         var text = "Olet sukusi ensimmäinen, jolla on keskikoulun päättötodistus, onneksi olkoon! "
         +"Vanhempiesi pettymykseksi todistus ei kuitenkaan takaa sinulle yhtään prameampaa elämää, vaan päädyt "+gendertext;
@@ -19,6 +19,10 @@ var studies6_state = {
     },
 
     centerButtonHandler: function() {
-        GAME.state.start('beginwar');
+        if(PLAYER.gender === "female") {
+            GAME.state.start('beginwar');
+        } else {
+            GAME.state.start('conscript');
+        }
     }
 }

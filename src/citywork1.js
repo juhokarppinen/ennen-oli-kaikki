@@ -5,24 +5,26 @@ var citywork1_state = {
 
         if(PLAYER.class === "poor") {
             if(PLAYER.gender === "male") {
+                var image     = 'riflefactorybackground';
                 var text = "Lähtö kannatti! Saat töitä Valtion kivääritehtaalta. Palkkasi on parempi kuin renkinä, "
                 +"mutta toisaalta joudut maksamaan asumisesta toisin kuin renkiaikoina. "
                 +"Työ on raskasta tehtaallakin, mutta olet silti tyytyväinen maisemanvaihdokseen.";
             } else {
+                var image     = 'citybackground';
                 var text = "Lähtö kannatti! Saat lastenhoitajan paikan apteekkarin talosta. "
                 +"Työhösi kuuluu lastenhoidon lisäksi siivousta ja ruoanlaittoa apteekkarin rouvan valvovan silmän alla.";
             }
         } else {
             if(PLAYER.gender === "male") {
+                var image     = 'plywoodfactorybackground';
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi vaneritehtaalla on rankkaa, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi laskentoa ja koneenpiirustusta.";
             } else {
+                var image     = 'citybackground';
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi kotiapulaisena ei juuri poikkea töistäsi kotona, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi englantia ja kuorolaulua.";
             }
         }
-        
-        var image     = 'citybackground';
             
         var centerButtonLabel = "Jatka";
 
@@ -30,6 +32,10 @@ var citywork1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('dance1');
+        if(PLAYER.gender === "male") {
+            GAME.state.start('conscript');
+        } else {
+            GAME.state.start('beginwar');
+        }
     }
 }

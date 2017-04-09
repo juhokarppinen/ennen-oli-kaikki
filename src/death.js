@@ -22,7 +22,7 @@ var death_state = {
             if(PLAYER.gender === "female") {
                 causeOfDeathText = "Tuberkuloosi koitui surmaksesi. Kulkutaudit olivat syynä yli puolelle ikäluokkasi kuolemista sotavuosina. "+ ripText;
             } else {
-                causeOfDeathText = "Ikäluokkasi miehistä kuoli hieman alle kymmenes talvisodassa. Muun muassa Taipeen taistoissa kuoli paljon keskisuomalaisia miehiä. "+ ripText;
+                causeOfDeathText = "Ikäluokkasi miehistä kuoli hieman alle kymmenes talvisodassa. Muun muassa Taipaleen taistoissa kuoli paljon keskisuomalaisia miehiä. "+ ripText;
             }
         }
 
