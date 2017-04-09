@@ -1,27 +1,16 @@
 var citywork2_state = {
 
     create: function() {
-        PLAYER.age = 16;
+        PLAYER.age = 13;
+        var text = "Mikä onni, sait kuin saitkin paikan makeistehtaalta. Tehtaalle on juuri hankittu uusi lakritsikone jonka välittömässä läheisyydessä tulet viettämään vielä monta vuotta.";
 
-        if(PLAYER.class === "rich") {
-            var text = "Pääsit isäsi suhteilla myyjäksi vaateliikkeeseen. Vaikka "+
-                       "tehtävää riittää, olet oikein tyytyväinen työhösi.";
-        } else {
-            var text = "Ompelutaidoillasi pääsit töihin ompeluliikkeeseen. " +
-                       "Vaikka tehtävää riittää, olet oikein tyytyväinen työhösi.";
-        }
-
-        var image               = 'homechores1background';
+        var image               = 'candyfactorybackground';
         var centerButtonLabel   = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {
-        if(PLAYER.class !== "rich") {
-            GAME.state.start('dance1');
-        } else {
-            GAME.state.start('death');
-        }
+        GAME.state.start('beginwar');
     }
 }

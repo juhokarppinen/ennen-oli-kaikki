@@ -8,13 +8,15 @@ authors["schoolbackground"]            = "Signe Brander";
 authors["homechorescountrybackground"] = "Hugo Simberg";
 authors["homechores1background"]       = "Väinö Kannisto";
 authors["studies1background"]          = "Tuntematon";
-authors["youthworkcitybackground"]     = "P.Jänis";
+authors["studieswomenbackground"]      = "Pietinen";
+authors["youthworkcitybackground"]     = "P. Jänis";
 authors["childworkcountrybackground"]  = "N. Verronen";
 authors["youthworkcountrybackground"]  = "Juhani Ahola";
 authors["deathbackground"]             = "Väinö Kannisto";
 authors["citybackground"]              = "Tuntematon (Keski-Suomen Museo)";
 authors["countrybackground"]           = "Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["apprenticebackground"]        = "Tuntematon";
+authors["candyfactory"]                = "Valokuvaamo Päijänne (Keski-Suomen Museo)";
 authors["barnbackground"]              = "Väinö Kannisto";
 authors["dancebackground"]             = "Väinö Kannisto";
 authors["weddingbackground"]           = "Väinö Kannisto";
@@ -22,6 +24,7 @@ authors["familybackground"]            = "Tuntematon";
 authors["childbackground"]             = "Pekka Kyytinen";
 authors["conscriptbackground"]         = "Tuntematon";
 authors["warbackground"]               = "K. Borg";
+authors["warworkbackground"]           = "Väinö Kannisto";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -47,6 +50,7 @@ var load_state = {
         GAME.load.image('homechorescountrybackground', 'assets/img/homechorescountry.jpg');
         GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
         GAME.load.image('studies1background', 'assets/img/studies1.jpg');
+        GAME.load.image('studieswomenbackground', 'assets/img/studieswomen.jpg');
         GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');
         GAME.load.image('childworkcountrybackground', 'assets/img/childworkcountry.jpg');
         GAME.load.image('youthworkcountrybackground', 'assets/img/youthworkcountry.jpg');
@@ -54,6 +58,7 @@ var load_state = {
         GAME.load.image('citybackground', 'assets/img/jyvaskyla_city.jpg');
         GAME.load.image('countrybackground', 'assets/img/jyvaskyla_country.jpg');
         GAME.load.image('apprenticebackground', 'assets/img/apprentice.jpg');
+        GAME.load.image('candyfactorybackground', 'assets/img/candyfactory.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');
         GAME.load.image('dancebackground', 'assets/img/dance.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
@@ -61,6 +66,7 @@ var load_state = {
         GAME.load.image('childbackground', 'assets/img/child.jpg');
         GAME.load.image('conscriptbackground', 'assets/img/conscript.jpg');
         GAME.load.image('warbackground', 'assets/img/war.jpg');
+        GAME.load.image('warworkbackground', 'assets/img/warwork.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
         //music

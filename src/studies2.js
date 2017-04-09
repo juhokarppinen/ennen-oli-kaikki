@@ -1,9 +1,9 @@
 var studies2_state = {
 
     create: function() {
-        PLAYER.age = 16;
-
         if (PLAYER.gender === "male") {
+            PLAYER.age = 16;
+            var image     = 'studies1background';
             var text = "Onneksi olkoon, tuore ylioppilas! ";
             if(PLAYER.class === "middle") {
                 "Tähän keskiluokkalaiselle jotain jatkoa.";
@@ -11,26 +11,26 @@ var studies2_state = {
                 var rightButtonLabel = "Jotain";
             } else {
                 if(PLAYER.location.name === "Jyväskylä") {
-                text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän seminaariin kouluttautumaan opettajaksi, vai...";
-                var leftButtonLabel  = "Seminaariin";
-                var rightButtonLabel = "Vai";
+                text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän kasvatusopilliseen korkeakouluun jatkamaan opintojasi vai "
+                +"seuraatko sydäntäsi ja haet Helsingin yliopistoon opiskelemaan lääketiedettä?";
+                var leftButtonLabel  = "Kasvatusoppi";
+                var rightButtonLabel = "Lääketiede";
             } else {
-                text += "Haaveilet urasta puolustusvoimissa ja haluaisit ilmoittautua "
-                +"vapaaehtoisena armeijaan, mutta isäsi toivoisi sinun jatkavan opintojasi Helsingin yliopistossa. "
-                +" Mitä teet?";
-                var leftButtonLabel  = "Yliopistoon";
-                var rightButtonLabel = "Armeijaan";
+                text += "Onneksi olkoon, tuore ylioppilas! Vanhempasi toivovat sinun jatkavan isäsi jalanjäljissä, mikä "
+                +"vaatisi korkeakouluopintoja Helsingissä. Lähdetkö vai jäätkö?";
+                var leftButtonLabel  = "Lähdet";
+                var rightButtonLabel = "Jäät";
             }
             }
         } else {
-            var text = "Onneksi olkoon, tuore keskikoulusta valmistunut! Haaveilet sairaanhoitajan ammatista, mutta "
-            +"opiskellaksesi sairaanhoitajaksi sinun pitäisi muuttaa Kuopioon. Vanhempasi toivoisivat sinun jäävän kotiin. "
+            PLAYER.age = 18;
+            var image     = 'studieswomenbackground';
+            var text = "Valmistut oppikoulusta parhain arvosanoin ja haaveilet sairaanhoitajan ammatista. "
+            +"Opiskellaksesi sairaanhoitajaksi sinun pitäisi muuttaa Kuopioon, mutta vanhempasi toivoisivat sinun jäävän kotiin. "
             +"Lähdetkö vai jäätkö?";
             var leftButtonLabel  = "Sairaanhoitajaksi";
             var rightButtonLabel = "Kotiin";
         }
-        
-        var image     = 'studies1background';
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },

@@ -3,37 +3,30 @@ var homechores1_state = {
     create: function() {
         PLAYER.age = 12;
 
-        if (PLAYER.class === "poor") {
-            var image     = 'homechores1background';
-            var text = "Olet hyvä apu kotona, mutta perheeseen syntyy uusi vauva. "
-                    +"Perheesi rahatilanne on niin tiukka, että joudut etsimään työtä. "
-                    +"Lähdetkö töihin vaneritehtaalle vai kivääritehtaalle?";
-            var leftButtonLabel  = "Vaneri";
-            var rightButtonLabel = "Kivääri";
-        } else if(PLAYER.noschool === false) {
-            var image     = 'homechores1background';
-            var text      = "Haluaisit ottaa vapaapaikan vastaan, mutta vanhempasi haluavat sinut pois koulunpenkiltä ja töihin. "
-                            +"Olisi unelmiesi täyttymys, jos pääsisit opiskelemaan sairaanhoitajaksi! Yritätkö vakuuttaa isäsi opinnoistasi?";
-            var leftButtonLabel  = "Kyllä";
-            var rightButtonLabel = "Ei";
+        if(PLAYER.gender === "female") {
+            var gendertext = "kotiapulaiseksi";
+            var rightButtonLabel = "Kotiapulaiseksi";
+        } else {
+            var gendertext = "juoksupojaksi leipomoon";
+            var rightButtonLabel = "Juoksupojaksi";
         }
+
+        var text = "Taivutko vanhempiesi tahtoon ja jatkat koulunpenkillä vai hankkiudutko mieluummin "+gendertext+"?";
+        var leftButtonLabel  = "Kouluun";
+        var image     = 'schoolbackground';
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
 
     leftButtonHandler: function () {
-        if(PLAYER.class === "poor") {
-            GAME.state.start('death');
-        } else {
-            GAME.state.start('studies1');
-        }
+        GAME.state.start('studies1');
     },
 
     rightButtonHandler: function () {
-        if(PLAYER.class === "poor") {
+        if(PLAYER.gender === "male") {
             GAME.state.start('death');
         } else {
-            GAME.state.start('homechores2');
+            GAME.state.start('death');
         }
     }
 }

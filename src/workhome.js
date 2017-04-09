@@ -3,7 +3,7 @@ var workhome_state = {
     create: function() {
 
         var text = PLAYER.crush +" menee naimisiin serkkusi kanssa. "
-        +" Jatkat töitä normaalisti, ja elämä jatkuu.";
+        +"Jatkat töitä normaalisti, ja elämä jatkuu.";
         
         var image            = 'youthworkcountrybackground';
         var centerButtonLabel = "Jatka";

@@ -2,23 +2,28 @@ var death_state = {
 
     create: function() {
         var causeOfDeathText = "";
+        var ripText = "Lepää rauhassa, " + PLAYER.name +"! ";
 
         // Childhood death
         if (PLAYER.causeofdeath === "keuhkokuume") {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
-            +"Tauti koitui sinunkin kohtalokseksi. Lepää rauhassa, " + PLAYER.name +"! "
+            +"Tauti koitui sinunkin kohtalokseksi. "+ ripText
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
-            + "Tauti koitui sinunkin kohtaloksesi. Lepää rauhassa, " + PLAYER.name +"! "
+            + "Tauti koitui sinunkin kohtaloksesi. "+ ripText
             + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
-        if (PLAYER.causeofdeath === "sota") {
-            causeOfDeathText = "Sota koitui surmaksesi. Lepää rauhassa, " + PLAYER.name + "!";
+        if (PLAYER.causeofdeath === "sota1") {
+            if(PLAYER.gender === "female") {
+                causeOfDeathText = "Tuberkuloosi koitui surmaksesi. Kulkutaudit olivat syynä yli puolelle ikäluokkasi kuolemista sotavuosina. "+ ripText;
+            } else {
+                causeOfDeathText = "Ikäluokkasi miehistä kuoli hieman alle kymmenes talvisodassa. Muun muassa Taipeen taistoissa kuoli paljon keskisuomalaisia miehiä. "+ ripText;
+            }
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",

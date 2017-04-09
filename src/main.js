@@ -55,11 +55,18 @@ function preload() {
     GAME.state.add('studies3', studies3_state);
     GAME.state.add('studies4', studies4_state);
     GAME.state.add('studies5', studies5_state);
+    GAME.state.add('studies6', studies6_state);
     GAME.state.add('servant0', servant0_state);
     GAME.state.add('servant1', servant1_state);
     GAME.state.add('servant2', servant2_state);
     GAME.state.add('servant3', servant3_state);
     GAME.state.add('servant4', servant4_state);
+    GAME.state.add('servant5', servant5_state);
+    GAME.state.add('torppa1', torppa1_state);
+    GAME.state.add('torppa2', torppa2_state);
+    GAME.state.add('torppa3', torppa3_state);
+    GAME.state.add('torppa4', torppa4_state);
+    GAME.state.add('barn0', barn0_state);
     GAME.state.add('barn1', barn1_state);
     GAME.state.add('barn2', barn2_state);
     GAME.state.add('barn3', barn3_state);
@@ -77,6 +84,8 @@ function preload() {
     GAME.state.add('conscriptwife', conscriptwife_state);
     GAME.state.add('beginwar', beginwar_state);
     GAME.state.add('war1', war1_state);
+    GAME.state.add('war2', war2_state);
+    GAME.state.add('war3', war3_state);
     GAME.state.add('wartime1', wartime1_state);
     GAME.state.add('death', death_state);
     

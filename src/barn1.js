@@ -4,16 +4,12 @@ var barn1_state = {
         PLAYER.age = 19;
 
         if (PLAYER.gender === "male") {
-            PLAYER.crush = pickName("female");
-            var servant = "piika ";
+            var text = "Et haluaisi illan päättyvän. Kotimatkanne varrella sijaitsee lato, ja "+PLAYER.crush
+            +" tuntuu katsovan sinua merkitsevästi. Ehdotatko pientä lepotaukoa ladossa?";
         } else {
-            PLAYER.crush = pickName("male");
-            var servant = "renki ";
+            var text = "Et haluaisi illan päättyvän. "+PLAYER.crush+" taitaa olla samaa mieltä, "
+            +"sillä hän ehdottaa lepotaukoa kotimatkanne varrella sijaitsevassa ladossa. Suostutko ehdotukseen?";
         }
-
-        var text = "Kauan odotetut tanssit saapuvat, ja kaikki seudun nuoret ovat paikalla. "
-        +"Tuttu " + servant + PLAYER.crush + " on silmäillyt sinua " +
-        "merkitsevästi koko illan. Lähdetkö hänen kanssaan heinälatoon?";
 
         var image            = 'barnbackground';
         var leftButtonLabel  = "Kyllä";
