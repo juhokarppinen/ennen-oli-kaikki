@@ -10,7 +10,7 @@ var barn2_state = {
             var text = "Ladossa vietetty hetki kaduttaa, ja olet vältellyt heilaasi sen jälkeen. "
                 +"Muutaman kuukauden kuluttua huomaat kauhuksesi olevasi raskaana. "
                 +"Huhut tilastasi kantautuvat talon emännän korviin. Hän uhkaa potkia teidät molemmat pellolle, "
-                +"jos ette mene naimisiin, joten sinun on suostuttava rengin kosintaan.";
+                +"jos ette mene naimisiin.";
         }
 
         var image            = 'barnbackground';

@@ -46,6 +46,7 @@ function preload() {
     GAME.state.add('homechores3', homechores3_state);
     GAME.state.add('youthwork1', youthwork1_state);
     GAME.state.add('youthwork2', youthwork2_state);
+    GAME.state.add('youthwork3', youthwork3_state);
     GAME.state.add('citywork0', citywork0_state);
     GAME.state.add('citywork1', citywork1_state);
     GAME.state.add('citywork2', citywork2_state);
@@ -56,6 +57,8 @@ function preload() {
     GAME.state.add('studies4', studies4_state);
     GAME.state.add('studies5', studies5_state);
     GAME.state.add('studies6', studies6_state);
+    GAME.state.add('studies7', studies7_state);
+    GAME.state.add('studies8', studies8_state);
     GAME.state.add('servant0', servant0_state);
     GAME.state.add('servant1', servant1_state);
     GAME.state.add('servant2', servant2_state);
