@@ -2,7 +2,7 @@ var weddingcountry_state = {
 
     create: function() {
 
-        var text = "Pidätte pienimuotoiset mutta romanttiset häät ja ";
+        var text = "Pidätte pienimuotoiset häät ja ";
         if (PLAYER.gender === "male") {
             if(PLAYER.class === "poor") {
                 text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";

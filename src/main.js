@@ -61,6 +61,7 @@ function preload() {
     GAME.state.add('servant2', servant2_state);
     GAME.state.add('servant3', servant3_state);
     GAME.state.add('servant4', servant4_state);
+    GAME.state.add('servant5', servant5_state);
     GAME.state.add('torppa1', torppa1_state);
     GAME.state.add('torppa2', torppa2_state);
     GAME.state.add('torppa3', torppa3_state);

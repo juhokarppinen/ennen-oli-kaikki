@@ -22,7 +22,7 @@ var servant0_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.noschool === true) {
-            GAME.state.start('barn1');
+            GAME.state.start('servant4');
         } else {
             GAME.state.start('servant3');
         }

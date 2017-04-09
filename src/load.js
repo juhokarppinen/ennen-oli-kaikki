@@ -16,6 +16,7 @@ authors["deathbackground"]             = "Väinö Kannisto";
 authors["citybackground"]              = "Tuntematon (Keski-Suomen Museo)";
 authors["countrybackground"]           = "Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["apprenticebackground"]        = "Tuntematon";
+authors["candyfactory"]                = "Valokuvaamo Päijänne (Keski-Suomen Museo)";
 authors["barnbackground"]              = "Väinö Kannisto";
 authors["dancebackground"]             = "Väinö Kannisto";
 authors["weddingbackground"]           = "Väinö Kannisto";
@@ -55,6 +56,7 @@ var load_state = {
         GAME.load.image('citybackground', 'assets/img/jyvaskyla_city.jpg');
         GAME.load.image('countrybackground', 'assets/img/jyvaskyla_country.jpg');
         GAME.load.image('apprenticebackground', 'assets/img/apprentice.jpg');
+        GAME.load.image('candyfactorybackground', 'assets/img/candyfactory.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');
         GAME.load.image('dancebackground', 'assets/img/dance.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
