@@ -2,7 +2,7 @@ var citywork1_state = {
 
     create: function() {
         PLAYER.age = 16;
-
+        PLAYER.movedtocity = true;
         if(PLAYER.class === "poor") {
             if(PLAYER.gender === "male") {
                 var image     = 'riflefactorybackground';

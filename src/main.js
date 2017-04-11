@@ -47,6 +47,7 @@ function preload() {
     GAME.state.add('youthwork1', youthwork1_state);
     GAME.state.add('youthwork2', youthwork2_state);
     GAME.state.add('youthwork3', youthwork3_state);
+    GAME.state.add('countrywork1', countrywork1_state);
     GAME.state.add('citywork0', citywork0_state);
     GAME.state.add('citywork1', citywork1_state);
     GAME.state.add('citywork2', citywork2_state);
@@ -86,7 +87,11 @@ function preload() {
     GAME.state.add('conscript', conscript_state);
     GAME.state.add('conscript2', conscript2_state);
     GAME.state.add('conscript3', conscript3_state);
+    GAME.state.add('conscript4', conscript4_state);
+    GAME.state.add('noconscript', noconscript_state);
     GAME.state.add('conscriptwife', conscriptwife_state);
+    GAME.state.add('conscriptwife2', conscriptwife2_state);
+    GAME.state.add('beforewar', beforewar_state);
     GAME.state.add('beginwar', beginwar_state);
     GAME.state.add('war1', war1_state);
     GAME.state.add('war2', war2_state);
