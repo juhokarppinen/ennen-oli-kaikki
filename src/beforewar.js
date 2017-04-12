@@ -2,7 +2,11 @@ var beforewar_state = {
 
     create: function() {
         PLAYER.age = 22;
-        if(PLAYER.location.name === "Jyväskylä") {
+        if(PLAYER.gender === "male") {
+          var text = "Kylän raitilla on hiljaista, sillä lähes kaikki työikäiset miehet on "
+          +"kutsuttu ylimääräisiin kertausharjoituksiin. Tunnet itsesi toisen luokan "
+          +"kansalaiseksi, kun joudut jäämään naisväen kanssa kotirintamalle.";  
+        } else if(PLAYER.location.name === "Jyväskylä") {
             var text = "Kaupungin kadut hiljenevät lokakuussa 1939, kun kaikki reserviläiset "
             +"kutsutaan ylimääräisiin kertaushajoituksiin. Myös veljesi saa kutsun. "
             +"Isäsi yrittää lohduttaa nyyhkyttävää äitiäsi sanomalla, että ehkä kyse "

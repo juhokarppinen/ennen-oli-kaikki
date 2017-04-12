@@ -23,6 +23,6 @@ var conscript_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('conscript2');
+        GAME.state.start('conscript3');
     }
 }

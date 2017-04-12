@@ -13,10 +13,12 @@ var beginwar_state = {
     },
 
     centerButtonHandler: function () {
-        if(PLAYER.gender === "male") {
-            GAME.state.start('war1');
+        if(PLAYER.noconscript === true) {
+            GAME.state.start('death');
+        } else if(PLAYER.gender === "male") {
+            GAME.state.start('death');
         } else {
-            GAME.state.start('wartime1');
+            GAME.state.start('death');
         }
     }
 }

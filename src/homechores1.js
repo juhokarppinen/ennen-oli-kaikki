@@ -23,10 +23,6 @@ var homechores1_state = {
     },
 
     rightButtonHandler: function () {
-        if(PLAYER.gender === "male") {
-            GAME.state.start('death');
-        } else {
-            GAME.state.start('death');
-        }
+        GAME.state.start('youthwork3');
     }
 }

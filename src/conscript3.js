@@ -5,12 +5,12 @@ var conscript3_state = {
         if(PLAYER.university === true) {
             var text = "Toinen lukuvuotesi yliopistossa on vasta päässyt hyvään vauhtiin, kun saat "
             +"kutsun ylimääräisiin kertausharjoituksiin. Kirje ei tullut täytenä yllätyksenä, "
-            +"sillä olette opiskelutovereittesi kanssa seuranneet uhkakuvia täynnä olevia uutisia "
+            +"sillä olet seurannut opiskelutovereidesi kanssa uhkakuvia täynnä olevia uutisia "
             +"huolellisesti koko alkusyksyn. Sinun on lähdettävä suoraan kohti Viipuria.";
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity === false) {
             var text = "Lokakuussa 1939 sinut kutsutaan ylimääräisiin kertausharjoituksiin. "
             +"Viime töiksesi ennen lähtöäsi kokoontumispaikalle valmistelet työnantajasi hevoset puolustusvoimien käyttöön. ";
-        } else if(PLAYER.location.name !== "Jyväskylä") {
+        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity === false) {
             var text = "Olet hädintuskin ehtinyt sopeutua siviilielämään armeijan jäljiltä, kun saat kutsun ylimääräisiin "
             +"kertausharjoituksiin lokakuussa 1939. Sadonkorjuu ja syystyöt on onneksi "
             +"saatu hyvissä ajoin päätökseen, joten voit jättää tilan huoletta kotijoukkojen hoidettavaksi harjoitusten ajaksi.";
