@@ -8,13 +8,8 @@ var studies5_state = {
             +"Pakenet yksinäisyyttä ja koti-ikävää kirjojen maailmaan ja alat haaveilla yliopisto-opinnoista.";
         } else {
             var image     = 'studieswomenbackground';
-            var text = "Ahkera opiskelusi tuottaa tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun ";
-
-            if(PLAYER.location.name === "Jämsä") {
-                text += "Jämsän yhteiskoulussa."
-            }   else {
-                text += "Jyväskylän tyttökoulussa."
-            }
+            var text = "Ahkera opiskelusi tuottaa tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun "
+            +"Jyväskylän tyttökoulussa.";
         }
 
         var centerButtonLabel = "Jatka";

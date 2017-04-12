@@ -5,14 +5,10 @@ var studies4_state = {
         +"palkkaavat sinulle yksityisopettajan iltojesi ratoksi. Kotiopetus tuottaa "
         +"tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun ";
 
-        if(PLAYER.location.name === "Jämsä") {
-            text += "Jämsän yhteiskoulussa."
-        }else {
-            if(PLAYER.gender === "female") {
-                text += "Jyväskylän tyttökoulussa."
-            } else {
-                text += "Jyväskylän lyseossa."
-            }
+        if(PLAYER.gender === "female") {
+            text += "Jyväskylän tyttökoulussa.";
+        } else {
+            text += "Jyväskylän lyseossa.";
         }
 
         var centerButtonLabel = "Jatka";

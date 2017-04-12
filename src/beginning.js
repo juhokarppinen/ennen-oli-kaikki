@@ -37,9 +37,9 @@ var beginning_state = {
                 PLAYER.causeofdeath = "espanjantauti";
             }
             GAME.state.start('death');
-        } else if (PLAYER.location.name === "Saarijärvi" && PLAYER.class === "poor") {            
+        } else if (PLAYER.class === "poor" && Math.random() <= 0.20) {            
             PLAYER.noschool = true;
-            GAME.state.start('school0'); // poor Saarijärvi children were too far from school and were relieved
+            GAME.state.start('school0');
         } else {
             PLAYER.noschool = false;
             GAME.state.start('school1');
@@ -48,7 +48,7 @@ var beginning_state = {
 }
 
 function createPlayerStats(gender, diedInChildhood) {
-    //get rid of possible "ghosts"
+    //gets rid of possible "ghosts"
     for (var member in PLAYER) delete PLAYER[member];
     PLAYER.gender = gender;
     PLAYER.diedInChildhood = diedInChildhood;
@@ -56,16 +56,13 @@ function createPlayerStats(gender, diedInChildhood) {
     PLAYER.age = 0;
     PLAYER.previousAge = 0;
     PLAYER.causeofdeath = "";
-    var locations = [{name: "Hankasalmi", to: "Hankasalmelle", at: "Hankasalmella"},
-        {name: "Jämsä", to: "Jämsään", at: "Jämsässä"}, {name: "Saarijärvi", to: "Saarijärvelle", at: "Saarijärvellä"}, 
-        {name: "Jyväskylän maalaiskunta", to: "Jyväskylän maalaiskuntaan", at: "Jyväskylän maalaiskunnassa"}];
     if (Math.random() <= 0.20) { 
         PLAYER.location = {name: "Jyväskylä", to: "Jyväskylään", at: "Jyväskylässä"};
     } else {
-        PLAYER.location = locations[Math.floor(Math.random()*locations.length)];
+        PLAYER.location = {name: "maaseutu Jyväskylän lähellä", to: "maaseudulle Jyväskylän lähelle", at: "maaseudulla Jyväskylän lähellä"};
     }
     var classes = ["poor", "middle"];
-    if (Math.random() <= 0.10 && PLAYER.location.name !== "Hankasalmi") { 
+    if (Math.random() <= 0.10) { 
         PLAYER.class = "rich";
     } else {
         PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
