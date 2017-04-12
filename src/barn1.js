@@ -19,10 +19,18 @@ var barn1_state = {
     },
 
     leftButtonHandler: function () {
-        GAME.state.start('barn2');
+        if(PLAYER.gender === "female" && PLAYER.noschool === true) {
+            GAME.state.start('barn3');
+        } else {
+            GAME.state.start('barn2');
+        }
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('barn4');
+        if(PLAYER.gender === "female" && PLAYER.noschool === true) {
+            GAME.state.start('barn5');
+        } else {
+            GAME.state.start('barn4');
+        }
     }
 }

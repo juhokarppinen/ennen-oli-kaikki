@@ -8,9 +8,9 @@ var barn2_state = {
             +"Häät sovitaan seuraavalle viikolle.";
         } else {
             var text = "Ladossa vietetty hetki kaduttaa, ja olet vältellyt heilaasi sen jälkeen. "
-                +"Muutaman kuukauden kuluttua huomaat kauhuksesi olevasi raskaana ja "
-                +"huhut tilastasi kantautuvat talon emännän korviin. Hän uhkaa potkia teidät molemmat pellolle, "
-                +"jos ette mene naimisiin. Sinun on suostuttava rengin kosintaan.";
+            +"Muutaman kuukauden kuluttua huomaat kauhuksesi olevasi raskaana ja "
+            +"huhut tilastasi kantautuvat talon emännän korviin. Hän uhkaa potkia teidät molemmat pellolle, "
+            +"jos ette mene naimisiin. Sinun on suostuttava rengin kosintaan.";
         }
 
         var image            = 'barnbackground';

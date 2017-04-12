@@ -77,6 +77,7 @@ function preload() {
     GAME.state.add('barn2', barn2_state);
     GAME.state.add('barn3', barn3_state);
     GAME.state.add('barn4', barn4_state);
+    GAME.state.add('barn5', barn5_state);
     GAME.state.add('weddingcountry', weddingcountry_state);
     GAME.state.add('child1', child1_state);
     GAME.state.add('dance1', dance1_state);
