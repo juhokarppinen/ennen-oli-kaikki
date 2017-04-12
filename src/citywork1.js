@@ -10,7 +10,7 @@ var citywork1_state = {
                 +"mutta toisaalta joudut maksamaan asumisesta toisin kuin renkiaikoina. "
                 +"Työ on raskasta tehtaallakin, mutta olet silti tyytyväinen maisemanvaihdokseen.";
             } else {
-                var image     = 'citybackground';
+                var image     = 'homeassistantbackground';
                 var text = "Lähtö kannatti! Saat lastenhoitajan paikan apteekkarin talosta. "
                 +"Työhösi kuuluu lastenhoidon lisäksi siivousta ja ruoanlaittoa apteekkarin rouvan valvovan silmän alla.";
             }
@@ -20,7 +20,7 @@ var citywork1_state = {
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi vaneritehtaalla on rankkaa, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi laskentoa ja koneenpiirustusta.";
             } else {
-                var image     = 'citybackground';
+                var image     = 'homeassistantbackground';
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi kotiapulaisena ei juuri poikkea töistäsi kotona, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi englantia ja kuorolaulua.";
             }
@@ -35,7 +35,7 @@ var citywork1_state = {
         if(PLAYER.gender === "male") {
             GAME.state.start('conscript');
         } else {
-            GAME.state.start('beginwar');
+            GAME.state.start('beforewar');
         }
     }
 }

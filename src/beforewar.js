@@ -3,9 +3,9 @@ var beforewar_state = {
     create: function() {
         PLAYER.age = 22;
         if(PLAYER.gender === "male") {
-          var text = "Kylän raitilla on hiljaista, sillä lähes kaikki työikäiset miehet on "
+          var text = "Kylän raitilla on hiljaista lokakuussa 1939, sillä lähes kaikki työikäiset miehet on "
           +"kutsuttu ylimääräisiin kertausharjoituksiin. Tunnet itsesi toisen luokan "
-          +"kansalaiseksi, kun joudut jäämään naisväen kanssa kotirintamalle.";  
+          +"kansalaiseksi, kun joudut jäämään naisväen kanssa kotirintamalle.";
         } else if(PLAYER.location.name === "Jyväskylä") {
             var text = "Kaupungin kadut hiljenevät lokakuussa 1939, kun kaikki reserviläiset "
             +"kutsutaan ylimääräisiin kertaushajoituksiin. Myös veljesi saa kutsun. "
@@ -16,7 +16,7 @@ var beforewar_state = {
             +"kutsutaan ylimääräisiin kertaushajoituksiin. Myös vuokranantajasi poika saa kutsun. "
             +"Yrität lohduttaa hänen nyyhkyttävää äitiään parhaasi mukaan.";
         } else {
-            var text = "Kylän raitilla on hiljaista, sillä lähes kaikki seudun miehet kaikkein nuorimpia "
+            var text = "Kylän raitilla on hiljaista lokakuussa 1939, sillä lähes kaikki seudun miehet kaikkein nuorimpia "
             +"ja vanhimpia lukuunottamatta on kutsuttu ylimääräisiin kertausharjoituksiin. Kotiin jääneiden ilmeet ovat vakavia.";
         }
         

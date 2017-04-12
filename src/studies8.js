@@ -3,7 +3,7 @@ var studies8_state = {
     create: function() {
         if(PLAYER.gender === "female") {
             PLAYER.age = 22;
-            var image     = 'studieswomenbackground';
+            var image     = 'nurseschoolbackground';
             var text = "Käytännön harjoittelu Kuopion lääninsairaalan kirurgisella osastolla sai sinut hetkeksi epäilemään, valitsitko sittenkin väärän alan. "
             +"Leikkausten jälkeisistä kivuista kärsivien potilaiden vaikerrus saa sinut voimaan pahoin. "
             +"Karaistuit kuitenkin pian, ja valmistuttuasi saat työpaikan Jyväskylän yleisestä sairaalasta.";
@@ -21,7 +21,7 @@ var studies8_state = {
 
     centerButtonHandler: function() {
         if(PLAYER.gender === "female") {
-            GAME.state.start('beginwar');
+            GAME.state.start('beforewar');
         } else {
             GAME.state.start('conscript');
         }

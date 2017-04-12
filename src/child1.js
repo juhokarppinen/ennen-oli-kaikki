@@ -50,7 +50,7 @@ var child1_state = {
             GAME.state.start('conscript');
         } else {
             if ("undefined" === typeof PLAYER.spouse) {
-                GAME.state.start('beginwar');
+                GAME.state.start('beforewar');
         } else {
             GAME.state.start('conscriptwife');
         }

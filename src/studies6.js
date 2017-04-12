@@ -20,7 +20,7 @@ var studies6_state = {
 
     centerButtonHandler: function() {
         if(PLAYER.gender === "female") {
-            GAME.state.start('beginwar');
+            GAME.state.start('beforewar');
         } else {
             GAME.state.start('conscript');
         }

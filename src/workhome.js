@@ -17,7 +17,7 @@ var workhome_state = {
         } else if(PLAYER.gender === "male") {
             GAME.state.start('conscript');
         } else {
-            GAME.state.start('beginwar');
+            GAME.state.start('beforewar');
         }
     }
 }
