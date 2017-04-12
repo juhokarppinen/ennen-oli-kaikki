@@ -32,6 +32,7 @@ authors["helsinkiunibackground"]       = "Pietinen";
 authors["conscriptbackground"]         = "Tuntematon";
 authors["warbackground"]               = "K. Borg";
 authors["warworkbackground"]           = "Väinö Kannisto";
+authors["lottawarbackground"]           = "Väinö Kannisto";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -79,6 +80,7 @@ var load_state = {
         GAME.load.image('conscriptbackground', 'assets/img/conscript.jpg');
         GAME.load.image('warbackground', 'assets/img/war.jpg');
         GAME.load.image('warworkbackground', 'assets/img/warwork.jpg');
+        GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
         //music

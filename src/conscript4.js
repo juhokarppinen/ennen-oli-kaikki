@@ -1,10 +1,8 @@
 var conscript4_state = {
 
     create: function() {
-        PLAYER.age = 22;
-        var text = "Koko Suomi odottaa henkeään pidätellen, mitä seuraavaksi tapahtuu. Alat epäillä, että harjoitukset päättyvät vielä tositoimiin. "
-        +"Kun Neuvostoliitto lopulta avaa tykistötulen Karjalan kannaksella marraskuun viimeisenä aamuna, "
-        +"olosi on omalla tavallaan helpottunut: piinaava odotus on vihdoin päättynyt.";
+        var text = "Maailmalta kuuluu yhä huolestuttavampia tietoja ja koko Suomi odottaa henkeään pidätellen, "
+        +"mitä seuraavaksi tapahtuu. Alat epäillä, että harjoitukset päättyvät vielä tositoimiin. Tunnelma leirissä käy yhä hermostuneemmaksi.";
         
         var image            = 'conscriptbackground';
         var centerButtonLabel = "Jatka";
@@ -13,6 +11,6 @@ var conscript4_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('beginwar');
+        GAME.state.start('conscript5');
     }
 }

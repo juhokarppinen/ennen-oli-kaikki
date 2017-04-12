@@ -18,7 +18,7 @@ var beginwar_state = {
         } else if(PLAYER.gender === "male") {
             GAME.state.start('death');
         } else {
-            GAME.state.start('death');
+            GAME.state.start('wartime1');
         }
     }
 }

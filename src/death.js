@@ -20,9 +20,13 @@ var death_state = {
         // War death
         if (PLAYER.causeofdeath === "sota1") {
             if(PLAYER.gender === "female" || PLAYER.noconscript === true) {
-                causeOfDeathText = "Tuberkuloosi koitui surmaksesi. Kulkutaudit olivat syynä yli puolelle ikäluokkasi kuolemista sotavuosina. "+ ripText;
+                causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "
+                +"koneet tulevat taas. Olet kaupungilla asioilla etkä ehdi suojaan ennen kuin pommit putoavat. "
+                +"Menetät henkesi uudenvuoden aattona 1939. "+ ripText;
             } else {
-                causeOfDeathText = "Ikäluokkasi miehistä kuoli hieman alle kymmenes talvisodassa. Muun muassa Taipaleen taistoissa kuoli paljon keskisuomalaisia miehiä. "+ ripText;
+                causeOfDeathText = "Pataljoonanne oli siirtymässä linjojen takaa reservistä etulinjaan, kun "
+                +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
+                +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
             }
         }
 

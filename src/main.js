@@ -89,6 +89,7 @@ function preload() {
     GAME.state.add('conscript2', conscript2_state);
     GAME.state.add('conscript3', conscript3_state);
     GAME.state.add('conscript4', conscript4_state);
+    GAME.state.add('conscript5', conscript5_state);
     GAME.state.add('noconscript', noconscript_state);
     GAME.state.add('conscriptwife', conscriptwife_state);
     GAME.state.add('conscriptwife2', conscriptwife2_state);

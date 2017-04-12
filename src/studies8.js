@@ -3,6 +3,7 @@ var studies8_state = {
     create: function() {
         if(PLAYER.gender === "female") {
             PLAYER.age = 22;
+            PLAYER.nurse = true;
             var image     = 'nurseschoolbackground';
             var text = "Käytännön harjoittelu Kuopion lääninsairaalan kirurgisella osastolla sai sinut hetkeksi epäilemään, valitsitko sittenkin väärän alan. "
             +"Leikkausten jälkeisistä kivuista kärsivien potilaiden vaikerrus saa sinut voimaan pahoin. "
