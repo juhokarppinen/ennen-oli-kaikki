@@ -1,8 +1,11 @@
 var war2_state = {
 
     create: function() {
-        var text = "Kuulut jalkaväen jääkärirykmenttiin. Osasto on aluksi täysin keskisuomalainen, "
-        +"kunnes miestappioiden jälkeen sitä täydennetään muualtakin Suomesta.";
+        if(PLAYER.location.name !== "Jyväskylä") {
+            var text = "Kuulut kranaatinheitinkomppaniaan, jalkaväkirykmentti 28, 10. divisioona.";
+        } else {
+            var text = "Kuulut kenttätykistörykmentti 10:een.";
+        }
                 
         var image            = 'warbackground';
         var centerButtonLabel = "Jatka";

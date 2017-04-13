@@ -22,13 +22,8 @@ var school2_state = {
                     var gendertext = "pikkurengiksi";
                 }
                 centerButtonLabel = "Töihin";
-                if(PLAYER.location.name === "Hankasalmi") {
-                    text += "Sinulla ei liiemmin ole lukupäätä, eikä vanhemmillasi olisi varaakaan kouluttaa sinua enempää, "+
-                        "joten vanhempasi lähettävät sinut "+gendertext+" tilalle, jonka mailla asutte.";
-                } else {
-                    text += "Opettajasi kannustaa sinua jatkamaan oppikouluun, johon saisit vapaapaikan. "
-                    +"Vanhemmillasi ei kuitenkaan ole varaa elättää sinua, ja sinut lähetetään "+gendertext+" Kartanoon, jonka mailla asutte.";
-                }
+                text += "Opettajasi kannustaa sinua jatkamaan oppikouluun, johon saisit vapaapaikan. "
+                +"Vanhemmillasi ei kuitenkaan ole varaa elättää sinua, ja sinut lähetetään "+gendertext+" Kartanoon, jonka mailla asutte.";
             } else if(PLAYER.class === "middle") {
                centerButtonLabel = "Jatka";
                if(PLAYER.gender === "female") {

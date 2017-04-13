@@ -26,7 +26,7 @@ var info_state = {
         var muteText = GAME.add.text(0, 100, muteString, INFO_STYLE);
         var helpText = GAME.add.text(0, 200, helpString, INFO_STYLE);
 
-        button = createButton(CENTER.x, CENTER.y, 'OK', function() {GAME.state.start('menu'), this});
+        var button = createButton(CENTER.x, CENTER.y, 'OK', function() {GAME.state.start('menu'), this});
         button.alpha = 1;
         drawToggleUIbutton([]);
         drawToggleSoundButton();

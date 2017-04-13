@@ -16,11 +16,10 @@ var weddingcountry_state = {
                 text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
                 PLAYER.spouse = PLAYER.crush;
             } else {
-                text += "muutatte asumaan pieneen mökkiin hänen isänsä tontin laidalle.";
+                text += "muutatte asumaan pieneen mökkiin isäsi tontin laidalle.";
                 PLAYER.spouse = PLAYER.crush;
             }
         }
-        text += " Haluatte perustaa oman perheen.";
         
         var image            = 'weddingbackground';
         var centerButtonLabel = "Jatka";

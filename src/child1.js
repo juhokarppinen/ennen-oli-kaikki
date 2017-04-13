@@ -26,11 +26,13 @@ var child1_state = {
             var image            = 'familybackground';
             if(PLAYER.class === "poor") {
                 if(PLAYER.gender === "male") {
-                    var text = PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
-                    +"Sinun on kuitenkin tehtävä kahta kauheammin töitä elättääksesi pikkuperheesi.";
+                    var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". "
+                    +PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
+                    +"Sinun on kuitenkin paiskittava töitä kahta kauheammin elättääksesi pikkuperheesi.";
                 } else {
-                    var text = "Synnytys oli vaikea, ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "
-                    +"Miehesi joutuu kuitenkin paiskimaan kahta kauheammin töitä, eikä hän ehdi kotiin kuin nukkumaan.";
+                    var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". Synnytys oli vaikea, "
+                    +"ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "
+                    +"Miehesi joutuu kuitenkin paiskimaan töitä kahta kauheammin, eikä hän ehdi kotiin kuin nukkumaan.";
                 }
             } else {
                 var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
@@ -48,7 +50,7 @@ var child1_state = {
             GAME.state.start('conscript');
         } else {
             if ("undefined" === typeof PLAYER.spouse) {
-                GAME.state.start('beginwar');
+                GAME.state.start('beforewar');
         } else {
             GAME.state.start('conscriptwife');
         }

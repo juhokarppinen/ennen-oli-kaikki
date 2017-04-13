@@ -16,15 +16,23 @@ authors["deathbackground"]             = "Väinö Kannisto";
 authors["citybackground"]              = "Tuntematon (Keski-Suomen Museo)";
 authors["countrybackground"]           = "Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["apprenticebackground"]        = "Tuntematon";
-authors["candyfactory"]                = "Valokuvaamo Päijänne (Keski-Suomen Museo)";
+authors["candyfactorybackground"]      = "Valokuvaamo Päijänne (Keski-Suomen Museo)";
+authors["plywoodfactorybackground"]    = "Keski-Suomen Museo";
+authors["riflefactorybackground"]      = "Keski-Suomen Museo";
+authors["bakerybackground"]            = "Tuntematon";
+authors["homeassistantbackground"]     = "Pietinen";
 authors["barnbackground"]              = "Väinö Kannisto";
 authors["dancebackground"]             = "Väinö Kannisto";
 authors["weddingbackground"]           = "Väinö Kannisto";
 authors["familybackground"]            = "Tuntematon";
 authors["childbackground"]             = "Pekka Kyytinen";
+authors["teacherschoolbackground"]     = "Pietinen";
+authors["nurseschoolbackground"]       = "Pietinen";
+authors["helsinkiunibackground"]       = "Pietinen";
 authors["conscriptbackground"]         = "Tuntematon";
 authors["warbackground"]               = "K. Borg";
 authors["warworkbackground"]           = "Väinö Kannisto";
+authors["lottawarbackground"]           = "Väinö Kannisto";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -59,14 +67,22 @@ var load_state = {
         GAME.load.image('countrybackground', 'assets/img/jyvaskyla_country.jpg');
         GAME.load.image('apprenticebackground', 'assets/img/apprentice.jpg');
         GAME.load.image('candyfactorybackground', 'assets/img/candyfactory.jpg');
+        GAME.load.image('plywoodfactorybackground', 'assets/img/plywoodfactory.jpg');
+        GAME.load.image('riflefactorybackground', 'assets/img/riflefactory.jpg');
+        GAME.load.image('bakerybackground', 'assets/img/bakery.jpg');
+        GAME.load.image('homeassistantbackground', 'assets/img/homeassistant.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');
         GAME.load.image('dancebackground', 'assets/img/dance.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
         GAME.load.image('familybackground', 'assets/img/family.jpg');
         GAME.load.image('childbackground', 'assets/img/child.jpg');
+        GAME.load.image('teacherschoolbackground', 'assets/img/teacherschool.jpg');
+        GAME.load.image('nurseschoolbackground', 'assets/img/nurseschool.jpg');
+        GAME.load.image('helsinkiunibackground', 'assets/img/helsinkiuniversity.jpg');
         GAME.load.image('conscriptbackground', 'assets/img/conscript.jpg');
         GAME.load.image('warbackground', 'assets/img/war.jpg');
         GAME.load.image('warworkbackground', 'assets/img/warwork.jpg');
+        GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
         //music
@@ -84,7 +100,7 @@ var load_state = {
         BACKGROUND_MUSIC = GAME.add.audio('music-Bittersweet');
         BACKGROUND_MUSIC.loop = true;
         BACKGROUND_MUSIC.play();
-        GAME.state.start('info');
+        GAME.state.start('menu');
     },
 
     // Could do better than this... :)

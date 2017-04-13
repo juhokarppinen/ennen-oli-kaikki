@@ -2,10 +2,10 @@ var barn4_state = {
 
     create: function() {
         if(PLAYER.gender === "female") {
-            var gendertext = "Vaikka kuutamouinnista on jo aikaa, et saa renkiä mielestäsi ja haaveilet salaa yhteisestä tulevaisuudesta hänen kanssaan. Yllättäen ";
+            var gendertext = "Kuluu viikkoja. Vaikka kuutamouinnista on jo aikaa, et saa renkiä mielestäsi ja haaveilet salaa yhteisestä tulevaisuudesta hänen kanssaan. Yllättäen ";
             var gendertext2 = "Vastaatko myöntävästi hänen kosintaansa?";
         } else {
-            var gendertext = "Vaikka kuutamouinnista on jo aikaa, et saa piikaa mielestäsi, joten teet kaikkesi saadaksesi hänen huomionsa. Lopulta sinnikkyytesi palkitaan - ";
+            var gendertext = "Kuluu viikkoja. Vaikka kuutamouinnista on jo aikaa, et saa piikaa mielestäsi, joten teet kaikkesi saadaksesi hänen huomionsa. Lopulta sinnikkyytesi palkitaan - ";
             var gendertext2 = "Pyydätkö häntä vaimoksesi?";
         }
 

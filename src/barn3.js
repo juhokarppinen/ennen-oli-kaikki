@@ -2,19 +2,10 @@ var barn3_state = {
 
     create: function() {
 
-        
-        if (Math.random() <= 0.50) {     // 50% chance for dramatic effect
-        var text = "Löydät heilasi. Onneksi " + PLAYER.crush + " toimii tilanteessa kuten pitää ja pyytää sinua vaimokseen. Pidätte pikaiset häät ja " + 
-                   "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
-        var image            = 'weddingbackground';
-        PLAYER.spouse = PLAYER.crush;
-        } else {
-            var text = +PLAYER.crush + " on kuitenkin viikkoa aiemmin muuttanut muualle töiden perässä. "
-                    + "Hänen löytämisensä on nyt mahdotonta. Otat nöyränä potkut vastaan.";
-            var image        = 'youthworkcountrybackground';
-        }
-        
-        //todo: country wedding picture
+        var text = "Ladossa vietetty hetki kaduttaa, ja olet vältellyt heilaasi sen jälkeen. "
+        +"Huhut yhteisestä retkestänne ovat kiirineet vanhempien piikojen korviin, ja he "
+        +"antavat sinun kuulla kunniasi. Pelkäät kuollaksesi olevasi raskaana, mutta tällä kertaa kävi tuuri.";
+        var image = 'barnbackground';
         
         var centerButtonLabel = "Jatka";
 
@@ -22,6 +13,6 @@ var barn3_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('child1');
+        GAME.state.start('beforewar');
     }
 }

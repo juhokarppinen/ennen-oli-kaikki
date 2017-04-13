@@ -6,15 +6,15 @@ var studies2_state = {
             var image     = 'studies1background';
             var text = "Onneksi olkoon, tuore ylioppilas! ";
                 if(PLAYER.location.name === "Jyväskylä") {
-                text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän kasvatusopilliseen korkeakouluun jatkamaan opintojasi vai "
-                +"seuraatko sydäntäsi ja haet Helsingin yliopistoon opiskelemaan lääketiedettä?";
-                var leftButtonLabel  = "Kasvatusoppi";
-                var rightButtonLabel = "Lääketiede";
-            } else {
-                text += "Onneksi olkoon, tuore ylioppilas! Vanhempasi toivovat sinun jatkavan isäsi jalanjäljissä, mikä "
-                +"vaatisi korkeakouluopintoja Helsingissä. Lähdetkö vai jäätkö?";
-                var leftButtonLabel  = "Lähdet";
-                var rightButtonLabel = "Jäät";
+                    text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän kasvatusopilliseen korkeakouluun jatkamaan opintojasi vai "
+                    +"seuraatko sydäntäsi ja haet Helsingin yliopistoon opiskelemaan lääketiedettä?";
+                    var leftButtonLabel  = "Kasvatusoppi";
+                    var rightButtonLabel = "Lääketiede";
+                } else {
+                    text += "Vanhempasi toivovat sinun jatkavan isäsi jalanjäljissä, mikä "
+                    +"vaatisi korkeakouluopintoja Helsingissä. Lähdetkö vai jäätkö?";
+                    var leftButtonLabel  = "Lähdet";
+                    var rightButtonLabel = "Jäät";
             }
         } else {
             PLAYER.age = 18;
@@ -34,7 +34,7 @@ var studies2_state = {
             GAME.state.start('studies7');
         } else {
             if(PLAYER.location.name === "Jyväskylä") {
-                GAME.state.start('death');
+                GAME.state.start('studies8');
             } else {
                 GAME.state.start('studies7');
             }
@@ -46,9 +46,9 @@ var studies2_state = {
             GAME.state.start('homechores0');
         } else {
             if(PLAYER.location.name === "Jyväskylä") {
-                GAME.state.start('death');
+                GAME.state.start('studies7');
             } else {
-                GAME.state.start('death');
+                GAME.state.start('countrywork1');
             }
         }
     }

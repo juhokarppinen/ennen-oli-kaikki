@@ -1,16 +1,10 @@
 var citywork0_state = {
 
     create: function() {
-        if(PLAYER.gender === "female") {
-            var gendertext = "tytön";
-            var gendertext2 = "piianpaikkojen";
-        } else {
-            var gendertext = "pojan";
-            var gendertext2 = "renginpaikkojen";
-        }
-        var text = "Luku- ja laskutaidottoman "+gendertext+" ei ole helppoa löytää töitä kaupungista. Rahasi ja voimasi ovat lopussa. "
+        PLAYER.age = 13;
+        var text = "Luku- ja laskutaidottoman tytön ei ole helppoa löytää töitä kaupungista. Rahasi ja voimasi ovat lopussa. "
         +"Kuulet, että SOK:n makeistehtaalla Vaajakoskella saattaisi kuitenkin olla töitä. "
-        +"Lähdetkö kokeilemaan onneasi vai palaatko jo kotipitäjääsi varmempien "+gendertext2+" perään?";
+        +"Lähdetkö kokeilemaan onneasi vai palaatko jo kotipitäjääsi varmempien piianpaikkojen perään?";
         
         var image     = 'citybackground';
             
@@ -21,10 +15,10 @@ var citywork0_state = {
     },
 
     leftButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('servant5');
     },
 
     rightButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('citywork2');
     }
 }

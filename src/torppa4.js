@@ -2,6 +2,7 @@ var torppa4_state = {
 
     create: function() {
         PLAYER.age = 21;
+        PLAYER.movedtocity = true;
 
         var text = "Kosijoista ei ole pulaa, muttet oikein lämpene kenenkään suhteen. "
         +"Äitisi tuskailu tulevaisuutesi suhteen käy sietämättömäksi, joten päätät "
@@ -14,6 +15,6 @@ var torppa4_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('beginwar');
+        GAME.state.start('beforewar');
     }
 }

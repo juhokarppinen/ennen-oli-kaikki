@@ -5,7 +5,7 @@ var school0_state = {
 
         var text = "Vuonna 1921 Suomessa säädettiin laki yleisestä " +
                    "oppivelvollisuudesta, mutta lähimpään kouluun on yli viisi kilometriä " +
-                   "joten sinut on vapautettu oppivelvollisuudesta Saarijärven valtuuston päätöksen mukaisesti. " +
+                   "joten sinut on vapautettu oppivelvollisuudesta kuntasi valtuuston päätöksen mukaisesti. " +
                    "Jäät kotiin auttamaan vanhempiasi kuten tähänkin asti.";
 
         var image             = 'countrybackground';

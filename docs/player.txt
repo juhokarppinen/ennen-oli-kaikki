@@ -18,3 +18,9 @@ spouse          string      barn3.js            Name of a person that player mar
 children        array       child1.js           Array that contains the player's children
 friend          string      studies1.js         Name of a person that player befriended
 causeofdeath    string      death.js            Tells the player how the character died
+university      bool        studies7.js         Tells if player went to university (affects army message)
+improvement     bool        countrywork1.js     Tells if player started improving the parsonage
+movedtocity     bool        citywork1.js        Tells if player was living in city during the start of war
+noconscript     bool        noconscript.js      Tells if player was released from army due to lacking health
+lotta           bool        homechores0.js      Tells if player became a lotta; useful during wartime branches
+nurse           bool        studies8.js         Tells if player became a nurse; useful during wartime branches

@@ -11,6 +11,6 @@ var servant5_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('beginwar');
+        GAME.state.start('servant4');
     }
 }
