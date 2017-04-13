@@ -230,7 +230,7 @@ function drawBackground(image) {
 
 
 function showPreviousBackground() {
-    GAME.add.sprite(0, 0, PREVIOUS_BACKGROUND);
+    return GAME.add.sprite(0, 0, PREVIOUS_BACKGROUND); 
 }
 
 

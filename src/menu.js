@@ -1,5 +1,7 @@
 var menu_state = {
     create: function () {
+        var bg = showPreviousBackground();
+        bg.alpha = 0.15;
         var background = drawBackground('menubackground');
         var pictureInfo = drawPictureInfo(authors['menubackground']);
         var startButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, 'Aloita', this.pickGender, this);
