@@ -11,6 +11,7 @@ var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
 var STYLE        = {font: "40px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
+var HELP_STYLE   = {font: "40px Alegreya Sans", fill: "#eeeeee", wordWrap: true, wordWrapWidth: 1220};
 var BUTTON_STYLE = {font: "40px Alegreya Sans", fill: "#1e1711"};
 var BUTTON_CLICK = {font: "40px Alegreya Sans", fill: "#e5c66d"};
 var INFO_STYLE   = {font: "40px Alegreya Sans", fill: "#FFFFFF"};
