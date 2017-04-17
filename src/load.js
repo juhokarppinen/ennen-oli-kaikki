@@ -41,7 +41,7 @@ var load_state = {
     preload: function() {
         this.addLoadingScreen();
         //common
-        GAME.load.image('infoButon', 'assets/img/info.png');
+        GAME.load.image('infoButton', 'assets/img/info.png');
         GAME.load.image('button', 'assets/img/button.png');
         GAME.load.image('toggleUIbutton', 'assets/img/looking-glass-button.png');
         GAME.load.image('soundOnButton', 'assets/img/sound-on-button.png');
