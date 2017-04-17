@@ -32,26 +32,17 @@ var info_state = {
                 btnL: "Seuraava sivu",
             },
             help3: {
-                txt: ["Valitse ensin, haluatko syntyä tytöksi vai pojaksi. Peli " +
-                     "saattaa ensimmäisellä kierroksella päättyä heti alkuunsa, " +
-                     "sillä yli kymmenennes vuonna 1917 syntyneistä kuoli ennen " +
-                     "yksivuotissyntymäpäiväänsä. Voit kuitenkin aloittaa alusta " +
-                     "ja kokeilla, jatkuisiko peli kauemmin, jos pelihahmosi " +
-                     "sukupuoli olisi toinen. Mitä useamman kierroksen pelaat, " +
+                txt: ["Peli saattaa joskus päättyä heti alkuunsa, " +
+                     "sillä lähes viidennes vuonna 1917 syntyneistä kuoli alle " +
+                     "kouluikäisenä. Voit kuitenkin aloittaa pelin alusta ja kokeilla " +
+                     "onneasi uudelleen. Mitä useamman kierroksen pelaat, " +
                      "sitä tarkemman kuvan saat siitä, millaisessa maassa tämän " +
-                     "päivän satavuotiaat ovat eläneet  –  tarinoita on monta.",
-
+                     "päivän satavuotiaat ovat eläneet  –  tarinoita on monta. " +
                      "Pelin hahmojen elämänkäänteet perustuvat tilastoihin ja " +
-                     "historiallisiin tapahtumiin, mutta hahmot eivät kerro " +
-                     "yksittäisistä ihmisistä, vaan ne ovat täysin fiktiivisiä. " +
+                     "historiallisiin tapahtumiin, mutta itse hahmot ovat täysin fiktiivisiä. " +
                      "Tausta-aineistona on käytetty muun muassa aikalaisten " +
                      "muistelmia ja elämäkertoja, joiden tarinoita on yhdistelty " +
-                     "sopiviksi kokonaisuuksiksi. Pelissä on esimerkiksi " +
-                     "mahdollista syntyä saarijärveläiseen pappilaan, vaikka " +
-                     "todellisuudessa Saarijärven kirkkoherran perheeseen ei " +
-                     "syntynyt lapsia vuonna 1917. Maaseutupappilan asukkaiden " +
-                     "elämää on kuitenkin pyritty kuvaamaan sellaisena kuin se " +
-                     "tuon ajan Suomessa oli."],
+                     "sopiviksi kokonaisuuksiksi."],
                 btnL: "Seuraava sivu",
             }
         };        
@@ -95,10 +86,11 @@ var info_state = {
                         });
                         if (hC.page < 3) {
                             hC.page += 1;
-                            this.turnPage(hC);
-                        } else if (hC.subPage < 1) {
-                            hC.subPage += 1;
-                            this.turnPage(hC, true);
+                            if(hC.page === 3) {
+                                this.turnPage(hC, true);
+                            } else {
+                                this.turnPage(hC);
+                            }
                         }
                     },
                     this);
