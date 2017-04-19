@@ -2,6 +2,7 @@ var GAME = new Phaser.Game(1280, 720, Phaser.AUTO, 'gameArea', { preload: preloa
 var PLAYER = {};
 var BACKGROUND_MUSIC;
 var PREVIOUS_BACKGROUND;
+var INFO_VISIBLE = false;
 
 var CENTER;
 
@@ -11,6 +12,7 @@ var RIGHT_BUTTON;
 
 /* Global text styles are defined here */
 var STYLE        = {font: "40px Alegreya Sans", fill: "#1e1711", wordWrap: true, wordWrapWidth: 750};
+var INFO_STYLE2  = {font: "40px Alegreya Sans", fill: "#eeeeee", wordWrap: true, wordWrapWidth: 750};
 var HELP_STYLE   = {font: "40px Alegreya Sans", fill: "#eeeeee", wordWrap: true, wordWrapWidth: 1220};
 var BUTTON_STYLE = {font: "40px Alegreya Sans", fill: "#1e1711"};
 var BUTTON_CLICK = {font: "40px Alegreya Sans", fill: "#e5c66d"};

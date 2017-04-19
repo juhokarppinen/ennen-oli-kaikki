@@ -25,7 +25,9 @@ var beginning_state = {
 
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        var infoText = "Yleisimmät etunimet vuonna 1917 olivat Seppo, Simeoni, Sipriina ja Saija.";
+
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {
