@@ -1,6 +1,10 @@
 var death_state = {
 
     create: function() {
+        var infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
+                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
+                       "oli 11,2 prosenttia.";
+
         var causeOfDeathText = "";
         var ripText = "Lepää rauhassa, " + PLAYER.name +"! ";
 
@@ -28,6 +32,7 @@ var death_state = {
                 +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
                 +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
             }
+            infoText = "Sodassa miesten kuolleisuus oli 12,8% ja naisten 2,6%.";
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
@@ -46,7 +51,7 @@ var death_state = {
         else var leftButtonLabel = "Pelaa tyttönä";
 
 
-        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, true);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, infoText);
     },
 
     leftButtonHandler: function () {

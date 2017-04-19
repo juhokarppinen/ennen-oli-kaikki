@@ -357,7 +357,7 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
 }
 
 
-function drawUItwoButtons(bg, txt, label1, label2, context, infoBtnActive = false, infoTxt = "") {
+function drawUItwoButtons(bg, txt, label1, label2, context, infoTxt = "") {
     showPreviousBackground();
 
     var background   = drawBackground(bg);
@@ -367,7 +367,11 @@ function drawUItwoButtons(bg, txt, label1, label2, context, infoBtnActive = fals
     var timeline     = drawTimeline(PLAYER.age); 
     var leftButton   = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, context.leftButtonHandler, context);
     var rightButton  = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, context.rightButtonHandler, context);
-    var infoButton   = drawInfoButton(infoBtnActive, infoTxt, boxedText, [leftButton, rightButton]);  
+    var infoText     = drawInfoText(infoTxt);
+    var infoButton   = drawInfoButton(infoText, boxedText, [leftButton, rightButton]);  
+
+    infoButton.inputEnabled = !(infoTxt === "");
+    infoButton.visible = !(infoTxt === ""); 
 
     var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
