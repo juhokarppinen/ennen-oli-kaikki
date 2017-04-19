@@ -113,7 +113,7 @@ function create() {
     GAME.scale.pageAlignVertically = true;
 
     // Define global variables for button positions relative to the center of the world
-    var defaultElevation = 1.4; // 0 == top, 1 == center, 2 == bottom
+    var defaultElevation = 1.5; // 0 == top, 1 == center, 2 == bottom
     CENTER        = {x: GAME.world.centerX, y: GAME.world.centerY};
     CENTER_BUTTON = {x: CENTER.x,           y: CENTER.y * defaultElevation};
     LEFT_BUTTON   = {x: CENTER.x * 0.6,     y: CENTER.y * defaultElevation};

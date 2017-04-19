@@ -270,17 +270,19 @@ function drawTitle(x, y, text) {
 }
 
 
-function drawUIsingleButton(bg, txt, label, context) {
+function drawUIsingleButton(bg, txt, label, context, infoBtnActive = false, infoTxt = "") {
     showPreviousBackground();
 
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
+    var infoText     = drawInfoText(infoTxt);
     var timeline     = drawTimeline(PLAYER.age); 
     var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
+    var infoButton   = drawInfoButton(infoBtnActive, infoText, boxedText);
       
-    var tweenedElements = nameText.concat(boxedText, centerButton, timeline);
+    var tweenedElements = nameText.concat(boxedText, centerButton, timeline, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
@@ -288,6 +290,21 @@ function drawUIsingleButton(bg, txt, label, context) {
 
     PLAYER.previousAge = PLAYER.age;
 }
+
+
+function drawInfoButton(active, infoText, boxedText) {
+    var button = GAME.add.button(1045, 120, 'infoButton');
+    button.scale.setTo(0.1);
+    button.anchor.setTo(0.5);
+    button.tint = 0x000000;
+    button.alpha = 0.0;
+    button.inputEnabled = active;
+    button.visible = active;
+
+    button.events.onInputUp.add(function() {toggleInfo(infoText, boxedText);});
+
+    return button;
+}    
 
 
 function drawUIsingleButtonArticle(bg, img, txt, label, context) {
@@ -308,7 +325,7 @@ function drawUIsingleButtonArticle(bg, img, txt, label, context) {
 }
 
 
-function drawUItwoButtons(bg, txt, label1, label2, context) {
+function drawUItwoButtons(bg, txt, label1, label2, context, infoBtnActive = false, infoTxt = "") {
     showPreviousBackground();
 
     var background   = drawBackground(bg);
@@ -318,8 +335,9 @@ function drawUItwoButtons(bg, txt, label1, label2, context) {
     var timeline     = drawTimeline(PLAYER.age); 
     var leftButton   = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, context.leftButtonHandler, context);
     var rightButton  = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, context.rightButtonHandler, context);
-      
-    var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline);
+    var infoButton   = drawInfoButton(infoBtnActive, infoTxt, boxedText);  
+
+    var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();

@@ -46,7 +46,7 @@ var death_state = {
         else var leftButtonLabel = "Pelaa tyttönä";
 
 
-        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, true);
     },
 
     leftButtonHandler: function () {
