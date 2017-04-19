@@ -27,6 +27,9 @@ var info_state = {
                      "tarkemmin ilman tekstiä. Klikkaamalla uudelleen pääset " +
                      "takaisin peliin." +
                      "\n\n" + 
+                     "Tämän merkin takaa pääset lukemaan lisätietoja pelin " +
+                     "käänteisiin liittyvistä historiallisista tapahtumista." +
+                     "\n\n" +
                      "Voit tarvittaessa hiljentää äänet, mutta saadaksesi parhaan " +
                      "pelikokemuksen ne kannattaa pitää päällä."],
                 btnL: "Seuraava sivu",
@@ -64,10 +67,12 @@ var info_state = {
 
         if (hC.page === 2) {
             hC.magnifyButton = this.drawButton(75, 100, 'toggleUIbutton');
-            hC.muteButton = this.drawButton(75, 310, 'soundOnButton');
+            hC.infoButton = this.drawButton(75, 310, 'infoButton');
+            hC.muteButton = this.drawButton(75, 470, 'soundOnButton');
         }
         if (hC.page === 3) {
             hC.magnifyButton.forEach(function(e) {e.destroy();});
+            hC.infoButton.forEach(function(e) {e.destroy();});
             hC.muteButton.forEach(function(e) {e.destroy();});
         }
 
