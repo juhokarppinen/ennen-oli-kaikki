@@ -22,7 +22,7 @@ var child1_state = {
             if(PLAYER.gender === "male") {
                 var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". "
                 +PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
-                +"Sinun on kuitenkin paiskittava töitä kahta kauheammin elättääksesi pikkuperheesi.";
+                +"Sinun on kuitenkin paiskittava töitä kahta kauheammin elättääksesi pienen perheesi.";
             } else {
                 var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". Synnytys oli vaikea, "
                 +"ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "

@@ -9,7 +9,7 @@ var servant4_state = {
             +"Suot hänelle muutaman tanssin juhannusjuhlilla, ja myöhemmin kesällä karkaatte kuutamouinnille yhdessä.";
         } else {
             PLAYER.crush = pickName("female");
-            var text = "Päiväsi peltotöissä jatkuvat. Piristystä arkeesi tuo uusi navettapiika "+PLAYER.crush+", johon olet iskenut silmäsi. "
+            var text = "Päiväsi peltotöissä jatkuvat. Piristystä arkeesi tuo uusi navettapiika "+PLAYER.crush+", johon olet iskenyt silmäsi. "
             +"Katseenne ovat kohdanneet, kun olet palannut pellolta. "
             +"Pääset tanssittamaan tyttöä juhannusjuhlilla, ja myöhemmin kesällä karkaatte kuutamouinnille yhdessä.";
         }
