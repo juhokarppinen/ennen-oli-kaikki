@@ -13,7 +13,6 @@ authors["youthworkcountrybackground"]  = "Juhani Ahola";
 authors["deathbackground"]             = "Väinö Kannisto";
 authors["citybackground"]              = "Tuntematon (Keski-Suomen Museo)";
 authors["countrybackground"]           = "Antti Pänkäläinen (Keski-Suomen Museo)";
-authors["apprenticebackground"]        = "Tuntematon";
 authors["candyfactorybackground"]      = "Valokuvaamo Päijänne (Keski-Suomen Museo)";
 authors["plywoodfactorybackground"]    = "Keski-Suomen Museo";
 authors["riflefactorybackground"]      = "Keski-Suomen Museo";
@@ -59,7 +58,6 @@ var load_state = {
         GAME.load.image('deathbackground', 'assets/img/death.jpg');
         GAME.load.image('citybackground', 'assets/img/jyvaskyla_city.jpg');
         GAME.load.image('countrybackground', 'assets/img/jyvaskyla_country.jpg');
-        GAME.load.image('apprenticebackground', 'assets/img/apprentice.jpg');
         GAME.load.image('candyfactorybackground', 'assets/img/candyfactory.jpg');
         GAME.load.image('plywoodfactorybackground', 'assets/img/plywoodfactory.jpg');
         GAME.load.image('riflefactorybackground', 'assets/img/riflefactory.jpg');

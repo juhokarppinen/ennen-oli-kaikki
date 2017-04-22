@@ -85,7 +85,6 @@ function preload() {
     GAME.state.add('weddingcountry', weddingcountry_state);
     GAME.state.add('child1', child1_state);
     GAME.state.add('dance1', dance1_state);
-    GAME.state.add('apprentice', apprentice_state);
     GAME.state.add('lotta0', lotta0_state);
     GAME.state.add('workaway', workaway_state);
     GAME.state.add('workhome', workhome_state);
