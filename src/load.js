@@ -19,7 +19,6 @@ authors["riflefactorybackground"]      = "Keski-Suomen Museo";
 authors["bakerybackground"]            = "Tuntematon";
 authors["homeassistantbackground"]     = "Pietinen";
 authors["barnbackground"]              = "Väinö Kannisto";
-authors["dancebackground"]             = "Väinö Kannisto";
 authors["weddingbackground"]           = "Väinö Kannisto";
 authors["familybackground"]            = "Tuntematon";
 authors["teacherschoolbackground"]     = "Pietinen";
@@ -64,7 +63,6 @@ var load_state = {
         GAME.load.image('bakerybackground', 'assets/img/bakery.jpg');
         GAME.load.image('homeassistantbackground', 'assets/img/homeassistant.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');
-        GAME.load.image('dancebackground', 'assets/img/dance.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
         GAME.load.image('familybackground', 'assets/img/family.jpg');
         GAME.load.image('teacherschoolbackground', 'assets/img/teacherschool.jpg');
