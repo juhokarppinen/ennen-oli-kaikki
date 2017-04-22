@@ -2,8 +2,6 @@
 var authors = {};
 authors["menubackground"]              = "Hugo Simberg";
 authors["genderbackground"]            = "";
-authors["beginningcitybackground"]     = "Väinö Kannisto";
-authors["beginningcountrybackground"]  = "Hugo Simberg";
 authors["schoolbackground"]            = "Signe Brander";
 authors["homechorescountrybackground"] = "Hugo Simberg";
 authors["homechores1background"]       = "Väinö Kannisto";
@@ -25,14 +23,13 @@ authors["barnbackground"]              = "Väinö Kannisto";
 authors["dancebackground"]             = "Väinö Kannisto";
 authors["weddingbackground"]           = "Väinö Kannisto";
 authors["familybackground"]            = "Tuntematon";
-authors["childbackground"]             = "Pekka Kyytinen";
 authors["teacherschoolbackground"]     = "Pietinen";
 authors["nurseschoolbackground"]       = "Pietinen";
 authors["helsinkiunibackground"]       = "Pietinen";
 authors["conscriptbackground"]         = "Tuntematon";
 authors["warbackground"]               = "K. Borg";
 authors["warworkbackground"]           = "Väinö Kannisto";
-authors["lottawarbackground"]           = "Väinö Kannisto";
+authors["lottawarbackground"]          = "Väinö Kannisto";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -51,8 +48,6 @@ var load_state = {
         GAME.load.image('background', 'assets/img/background.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
-        GAME.load.image('beginningcitybackground', 'assets/img/beginningcity.jpg');
-        GAME.load.image('beginningcountrybackground', 'assets/img/beginningcountry.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
         GAME.load.image('homechorescountrybackground', 'assets/img/homechorescountry.jpg');
         GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
@@ -74,7 +69,6 @@ var load_state = {
         GAME.load.image('dancebackground', 'assets/img/dance.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
         GAME.load.image('familybackground', 'assets/img/family.jpg');
-        GAME.load.image('childbackground', 'assets/img/child.jpg');
         GAME.load.image('teacherschoolbackground', 'assets/img/teacherschool.jpg');
         GAME.load.image('nurseschoolbackground', 'assets/img/nurseschool.jpg');
         GAME.load.image('helsinkiunibackground', 'assets/img/helsinkiuniversity.jpg');

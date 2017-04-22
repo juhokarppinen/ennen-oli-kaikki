@@ -17,27 +17,20 @@ var child1_state = {
             PLAYER.children = [{name: pickName("female"), gender: "female", year: 1937}];
             var baby = "tyttövauvan";
         }
-        if ("undefined" === typeof PLAYER.spouse) {
-            var text = "Häpeissäsi asut nyt perheesi luona ja vältät ulkona liikkumista. " + 
-                       "Onneksi synnytät terveen "+baby+"! Lapsi saa nimekseen "+PLAYER.children[0].name
-                       +" ja äitisi ihastuu lapsenlapseen ikihyviksi.";
-            var image = 'childbackground';
-        } else {
-            var image            = 'familybackground';
-            if(PLAYER.class === "poor") {
-                if(PLAYER.gender === "male") {
-                    var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". "
-                    +PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
-                    +"Sinun on kuitenkin paiskittava töitä kahta kauheammin elättääksesi pikkuperheesi.";
-                } else {
-                    var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". Synnytys oli vaikea, "
-                    +"ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "
-                    +"Miehesi joutuu kuitenkin paiskimaan töitä kahta kauheammin, eikä hän ehdi kotiin kuin nukkumaan.";
-                }
+        var image            = 'familybackground';
+        if(PLAYER.class === "poor") {
+            if(PLAYER.gender === "male") {
+                var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". "
+                +PLAYER.spouse + " voi synnytyksen jälkeen huonosti, ja talon rouva lupaa hänelle vapaata muutamaksi viikoksi. "
+                +"Sinun on kuitenkin paiskittava töitä kahta kauheammin elättääksesi pikkuperheesi.";
             } else {
-                var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
-                ". Sukulaiset ihastelevat pienokaista ja elämä hymyilee.";
+                var text = "Saatte "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+". Synnytys oli vaikea, "
+                +"ja olet heikossa kunnossa. Onneksi talon rouva vapauttaa sinut töistäsi muutamaksi viikoksi. "
+                +"Miehesi joutuu kuitenkin paiskimaan töitä kahta kauheammin, eikä hän ehdi kotiin kuin nukkumaan.";
             }
+        } else {
+            var text = "Saatte terveen "+baby+" ja lapsi saa nimekseen "+PLAYER.children[0].name+
+            ". Sukulaiset ihastelevat pienokaista ja elämä hymyilee.";
         }
         
         var centerButtonLabel = "Jatka";
