@@ -77,11 +77,7 @@ var load_state = {
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
         //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
-
-        /*  This needs to be mentioned in the credits if it remains in the final
-            game.
-
-            Bittersweet Kevin MacLeod (incompetech.com)
+        /*  Bittersweet Kevin MacLeod (incompetech.com)
             Licensed under Creative Commons: By Attribution 3.0 License
             http://creativecommons.org/licenses/by/3.0/ */
     },

@@ -235,11 +235,6 @@ function showPreviousBackground() {
 }
 
 
-/**
- * Luo napin keskitettynä koordinaatteihin (x,y).
- * buttonText ja style määrittävät tekstin ja sen tyylin.
- * handler on funktio, joka napista laukeaa, ja context on aina this.
- */
 function createButton(x, y, buttonText, handler, context) {
     var button = GAME.add.button(x, y, 'button');
     button.anchor.set(0.5);
@@ -271,17 +266,6 @@ function drawTitle(x, y, text) {
 }
 
 
-function drawInfoText(infoTxt) {
-    var gfx = GAME.add.graphics(1280 + GAME.world.centerX*0.3, GAME.world.centerY*0.2);
-    gfx.beginFill(0x000000, 0.50);
-    gfx.drawRect(0, 0, 900, 540);
-    gfx.endFill();
-    
-    var infoText = GAME.add.text(1280 + GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, infoTxt, INFO_STYLE2);
-    return [gfx, infoText];
-}
-
-
 function toggleInfo(infoText, boxedText, button, backButton, buttons) {
     var offset = 1280;
     if (INFO_VISIBLE) offset = -offset;
@@ -289,36 +273,20 @@ function toggleInfo(infoText, boxedText, button, backButton, buttons) {
 
     var elements = boxedText.concat(button, backButton, infoText, [].concat.apply([], buttons));
 
-    elements.forEach(function(element) { 
-        GAME.add.tween(element).to({ x: element.x - offset }, 150, Phaser.Easing.Sinusoidal.In, true); 
+    elements.forEach(function(element) {
+        GAME.add.tween(element).to({ x: element.x - offset }, 150, Phaser.Easing.Sinusoidal.In, true);
     });
 }
 
 
-function drawUIsingleButton(bg, txt, label, context, infoTxt = "") {
-    showPreviousBackground();
+function drawInfoText(infoTxt) {
+    var gfx = GAME.add.graphics(1280 + GAME.world.centerX*0.3, GAME.world.centerY*0.2);
+    gfx.beginFill(0x000000, 0.50);
+    gfx.drawRect(0, 0, 900, 540);
+    gfx.endFill();
 
-    var background   = drawBackground(bg);
-    var pictureInfo  = drawPictureInfo(authors[bg]);
-    var nameText     = displayNameAndAge();
-    var boxedText    = drawBoxedText(txt);
-    var timeline     = drawTimeline(PLAYER.age); 
-    var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
-    var infoText     = drawInfoText(infoTxt);
-    var infoButton   = drawInfoButton(infoText, boxedText, [centerButton]);
-
-    infoButton.forEach(function(element) {
-        element.inputEnabled = !(infoTxt === "");
-        element.visible = !(infoTxt === "");
-    });
-
-    var tweenedElements = nameText.concat(boxedText, centerButton, timeline, infoButton);
-    var UIelements      = tweenedElements.concat(pictureInfo, timeline);
-    drawToggleUIbutton(UIelements);
-    drawToggleSoundButton();
-    tweenElements(background, tweenedElements);
-
-    PLAYER.previousAge = PLAYER.age;
+    var infoText = GAME.add.text(1280 + GAME.world.centerX * 0.4, GAME.world.centerY * 0.3, infoTxt, INFO_STYLE2);
+    return [gfx, infoText];
 }
 
 
@@ -337,24 +305,33 @@ function drawInfoButton(infoText, boxedText, buttons) {
     backButton.tint = 0xeeeeee;
 
     return [button, backButton];
-}    
+}
 
 
-function drawUIsingleButtonArticle(bg, img, txt, label, context) {
+function drawUIsingleButton(bg, txt, label, context, infoTxt = "") {
     showPreviousBackground();
 
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
-    var article      = drawArticle(img);
-    var timeline     = drawTimeline(PLAYER.age); 
+    var boxedText    = drawBoxedText(txt);
+    var timeline     = drawTimeline(PLAYER.age);
     var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
-      
-    var tweenedElements = nameText.concat(article, centerButton, timeline);
+    var infoText     = drawInfoText(infoTxt);
+    var infoButton   = drawInfoButton(infoText, boxedText, [centerButton]);
+
+    infoButton.forEach(function(element) {
+        element.inputEnabled = !(infoTxt === "");
+        element.visible = !(infoTxt === "");
+    });
+
+    var tweenedElements = nameText.concat(boxedText, centerButton, timeline, infoText, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
     tweenElements(background, tweenedElements);
+
+    PLAYER.previousAge = PLAYER.age;
 }
 
 
@@ -365,14 +342,16 @@ function drawUItwoButtons(bg, txt, label1, label2, context, infoTxt = "") {
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
     var boxedText    = drawBoxedText(txt);
-    var timeline     = drawTimeline(PLAYER.age); 
+    var timeline     = drawTimeline(PLAYER.age);
     var leftButton   = createButton(LEFT_BUTTON.x, LEFT_BUTTON.y, label1, context.leftButtonHandler, context);
     var rightButton  = createButton(RIGHT_BUTTON.x, RIGHT_BUTTON.y, label2, context.rightButtonHandler, context);
     var infoText     = drawInfoText(infoTxt);
-    var infoButton   = drawInfoButton(infoText, boxedText, [leftButton, rightButton]);  
+    var infoButton   = drawInfoButton(infoText, boxedText, [leftButton, rightButton]);
 
-    infoButton.inputEnabled = !(infoTxt === "");
-    infoButton.visible = !(infoTxt === ""); 
+    infoButton.forEach(function(element) {
+        element.inputEnabled = !(infoTxt === "");
+        element.visible = !(infoTxt === "");
+    });
 
     var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
@@ -381,4 +360,22 @@ function drawUItwoButtons(bg, txt, label1, label2, context, infoTxt = "") {
     tweenElements(background, tweenedElements);
 
     PLAYER.previousAge = PLAYER.age;
+}
+
+
+function drawUIsingleButtonArticle(bg, img, txt, label, context) {
+    showPreviousBackground();
+
+    var background   = drawBackground(bg);
+    var pictureInfo  = drawPictureInfo(authors[bg]);
+    var nameText     = displayNameAndAge();
+    var article      = drawArticle(img);
+    var timeline     = drawTimeline(PLAYER.age);
+    var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
+
+    var tweenedElements = nameText.concat(article, centerButton, timeline);
+    var UIelements      = tweenedElements.concat(pictureInfo, timeline);
+    drawToggleUIbutton(UIelements);
+    drawToggleSoundButton();
+    tweenElements(background, tweenedElements);
 }
