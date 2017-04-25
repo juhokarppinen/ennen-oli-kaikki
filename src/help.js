@@ -1,4 +1,4 @@
-var info_state = {
+var help_state = {
     create: function () {
         var background = drawBackground('menubackground');
         background.alpha = 0.15;

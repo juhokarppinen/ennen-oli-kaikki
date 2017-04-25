@@ -20,7 +20,7 @@ var menu_state = {
     },
 
     readHelp: function () {
-        GAME.state.start('info');
+        GAME.state.start('help');
     },
 
     readCredits: function () {
