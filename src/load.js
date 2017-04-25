@@ -87,7 +87,10 @@ var load_state = {
     },
 
     create: function() {
-        GAME.state.start('info');
+        BACKGROUND_MUSIC = GAME.add.audio('music-Bittersweet');
+        BACKGROUND_MUSIC.loop = true;
+        BACKGROUND_MUSIC.play();
+        GAME.state.start('menu');
     },
 
     // Could do better than this... :)

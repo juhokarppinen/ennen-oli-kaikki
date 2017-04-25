@@ -5,16 +5,13 @@ var info_state = {
         PREVIOUS_BACKGROUND = 'menubackground';
         
         var helpContents = {
-            page:        1,
+            page:        2,
             subPage:     0,
             btnLHandler: function() { this.turnPage(helpContents); },
             btnRHandler: function() {
-                BACKGROUND_MUSIC = GAME.add.audio('music-Bittersweet');
-                BACKGROUND_MUSIC.loop = true;
-                BACKGROUND_MUSIC.play();
                 GAME.state.start('menu');
             },
-            btnR:        "Aloita peli",
+            btnR:        "Valikkoon",
             textObj:     {},
 
             help1: {
