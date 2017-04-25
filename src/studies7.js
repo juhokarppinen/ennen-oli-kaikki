@@ -10,7 +10,7 @@ var studies7_state = {
                 +"Työskentelet ahkerasti, jottet tuottaisi heille pettymystä ja vapaa-aikasi kuluu pitkälti kirjojen parissa.";
             } else {
                 var text = "Opinnoistasi ei ole tulla mitään, sillä pääsi on aivan pyörällään kaikista huvituksista, joita Helsingissä on tarjolla. "
-                +"Lisäksi olet naulinnut silmäsi maitokaupan myymäläapulaiseen ja keksit asiaa kauppaan useammin kuin oikeasti olisi tarve. "
+                +"Lisäksi olet naulinnut silmäsi maitokaupan myymäläapulaiseen. "
                 +"Et kuitenkaan uskalla tehdä aloitetta, sillä tiedät, ettei konservatiivinen isäsi hyväksyisi seurustelua työläisnaisen kanssa.";
             }
         } else {

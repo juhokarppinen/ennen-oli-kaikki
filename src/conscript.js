@@ -3,9 +3,6 @@ var conscript_state = {
     create: function() {
         PLAYER.age = 20;
         var text = "Saat valtiolta kirjeen: Sinun on ilmoittauduttava asepalvelukseen.";
-        if(PLAYER.university === true) {
-            text += " Opintosi keskeytyvät, sillä asepalvelusta ei saanut lykätä niiden perusteella.";
-        }
         if(PLAYER.improvement === true) {
             text += " Suunnittelemasi pappilan laajennos lykkäytyy.";
         }
