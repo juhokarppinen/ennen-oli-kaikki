@@ -353,7 +353,7 @@ function drawUItwoButtons(bg, txt, label1, label2, context, infoTxt = "") {
         element.visible = !(infoTxt === "");
     });
 
-    var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline, infoButton);
+    var tweenedElements = nameText.concat(boxedText, leftButton, rightButton, timeline, infoText, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
     drawToggleUIbutton(UIelements);
     drawToggleSoundButton();
