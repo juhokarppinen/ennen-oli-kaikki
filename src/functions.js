@@ -282,15 +282,12 @@ function drawInfoText(infoTxt) {
 }
 
 
-function toggleInfo(infoText, boxedText, button, buttons) {
+function toggleInfo(infoText, boxedText, button, backButton, buttons) {
     var offset = 1280;
     if (INFO_VISIBLE) offset = -offset;
-    if (INFO_VISIBLE) button.tint = 0x000000;
-    else button.tint = 0xeeeeee;
     INFO_VISIBLE = !INFO_VISIBLE;
-    button.x += offset;
 
-    var elements = boxedText.concat(button, infoText, [].concat.apply([], buttons));
+    var elements = boxedText.concat(button, backButton, infoText, [].concat.apply([], buttons));
 
     elements.forEach(function(element) { 
         GAME.add.tween(element).to({ x: element.x - offset }, 150, Phaser.Easing.Sinusoidal.In, true); 
@@ -301,7 +298,6 @@ function toggleInfo(infoText, boxedText, button, buttons) {
 function drawUIsingleButton(bg, txt, label, context, infoTxt = "") {
     showPreviousBackground();
 
-
     var background   = drawBackground(bg);
     var pictureInfo  = drawPictureInfo(authors[bg]);
     var nameText     = displayNameAndAge();
@@ -310,9 +306,11 @@ function drawUIsingleButton(bg, txt, label, context, infoTxt = "") {
     var centerButton = createButton(CENTER_BUTTON.x, CENTER_BUTTON.y, label, context.centerButtonHandler, context);
     var infoText     = drawInfoText(infoTxt);
     var infoButton   = drawInfoButton(infoText, boxedText, [centerButton]);
-    
-    infoButton.inputEnabled = !(infoTxt === "");
-    infoButton.visible = !(infoTxt === ""); 
+
+    infoButton.forEach(function(element) {
+        element.inputEnabled = !(infoTxt === "");
+        element.visible = !(infoTxt === "");
+    });
 
     var tweenedElements = nameText.concat(boxedText, centerButton, timeline, infoButton);
     var UIelements      = tweenedElements.concat(pictureInfo, timeline);
@@ -326,16 +324,19 @@ function drawUIsingleButton(bg, txt, label, context, infoTxt = "") {
 
 function drawInfoButton(infoText, boxedText, buttons) {
     var button = GAME.add.button(1045, 120, 'infoButton');
-    button.scale.setTo(0.1);
-    button.anchor.setTo(0.5);
+    var backButton = GAME.add.button(1045 + 1280, 120, 'arrowLeftButton');
+    [button, backButton].forEach(function(element) {
+        element.scale.setTo(0.1);
+        element.anchor.setTo(0.5);
+        element.alpha = 0;
+        element.inputEnabled = true;
+        element.visible = true;
+        element.events.onInputUp.add(function() {toggleInfo(infoText, boxedText, button, backButton, buttons);});
+    });
     button.tint = 0x000000;
-    button.alpha = 0;
-    button.inputEnabled = true;
-    button.visible = true;
+    backButton.tint = 0xeeeeee;
 
-    button.events.onInputUp.add(function() {toggleInfo(infoText, boxedText, button, buttons);});
-
-    return button;
+    return [button, backButton];
 }    
 
 
