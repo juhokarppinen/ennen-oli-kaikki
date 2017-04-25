@@ -31,7 +31,7 @@ var beginning_state = {
                 "Veikko, Väinö, Tauno, Erkki, Reino, Lauri, Viljo ja Martti.";
         } else {
             infoText = "Suosituimmat vuonna 1917 syntyneiden tyttöjen nimet olivat " +
-                "Anna, Aino, Aili, Aune, Helvi, Tyyne, Kerttu, Helmi, Martta ja Toini";
+                "Anna, Aino, Aili, Aune, Helvi, Tyyne, Kerttu, Helmi, Martta ja Toini.";
         }
 
         drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
