@@ -36,6 +36,7 @@ function preload() {
     //GAME.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
 
     // Define all the states
+    GAME.state.add('credits', credits_state);
     GAME.state.add('help', help_state);
     GAME.state.add('load', load_state);
     GAME.state.add('menu', menu_state);

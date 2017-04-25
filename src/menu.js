@@ -24,7 +24,7 @@ var menu_state = {
     },
 
     readCredits: function () {
-
+        GAME.state.start('credits');
     }
 };
 
