@@ -8,7 +8,9 @@ var youthwork3_state = {
             +"Leipurimestari arvostaa myös rehellisyyttäsi, sillä et ole kertaakaan jäänyt kiinni kuormasta syömisestä. "
             +"Niinpä pääset leipomoon oppipojaksi eikä aikaakaan, kun opit alustamaan taikinat ja pyöräyttämään pullat vaikka unissasi.";
             var image = 'bakerybackground';
+            PLAYER.deathwar1 = true;
         } else {
+            PLAYER.widowboss = true;
             var text = "Saat kotiapulaisen paikan ikääntyneen tehdassukuun kuuluvan leskirouvan luota. "
             +"Hän vaatii sinulta paljon: asunnon tulee olla lämmin ennen kuin hän nousee kattamallesi aamupalalle kello 7. "
             +"Olet kuitenkin tyytyväinen, sillä palkkasi riittää vaatteisiin, joista et aiemmin uskaltanut edes haaveilla.";

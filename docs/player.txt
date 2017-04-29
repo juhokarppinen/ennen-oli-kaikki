@@ -24,3 +24,4 @@ movedtocity     bool        citywork1.js        Tells if player was living in ci
 noconscript     bool        noconscript.js      Tells if player was released from army due to lacking health
 lotta           bool        homechores0.js      Tells if player became a lotta; useful during wartime branches
 nurse           bool        studies8.js         Tells if player became a nurse; useful during wartime branches
+widowboss       bool        youtwork3.js        Separates those city girls who work as assistants to the widow.

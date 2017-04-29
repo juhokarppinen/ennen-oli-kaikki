@@ -14,9 +14,9 @@ var beginwar_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.noconscript === true) {
-            GAME.state.start('death');
+            GAME.state.start('wartime1');
         } else if(PLAYER.gender === "male") {
-            GAME.state.start('death');
+            GAME.state.start('war1');
         } else {
             GAME.state.start('wartime1');
         }

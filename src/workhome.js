@@ -15,6 +15,7 @@ var workhome_state = {
         if(PLAYER.gender === "male" && PLAYER.class === "poor") {
             GAME.state.start('noconscript');
         } else if(PLAYER.gender === "male") {
+            PLAYER.deathwar1 = true;
             GAME.state.start('conscript');
         } else {
             GAME.state.start('beforewar');

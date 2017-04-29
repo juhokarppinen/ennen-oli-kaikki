@@ -13,8 +13,14 @@ var beforewar_state = {
             +"tosiaankin on vain harjoituksista, mutta kuulet huolen hänen äänestään.";
         } else if(PLAYER.movedtocity === true) {
             var text = "Kaupungin kadut hiljenevät lokakuussa 1939, kun kaikki reserviläiset "
-            +"kutsutaan ylimääräisiin kertaushajoituksiin. Myös vuokranantajasi poika saa kutsun. "
-            +"Yrität lohduttaa hänen nyyhkyttävää äitiään parhaasi mukaan.";
+            +"kutsutaan ylimääräisiin kertaushajoituksiin.";
+            if(PLAYER.widowboss === true) {
+                text += " Myös leskirouvan poika saa kutsun, vaikka on jo lähes 40-vuotias. "
+                +"Yrität lohduttaa nyyhkyttävää rouvaa parhaasi mukaan.";
+            } else {
+                text += " Myös vuokranantajasi poika saa kutsun. "
+                +"Yrität lohduttaa hänen nyyhkyttävää äitiään parhaasi mukaan.";
+            }
         } else {
             var text = "Kylän raitilla on hiljaista lokakuussa 1939, sillä lähes kaikki seudun miehet kaikkein nuorimpia "
             +"ja vanhimpia lukuunottamatta on kutsuttu ylimääräisiin kertausharjoituksiin. Kotiin jääneiden ilmeet ovat vakavia.";

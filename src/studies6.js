@@ -3,7 +3,8 @@ var studies6_state = {
     create: function() {
         if(PLAYER.gender === "female") {
             PLAYER.age = 18;
-            var gendertext = "kotiapulaiseksi apteekkarin taloon.";
+            PLAYER.widowboss = true;
+            var gendertext = "ikääntyneen leskirouvan kotiapulaiseksi.";
             var image      = 'studieswomenbackground';
         } else {
             PLAYER.age = 16;

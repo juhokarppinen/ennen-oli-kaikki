@@ -8,6 +8,7 @@ var studies7_state = {
             if(PLAYER.location.name === "Jyväskylä") {
                 var text = "Vanhempasi alkavat pikkuhiljaa tottua ajatukseen sinusta suvun ensimmäisenä lääkärinä. "
                 +"Työskentelet ahkerasti, jottet tuottaisi heille pettymystä ja vapaa-aikasi kuluu pitkälti kirjojen parissa.";
+                PLAYER.deathwar1 = true;
             } else {
                 var text = "Opinnoistasi ei ole tulla mitään, sillä pääsi on aivan pyörällään kaikista huvituksista, joita Helsingissä on tarjolla. "
                 +"Lisäksi olet naulinnut silmäsi maitokaupan myymäläapulaiseen. "

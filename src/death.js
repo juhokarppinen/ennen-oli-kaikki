@@ -23,7 +23,7 @@ var death_state = {
         }
         // War death
         if (PLAYER.causeofdeath === "sota1") {
-            if(PLAYER.gender === "female" || PLAYER.noconscript === true) {
+            if(PLAYER.gender === "female") {
                 causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "
                 +"koneet tulevat taas. Olet kaupungilla asioilla etkä ehdi suojaan ennen kuin pommit putoavat. "
                 +"Menetät henkesi uudenvuoden aattona 1939. "+ ripText;
@@ -33,6 +33,17 @@ var death_state = {
                 +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
             }
             infoText = "Sodassa miesten kuolleisuus oli 12,8% ja naisten 2,6%.";
+        }
+        if(PLAYER.causeofdeath === "sota2") {
+            if(PLAYER.gender === "female") {
+                causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "
+                +"koneet tulevat taas. Olet kaupungilla asioilla etkä ehdi suojaan ennen kuin pommit putoavat. "
+                +"Menetät henkesi uudenvuoden aattona 1939. "+ ripText;
+            } else {
+                causeOfDeathText = "Pataljoonanne oli siirtymässä linjojen takaa reservistä etulinjaan, kun "
+                +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
+                +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
+            }
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
