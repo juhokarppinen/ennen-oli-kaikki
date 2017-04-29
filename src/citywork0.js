@@ -6,8 +6,12 @@ var citywork0_state = {
         +"Kuulet, että SOK:n makeistehtaalla Vaajakoskella saattaisi kuitenkin olla töitä. "
         +"Lähdetkö kokeilemaan onneasi vai palaatko jo kotipitäjääsi varmempien piianpaikkojen perään?";
         
-        var image     = 'citybackground';
-            
+        this.backgroundSound = GAME.add.audio('ambience-city');
+        this.backgroundSound.loop = true;
+        this.backgroundSound.volume = 0.15;
+        this.backgroundSound.play();
+        
+        var image = 'citybackground';
         var leftButtonLabel = "Kotiin";
         var rightButtonLabel = "Makeistehtaalle";
 
@@ -15,10 +19,12 @@ var citywork0_state = {
     },
 
     leftButtonHandler: function () {
+        this.backgroundSound.stop();
         GAME.state.start('servant5');
     },
 
     rightButtonHandler: function () {
+        this.backgroundSound.stop();
         GAME.state.start('citywork2');
     }
 }

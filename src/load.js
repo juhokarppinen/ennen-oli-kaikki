@@ -75,6 +75,8 @@ var load_state = {
         GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
+        //sfx
+        GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
         //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
         /*  Bittersweet Kevin MacLeod (incompetech.com)
