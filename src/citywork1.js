@@ -11,7 +11,8 @@ var citywork1_state = {
                 +"Työ on raskasta tehtaallakin, mutta olet silti tyytyväinen maisemanvaihdokseen.";
             } else {
                 var image     = 'homeassistantbackground';
-                var text = "Lähtö kannatti! Saat lastenhoitajan paikan apteekkarin talosta. "
+                PLAYER.widowboss = true;
+                var text = "Lähtö kannatti! Saat kotiapulaisen paikan ikääntyvän leskirouvan luota. "
                 +"Työhösi kuuluu lastenhoidon lisäksi siivousta ja ruoanlaittoa apteekkarin rouvan valvovan silmän alla.";
             }
         } else {
@@ -21,10 +22,16 @@ var citywork1_state = {
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi laskentoa ja koneenpiirustusta.";
             } else {
                 var image     = 'homeassistantbackground';
-                var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi kotiapulaisena ei juuri poikkea töistäsi kotona, "
+                PLAYER.widowboss = true;
+                var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi leskirouvan kotiapulaisena ei juuri poikkea töistäsi kotona, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi englantia ja kuorolaulua.";
             }
         }
+        
+        this.backgroundSound = GAME.add.audio('ambience-city');
+        this.backgroundSound.loop = true;
+        this.backgroundSound.volume = 0.15;
+        this.backgroundSound.play();
             
         var centerButtonLabel = "Jatka";
 
@@ -32,6 +39,7 @@ var citywork1_state = {
     },
 
     centerButtonHandler: function () {
+        this.backgroundSound.stop();
         if(PLAYER.gender === "male") {
             GAME.state.start('conscript');
         } else {
