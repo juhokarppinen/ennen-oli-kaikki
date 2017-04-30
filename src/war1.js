@@ -1,7 +1,7 @@
 var war1_state = {
 
     create: function() {
-        if(PLAYER.location !== "Jyväskylä") {
+        if(PLAYER.location.name !== "Jyväskylä") {
             var text = "Palvelet kranaatinheitinkomppaniassa Taipaleen lohkolla Itä-Kannaksella. "
             +"Neuvostoliitto on tykittänyt puolustuslinjaanne taukoamatta jo viikkoja, mutta "
             +"linja pitää vihollisen ylivoimasta huolimatta.";

@@ -11,9 +11,9 @@ var peacesoldier2_state = {
             +"Joukkoja lomautetaan ja kotiutetaan pikkuhiljaa.";
             if ("undefined" !== typeof PLAYER.spouse) {
                 text += " Koska olet perheellinen, olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
-            } else if(PLAYER.class !== "rich" && PLAYER.location === "Jyväskylä" || PLAYER.movedtocity === true) {
+            } else if(PLAYER.class !== "rich" && PLAYER.location.name === "Jyväskylä" || PLAYER.movedtocity === true) {
                 text += " Koska kotiuttamisjärjestyksessä otetaan huomioon teollisuuden työvoiman tarpeet, pääset kotimatkalle huhtikuun puolivälissä.";
-            } else if(PLAYER.class !== "rich" && PLAYER.location !== "Jyväskylä") {
+            } else if(PLAYER.class !== "rich" && PLAYER.location.name !== "Jyväskylä") {
                 text += " Kotona maaseudulla tarvitaan kipeästi työvoimaa, sillä kevätkylvöt alkavat pian, "
                 +"joten olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
             } else {
@@ -28,7 +28,11 @@ var peacesoldier2_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.amputation === true) {
-            GAME.state.start('weddingpeace');
+            if ("undefined" !== typeof PLAYER.spouse) {
+                GAME.state.start('death');
+            } else {
+                GAME.state.start('weddingpeace');
+            }
         } else {
             GAME.state.start('death');
         }
