@@ -77,6 +77,7 @@ function preload() {
     GAME.state.add('torppa2', torppa2_state);
     GAME.state.add('torppa3', torppa3_state);
     GAME.state.add('torppa4', torppa4_state);
+    GAME.state.add('torppa5', torppa5_state);
     GAME.state.add('barn0', barn0_state);
     GAME.state.add('barn1', barn1_state);
     GAME.state.add('barn2', barn2_state);
@@ -104,6 +105,10 @@ function preload() {
     GAME.state.add('wartime1', wartime1_state);
     GAME.state.add('wartime2', wartime2_state);
     GAME.state.add('peacetime1', peacetime1_state);
+    GAME.state.add('peacetime2', peacetime2_state);
+    GAME.state.add('peacesoldier1', peacesoldier1_state);
+    GAME.state.add('peacesoldier2', peacesoldier2_state);
+    GAME.state.add('map1', map1_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

@@ -1,11 +1,9 @@
 var war2_state = {
 
     create: function() {
-        if(PLAYER.location.name !== "Jyväskylä") {
-            var text = "Kuulut kranaatinheitinkomppaniaan, jalkaväkirykmentti 28, 10. divisioona.";
-        } else {
-            var text = "Kuulut kenttätykistörykmentti 10:een.";
-        }
+        PLAYER.age = 23;
+        var text = "Pakkanen on laskenut Kannaksella alle 40 asteen. Olet palelluttanut vasemman jalkasi pahasti, "
+        +"sillä saappaaseesi on tullut reikä. Jalkasi on täysin tunnoton ja sinut lähetetään kenttäsairaalaan tarkistettavaksi.";
                 
         var image            = 'warbackground';
         var centerButtonLabel = "Jatka";
@@ -14,6 +12,6 @@ var war2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('war3');
+        GAME.state.start('peacesoldier1');
     }
 }

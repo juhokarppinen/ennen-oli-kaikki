@@ -1,7 +1,7 @@
 var peacetime1_state = {
 
     create: function() {
-        
+        PLAYER.age = 23;
         if(PLAYER.gender === "male") {
           var image = 'youthworkcountrybackground';
           var text = "Olet kärräämässä polttopuita saunalle, kun pikkurenki käskee sinut kiireesti talolle. Jätät halot niille sijoilleen, "
@@ -43,6 +43,6 @@ var peacetime1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('map1');
     }
 }

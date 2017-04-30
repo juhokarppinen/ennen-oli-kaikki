@@ -20,8 +20,12 @@ var war1_state = {
         if(PLAYER.deathwar1 === true) {
             GAME.state.start('death');
         } else {
-            //to do GAME.state.start('war2');
-            GAME.state.start('death');
+            if(PLAYER.location !== "Jyväskylä" && PLAYER.class === "middle" && PLAYER.movedtocity !== true) {
+                PLAYER.amputation = true;
+                GAME.state.start('war2');
+            } else {
+                GAME.state.start('peacesoldier1');
+            }
         }
     }
 }
