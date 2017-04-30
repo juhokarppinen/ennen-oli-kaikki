@@ -23,7 +23,7 @@ var peacetime1_state = {
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Olet pesemässä pyykkiä saunan padassa, kun kuulet pihalta melua. Ohi juokseva pikkupoika kertoo sodan päättyneen. "
-            +"Kiiruhdat sisälle, missä leskirouva on juuri avannut radion. Otatte uutiset vastaan ristiriitaisin tuntein. "
+            +"Kiiruhdat sisälle, missä leskirouva on juuri avannut radion. "
             +"Olette onnellisia rauhasta, mutta sen hinta, Karjalankannaksen menettäminen Neuvostoliitolle, tuntuu kohtuuttomalta.";
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';
@@ -32,7 +32,7 @@ var peacetime1_state = {
             +"sota on loppunut. Alat valmistella potilaita siirtoa varten välittömästi.";
         } else {
             var image = 'candyfactorybackground';
-            var text = "Työpäiväsi on puolessa välissä, kun vuoromestari keskeyttää työt. Kaikkien on kokoonnuttava tehtaan edustalle, "
+            var text = "Vuoromestari keskeyttää työt. Kaikki kokoontuvat tehtaan edustalle, "
             +"missä johtaja kertoo uutiset. Sota on päättynyt. Ilon kiljahdukset vaimenevat pian, kun johtaja kertoo rauhan ehdoista. "
             +"Uusi työtoverisi, joka on tullut Jyväskylään evakkona Karjalasta, purskahtaa itkuun. Hänen kotinsa jäi rajan taakse.";
         }

@@ -21,7 +21,7 @@ var peacetime2_state = {
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Leskirouva on huonona edelleen, vaikka hänen poikansa palasikin sodasta vahingoittumattomana. "
-            +"Rouvan terveys reistailee ja teet kovasti töitä hankkiaksesi hyviä raaka-aineita, jotta saat valmistettua "
+            +"Teet kovasti töitä hankkiaksesi hyviä raaka-aineita, jotta saat valmistettua "
             +"rouvalle ravitsevaa ruokaa elintarvikepulasta huolimatta. Raha ei ole ongelma, joten hankit ylimääräisiä maito- ja voiannoksia mustasta pörssistä.";
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';

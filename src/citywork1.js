@@ -13,7 +13,7 @@ var citywork1_state = {
                 var image     = 'homeassistantbackground';
                 PLAYER.widowboss = true;
                 var text = "Lähtö kannatti! Saat kotiapulaisen paikan ikääntyvän leskirouvan luota. "
-                +"Työhösi kuuluu lastenhoidon lisäksi siivousta ja ruoanlaittoa apteekkarin rouvan valvovan silmän alla.";
+                +"Hän vaatii sinulta paljon, mutta olet tyytyväinen, sillä palkkasi riittää vaatteisiin, joista et aiemmin uskaltanut edes haaveilla.";
             }
         } else {
             if(PLAYER.gender === "male") {

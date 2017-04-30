@@ -3,7 +3,6 @@ var beginwar_state = {
     create: function() {
         PLAYER.age = 22;
         var text = "Keski-Suomalainen: SOTA ALKAA!";
-        PLAYER.causeofdeath = "sota1";
         
         var image            = 'conscriptbackground';
         var article          = 'articlewinterwar';

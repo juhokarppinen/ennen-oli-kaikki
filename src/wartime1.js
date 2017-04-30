@@ -53,6 +53,7 @@ var wartime1_state = {
         } else if(PLAYER.lotta === true) {
             GAME.state.start('peacetime1');
         } else if(PLAYER.nurse === true) {
+            PLAYER.causeofdeath = "sota1";
             GAME.state.start('death');
         } else {
             GAME.state.start('wartime2');

@@ -18,6 +18,7 @@ var war1_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.deathwar1 === true) {
+            PLAYER.causeofdeath = "sota1";
             GAME.state.start('death');
         } else {
             if(PLAYER.location !== "Jyväskylä" && PLAYER.class === "middle" && PLAYER.movedtocity !== true) {

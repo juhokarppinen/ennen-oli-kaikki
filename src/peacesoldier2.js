@@ -8,16 +8,16 @@ var peacesoldier2_state = {
         } else {
             var image = 'warbackground';
             var text = "Lähdette vetäytymään kohti uusia rajoja. Rauhansopimuksesta huolimatta sotatilalaki on edelleen voimassa. "
-            +"Kaikki sotilaat eivät siis suinkaan pääse palaamaan koteihinsa heti, vaan joukkoja lomautetaan ja kotiutetaan pikkuhiljaa.";
+            +"Joukkoja lomautetaan ja kotiutetaan pikkuhiljaa.";
             if ("undefined" !== typeof PLAYER.spouse) {
-                text += "Koska olet perheellinen, olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
+                text += " Koska olet perheellinen, olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
             } else if(PLAYER.class !== "rich" && PLAYER.location === "Jyväskylä" || PLAYER.movedtocity === true) {
-                text += "Koska kotiuttamisjärjestyksessä otetaan huomioon teollisuuden työvoiman tarpeet, pääset kotimatkalle huhtikuun puolivälissä.";
+                text += " Koska kotiuttamisjärjestyksessä otetaan huomioon teollisuuden työvoiman tarpeet, pääset kotimatkalle huhtikuun puolivälissä.";
             } else if(PLAYER.class !== "rich" && PLAYER.location !== "Jyväskylä") {
-                text += "Kotona maaseudulla tarvitaan kipeästi työvoimaa, sillä kevätkylvöt alkavat pian, "
+                text += " Kotona maaseudulla tarvitaan kipeästi työvoimaa, sillä kevätkylvöt alkavat pian, "
                 +"joten olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
             } else {
-                text += "Koska kotiin lähetettiin ensimmäisenä miehet, joita tarvittiin elinkeinoelämän palvelukseen, joudut odottamaan kotiuttamista vappuun asti.";
+                text += " Koska kotiin lähetettiin ensimmäisenä miehet, joita tarvittiin elinkeinoelämän palvelukseen, joudut odottamaan kotiuttamista vappuun asti.";
             }
         }
                 
@@ -27,6 +27,10 @@ var peacesoldier2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.amputation === true) {
+            GAME.state.start('weddingpeace');
+        } else {
+            GAME.state.start('death');
+        }
     }
 }
