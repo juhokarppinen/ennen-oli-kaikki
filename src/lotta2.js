@@ -13,6 +13,6 @@ var lotta2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('peaceend1');
     }
 }

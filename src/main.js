@@ -112,6 +112,9 @@ function preload() {
     GAME.state.add('peacesoldier1', peacesoldier1_state);
     GAME.state.add('peacesoldier2', peacesoldier2_state);
     GAME.state.add('peacesoldier3', peacesoldier3_state);
+    GAME.state.add('peacecrush1', peacecrush1_state);
+    GAME.state.add('peacecrush2', peacecrush2_state);
+    GAME.state.add('peacecrush3', peacecrush3_state);
     GAME.state.add('peaceend1', peaceend1_state);
     GAME.state.add('map1', map1_state);
     GAME.state.add('death', death_state);

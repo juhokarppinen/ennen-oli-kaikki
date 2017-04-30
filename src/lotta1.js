@@ -6,7 +6,7 @@ var lotta1_state = {
         +"Töitä olisi tarjolla esimerkiksi siirtoväen huoltotehtävissä. Jatkatko lottana vai hankkiudutko opiskelemaan?";
         var leftButtonLabel  = "Lottatyö";
         var rightButtonLabel  = "Opiskelu";
-        var image     = 'schoolbackground';
+        var image     = 'lottawarbackground';
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },

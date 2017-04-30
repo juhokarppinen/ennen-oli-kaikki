@@ -16,7 +16,7 @@ var peacesoldier3_state = {
             +"sillä puolustusvoimat tarvitsevat uusia aseita. Ihan kuin Suomi varustautuisi uuteen sotaan edellisen tuskin päätyttyä.";
         } else if(PLAYER.improvement === true) {
             var image = 'countrybackground';
-            var text = "Kun kiireisimmät kevättyöt on tehty, alat toteuttaa ennen sotaa laatimaasi suunnitelman uuden navetan rakentamisesta. "
+            var text = "Kun kiireisimmät kevättyöt on tehty, alat toteuttaa ennen sotaa laatimaasi suunnitelmaa uuden navetan rakentamisesta. "
             +"Kaikki pitävät ajatustasi hulluna, sillä kaikesta on pulaa. Niin rakennustarvikkeista kuin lehmien rehustakin. "
             +"Haluat kuitenkin uskoa parempiin aikoihin ja pidät pääsi.";
         } else if(PLAYER.amputation) {
@@ -38,6 +38,10 @@ var peacesoldier3_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('peaceend1');
+        if(PLAYER.location.name === "Jyväskylä" && PLAYER.class === "rich") {
+            GAME.state.start('peacecrush1');
+        } else {
+            GAME.state.start('peaceend1');
+        }
     }
 }
