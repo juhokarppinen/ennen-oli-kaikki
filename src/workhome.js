@@ -13,9 +13,13 @@ var workhome_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male" && PLAYER.class === "poor") {
-            GAME.state.start('noconscript');
+            if (Math.random() <= 0.50) {
+                GAME.state.start('noconscript');
+            } else {
+                PLAYER.deathwar1 = true;
+                GAME.state.start('conscript');
+            }
         } else if(PLAYER.gender === "male") {
-            PLAYER.deathwar1 = true;
             GAME.state.start('conscript');
         } else {
             GAME.state.start('beforewar');

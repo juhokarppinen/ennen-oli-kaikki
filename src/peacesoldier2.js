@@ -29,12 +29,12 @@ var peacesoldier2_state = {
     centerButtonHandler: function () {
         if(PLAYER.amputation === true) {
             if ("undefined" !== typeof PLAYER.spouse) {
-                GAME.state.start('death');
+                GAME.state.start('peacesoldier3');
             } else {
                 GAME.state.start('weddingpeace');
             }
         } else {
-            GAME.state.start('death');
+            GAME.state.start('peacesoldier3');
         }
     }
 }

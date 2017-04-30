@@ -20,9 +20,9 @@ var peacetime2_state = {
             var text = "Kevään muututtua kesäksi elämä alkaa taas näyttää valoisia puoliaan. Naapurin isäntä, joka menetti sodassa jalkansa, on liehitellyt sinua jo tovin.";
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
-            var text = "Leskirouva on huonona edelleen, vaikka hänen poikansa palasikin sodasta vahingoittumattomana. "
+            var text = "Leskirouva on edelleen huonona, vaikka hänen poikansa palasi sodasta vahingoittumattomana. "
             +"Teet kovasti töitä hankkiaksesi hyviä raaka-aineita, jotta saat valmistettua "
-            +"rouvalle ravitsevaa ruokaa elintarvikepulasta huolimatta. Raha ei ole ongelma, joten hankit ylimääräisiä maito- ja voiannoksia mustasta pörssistä.";
+            +"rouvalle ravitsevaa ruokaa elintarvikepulasta huolimatta. Hankit ylimääräisiä maito- ja voiannoksia mustasta pörssistä.";
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';
             var text = "Velvollisuutesi lottana jatkuvat rauhan aikana. Rintamalta siirryt töihin Jyväskylän sotasairaalaan, jossa "
@@ -39,6 +39,6 @@ var peacetime2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('peaceend1');
     }
 }
