@@ -9,6 +9,7 @@ var citywork1_state = {
                 var text = "Lähtö kannatti! Saat töitä Valtion kivääritehtaalta. Palkkasi on parempi kuin renkinä, "
                 +"mutta toisaalta joudut maksamaan asumisesta toisin kuin renkiaikoina. "
                 +"Työ on raskasta tehtaallakin, mutta olet silti tyytyväinen maisemanvaihdokseen.";
+                PLAYER.job = "riflefactory";
             } else {
                 var image     = 'homeassistantbackground';
                 PLAYER.widowboss = true;
@@ -20,6 +21,7 @@ var citywork1_state = {
                 var image     = 'plywoodfactorybackground';
                 var text = "Vaikka valinta oli vaikea, et ole katunut sitä hetkeäkään. Työsi vaneritehtaalla on rankkaa, "
                 +"mutta saat uutta sisältöä elämääsi vasta perustetusta Jyväskylän kansalaisopistosta, jossa opiskelet vapaa-ajallasi laskentoa ja koneenpiirustusta.";
+                PLAYER.job = "plywoodfactory";
             } else {
                 var image     = 'homeassistantbackground';
                 PLAYER.widowboss = true;

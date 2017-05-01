@@ -10,6 +10,7 @@ var studies6_state = {
             PLAYER.age = 16;
             var gendertext = "töihin vaneritehtaalle, kuten isäsi.";
             var image      = 'plywoodfactorybackground';
+            PLAYER.job = "plywoodfactory";
         }
         var text = "Olet sukusi ensimmäinen, jolla on keskikoulun päättötodistus, onneksi olkoon! "
         +"Vanhempiesi pettymykseksi todistus ei kuitenkaan takaa sinulle yhtään prameampaa elämää, vaan päädyt "+gendertext;

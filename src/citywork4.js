@@ -4,6 +4,7 @@ var citywork4_state = {
         PLAYER.age = 14;
         var text = "Pääset töihin vaneritehtaan pakkausosastolle. Ylpeytesi saa kolauksen, kun osastolla työskentelevät "
         +"naiset ovat sinua näppärämpiä vasaran ja paikkaraudan kanssa ja suoriutuvat töistä sinua nopeammin.";
+        PLAYER.job = "plywoodfactory";
 
         var image               = 'plywoodfactorybackground';
         var centerButtonLabel   = "Jatka";

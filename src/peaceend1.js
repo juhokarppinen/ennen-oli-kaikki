@@ -15,6 +15,24 @@ var peaceend1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
+            if("undefined" !== typeof PLAYER.spouse) {
+                GAME.state.start('prewar1');
+            } else {
+                GAME.state.start('peaceend2');
+            }
+        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "rich" && PLAYER.gender === "male") {
+            GAME.state.start('prewar1');
+        } else if(PLAYER.location.name === "Jyväskylä" && PLAYER.class === "rich" && PLAYER.gender === "male") {
+            GAME.state.start('prewar1');
+        } else if(PLAYER.gender === "male" && (PLAYER.location.name === "Jyväskylä" || PLAYER.movedtocity === true)) {
+            GAME.state.start('prewar1');
+        } else if(PLAYER.job === "riflefactory") {
+            GAME.state.start('prewar1');
+        } else if(PLAYER.job === "plywoodfactory") {
+            GAME.state.start('prewar1');
+        } else {
+            GAME.state.start('peaceend2');
+        }
     }
 }

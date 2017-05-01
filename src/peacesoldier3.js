@@ -6,11 +6,11 @@ var peacesoldier3_state = {
             var name = pickName("female");
             var text = "Sinun on vaikea totutella siviilielämään, sillä pääset jatkamaan opintojasi vasta syksyllä ja toimettomuus ahdistaa. "
             +"Päätät lähteä sukulaistesi avuksi maalle heinänkorjuutöihin. Pikkuserkkusi "+name+" herättää kiinnostuksesi, ja tanssitte sadonkorjuujuhlilla.";
-        } else if(PLAYER.location.name === "Jyväskylä") {
+        } else if(PLAYER.job === "plywoodfactory") {
             var image = 'plywoodfactorybackground';
             var text = "Kotiuduttuasi rintamalta palaat saman tien töihin vaneritehtaalle. Liityt ammattiliittoon "
             +"ja saatte neuvoteltua itsellenne tuntuvan palkankorotuksen säännöstelyn nostamiin hintoihin vedoten.";
-        } else if(PLAYER.movedtocity === true) {
+        } else if(PLAYER.job === "riflefactory") {
             var image = 'riflefactorybackground';
             var text = "Kotiuduttuasi rintamalta palaat saman tien töihin kivääritehtaalle. Työtä riittää enemmän kuin ennen, "
             +"sillä puolustusvoimat tarvitsevat uusia aseita. Ihan kuin Suomi varustautuisi uuteen sotaan edellisen tuskin päätyttyä.";

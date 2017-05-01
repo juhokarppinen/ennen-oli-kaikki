@@ -12,6 +12,7 @@ var peacecrush2_state = {
     },
 
     centerButtonHandler: function () {
+        PLAYER.spouse = PLAYER.crush;
         GAME.state.start('peaceend1');
     }
 }

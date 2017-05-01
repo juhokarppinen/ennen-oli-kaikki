@@ -18,6 +18,7 @@ var wartime1_state = {
             var image = 'homechorescountrybackground';
             var text = "Veljesi ovat rintamalla ja vanheneva isäsi kärsii rintakivuista. Äitisi tarvitsee apuasi "
             +"kotitilan töissä, joten hyvästelet työnantajasi ja palaat maaseudulle.";
+            PLAYER.movedtocity = false;
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Huoli rintamalla olevasta pojasta saa leskirouvan suunniltaan, eikä hän enää välitä ruoan laadusta eikä valita solmussa olevista maton hapsuista. "
