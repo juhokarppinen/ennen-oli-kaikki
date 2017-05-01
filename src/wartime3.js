@@ -1,4 +1,4 @@
-var wartime1_state = {
+var wartime3_state = {
 
     create: function() {
         
@@ -16,6 +16,6 @@ var wartime1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('wartime4');
     }
 }

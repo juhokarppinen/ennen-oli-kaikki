@@ -108,6 +108,13 @@ function preload() {
     GAME.state.add('wartime1', wartime1_state);
     GAME.state.add('wartime2', wartime2_state);
     GAME.state.add('wartime3', wartime3_state);
+    GAME.state.add('wartime4', wartime4_state);
+    GAME.state.add('wartime5', wartime5_state);
+    GAME.state.add('warcrush1', warcrush1_state);
+    GAME.state.add('warcrush2', warcrush2_state);
+    GAME.state.add('warcrush3', warcrush3_state);
+    GAME.state.add('warcrush4', warcrush4_state);
+    GAME.state.add('warcrush5', warcrush5_state);
     GAME.state.add('peacetime1', peacetime1_state);
     GAME.state.add('peacetime2', peacetime2_state);
     GAME.state.add('peacesoldier1', peacesoldier1_state);
