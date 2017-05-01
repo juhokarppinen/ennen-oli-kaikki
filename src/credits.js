@@ -6,10 +6,10 @@ var credits_state = {
 
         var backButton = createButton(CENTER.x, CENTER.y * 1.75, "Valikkoon", this.backButtonHandler, this);
         var text = this.drawText(
-            "Veera Hasala: ohjelmointi, projektin johto, käsikirjoitus\n" +
-            "Pauliina Karjalainen: graafinen suunnittelu, taustatutkimus\n" +
+            "Veera Hasala: Projektin johto, ohjelmointi\n" +
+            "Pauliina Karjalainen: graafinen suunnittelu, kuvien haku ja editointi\n" +
             "Juho Karppinen: ohjelmointi, äänisuunnittelu\n" +
-            "Elina Rantalainen: taustatutkimus, käsikirjoitus\n" +
+            "Elina Rantalainen: käsikirjoitus, taustatutkimus\n" +
             "Roope Visuri: taustatutkimus\n\n" +
             "Taustakuvat: Kansallisgalleria, Helsingin Kaupunginmuseo, Museovirasto, SA-kuva-arkisto, Keski-Suomen museo\n\n" +
             "Taustamusiikki: Bittersweet (Kevin MacLeod, incompetech.com, CC BY 3.0)");
