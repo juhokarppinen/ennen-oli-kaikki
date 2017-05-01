@@ -12,6 +12,14 @@ var peaceend2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        if(PLAYER.lotta === true) {
+            GAME.state.start('wartime3');
+        } else if(PLAYER.gender === "female" || PLAYER.noconscript === true) {
+            //todo GAME.state.start('wartime4');
+            GAME.state.start('death');
+        } else {
+            //todo GAME.state.start('war3');
+            GAME.state.start('death');
+        }
     }
 }
