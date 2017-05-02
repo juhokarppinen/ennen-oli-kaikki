@@ -74,7 +74,7 @@ var load_state = {
         GAME.load.image('warworkbackground', 'assets/img/warwork.jpg');
         GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
         //articles
-        GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.png');
+        GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         //sfx
         GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
         //music
