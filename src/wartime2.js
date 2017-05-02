@@ -13,6 +13,6 @@ var wartime2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('peacetime1');
+        GAME.state.start('endwar');
     }
 }

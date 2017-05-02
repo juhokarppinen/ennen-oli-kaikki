@@ -132,6 +132,7 @@ function preload() {
     GAME.state.add('prewar1', prewar1_state);
     GAME.state.add('prewar2', prewar2_state);
     GAME.state.add('map1', map1_state);
+    GAME.state.add('endwar', endwar_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

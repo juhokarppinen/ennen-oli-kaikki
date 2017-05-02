@@ -44,15 +44,15 @@ var wartime1_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
-            GAME.state.start('peacetime1');
+            GAME.state.start('endwar');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
-            GAME.state.start('peacetime1');
+            GAME.state.start('endwar');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-            GAME.state.start('peacetime1');
+            GAME.state.start('endwar');
         } else if(PLAYER.widowboss === true) {
             GAME.state.start('wartime2');
         } else if(PLAYER.lotta === true) {
-            GAME.state.start('peacetime1');
+            GAME.state.start('endwar');
         } else if(PLAYER.nurse === true) {
             PLAYER.causeofdeath = "sota1";
             GAME.state.start('death');

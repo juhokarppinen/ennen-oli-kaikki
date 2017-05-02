@@ -363,7 +363,7 @@ function drawUItwoButtons(bg, txt, label1, label2, context, infoTxt = "") {
 }
 
 
-function drawUIsingleButtonArticle(bg, img, txt, label, context) {
+function drawUIsingleButtonArticle(bg, img, label, context) {
     showPreviousBackground();
 
     var background   = drawBackground(bg);

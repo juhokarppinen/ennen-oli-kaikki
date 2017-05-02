@@ -2,13 +2,12 @@ var beginwar_state = {
 
     create: function() {
         PLAYER.age = 22;
-        var text = "Keski-Suomalainen: SOTA ALKAA!";
         
         var image            = 'conscriptbackground';
         var article          = 'articlewinterwar';
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButtonArticle(image, article, text, centerButtonLabel, this);
+        drawUIsingleButtonArticle(image, article, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {
