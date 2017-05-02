@@ -3,9 +3,9 @@ var peacesoldier3_state = {
     create: function() {
         if(PLAYER.location.name === "Jyväskylä" && PLAYER.class === "rich") {
             var image = 'youthworkcountrybackground';
-            var name = pickName("female");
+            PLAYER.crush = pickName("female");
             var text = "Sinun on vaikea totutella siviilielämään, sillä pääset jatkamaan opintojasi vasta syksyllä ja toimettomuus ahdistaa. "
-            +"Päätät lähteä sukulaistesi avuksi maalle heinänkorjuutöihin. Pikkuserkkusi "+name+" herättää kiinnostuksesi, ja tanssitte sadonkorjuujuhlilla.";
+            +"Päätät lähteä sukulaistesi avuksi maalle heinänkorjuutöihin. Pikkuserkkusi "+PLAYER.crush+" herättää kiinnostuksesi, ja tanssitte sadonkorjuujuhlilla.";
         } else if(PLAYER.job === "plywoodfactory") {
             var image = 'plywoodfactorybackground';
             var text = "Kotiuduttuasi rintamalta palaat saman tien töihin vaneritehtaalle. Liityt ammattiliittoon "

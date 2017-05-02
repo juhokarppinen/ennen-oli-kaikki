@@ -2,6 +2,7 @@ var war4_state = {
 
     create: function() {
         PLAYER.age = 26;
+        var image = 'warbackground';
         if(PLAYER.location.name === "Jyväskylä" && PLAYER.class === "rich") {
             if ("undefined" !== typeof PLAYER.spouse) {
                 var text = "Kuukaudet kuluvat, ja toivo sodan päättymisestä alkaa hiipua. "
@@ -12,7 +13,6 @@ var war4_state = {
             }
         } else if(PLAYER.job === "plywoodfactory") {
             PLAYER.age = 24;
-            var image = 'plywoodfactorybackground';
             var text = "Pääset ensimmäistä kertaa lomalle vasta joulukuussa, kun hyökkäyssota on muuttumassa asemasodaksi. "
             +"Aiot mennä tapaamaan heilaasi, jonka kanssa olet ollut tiiviissä kirjeenvaihdossa sodan alusta asti.";
         } else {
@@ -26,8 +26,7 @@ var war4_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.job === "plywoodfactory") {
-            //todo: romance path
-            GAME.state.start('death');
+            GAME.state.start('warromance1');
         } else {
             GAME.state.start('death');
         }

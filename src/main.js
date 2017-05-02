@@ -114,6 +114,9 @@ function preload() {
     GAME.state.add('warcrush1', warcrush1_state);
     GAME.state.add('warcrush2', warcrush2_state);
     GAME.state.add('warcrush3', warcrush3_state);
+    GAME.state.add('warromance1', warromance1_state);
+    GAME.state.add('warromance2', warromance2_state);
+    GAME.state.add('warromance3', warromance3_state);
     GAME.state.add('warcrush4', warcrush4_state);
     GAME.state.add('warcrush5', warcrush5_state);
     GAME.state.add('warchoice1', warchoice1_state);
