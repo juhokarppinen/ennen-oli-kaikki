@@ -93,8 +93,8 @@ var load_state = {
      * Note that most states will require the PLAYER to have certain properties
      * in order for them to work properly. Here you can set these properties
      * accordingly. These settings have no effect if the game is started 
-     * normally, since they are going to be overwritten or deleted in the 
-     * beginning.
+     * from the default state, since they are going to be overwritten or deleted 
+     * in the beginning.
      */
     create: function() {
         var startState = 'menu'; // Default start state == 'menu'     
