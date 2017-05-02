@@ -93,8 +93,7 @@ var load_state = {
      * Note that most states will require the PLAYER to have certain properties
      * in order for them to work properly. Here you can set these properties
      * accordingly. These settings have no effect if the game is started 
-     * from the default state, since they are going to be overwritten or deleted 
-     * in the beginning.
+     * from the default state, since they are overwritten in the beginning.
      */
     create: function() {
         var startState = 'menu'; // Default start state == 'menu'     
@@ -128,7 +127,7 @@ var load_state = {
         BACKGROUND_MUSIC = GAME.add.audio('music-Bittersweet');
         BACKGROUND_MUSIC.loop = true;
         BACKGROUND_MUSIC.play();
-        GAME.state.start('menu');
+        GAME.state.start(startState);
     },
 
     addLoadingScreen: function () {
