@@ -16,8 +16,10 @@ var peacetime2_state = {
                 +"Yrität työn ohessa udella heiltä heidän sotakokemuksistaan, mutta saat vastaukseksi vain epämääräisiä murahduksia.";
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-            var image = 'homechorescountrybackground';
-            var text = "Kevään muututtua kesäksi elämä alkaa taas näyttää valoisia puoliaan. Naapurin isäntä, joka menetti sodassa jalkansa, on liehitellyt sinua jo tovin.";
+            var image = 'weddingbackground';
+            var text = "Kevään muututtua kesäksi elämä alkaa taas näyttää valoisia puoliaan. Naapurin isäntä, "
+            +"joka menetti sodassa jalkansa, on liehitellyt sinua jo tovin. Pidät hänestä kovasti ja avioliitto "
+            +"tarkoittaisi emännän paikkaa hänen talossaan. Vastaat lopulta kyllä.";
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Leskirouva on edelleen huonona, vaikka hänen poikansa palasi sodasta vahingoittumattomana. "
