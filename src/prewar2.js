@@ -16,6 +16,6 @@ var prewar2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('peaceend2');
+        GAME.state.start('beginwar2');
     }
 }

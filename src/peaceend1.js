@@ -19,7 +19,7 @@ var peaceend1_state = {
             if("undefined" !== typeof PLAYER.spouse) {
                 GAME.state.start('prewar1');
             } else {
-                GAME.state.start('peaceend2');
+                GAME.state.start('beginwar2');
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "rich" && PLAYER.gender === "male") {
             GAME.state.start('prewar1');
@@ -32,7 +32,7 @@ var peaceend1_state = {
         } else if(PLAYER.job === "plywoodfactory") {
             GAME.state.start('prewar1');
         } else {
-            GAME.state.start('peaceend2');
+            GAME.state.start('beginwar2');
         }
     }
 }

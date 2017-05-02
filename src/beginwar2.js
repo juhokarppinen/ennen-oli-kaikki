@@ -1,18 +1,15 @@
-var endwar_state = {
+var beginwar2_state = {
 
     create: function() {
+        
         var image            = 'conscriptbackground';
-        var article          = 'articlepeace';
+        var article          = 'articlecontinuationwar';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButtonArticle(image, article, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {
-        if(PLAYER.gender === "male" && PLAYER.noconscript !== true) {
-            GAME.state.start('map1');
-        } else {
-            GAME.state.start('peacetime1');
-        }
+        GAME.state.start('peaceend2');
     }
 }

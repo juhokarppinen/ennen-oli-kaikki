@@ -101,6 +101,7 @@ function preload() {
     GAME.state.add('conscriptwife2', conscriptwife2_state);
     GAME.state.add('beforewar', beforewar_state);
     GAME.state.add('beginwar', beginwar_state);
+    GAME.state.add('beginwar2', beginwar2_state);
     GAME.state.add('war1', war1_state);
     GAME.state.add('war2', war2_state);
     GAME.state.add('war3', war3_state);

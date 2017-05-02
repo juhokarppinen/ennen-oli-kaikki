@@ -19,6 +19,6 @@ var peacesoldier1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('map1');
+        GAME.state.start('endwar');
     }
 }

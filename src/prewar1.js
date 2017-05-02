@@ -56,16 +56,16 @@ var prewar1_state = {
             if(PLAYER.gender === "female") {
                 GAME.state.start('prewar2');
             } else {
-                GAME.state.start('peaceend2');
+                GAME.state.start('beginwar2');
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "rich" && PLAYER.gender === "male") {
             if(PLAYER.university === true) {
                 GAME.state.start('prewar2');
             } else {
-                GAME.state.start('peaceend2');
+                GAME.state.start('beginwar2');
             }
         } else {
-            GAME.state.start('peaceend2');
+            GAME.state.start('beginwar2');
         }
     }
 }

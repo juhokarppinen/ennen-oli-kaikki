@@ -76,6 +76,7 @@ var load_state = {
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');
+        GAME.load.image('articlecontinuationwar', 'assets/img/articlecontinuationwar.jpg');
         //sfx
         GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
         //music

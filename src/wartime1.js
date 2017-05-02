@@ -9,10 +9,12 @@ var wartime1_state = {
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
             var image = 'homechorescountrybackground';
             var text = "Arkinen aherrus jatkuu kuten ennenkin, mutta työtä on paljon enemmän, sillä suurin osa tilan "
-            +"työikäisistä miehistä on rintamalla. Polttopuiden teko jäi talon miesväeltä lokakuussa kesken, joten saat työn vastuullesi.";
+            +"työikäisistä miehistä on rintamalla. ";
             if("undefined" !== typeof PLAYER.spouse) {
                 text += "Päiviä varjostaa huoli miehestäsi, sillä uutisia saman kylän poikien kaatumisista "
                 +"on saapunut viime viikkoina useampia. Et ole saanut vastausta viimeiseen kirjeeseesi ja pelkäät pahinta.";
+            } else {
+                text += "Polttopuiden teko jäi talon miesväeltä lokakuussa kesken, joten saat työn vastuullesi.";
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
             var image = 'homechorescountrybackground';
