@@ -34,6 +34,9 @@ var death_state = {
             }
             infoText = "Sodassa miesten kuolleisuus oli 12,8% ja naisten 2,6%.";
         }
+        if(PLAYER.causeofdeath === "tuberkuloosi") {
+            causeOfDeathText = "Sairastut tuberkuloosiin, joka koituu kohtaloksesi." + ripText;
+        }
         if(PLAYER.causeofdeath === "sota2") {
             if(PLAYER.gender === "female") {
                 causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "

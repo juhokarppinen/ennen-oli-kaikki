@@ -12,11 +12,7 @@ var map1_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "female") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-                GAME.state.start('torppa5');
-            } else {
-                GAME.state.start('peacetime2');
-            }
+            GAME.state.start('peacetime2');
         } else {
             if(PLAYER.noconscript === true) {
                 GAME.state.start('peacetime2');

@@ -2,10 +2,15 @@ var wartime4_state = {
 
     create: function() {
         
-        if(PLAYER.gender === "male") {
+        if(PLAYER.amputation === true) {
           var image = 'youthworkcountrybackground';
           var text = "Tilanne kotirintamalla kiristyy ja elintarvikepula pahenee syksyn mittaan. Kaikki tilallanne tuotetut elintarvikkeet "
           +"on ilmoitettava kansanhuoltolautakunnalle ja luovutettava suurimmilta osin säännösteltyyn kulutukseen.";
+        } else if(PLAYER.noconscript === true) {
+            var image = 'youthworkcountrybackground';
+            var text = "Tilanne kotirintamalla kiristyy elintarvikepulan muuttuessa yhä pahemmaksi. Sotilaiden muonittaminen "
+            +"on etusijalla ja siviilien ruoka-annoksia säännöstellään ankarasti. Ravinnon puute heikentää jo entisestään heiveröistä "
+            +"ruumistasi ja olet altis tartuntataudeille.";
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
             var image = 'homechorescountrybackground';
             var text = "Uutiset suomalaisjoukkojen menestyksestä ja Viipurin takaisinvalloituksesta saavat keskisuomalaistenkin mielet kohoamaan, "
@@ -37,10 +42,17 @@ var wartime4_state = {
     },
 
     centerButtonHandler: function () {
-        if(PLAYER.gender === "male") {
+        if(PLAYER.amputation === true) {
             GAME.state.start('wartime5');
-        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
+        } else if(PLAYER.noconscript === true) {
+            PLAYER.causeofdeath = "tuberkuloosi";
             GAME.state.start('death');
+        } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
+            if("undefined" !== typeof PLAYER.spouse) {
+                GAME.state.start('death');
+            } else {
+                GAME.state.start('warchoice1');
+            }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
             GAME.state.start('wartime5');
         } else if(PLAYER.lotta === true) {
