@@ -16,7 +16,6 @@ var menu_state = {
     },
 
     pickGender: function () {
-        // this.debugJump();
         GAME.state.start('gender');
     },
 
@@ -26,43 +25,6 @@ var menu_state = {
 
     readCredits: function () {
         GAME.state.start('credits');
-    },
-
-    /** 
-     * Jump straight to the state to be tested. Populate PLAYER with desired 
-     * testing properties. 
-     */
-    debugJump: function () {
-        var jumpToState = '';
-
-        PLAYER = { 
-            // Beginning properties
-            gender: 'male',
-            age: 0, 
-            name: 'Debug',
-            class: 'middle',
-            location: {
-                name: 'Jyväskylä', 
-                to: 'Jyväskylään', 
-                at: 'Jyväskylässä'
-            },
-
-            // Properties during the game
-            noschool: false,
-            crush: 'DebugCrush',
-            spouse: 'DebugSpouse',
-            children: ['DebugChild1','DebugChild2'],
-            friend: 'DebugFriend',
-            causeOfDeath: 'DebugCauseOfDeath',
-            university: true,
-            improvement: true,
-            movedtocity: true,
-            noconscript: true,
-            lotta: false,
-            nurse: false
-        };
-
-        GAME.state.start(jumpToState);
     }
 };
 
