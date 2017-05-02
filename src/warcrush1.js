@@ -4,9 +4,9 @@ var warcrush1_state = {
 
         var image = 'barnbackground';
         PLAYER.crush = pickName("male");
-        var text = name+" on vaihtanut kirjeitä kanssasi tiiviisti loppukesästä asti. Hän "
+        var text = PLAYER.crush+" on vaihtanut kirjeitä kanssasi tiiviisti loppukesästä asti. Hän "
         +"raportoi sinulle paitsi rintaman tapahtumista, myös tulevaisuuden suunnitelmistaan, "
-        +"joihin vihjaa sinun liittyvän. Joulukuussa "+name+" pääsee viimein lomalle ja pyytää päästä tapaamaan sinua. Suostutko?";
+        +"joihin vihjaa sinun liittyvän. Joulukuussa "+PLAYER.crush+" pääsee viimein lomalle ja pyytää päästä tapaamaan sinua. Suostutko?";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel  = "Ei";
 
