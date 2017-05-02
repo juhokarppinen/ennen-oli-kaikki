@@ -84,14 +84,53 @@ var load_state = {
             http://creativecommons.org/licenses/by/3.0/ */
     },
 
+    /** 
+     * This function starts the actual game. Here you can specify in which state
+     * the game begins; the default state is 'menu', but you can change it
+     * to quickly jump to a specific state for testing. See main.js for a 
+     * comprehensive list of state names.
+     *
+     * Note that most states will require the PLAYER to have certain properties
+     * in order for them to work properly. Here you can set these properties
+     * accordingly. These settings have no effect if the game is started 
+     * normally, since they are going to be overwritten or deleted in the 
+     * beginning.
+     */
     create: function() {
+        var startState = 'menu'; // Default start state == 'menu'     
+        PLAYER = { 
+            // Beginning properties
+            gender: 'male',
+            age: 0, 
+            name: 'Debug',
+            class: 'middle',
+            location: {
+                name: 'Jyväskylä', 
+                to: 'Jyväskylään', 
+                at: 'Jyväskylässä'
+            },
+
+            // Properties during the game
+            noschool: false,
+            crush: 'DebugCrush',
+            spouse: 'DebugSpouse',
+            children: ['DebugChild1','DebugChild2'],
+            friend: 'DebugFriend',
+            causeOfDeath: 'DebugCauseOfDeath',
+            university: true,
+            improvement: true,
+            movedtocity: true,
+            noconscript: true,
+            lotta: false,
+            nurse: false
+        };
+
         BACKGROUND_MUSIC = GAME.add.audio('music-Bittersweet');
         BACKGROUND_MUSIC.loop = true;
         BACKGROUND_MUSIC.play();
         GAME.state.start('menu');
     },
 
-    // Could do better than this... :)
     addLoadingScreen: function () {
         var loadingText = GAME.add.text(CENTER.x, CENTER.y, "Peli latautuu...", TITLE_STYLE);
         loadingText.anchor.setTo(0.5);
