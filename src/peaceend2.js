@@ -16,11 +16,10 @@ var peaceend2_state = {
             GAME.state.start('wartime3');
         } else if(PLAYER.widowboss === true ) {
             GAME.state.start('warcrush1');
-        } else if(PLAYER.gender === "female" || PLAYER.noconscript === true) {
+        } else if(PLAYER.gender === "female" || PLAYER.noconscript === true || PLAYER.amputation === true) {
             GAME.state.start('wartime4');
         } else {
-            //todo GAME.state.start('war3');
-            GAME.state.start('death');
+            GAME.state.start('war3');
         }
     }
 }

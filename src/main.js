@@ -104,6 +104,7 @@ function preload() {
     GAME.state.add('war1', war1_state);
     GAME.state.add('war2', war2_state);
     GAME.state.add('war3', war3_state);
+    GAME.state.add('war4', war4_state);
     GAME.state.add('wartime1', wartime1_state);
     GAME.state.add('wartime2', wartime2_state);
     GAME.state.add('wartime3', wartime3_state);
