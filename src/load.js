@@ -116,7 +116,7 @@ var load_state = {
             spouse: 'DebugSpouse',
             children: ['DebugChild1','DebugChild2'],
             friend: 'DebugFriend',
-            causeOfDeath: 'DebugCauseOfDeath',
+            causeofdeath: 'DebugCauseOfDeath',
             university: true,
             improvement: true,
             movedtocity: true,
