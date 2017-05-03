@@ -39,6 +39,6 @@ var wartime7_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('warend1');
     }
 }

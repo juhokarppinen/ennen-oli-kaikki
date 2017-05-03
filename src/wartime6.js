@@ -64,12 +64,12 @@ var wartime6_state = {
             if("undefined" !== typeof PLAYER.spouse) {
                 GAME.state.start('wartime7');
             } else {
-                GAME.state.start('death');
+                GAME.state.start('warend1');
             }
         } else if(PLAYER.amputation === true) {
-            GAME.state.start('death');
+            GAME.state.start('warend1');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-            
+            GAME.state.start('warend1');
         } else {
             GAME.state.start('wartime7');
         }

@@ -28,7 +28,7 @@ var war4_state = {
         if(PLAYER.job === "plywoodfactory") {
             GAME.state.start('warromance1');
         } else {
-            GAME.state.start('death');
+            GAME.state.start('war5');
         }
     }
 }

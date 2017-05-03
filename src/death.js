@@ -41,16 +41,20 @@ var death_state = {
             var text = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
             +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi." + ripText;
         }
-        if(PLAYER.causeofdeath === "sota2") {
-            if(PLAYER.gender === "female") {
-                causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "
-                +"koneet tulevat taas. Olet kaupungilla asioilla etkä ehdi suojaan ennen kuin pommit putoavat. "
-                +"Menetät henkesi uudenvuoden aattona 1939. "+ ripText;
-            } else {
-                causeOfDeathText = "Pataljoonanne oli siirtymässä linjojen takaa reservistä etulinjaan, kun "
-                +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
-                +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
-            }
+        if(PLAYER.causeofdeath === "vuosalmi") {
+            var text = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
+            +"Kaaduit Neuvostoliiton tykistötulessa Vuosalmella." + ripText;
+        }
+        if(PLAYER.causeofdeath === "taliihantala") {
+            var text = "Kesäkuun loppuun mennessä yli puolet divisioonasi miehistä oli kaatunut, haavoittunut tai kadonnut. "
+            +"Sinä selvisit heinäkuun alkuun asti, mutta kaaduit lopulta Tali-Ihantalan taisteluissa." + ripText;
+        }
+        if(PLAYER.causeofdeath === "karkuri") {
+            var text = "Sinut teloitettiin rintamakarkurina." + ripText;
+        }
+        if(PLAYER.causeofdeath === "luoti") {
+            var text = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
+            +"joukkosidontapaikalle." + ripText;
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",

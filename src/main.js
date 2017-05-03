@@ -47,10 +47,7 @@ function preload() {
     GAME.state.add('school2', school2_state);
     GAME.state.add('homechores0', homechores0_state);
     GAME.state.add('homechores1', homechores1_state);
-    GAME.state.add('homechores2', homechores2_state);
-    GAME.state.add('homechores3', homechores3_state);
     GAME.state.add('youthwork1', youthwork1_state);
-    GAME.state.add('youthwork2', youthwork2_state);
     GAME.state.add('youthwork3', youthwork3_state);
     GAME.state.add('countrywork1', countrywork1_state);
     GAME.state.add('citywork0', citywork0_state);
@@ -61,7 +58,6 @@ function preload() {
     GAME.state.add('studies0', studies0_state);
     GAME.state.add('studies1', studies1_state);
     GAME.state.add('studies2', studies2_state);
-    GAME.state.add('studies3', studies3_state);
     GAME.state.add('studies4', studies4_state);
     GAME.state.add('studies5', studies5_state);
     GAME.state.add('studies6', studies6_state);
@@ -106,6 +102,9 @@ function preload() {
     GAME.state.add('war2', war2_state);
     GAME.state.add('war3', war3_state);
     GAME.state.add('war4', war4_state);
+    GAME.state.add('war5', war5_state);
+    GAME.state.add('war6', war6_state);
+    GAME.state.add('war7', war7_state);
     GAME.state.add('wartime1', wartime1_state);
     GAME.state.add('wartime2', wartime2_state);
     GAME.state.add('wartime3', wartime3_state);
@@ -139,6 +138,7 @@ function preload() {
     GAME.state.add('prewar2', prewar2_state);
     GAME.state.add('map1', map1_state);
     GAME.state.add('endwar', endwar_state);
+    GAME.state.add('warend1', warend1_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state
