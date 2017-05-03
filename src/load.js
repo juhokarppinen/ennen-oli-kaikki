@@ -17,6 +17,7 @@ authors["countrybackground"]           = prefix+"Antti Pänkäläinen (Keski-Suo
 authors["candyfactorybackground"]      = prefix+"Valokuvaamo Päijänne (Keski-Suomen Museo)";
 authors["plywoodfactorybackground"]    = prefix+"Tuntematon (Keski-Suomen Museo)";
 authors["riflefactorybackground"]      = prefix+"Tuntematon (Keski-Suomen Museo)";
+authors["gunpowderfactorybackground"]  = prefix+"Pietinen (Museovirasto)";
 authors["bakerybackground"]            = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["homeassistantbackground"]     = prefix+"Pietinen (Museovirasto)";
 authors["barnbackground"]              = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
@@ -29,6 +30,7 @@ authors["conscriptbackground"]         = prefix+"Tuntematon (Museovirasto)";
 authors["warbackground"]               = prefix+"K. Borg (SA-kuva-arkisto)";
 authors["warworkbackground"]           = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["lottawarbackground"]          = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
+authors["constructionbackground"]      = prefix+"Antti Pänkäläinen (Keski-Suomen Museo)";
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -74,6 +76,7 @@ var load_state = {
         GAME.load.image('warbackground', 'assets/img/war.jpg');
         GAME.load.image('warworkbackground', 'assets/img/warwork.jpg');
         GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
+        GAME.load.image('consctructionbackground', 'assets/img/construction.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');

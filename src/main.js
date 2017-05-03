@@ -139,6 +139,8 @@ function preload() {
     GAME.state.add('map1', map1_state);
     GAME.state.add('endwar', endwar_state);
     GAME.state.add('warend1', warend1_state);
+    GAME.state.add('warend2', warend2_state);
+    GAME.state.add('warend3', warend3_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

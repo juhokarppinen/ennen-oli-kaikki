@@ -21,11 +21,7 @@ var peacesoldier3_state = {
             +"Haluat kuitenkin uskoa parempiin aikoihin ja pidät pääsi.";
         } else if(PLAYER.amputation) {
             var image = 'countrybackground';
-            var text = "Kesän edetessä elämä alkaa muuttua yhä valoisammaksi. ";
-            if ("undefined" !== typeof PLAYER.children) {
-                text += PLAYER.children[0].name +"on jo"+ (1940-PLAYER.children[0].year) + "-vuotias ja "+PLAYER.spouse+" odottaa toista lasta. "
-                +"Muistat minkä vuoksi taistelit.";
-            }
+            var text = "Kesän edetessä elämä alkaa pikkuhiljaa muuttua yhä valoisammaksi.";
         } else {
             var image = 'youthworkcountrybackground';
             var text = "Kun pääset kotiin, kevätkylvöt ovat jo täydessä vauhdissa. Työpanostasi on kaivattu ja "
