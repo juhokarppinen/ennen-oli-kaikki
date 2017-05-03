@@ -13,6 +13,7 @@ var warcrush4_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        PLAYER.spouse = PLAYER.crush;
+        GAME.state.start('wartime6');
     }
 }

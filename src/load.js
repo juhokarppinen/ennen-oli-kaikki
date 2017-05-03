@@ -61,6 +61,7 @@ var load_state = {
         GAME.load.image('candyfactorybackground', 'assets/img/candyfactory.jpg');
         GAME.load.image('plywoodfactorybackground', 'assets/img/plywoodfactory.jpg');
         GAME.load.image('riflefactorybackground', 'assets/img/riflefactory.jpg');
+        GAME.load.image('gunpowderfactorybackground', 'assets/img/gunpowderfactory.jpg');
         GAME.load.image('bakerybackground', 'assets/img/bakery.jpg');
         GAME.load.image('homeassistantbackground', 'assets/img/homeassistant.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');

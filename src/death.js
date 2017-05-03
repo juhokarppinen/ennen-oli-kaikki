@@ -37,6 +37,10 @@ var death_state = {
         if(PLAYER.causeofdeath === "tuberkuloosi") {
             causeOfDeathText = "Sairastut tuberkuloosiin, joka koituu kohtaloksesi." + ripText;
         }
+        if(PLAYER.causeofdeath === "pilkkukuume") {
+            var text = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
+            +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi." + ripText;
+        }
         if(PLAYER.causeofdeath === "sota2") {
             if(PLAYER.gender === "female") {
                 causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "

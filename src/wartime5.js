@@ -7,8 +7,6 @@ var wartime5_state = {
           var image = 'youthworkcountrybackground';
           var text = "Alat viritellä pienimuotoista salakauppaa. Onnistut piilottamaan osan viljasta ja voiksi kirnutusta "
           +"maidosta viranomaisilta, joista saat mustassa pörssissä hyvän hinnan.";
-        } else if(PLAYER.noconscript === true) {
-            
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
             var image = 'homechorescountrybackground';
             var text = "Jätätte kuitenkin osan maidosta ilmoittamatta ja kirnuatte sen salaa voiksi, jonka piilotatte viranomaisilta "
@@ -24,6 +22,6 @@ var wartime5_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('wartime6');
     }
 }

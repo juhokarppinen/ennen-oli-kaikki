@@ -49,7 +49,7 @@ var wartime4_state = {
             GAME.state.start('death');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
             if("undefined" !== typeof PLAYER.spouse) {
-                GAME.state.start('death');
+                GAME.state.start('wartime6');
             } else {
                 GAME.state.start('warchoice1');
             }
@@ -58,7 +58,7 @@ var wartime4_state = {
         } else if(PLAYER.lotta === true) {
             GAME.state.start('wartime5');
         } else {
-            GAME.state.start('death');
+            GAME.state.start('wartime6');
         }
     }
 }
