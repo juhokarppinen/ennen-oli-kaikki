@@ -47,6 +47,10 @@ var load_state = {
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('arrowLeftButton', 'assets/img/arrow-left-button.png');
         //backgrounds
+        GAME.load.image('peace1940_01', 'assets/img/peace1940_01.jpg');
+        GAME.load.image('peace1940_02', 'assets/img/peace1940_02.jpg');
+        GAME.load.image('peace1944_01', 'assets/img/peace1944_01.jpg');
+        GAME.load.image('peace1944_02', 'assets/img/peace1944_02.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
