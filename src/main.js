@@ -141,6 +141,10 @@ function preload() {
     GAME.state.add('warend1', warend1_state);
     GAME.state.add('warend2', warend2_state);
     GAME.state.add('warend3', warend3_state);
+    GAME.state.add('newchoice1', newchoice1_state);
+    GAME.state.add('newchoice2', newchoice2_state);
+    GAME.state.add('newchoice3', newchoice3_state);
+    GAME.state.add('newpath1', warend1_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state

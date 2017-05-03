@@ -4,7 +4,7 @@ var warcrush1_state = {
 
         var image = 'barnbackground';
         PLAYER.crush = pickName("male");
-        var text = PLAYER.crush+" on vaihtanut kirjeitä kanssasi tiiviisti loppukesästä asti. Hän "
+        var text = "Rauhan aikana tapaamasi "+PLAYER.crush+" on vaihtanut kirjeitä kanssasi tiiviisti loppukesästä asti. Hän "
         +"raportoi sinulle paitsi rintaman tapahtumista, myös tulevaisuuden suunnitelmistaan, "
         +"joihin vihjaa sinun liittyvän. Joulukuussa "+PLAYER.crush+" pääsee viimein lomalle ja pyytää päästä tapaamaan sinua. Suostutko?";
         var leftButtonLabel  = "Kyllä";

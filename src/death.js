@@ -35,26 +35,29 @@ var death_state = {
             infoText = "Sodassa miesten kuolleisuus oli 12,8% ja naisten 2,6%.";
         }
         if(PLAYER.causeofdeath === "tuberkuloosi") {
-            causeOfDeathText = "Sairastut tuberkuloosiin, joka koituu kohtaloksesi." + ripText;
+            causeOfDeathText = "Sairastut tuberkuloosiin, joka koituu kohtaloksesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "pilkkukuume") {
             var text = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
-            +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi." + ripText;
+            +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "vuosalmi") {
             var text = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
-            +"Kaaduit Neuvostoliiton tykistötulessa Vuosalmella." + ripText;
+            +"Kaaduit Neuvostoliiton tykistötulessa Vuosalmella. " + ripText;
         }
         if(PLAYER.causeofdeath === "taliihantala") {
             var text = "Kesäkuun loppuun mennessä yli puolet divisioonasi miehistä oli kaatunut, haavoittunut tai kadonnut. "
-            +"Sinä selvisit heinäkuun alkuun asti, mutta kaaduit lopulta Tali-Ihantalan taisteluissa." + ripText;
+            +"Sinä selvisit heinäkuun alkuun asti, mutta kaaduit lopulta Tali-Ihantalan taisteluissa. " + ripText;
         }
         if(PLAYER.causeofdeath === "karkuri") {
-            var text = "Sinut teloitettiin rintamakarkurina." + ripText;
+            var text = "Sinut teloitettiin rintamakarkurina. " + ripText;
         }
         if(PLAYER.causeofdeath === "luoti") {
             var text = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
-            +"joukkosidontapaikalle." + ripText;
+            +"joukkosidontapaikalle. " + ripText;
+        }
+        if(PLAYER.causeofdeath === "influenssa") {
+            var text = "Vuosia jatkunut nälkä oli heikentänyt kehosi alttiiksi tartuntataudeille. Sairastuit ärhäkkään influenssaan, joka vei henkesi. " + ripText;
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
