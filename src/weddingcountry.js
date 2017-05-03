@@ -28,6 +28,14 @@ var weddingcountry_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('child1');
+        if(PLAYER.class === "poor") {
+            GAME.state.start('child1');
+        } else {
+            if(PLAYER.gender === "female") {
+                GAME.state.start('conscriptwife');
+            } else {
+                GAME.state.start('conscript');
+            }
+        }
     }
 }
