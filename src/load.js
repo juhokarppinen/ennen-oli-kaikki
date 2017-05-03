@@ -31,6 +31,8 @@ authors["warbackground"]               = prefix+"K. Borg (SA-kuva-arkisto)";
 authors["warworkbackground"]           = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["lottawarbackground"]          = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["constructionbackground"]      = prefix+"Antti Pänkäläinen (Keski-Suomen Museo)";
+authors["empty"]                       = "Grafiikka: Pauliina Karjalainen";
+
 
 /*load.js contains a state-object called load_state
  All assets are loaded in load.js so that there is no need to load them later.
@@ -47,10 +49,13 @@ var load_state = {
         GAME.load.image('box', 'assets/img/box.png');
         GAME.load.image('arrowLeftButton', 'assets/img/arrow-left-button.png');
         //backgrounds
+        GAME.load.image('empty', 'assets/img/empty.png');
         GAME.load.image('peace1940_01', 'assets/img/peace1940_01.jpg');
         GAME.load.image('peace1940_02', 'assets/img/peace1940_02.jpg');
+        GAME.load.image('peace1940_03', 'assets/img/peace1940_03.jpg');
         GAME.load.image('peace1944_01', 'assets/img/peace1944_01.jpg');
         GAME.load.image('peace1944_02', 'assets/img/peace1944_02.jpg');
+        GAME.load.image('peace1944_03', 'assets/img/peace1944_03.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
