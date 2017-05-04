@@ -2,6 +2,8 @@ var map1_state = {
 
     create: function() {
         //PLACEHOLDER! TODO: Add map with animation
+        // Actually we probably need to have two map animations: one for 1940
+        // and another for 1944.
         var images = [GAME.add.sprite(0, 0, 'peace1940_01'),
                       GAME.add.sprite(0, 0, 'peace1940_02'),
                       GAME.add.sprite(0, 0, 'peace1944_01'),
