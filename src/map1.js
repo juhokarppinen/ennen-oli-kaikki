@@ -30,6 +30,7 @@ var map1_state = {
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);
+        PREVIOUS_BACKGROUND = 'peace1944_02';
     },
 
     centerButtonHandler: function () {

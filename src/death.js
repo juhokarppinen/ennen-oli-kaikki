@@ -12,16 +12,16 @@ var death_state = {
             +"Tauti koitui sinunkin kohtalokseksi. "+ ripText
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
-                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
+                       "Kouluikään mennessä lapsista oli kuollut jo noin 18 prosenttia. Imeväiskuolleisuus " +
                        "oli 11,2 prosenttia.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
             + "Tauti koitui sinunkin kohtaloksesi. "+ ripText
-            + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
+            + "Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
-                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
+                       "Kouluikään mennessä lapsista oli kuollut jo noin 18 prosenttia. Imeväiskuolleisuus " +
                        "oli 11,2 prosenttia.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
