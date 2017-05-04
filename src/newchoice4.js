@@ -2,7 +2,7 @@ var newchoice4_state = {
 
     create: function() {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 PLAYER.age = 30;
                 var image = 'constructionbackground';
                 var text = "Saat töitä Rautpohjan tehtaalta, entiseltä Valtion tykkitehtaalta, jossa valmistetaan tätä nykyä sotakorvaustuotteita Neuvostoliitolle. "

@@ -2,7 +2,7 @@ var newchoice5_state = {
 
     create: function() {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 PLAYER.age = 32;
                 var image = 'constructionbackground';
                 var text = "Kahden parakkivuoden jälkeen saatte yksiön Valimonmäestä. Asunnossa on viemäröinti ja juokseva vesi, "
@@ -31,6 +31,7 @@ var newchoice5_state = {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
                 GAME.state.start('sixties');
             } else {
+                PLAYER.age = 48;
                 PLAYER.causeofdeath = "auto";
                 GAME.state.start('death');
             }

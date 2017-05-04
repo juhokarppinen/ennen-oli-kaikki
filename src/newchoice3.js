@@ -2,7 +2,7 @@ var newchoice3_state = {
 
     create: function() {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 PLAYER.age = 29;
                 var image = 'constructionbackground';
                 var text = "Maaseudulla tarjolla olevat työt vähenevät vuosi vuodelta. Vaikka elintarvikesäännöstely on jo loppunut, "

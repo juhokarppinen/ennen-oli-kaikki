@@ -151,6 +151,12 @@ function preload() {
     GAME.state.add('newpath3', newpath3_state);
     GAME.state.add('newpath4', newpath4_state);
     GAME.state.add('sixties', sixties_state);
+    GAME.state.add('oldyears1', oldyears1_state);
+    GAME.state.add('oldyears2', oldyears2_state);
+    GAME.state.add('oldyears3', oldyears3_state);
+    GAME.state.add('oldyears4', oldyears4_state);
+    GAME.state.add('oldyears5', oldyears5_state);
+    GAME.state.add('heinalato4ever', heinalato4ever_state);
     GAME.state.add('death', death_state);
     
     // Start with the 'load' state
