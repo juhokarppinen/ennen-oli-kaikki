@@ -1,7 +1,7 @@
 var beginning_state = {
 
     create: function () {
-        createPlayerStats(PLAYER.gender, PLAYER.diedInChildhood);
+        createPlayerStats(PLAYER.gender, PLAYER.diedInChildhood, PLAYER.previousClass);
 
         var classText;
         var genderText;
@@ -68,7 +68,7 @@ var beginning_state = {
     }
 }
 
-function createPlayerStats(gender, diedInChildhood) {
+function createPlayerStats(gender, diedInChildhood, previousClass) {
     //gets rid of possible "ghosts"
     for (var member in PLAYER) delete PLAYER[member];
     PLAYER.gender = gender;
@@ -83,11 +83,14 @@ function createPlayerStats(gender, diedInChildhood) {
         PLAYER.location = {name: "maaseutu Jyväskylän lähellä", to: "maaseudulle Jyväskylän lähelle", at: "maaseudulla Jyväskylän lähellä"};
     }
     var classes = ["poor", "middle"];
-    if (Math.random() <= 0.10) { 
+    if (Math.random() <= 0.10 && previousClass !== 'rich') { 
         PLAYER.class = "rich";
     } else {
+        do {
         PLAYER.class = classes[Math.floor(Math.random()*classes.length)];
+        } while (PLAYER.class === previousClass);
     }
+    PLAYER.previousClass = PLAYER.class;
 }
 
 

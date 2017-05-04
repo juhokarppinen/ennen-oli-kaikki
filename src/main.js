@@ -176,6 +176,7 @@ function create() {
     RIGHT_BUTTON  = {x: CENTER.x * 1.4,     y: CENTER.y * defaultElevation};
 
     PLAYER.diedInChildhood = false;
+    PLAYER.previousClass = '';
 }
 
 function update() {
