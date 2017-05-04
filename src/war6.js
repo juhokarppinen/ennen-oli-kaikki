@@ -9,9 +9,9 @@ var war6_state = {
             var text = "Juhannukseen mennessä olette joutuneet vetäytymään useita kymmeniä kilometrejä. Viipuri on jo menetetty, ja asemapaikkanne on "
             +"sen pohjoispuolella Portinhoikassa. Olette jäädä saarroksiin ja ammuksenne ovat loppumaisillaan, mutta vetäytymislupaa ei heru.";
         } else if("undefined" !== typeof PLAYER.spouse) {
-            var text = "Kuopuksesi täyttää pian kolme vuotta, mutta et ole nähnyt häntä kuin muutaman kerran. Olet palvellut rintamalla "
-                +"niin kauan, ettet edes muista, millaista elämäsi siviilissä oli. Vaimosi kuitenkin yrittää pitää sinut ajan tasalla "
-                +"kotirintaman tapahtumista pitkine kirjeineen.";
+            var text = "Rintamalle kantautuu tietoja länsiliittoutuneiden hyökkäyksestä Saksaa vastaan Pohjois-Ranskassa. Neuvostoliiton oletetaan "
+            +"hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä on toivuttava nopeasti, kun rintamilla alkaa jytistä "
+            +"toden teolla kesäkuun yhdeksäntenä.";
         } else {
             var text = "Kesäkuun loppuun mennessä hermosi ovat riekaleina. Et ole päässyt lepäämään viikkokausiin eikä pääsi enää toimi kunnolla. "
             +"Harhailet yksin metsässä, etkä tiedä, miten ja milloin olet joutunut eroon joukkueestasi. Kun sinut löydetään, joudut kenttäoikeuteen.";

@@ -27,7 +27,7 @@ var oldyears2_state = {
                 var image = "citybackground";
                 PLAYER.age = 63;
                 var text = "Kun miehesi jää eläkkeelle täytettyään 65 vuotta, hänellä on vihdoin aikaa sinullekin. Saatte pitää Valmetin omistaman vuokra-asuntonne, "
-                +"jota on vuosien mittaan remontoitu ja varusteltu uusilla mukavuuksilla. Pyykkiäkään ei tarvitse enää käydä pesemässä kodin ulkopuolella, sillä olet "
+                +"jota on vuosien mittaan remontoitu ja varusteltu uusilla mukavuuksilla. Olet "
                 +"saanut joululahjaksi oman pyykkikoneen. Et oikein tiedä, mihin käyttäisit kaiken kotitöiltä koneiden myötä säästyvän ajan.";
             } else {
                 var image = "citybackground";
