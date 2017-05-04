@@ -16,18 +16,18 @@ var beginning_state = {
                        "runsas pientilojen määrä ja viljelyalojen rehuvoittoisuus. ";
             if (PLAYER.class === "poor") { 
                 classText = "mäkitupalaiseksi ";
-                infoText += "Mäkitupalainen omisti omalla tai vuokraamaallaan aluellaan mökin, mutta hän sai tavallisesti elantonsa muualta kuin mökistään.\n\n" + 
-                           "Lähteet: Jokipii M. Keski-Suomen historia. Elkelä K.: Maaseutuväestön historian sanastoa";
+                infoText += "\n\nMäkitupalainen omisti omalla tai vuokraamaallaan aluellaan mökin, mutta hän sai tavallisesti elantonsa muualta kuin mökistään.\n\n" + 
+                           "Lähteet: 1) Jokipii M. Keski-Suomen historia. 2) Elkelä K. Maaseutuväestön historian sanastoa";
             }
             else if (PLAYER.class === "middle") {
                 classText = "torpparin esikoiseksi ";
-                infoText += "Torppari piti huolta torpastaan, joka oli maanviljelyä varten vuokralle annettu maatilan jakamaton osa.\n\n" + 
-                           "Lähteet: Jokipii M. Keski-Suomen historia. Kielitoimiston sanakirja";
+                infoText += "\n\nTorppari piti huolta torpastaan, joka oli maanviljelyä varten vuokralle annettu maatilan jakamaton osa.\n\n" + 
+                           "Lähteet: 1) Jokipii M. Keski-Suomen historia. 2) Kielitoimiston sanakirja";
             }
             else {
                 classText = "pappilan kolmanneksi lapseksi ";
-                infoText += "Pappila oli papin virka-asunto. Keski-Suomessa useampi pappila kuuluu arvokkaasti rakennettuihin kulttuuriympäristöihin.\n\n" +
-                           "Lähteet: Jokipii M. Keski-Suomen historia. Maakunnallisesti arvokkaat rakennetut kulttuuriympäristöt Keski-Suomessa. Alueluettelon liite. Keski-Suomen liitto.";  
+                infoText += "\n\nPappila oli papin virka-asunto. Keski-Suomessa useampi pappila kuuluu arvokkaasti rakennettuihin kulttuuriympäristöihin.\n\n" +
+                           "Lähteet: 1) Jokipii M. Keski-Suomen historia. 2) Maakunnallisesti arvokkaat rakennetut kulttuuriympäristöt Keski-Suomessa. Alueluettelon liite. Keski-Suomen liitto.";  
             }   
         } else {
             infoText = "Jyväskylän kaupunki perustettiin maaliskuussa 1837. Kaupungin alueella oli vain pari taloa, muutama torppa ja markkinapaikka. " +

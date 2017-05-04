@@ -43,6 +43,14 @@ var peacetime1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('map1');
+        if(PLAYER.gender === "female") {
+            GAME.state.start('peacetime2');
+        } else {
+            if(PLAYER.noconscript === true) {
+                GAME.state.start('peacetime2');
+            } else {
+                GAME.state.start('peacesoldier2');
+            }
+        }
     }
 }

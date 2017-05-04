@@ -136,7 +136,7 @@ function preload() {
     GAME.state.add('peaceend2', peaceend2_state);
     GAME.state.add('prewar1', prewar1_state);
     GAME.state.add('prewar2', prewar2_state);
-    GAME.state.add('map1', map1_state);
+    // GAME.state.add('map1', map1_state);
     GAME.state.add('endwar', endwar_state);
     GAME.state.add('warend1', warend1_state);
     GAME.state.add('warend2', warend2_state);
