@@ -58,7 +58,7 @@ var beginning_state = {
                 PLAYER.causeofdeath = "espanjantauti";
             }
             GAME.state.start('death');
-        } else if (PLAYER.class === "poor" && Math.random() <= 0.20) {            
+        } else if (PLAYER.class === "poor" && PLAYER.location !== "Jyväskylä" && Math.random() <= 0.20) {            
             PLAYER.noschool = true;
             GAME.state.start('school0');
         } else {
