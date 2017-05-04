@@ -12,6 +12,9 @@ var newpath2_state = {
                 PLAYER.age = 32;
                 var text = "Opintosi jäivät ennen sotia puolitiehen, mutta työkokemuksesi korvaa koulutuksen puutteen. Saat konttoristin paikan "
                 +"vaneritehtaan toimistolta. Asiaa auttaa se, että entinen esimiehesi tuntee tehtaan materiaalihankinnoista vastaavan johtajan.";
+                var infoText = "Vuonna 1912 Jyväsjärven rantaan perustettiin Wilh. Schaumanin Faneeritehdas Oy. " +
+                    "Vuonna 1920 sen tuotannon arvo oli kymmenkertainen toiseksi suurimpaan Fredriksoniin verrattuna.\n\n" +
+                    "Lähde: Jäppinen J., Voutilainen H., Keski-Suomen museo: Markkinapaikasta mainio kaupunki. jkl.fi";
             }
         } else if(PLAYER.widowboss === true) {
             if("undefined" !== typeof PLAYER.spouse) {
@@ -37,7 +40,7 @@ var newpath2_state = {
                 
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {
