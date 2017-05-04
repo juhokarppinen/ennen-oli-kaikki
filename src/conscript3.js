@@ -11,11 +11,11 @@ var conscript3_state = {
             var text = "Lokakuussa 1939 sinut kutsutaan ylimääräisiin kertausharjoituksiin. "
             +"Viime töiksesi ennen lähtöäsi kokoontumispaikalle valmistelet työnantajasi hevoset puolustusvoimien käyttöön. ";
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true) {
-            var text = "Olet hädintuskin ehtinyt sopeutua siviilielämään armeijan jäljiltä, kun saat kutsun ylimääräisiin "
+            var text = "Olet hädin tuskin ehtinyt sopeutua siviilielämään armeijan jäljiltä, kun saat kutsun ylimääräisiin "
             +"kertausharjoituksiin lokakuussa 1939. Sadonkorjuu ja syystyöt on onneksi "
             +"saatu hyvissä ajoin päätökseen, joten voit jättää tilan huoletta kotijoukkojen hoidettavaksi harjoitusten ajaksi.";
         } else {
-            var text = "Olet hädintuskin ehtinyt sopeutua siviilielämään armeijan jäljiltä, kun lokakuussa 1939 "
+            var text = "Olet hädin tuskin ehtinyt sopeutua siviilielämään armeijan jäljiltä, kun lokakuussa 1939 "
             +"saat jälleen valtiolta kirjeen: sinun on lähdettävä ylimääräisiin kertausharjoituksiin.";
         }
 
