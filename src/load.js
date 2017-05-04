@@ -111,7 +111,7 @@ var load_state = {
      * from the default state, since they are overwritten in the beginning.
      */
     create: function() {
-        var startState = 'warend1'; // Default start state == 'menu'     
+        var startState = 'menu'; // Default start state == 'menu'     
         PLAYER = { 
             // Beginning properties
             gender: 'male',
