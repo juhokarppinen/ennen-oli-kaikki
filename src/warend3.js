@@ -28,12 +28,14 @@ var warend3_state = {
                     +"palatessaan olet haistavinasi alkoholin hänen hengityksestään.";
                 } else {
                     var image = "youthworkcountrybackground";
-                    var text = "Olet jo pitkään hankkinut elantosi erilaisilla talkootöillä millon missäkin, mutta nyt, kun rintamamiehet ovat palanneet koteihinsa, he syrjäyttävät sinut työnhaussa.";
+                    var text = "Olet jo pitkään hankkinut elantosi erilaisilla talkootöillä millon missäkin, mutta nyt, kun rintamamiehet ovat palanneet koteihinsa, "
+                    +"he syrjäyttävät sinut työnhaussa.";
                 }
             } else if(PLAYER.lotta === true) {
                 if(PLAYER.university === true) {
                     var image = "helsinkiunibackground";
-                    var text = "Olet palannut jälleen Helsinkiin. Arki yliopistokampuksella on varsin erilaista kuin ennen, kun rintamalla palvelleet sotilaat ovat palanneet myös opintojensa pariin.";
+                    var text = "Olet palannut jälleen Helsinkiin. Arki yliopistokampuksella on varsin erilaista kuin ennen, kun rintamalla palvelleet sotilaat ovat "
+                    +"palanneet myös opintojensa pariin.";
                 } else {
                     var image = "lottawarbackground";
                     var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Yhtäkkiä teitä lottia, joita ennen ylistettiin työstänne "
@@ -72,7 +74,7 @@ var warend3_state = {
             } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('newchoice1');
             } else {
-                GAME.state.start('death');
+                GAME.state.start('newpath1');
             }
         } else {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
@@ -82,22 +84,22 @@ var warend3_state = {
                     GAME.state.start('newchoice1');
                 } else {
                     PLAYER.causeofdeath = "influenssa";
-                    GAME.state.start('death');
+                    GAME.state.start('sixties');
                 }
             } else if(PLAYER.lotta === true) {
                 if(PLAYER.university === true) {
                     GAME.state.start('newpath1');
                 } else {
-                    GAME.state.start('death');
+                    GAME.state.start('sixties');
                 }
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
                     GAME.state.start('newpath1');
                 } else {
-                    GAME.state.start('death');
+                    GAME.state.start('newpath2');
                 }
             } else {
-                GAME.state.start('death');
+                GAME.state.start('sixties');
             }
         }
     }

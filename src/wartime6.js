@@ -9,7 +9,7 @@ var wartime6_state = {
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             if("undefined" !== typeof PLAYER.spouse) {
-                var text = "Sota jatkuu jo kolmatta vuotta ja poikkeustilasta on tullut uusi normaali. Leskirouva menehtyi pian häittenne jälkeen, "
+                var text = "Sota jatkuu jo kolmatta vuotta. Leskirouva menehtyi pian häittenne jälkeen, "
                 +"mutta onneksi sait jäädä toistaiseksi asumaan palvelijan huoneeseesi. Erilaiset talkootyöt pitävät sinut kiireisenä ja saat pientä "
                 +"sotapalkkaa mentyäsi naimisiin rintamalla palvelevan miehen kanssa. Ikävä on kova eikä avioliitto ilman yhteistä kotia ja arkea tunnu avioliitolta ollenkaan.";
             } else {

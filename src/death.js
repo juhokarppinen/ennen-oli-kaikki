@@ -59,6 +59,14 @@ var death_state = {
         if(PLAYER.causeofdeath === "influenssa") {
             var text = "Vuosia jatkunut nälkä oli heikentänyt kehosi alttiiksi tartuntataudeille. Sairastuit ärhäkkään influenssaan, joka vei henkesi. " + ripText;
         }
+        if(PLAYER.causeofdeath === "rakennus") {
+            var text = "Olit muuraamassa kaksikerroksisen talon savupiippua. Jalkasi lipesi rakennustelineeltä ja putosit." + ripText;
+        }
+        if(PLAYER.causeofdeath === "auto") {
+            var text = "Olit palaamassa kotiin Vähittäiskaupan Keskusliiton kokouksesta. Olit väsynyt ja kiukkuinen, sillä et ollut saanut ajatuksillesi kannatusta. "
+            +"Ajoit liian lujaa sateen liukastamaan mutkaan. Autosi suistui tieltä ja törmäsi puuhun. Menehdyit välittömästi." + ripText;
+            infoText = "Vuonna 1965 tieliikenneonnettomuuksissa kuoli 1 049 ihmistä ja loukkaantui 15 914 ihmistä. Vastaavat luvut vuonna 2015 olivat 270 ja 6 408.";
+        }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
                            "seitsemän","kahdeksan","yhdeksän","kymmenen"];
