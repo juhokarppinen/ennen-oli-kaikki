@@ -16,8 +16,13 @@ var studies6_state = {
         +"Vanhempiesi pettymykseksi todistus ei kuitenkaan takaa sinulle yhtään prameampaa elämää, vaan päädyt "+gendertext;
 
         var centerButtonLabel = "Jatka";
+        var infoText = "Nuoret pääsivät töihin jo 13-vuotiaina. Kaupungeissa nuoret pystyivät saamaan " +
+        "töitä 14-15 -vuotiaina.  Tyttöjen tulevaisuudelle koulunkäynnillä ei ollut merkitystä " +
+        "työelämässä. Maalaistytöt tai kansankoulun loppuun käyneet tytöt saattoivat päätyä " +
+        "apulaisiksi, tehdastyöläisiksi tai muihin aputöihin.\n\n" +
+        "Lähde: Elättäjistä kuluttajiksi. Tilastokeskuksen artikkeli, stat.fi";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function() {

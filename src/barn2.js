@@ -15,8 +15,12 @@ var barn2_state = {
 
         var image            = 'barnbackground';
         var centerButtonLabel  = "Jatka";
+        var infoText = "Aviottomien lasten asema parani vuonna 1922, kun eduskunta vahvisti " +
+        "lain avioliiton ulkopuolella syntyneistä lapsista. Sen mukaan kuntien oli perustettava " +
+        "lastenvalvojan virka, jonka tehtävänä oli valvoa muun muassa elatusmaksujen suorittamista " +
+        "17-vuotiaaksi asti.\n\nLähde: Arkistojen portti. Lapsuuteen liittyvät asiakirjat. wiki.narc.fi";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {

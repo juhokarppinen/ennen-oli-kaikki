@@ -131,9 +131,10 @@ var load_state = {
             children: ['DebugChild1','DebugChild2'],
             friend: 'DebugFriend',
             causeofdeath: 'DebugCauseOfDeath',
+            job: 'plywoodfactory',
             university: true,
             improvement: true,
-            movedtocity: true,
+            movedtocity: false,
             noconscript: true,
             lotta: false,
             nurse: false
