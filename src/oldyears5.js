@@ -4,7 +4,7 @@ var oldyears5_state = {
         PLAYER.age = 74;
         var text = "Olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen kuuluvan vanhuuteen, etkä ole moksiskaan. "
         +"Tyttäresi passittaa sinut kuitenkin lääkärin vastaanotolle sen jälkeen, kun olet aiheuttanut useamman palohälytyksen unohtamalla ruoat liedelle käryämään. "
-        +"Diagnoosi on Altzheimerin tauti, joka näyttää etenevän vauhdilla.";
+        +"Diagnoosi on Alzheimerin tauti, joka näyttää etenevän vauhdilla.";
                 
         var centerButtonLabel = "Jatka";
 
@@ -12,7 +12,7 @@ var oldyears5_state = {
     },
 
     centerButtonHandler: function () {
-        PLAYER.causeofdeath = "altzheimer";
+        PLAYER.causeofdeath = "alzheimer";
         GAME.state.start('death');
     }
 }

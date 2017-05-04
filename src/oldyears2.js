@@ -6,7 +6,7 @@ var oldyears2_state = {
                 PLAYER.age = 83;
                 var text = "Olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen kuuluvan vanhuuteen, etkä ole moksiskaan. "
                 +"Vaimosi passittaa sinut kuitenkin lääkärin vastaanotolle sen jälkeen, kun olet hukannut autosi useampaan otteeseen asioidessasi keskustassa. "
-                +"Diagnoosi on Altzheimerin tauti, joka näyttää etenevän vauhdilla.";
+                +"Diagnoosi on Alzheimerin tauti, joka näyttää etenevän vauhdilla.";
             } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'countrybackground';
                 PLAYER.age = 81;
@@ -46,7 +46,7 @@ var oldyears2_state = {
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
-                PLAYER.causeofdeath = "altzheimer";
+                PLAYER.causeofdeath = "alzheimer";
                 GAME.state.start('death');
             } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.causeofdeath = "piha";

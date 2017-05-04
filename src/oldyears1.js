@@ -44,7 +44,7 @@ var oldyears1_state = {
                 PLAYER.age = 63;
                 var text = "Jäätyäsi eläkkeelle olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen olevan normaalia vanhuuden höperyyttä, "
                 +"etkä ole moksiskaan. Mainitset kuitenkin asiasta ohi mennen lääkärillesi. Hän ottaa asian vakavasti ja passittaa sinut muistitesteihin. Diagnoosi on "
-                +"Altzheimerin tauti, joka näyttää etenevän vauhdilla.";
+                +"Alzheimerin tauti, joka näyttää etenevän vauhdilla.";
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
                     var image = "citybackground";
@@ -90,7 +90,7 @@ var oldyears1_state = {
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 GAME.state.start('oldyears2');
             } else if(PLAYER.lotta === true) {
-                PLAYER.causeofdeath = "altzheimer";
+                PLAYER.causeofdeath = "alzheimer";
                 GAME.state.start('death');
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
