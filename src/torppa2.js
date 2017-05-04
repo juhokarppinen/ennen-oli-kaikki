@@ -15,7 +15,10 @@ var torppa2_state = {
         var leftButtonLabel  = "Jää";
         var rightButtonLabel = "Kaupunkiin";
 
-        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
+        var infoText = "Vuoden 1918 lopussa vahvistettua torpparilakia alettiin panna täytäntöön vapunpäivänä 1919. Sen tarkoituksena oli antaa vuokratilallisille oikeus lunastaa tilansa itselleen.\n\n" +
+                       "Lähteet: Puumalainen I. 2015. Lieksan Anni: aikakautensa vahva nainen; juuret.org/node/39.";
+
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, infoText);
     },
 
     leftButtonHandler: function () {

@@ -5,14 +5,35 @@ var beginning_state = {
 
         var classText;
         var genderText;
+        var infoText;
+
         if (PLAYER.gender === "male") genderText = "pojan";
         else                          genderText = "tytön";
         if(PLAYER.location.name !== "Jyväskylä") {
             var image     = 'countrybackground';
-            if (PLAYER.class === "poor")        classText = "mäkitupalaiseksi ";
-            else if (PLAYER.class === "middle") classText = "torpparin esikoiseksi ";
-            else                                classText = "pappilan kolmanneksi lapseksi ";
+            infoText = "85% keskisuomalaisista sai toimeentulonsa maataloudesta vuonna 1920. Luku oli poikkeuksellisen korkea, " +
+                       "sillä muussa Suomessa vastaava luku oli noin 70 prosenttia. Keski-Suomen maatalouden erityispiirteet olivat " +
+                       "runsas pientilojen määrä ja viljelyalojen rehuvoittoisuus. ";
+            if (PLAYER.class === "poor") { 
+                classText = "mäkitupalaiseksi ";
+                infoText += "Mäkitupalainen omisti omalla tai vuokraamaallaan aluellaan mökin, mutta hän sai tavallisesti elantonsa muualta kuin mökistään.\n\n" + 
+                           "Lähteet: Jokipii M. Keski-Suomen historia. Elkelä K.: Maaseutuväestön historian sanastoa";
+            }
+            else if (PLAYER.class === "middle") {
+                classText = "torpparin esikoiseksi ";
+                infoText += "Torppari piti huolta torpastaan, joka oli maanviljelyä varten vuokralle annettu maatilan jakamaton osa.\n\n" + 
+                           "Lähteet: Jokipii M. Keski-Suomen historia. Kielitoimiston sanakirja";
+            }
+            else {
+                classText = "pappilan kolmanneksi lapseksi ";
+                infoText += "Pappila oli papin virka-asunto. Keski-Suomessa useampi pappila kuuluu arvokkaasti rakennettuihin kulttuuriympäristöihin.\n\n" +
+                           "Lähteet: Jokipii M. Keski-Suomen historia. Maakunnallisesti arvokkaat rakennetut kulttuuriympäristöt Keski-Suomessa. Alueluettelon liite. Keski-Suomen liitto.";  
+            }   
         } else {
+            infoText = "Jyväskylän kaupunki perustettiin maaliskuussa 1837. Kaupungin alueella oli vain pari taloa, muutama torppa ja markkinapaikka. " +
+                       "1920- ja 1930 Jyväskylästä alkoi tulla kaupunkimaisempi, kun ensimmäiset kerrostalot rakennettiin. Sadassa vuodessa Jyväskylän " +
+                       "asukasluku on kasvanut reilusta 6000 ihmisestä noin 138 000 ihmiseen. Kasvuun on vaikuttanut monta eri ilmiöt: muun muassa " +
+                       "teollisuuden kasvu, muuttoliike ja alueliitokset.\n\nLähde: Jokipii M. Keski-Suomen historia.";
             var image     = 'citybackground';
             if (PLAYER.class === "rich")        classText = "toiseksi lapseksi opettajaperheeseen ";
             else                                classText = "työläisperheeseen ";
@@ -24,15 +45,6 @@ var beginning_state = {
         genderText + "nimistä vuonna 1917.";
 
         var centerButtonLabel = "Jatka";
-
-        var infoText;
-        if (PLAYER.gender === "male") {
-            infoText = "Suosituimmat vuonna 1917 syntyneiden poikien etunimet olivat Eino, Toivo, " +
-                "Veikko, Väinö, Tauno, Erkki, Reino, Lauri, Viljo ja Martti.";
-        } else {
-            infoText = "Suosituimmat vuonna 1917 syntyneiden tyttöjen nimet olivat " +
-                "Anna, Aino, Aili, Aune, Helvi, Tyyne, Kerttu, Helmi, Martta ja Toini.";
-        }
 
         drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },

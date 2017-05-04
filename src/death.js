@@ -1,9 +1,7 @@
 var death_state = {
 
     create: function() {
-        var infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
-                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
-                       "oli 11,2 prosenttia.";
+        var infoText;
 
         var causeOfDeathText = "";
         var ripText = "Lepää rauhassa, " + PLAYER.name +"! ";
@@ -13,12 +11,18 @@ var death_state = {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
             +"Tauti koitui sinunkin kohtalokseksi. "+ ripText
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
+            infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
+                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
+                       "oli 11,2 prosenttia.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
             causeOfDeathText = "Espanjantauti tappoi 10- ja 20-lukujen vaihteessa 30 miljoonaa ihmistä. "
             + "Tauti koitui sinunkin kohtaloksesi. "+ ripText
             + "Kuolemasi ei ollut poikkeuksellinen, sillä sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
+            infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli pohjoismaiden suurin. " +
+                       "Kouluikään mennessä lapsista oli kuollut jo noin 18%. Imeväiskuolleisuus " +
+                       "oli 11,2 prosenttia.";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
@@ -70,7 +74,7 @@ var death_state = {
         if(PLAYER.causeofdeath === "syopa") {
             var text = "Kuolit Jyväskylän keskussairaalassa. " + ripText;
         }
-        if(PLAYER.causeofdeath === "altzheimer") {
+        if(PLAYER.causeofdeath === "alzheimer") {
             var text = "Vietit viimeiset vuotesi vanhainkodin vuodeosastolla. " + ripText;
         }
         if(PLAYER.causeofdeath === "rintakipu") {
