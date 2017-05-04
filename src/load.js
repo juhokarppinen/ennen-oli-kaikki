@@ -91,7 +91,7 @@ var load_state = {
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');
         GAME.load.image('articlecontinuationwar', 'assets/img/articlecontinuationwar.jpg');
         //sfx
-        GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
+        // GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
         //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
         /*  Bittersweet Kevin MacLeod (incompetech.com)
@@ -111,7 +111,7 @@ var load_state = {
      * from the default state, since they are overwritten in the beginning.
      */
     create: function() {
-        var startState = 'menu'; // Default start state == 'menu'     
+        var startState = 'warend1'; // Default start state == 'menu'     
         PLAYER = { 
             // Beginning properties
             gender: 'male',

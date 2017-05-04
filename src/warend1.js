@@ -8,9 +8,10 @@ var warend1_state = {
               GAME.add.sprite(0, 0, 'peace1944_01'),
               GAME.add.sprite(0, 0, 'peace1944_02')];
 
-        var tweenLength = 3000;
+        var tweenLength = 1000;
         var tweenDelayScalar = 0;
         var tweenDelayConst = 0;
+        var tweenLengthAddition = 0;
 
         images.forEach(img => { 
             img.alpha = 0; 
@@ -20,6 +21,7 @@ var warend1_state = {
                 Phaser.Easing.Linear.None, 
                 true, 
                 tweenDelayConst + tweenLength * tweenDelayScalar++);
+            tweenLength = 3000;
         });
 
         var image = 'empty';
