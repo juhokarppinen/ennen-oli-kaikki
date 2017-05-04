@@ -13,7 +13,6 @@ var citywork3_state = {
     },
 
     centerButtonHandler: function () {
-        this.backgroundSound.stop();
         GAME.state.start('youthwork3');
     }
 }

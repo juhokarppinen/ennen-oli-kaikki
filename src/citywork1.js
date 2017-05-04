@@ -43,7 +43,6 @@ var citywork1_state = {
     },
 
     centerButtonHandler: function () {
-        this.backgroundSound.stop();
         if(PLAYER.gender === "male") {
             GAME.state.start('conscript');
         } else {

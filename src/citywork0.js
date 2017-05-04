@@ -14,12 +14,10 @@ var citywork0_state = {
     },
 
     leftButtonHandler: function () {
-        this.backgroundSound.stop();
         GAME.state.start('servant5');
     },
 
     rightButtonHandler: function () {
-        this.backgroundSound.stop();
         GAME.state.start('citywork2');
     }
 }
