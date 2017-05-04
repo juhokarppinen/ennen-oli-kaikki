@@ -32,6 +32,7 @@ var oldyears1_state = {
                 var image = "countrybackground";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 60;
+                var image = "shopbackground";
                 var text = "Eläkeiän lähestyessä sinun on mietittävä järjestelyä uudelleen, sillä lapsesi perivät kaupan jonakin päivänä joka tapauksessa. "
                 +"Tyttärestäsi tulee kauppias sinun siirtyessäsi pikkuhiljaa taka-alalle. Kokonaan et malta pysyä poissa vielä seitsemänkymppisenäkään.";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {

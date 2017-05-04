@@ -9,7 +9,7 @@ var newchoice2_state = {
                 +"Et pääse enää aamuisin liikkeelle ilman krapularyyppyä.";
             } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 37;
-                var image = 'youthworkcountrybackground';
+                var image = "shopbackground";
                 var text = "Riski kannatti, sillä kauppa lähtee pyörimään jopa paremmin kuin olit laskeskellut. "
                 +"Kun kahvi vapautetaan säännöstelystä viimein vuonna 1954, jonot kiemurtelevat pihalla asti.";
             } else {
@@ -23,6 +23,7 @@ var newchoice2_state = {
             var image = "youthworkcountrybackground";
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 29;
+                var image = "shopbackground";
                 var text = "Vastoin miehesi toiveita otat yhä enemmän vastuuta kaupasta hänen poissaollessaan. Välillenne syntyy riita, kun ilmoitat haluavasi alkaa nostaa palkkaa itsellesi.";
             } else {
                 var image = "youthworkcountrybackground";

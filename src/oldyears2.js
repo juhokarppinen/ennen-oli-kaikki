@@ -21,6 +21,7 @@ var oldyears2_state = {
         } else {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 74;
+                var image = "shopbackground";
                 var text = "Olet lähdössä kaupalle tavalliseen tapaasi puolenpäivän maissa, kun sinut pysäyttää kova päänsärky. Soitat tyttärellesi, joka hälyttää apua. "
                 +"Hätäkeskuksessa epäillään aivoinfarktia, joten pääset hoitoon nopeasti.";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {

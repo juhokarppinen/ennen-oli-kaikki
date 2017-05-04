@@ -19,6 +19,7 @@ var warend3_state = {
             }
         } else {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+                var image = "shopbackground";
                 var text = "Miehesi on perustanut sekatavarakaupan, jossa riittää tekemistä sinullekin. Vaihdat navettaesiliinan astetta hienompaan ja alat palvella asiakkaita.";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 if("undefined" !== typeof PLAYER.spouse) {

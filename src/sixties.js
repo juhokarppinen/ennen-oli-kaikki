@@ -28,6 +28,7 @@ var sixties_state = {
                 +"Vietät melko eristäytynyttä elämää siskosi perheen maille rakennetussa tuvassa.";
                 var image = "countrybackground";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+                var image = "shopbackground";
                 var text = "Miehesi menehtyy auto-onnettomuudessa, ja joudut ottamaan kaupan kokonaan vastuullesi. Kauppatieteitä Helsingin yliopistossa opiskeleva esikoisesi "
                 +"tarjoutuu ottamaan osan taakasta harteilleen, mutta kieltäydyt ehdottomasti avusta. Haluat, että lapsesi saa paremman koulutuksen kuin mihin itselläsi oli mahdollisuus.";
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {

@@ -9,7 +9,7 @@ var newchoice5_state = {
                 +"joista et ole ennen päässyt nauttimaan. Töitä on paiskittava miltei kellon ympäri, usein myös sunnuntaisin.";
             } else {
                 PLAYER.age = 38;
-                var image = 'youthworkcountrybackground';
+                var image = "shopbackground";
                 var text = "Liiketoimintasi rullaa niin hyvin, ettei sinun enää tarvitse huolehtia kaupan päivittäisestä pyörittämisestä. "
                 +"Olet Suomen Kaupunkien Vähittäiskauppiasliiton aktiivijäsen, ja politiikka kiinnostaa sinua yhä enemmän. "
                 +"Kiidät uudella Mossellasi kokouksissa ympäri Suomen.";
