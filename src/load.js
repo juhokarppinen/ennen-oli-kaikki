@@ -90,8 +90,6 @@ var load_state = {
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');
         GAME.load.image('articlecontinuationwar', 'assets/img/articlecontinuationwar.jpg');
-        //sfx
-        // GAME.load.audio('ambience-city', 'assets/sound/ambience-city.mp3');
         //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
         /*  Bittersweet Kevin MacLeod (incompetech.com)
@@ -115,7 +113,8 @@ var load_state = {
         PLAYER = { 
             // Beginning properties
             gender: 'male',
-            age: 0, 
+            age: 0,
+            previousAge: 0, 
             name: 'Debug',
             class: 'middle',
             location: {
