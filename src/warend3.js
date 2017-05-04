@@ -60,12 +60,15 @@ var warend3_state = {
                 PLAYER.age = 32;
                 var text = "Tehtaan tuotanto on saatu pyörimään jälleen täydellä teholla, ja olet saanut työpaikkasi takaisin. Makeiset maistuvat suomalaisille pulavuosien jälkeen. "
                 +"Suklaakin on vapautettu säännöstelystä, ja sen kysyntä on niin kovaa, ettette pysty siihen vastaamaan, vaikka paiskittekin hommia kahdessa vuorossa.";
+                var infoText = "SOK:n Makeistehdas Vaajakoskella pysyi käynnissä miltei koko sodan ajan, vaikka valikoimaa jouduttiin supistamaan sokeri- ja siirappipulan " +
+                "vuoksi. Raaka-ainepula pysäytti tehtaan tuotannon kokonaan muutamiksi kuukausiksi vuosina 1943 ja 1944, mutta tuotanto käynnistyi uudelleen, kun raaka-aineita " +
+                "oli jälleen saatavilla.\n\nLähde: Kolu, Antti, Vaajakosken yhdyskunta 1916-1944. Vaajakosken Kohinat ry. Jyväskylä 2011.";
             }
         }
                 
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {

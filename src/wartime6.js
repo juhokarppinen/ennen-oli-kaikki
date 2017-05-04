@@ -19,7 +19,7 @@ var wartime6_state = {
             }
         } else if(PLAYER.gunpowderfactory) {
                 var image = 'gunpowderfactorybackground';
-                var text = "Sota jatkuu jo kolmatta vuotta. Vanhemmat ikäluokat on lomautettu armeijasta taisteluiden rauhoitutta, ja "
+                var text = "Sota jatkuu jo kolmatta vuotta. Vanhemmat ikäluokat on lomautettu armeijasta taisteluiden rauhoituttua, ja "
                 +"olet menettänyt työpaikkasi rintamalta palanneen miehen tieltä. Tienaat elantosi osallistumalla erilaisiin talkoisiin milloin missäkin.";
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
             var image = 'homechorescountrybackground';

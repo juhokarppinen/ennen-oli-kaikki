@@ -34,8 +34,10 @@ var war3_state = {
         }
                 
         var centerButtonLabel = "Jatka";
+        var infoText = "Suomen hyökkäysvaiheen päätyttyä, vuoden 1941 loppuun mennessä Suomen tappiot " +
+        "olivat noin 25 000 kaatunutta ja 62 000 haavoittunutta.\n\nLähde: Lauri Haavisto (toim.): Suomalainen sotilas - jääkäristä rauhanturvaajaan, 2009";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {

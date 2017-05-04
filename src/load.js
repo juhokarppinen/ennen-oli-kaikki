@@ -118,7 +118,7 @@ var load_state = {
             name: 'Debug',
             class: 'middle',
             location: {
-                name: 'Jyväskylä', 
+                name: 'Debugkylä', 
                 to: 'Jyväskylään', 
                 at: 'Jyväskylässä'
             },

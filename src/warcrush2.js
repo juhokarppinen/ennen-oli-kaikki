@@ -7,8 +7,11 @@ var warcrush2_state = {
         +"Viimeisenä iltanaan "+PLAYER.crush+" pyytää sinua vaimokseen. Mitä vastaat?";
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel  = "Ei";
+        var infoText = "Sota-aikana avioliittoja solmittiin runsaasti, sillä sotilaan vaimo sai kuukausipalkkaa " +
+        "valtiolta. Itse sotilas sai enemmän lomapäiviä. Monet sota-ajan pika-avioliitot kuitenkin päättyivät " +
+        "myös nopeasti sodan jälkeen. Avioerojen määrä kasvoi.\n\nLähde: Elämää kotirintamalla. Artikkeli. yle.fi";
 
-        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
+        drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, infoText);
     },
 
     leftButtonHandler: function () {

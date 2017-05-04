@@ -38,8 +38,12 @@ var peacetime1_state = {
         }
                 
         var centerButtonLabel = "Jatka";
+        var infoText = "Suurin osa keskisuomalaisista kuului Talvisodassa 10. divisioonaan " +
+        "(myöhemmin 7. divisioona), joka keskitettiin Taipaleen lohkolle, Itä-Kannakselle. " +
+        "Talvisodan aikana 10. divisioonan miehistöstä kaatui 1038, haavoittui 2751 ja katosi " +
+        "201 miestä.\n\nLähde: Talvisodan historia 4, talvisota.fi";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {

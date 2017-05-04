@@ -34,11 +34,14 @@ var wartime4_state = {
             var text = "Vaikka uutiset suomalaisten joukkojen etenemisestä idässä ovat rohkaisevia, tilanne kotirintamalla "
             +"kurjistuu entisestään alati pahenevan elintarvikepulan myötä. Tehtaan tuotantolinjoja joudutaan sulkemaan ja "
             +"osa työtovereistasi joutuu jättämään paikkansa.";
+            var infoText = "Elintarvikkeita säännösteltiin sodan aikana, sillä muuten ruokaa ja juotavaa ei olisi riittänyt koko " +
+            "kansalle kuin puoleksi vuodeksi. Eri ikä-, sukupolvi-  ja ammattiryhmille jaettiin kortit, joihin oli esimerkikisi " +
+            "mietitty, kuinka paljon esimerkiksi sokeria tai kahvia sai ostaa kaupasta.\n\nLähde: Elämää kotirintamalla. Artikkeli. yle.fi";
         }
                 
         var centerButtonLabel = "Jatka";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {
