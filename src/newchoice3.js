@@ -22,7 +22,7 @@ var newchoice3_state = {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 30;
                 var text = "Miehesi on rakennuttanut teille uuden kodin. Talo on suorastaan hulppea verrattuna torppaan, jossa asuitte "
-                "avioliittonne ensimmäiset vuodet. Siellä on kaikki modernit mukavuudet, kuten juokseva vesi, sisävessa, sähköhella ja jääkaappi. "
+                +"avioliittonne ensimmäiset vuodet. Siellä on kaikki modernit mukavuudet, kuten juokseva vesi, sisävessa, sähköhella ja jääkaappi. "
                 +"Haluaisit ajokortin, jotta voisit käydä asioilla miehesi uudella Mossella, mutta hän vastustelee.";
             } else {
                 var image = "youthworkcountrybackground";
