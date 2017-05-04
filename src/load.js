@@ -32,6 +32,7 @@ authors["warworkbackground"]           = prefix+"Väinö Kannisto (Helsingin kau
 authors["lottawarbackground"]          = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["constructionbackground"]      = prefix+"Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["shopbackground"]              = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
+authors["wardeathbackground"]          = prefix+"Pauliina Karjalainen";
 authors["empty"]                       = "Grafiikka: Pauliina Karjalainen";
 authors["articlewinterwar2"]           = "Keskisuomalainen";
 authors["articlepeace2"]               = "Keskisuomalainen";
@@ -89,6 +90,7 @@ var load_state = {
         GAME.load.image('lottawarbackground', 'assets/img/lottawar.jpg');
         GAME.load.image('constructionbackground', 'assets/img/construction.jpg');
         GAME.load.image('shopbackground', 'assets/img/shop.jpg');
+        GAME.load.image('wardeathbackground', 'assets/img/wardeath.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');

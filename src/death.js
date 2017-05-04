@@ -5,7 +5,7 @@ var death_state = {
 
         var causeOfDeathText = "";
         var ripText = "Lepää rauhassa, " + PLAYER.name +"! ";
-
+        var image            = "deathbackground";
         // Childhood death
         if (PLAYER.causeofdeath === "keuhkokuume") {
             causeOfDeathText = "Keuhkotuberkuloosi oli 1900-luvun alkupuolella yksi yleisimmistä kuolinsyistä. "
@@ -35,6 +35,7 @@ var death_state = {
                 causeOfDeathText = "Pataljoonanne oli siirtymässä linjojen takaa reservistä etulinjaan, kun "
                 +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
                 +"Kranaatin sirpale osui kaulaasi ja menetit henkesi välittömästi. "+ ripText;
+                image = "wardeathbackground";
             }
             infoText = "Sodassa miesten kuolleisuus oli 12,8% ja naisten 2,6%.";
         }
@@ -48,10 +49,12 @@ var death_state = {
         if(PLAYER.causeofdeath === "vuosalmi") {
             causeOfDeathText = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
             +"Kaaduit Neuvostoliiton tykistötulessa Vuosalmella. " + ripText;
+            image = "wardeathbackground";
         }
         if(PLAYER.causeofdeath === "taliihantala") {
             causeOfDeathText = "Kesäkuun loppuun mennessä yli puolet divisioonasi miehistä oli kaatunut, haavoittunut tai kadonnut. "
             +"Sinä selvisit heinäkuun alkuun asti, mutta kaaduit lopulta Tali-Ihantalan taisteluissa. " + ripText;
+            image = "wardeathbackground";
         }
         if(PLAYER.causeofdeath === "karkuri") {
             causeOfDeathText = "Sinut teloitettiin rintamakarkurina. " + ripText;
@@ -59,6 +62,7 @@ var death_state = {
         if(PLAYER.causeofdeath === "luoti") {
             causeOfDeathText = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
             +"joukkosidontapaikalle. " + ripText;
+            image = "wardeathbackground";
         }
         if(PLAYER.causeofdeath === "influenssa") {
             causeOfDeathText = "Vuosia jatkunut nälkä oli heikentänyt kehosi alttiiksi tartuntataudeille. Sairastuit ärhäkkään influenssaan, joka vei henkesi. " + ripText;
@@ -96,7 +100,7 @@ var death_state = {
 
         var text = "Kuolit... " + causeOfDeathText;
 
-        var image            = "deathbackground";
+        
         var rightButtonLabel = "Valikkoon";
         var leftButtonLabel;
         if(PLAYER.gender === "female") leftButtonLabel = "Pelaa poikana";
