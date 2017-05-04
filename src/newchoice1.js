@@ -4,15 +4,24 @@ var newchoice1_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
                 var image = 'constructionbackground';
-                var text = "Rakennustöitä ei kotikylälläsi kuitenkaan riitä loputtomiin. Kauempana niitä olisi lisää. Lähdetkö kauemmas työnhakuun?";
+                var text = "Rakennustöitä ei kotikulmillasi kuitenkaan riitä loputtomiin, mutta Pohjois-Suomessa niitä riittäisi. Lähdetkö?";
                 var leftButtonLabel  = "Lähde";
                 var rightButtonLabel  = "Jää";
-            } else {
+            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'youthworkcountrybackground';
                 var text = "Kauppaa varten tarvitsisit lainaa. Sen vakuudeksi kävisi maillanne oleva mökki. Uskallatko ottaa riskin?";
                 var leftButtonLabel  = "Kyllä";
                 var rightButtonLabel  = "Ei";
+            } else {
+                PLAYER.age = 29;
+                var image = 'plywoodfactorybackground';
+                var text = "Uutta ylennystä ei tarvitse kauaa odottaa, mutta paikan vastaanottaminen tarkoittaisi muuttoa pääkaupunkiseudulle. "
+                +"Vaimosi ei haluaisi lähteä, etkä sinäkään haluaisi jättää kotiseutujasi, mutta uudesta työstä maksettaisiin niin hyvin, että "
+                +"sinulla olisi vihdoin varaa hankkia perheellesi oma asunto. Tartutko tarjoukseen?";
+                var leftButtonLabel  = "Kyllä";
+                var rightButtonLabel  = "Ei";
             }
+            
         } else {
             var image = "youthworkcountrybackground";
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
@@ -35,13 +44,11 @@ var newchoice1_state = {
 
     leftButtonHandler: function () {
         GAME.state.start('death');
-        //todo
-        //GAME.state.start('newchoice2');
+        GAME.state.start('newchoice2');
     },
 
     rightButtonHandler: function () {
         GAME.state.start('death');
-        //todo
-        //GAME.state.start('newchoice3');
+        GAME.state.start('newchoice3');
     }
 }
