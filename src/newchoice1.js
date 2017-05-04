@@ -2,7 +2,7 @@ var newchoice1_state = {
 
     create: function() {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 var image = 'constructionbackground';
                 var text = "Rakennustöitä ei kotikulmillasi kuitenkaan riitä loputtomiin, mutta Pohjois-Suomessa niitä riittäisi. Lähdetkö?";
                 var leftButtonLabel  = "Lähde";

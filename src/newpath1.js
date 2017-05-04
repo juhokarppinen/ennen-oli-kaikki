@@ -19,6 +19,6 @@ var newpath1_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('death');
+        GAME.state.start('newpath2');
     }
 }

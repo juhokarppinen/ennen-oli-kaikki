@@ -25,7 +25,7 @@ var wartime7_state = {
                 +"Haavoittuneet kertovat ennenkokemattomasta tulimerestä ja osa heistä on edelleen kauhun vallassa, vaikka ovat päässeet turvaan.";
             } else {
                 var text = "Idästä alkaa tulvia lannistavia uutisia. Neuvostoliitto on aloittanut suurhyökkäyksen Karjalankannaksella, ja "
-                +"suomalaijoukot ovat joutuneet vetäytymään. Viipuri on evakuoitu jälleen, mikä tietää lisätöitä kotirintamalla.";
+                +"suomalaisjoukot ovat joutuneet vetäytymään. Viipuri on evakuoitu jälleen, mikä tietää lisätöitä kotirintamalla.";
             }
         } else {
             var image = 'candyfactorybackground';
