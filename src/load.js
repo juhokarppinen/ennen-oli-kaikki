@@ -52,10 +52,8 @@ var load_state = {
         GAME.load.image('empty', 'assets/img/empty.png');
         GAME.load.image('peace1940_01', 'assets/img/peace1940_01.jpg');
         GAME.load.image('peace1940_02', 'assets/img/peace1940_02.jpg');
-        GAME.load.image('peace1940_03', 'assets/img/peace1940_03.jpg');
         GAME.load.image('peace1944_01', 'assets/img/peace1944_01.jpg');
         GAME.load.image('peace1944_02', 'assets/img/peace1944_02.jpg');
-        GAME.load.image('peace1944_03', 'assets/img/peace1944_03.jpg');
         GAME.load.image('menubackground', 'assets/img/menu.jpg');
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
@@ -111,7 +109,7 @@ var load_state = {
      * from the default state, since they are overwritten in the beginning.
      */
     create: function() {
-        var startState = 'peacetime1'; // Default start state == 'menu'     
+        var startState = 'menu'; // Default start state == 'menu'     
         PLAYER = { 
             // Beginning properties
             gender: 'male',

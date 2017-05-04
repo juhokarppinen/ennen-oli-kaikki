@@ -4,15 +4,13 @@ var map1_state = {
         //PLACEHOLDER! TODO: Add map with animation
         var images = [GAME.add.sprite(0, 0, 'peace1940_01'),
                       GAME.add.sprite(0, 0, 'peace1940_02'),
-                      GAME.add.sprite(0, 0, 'peace1940_03'),
                       GAME.add.sprite(0, 0, 'peace1944_01'),
-                      GAME.add.sprite(0, 0, 'peace1944_02'),
-                      GAME.add.sprite(0, 0, 'peace1944_03')];
+                      GAME.add.sprite(0, 0, 'peace1944_02')];
         var image = 'empty';
 
-        var tweenLength = 2000;
+        var tweenLength = 3000;
         var tweenDelayScalar = 0;
-        var tweenDelayConst = 1000;
+        var tweenDelayConst = 0;
 
         images.forEach(img => { 
             img.alpha = 0; 
