@@ -26,8 +26,13 @@ var conscript3_state = {
         
         var image            = 'conscriptbackground';
         var centerButtonLabel = "Jatka";
+        var infoText = "Ylimääräinen kertausharjoitus tarkoitti sitä, että palvelukseen kutsuttiin lähes kaikki " +
+        "reserviin kuuluvat alle 60-vuotiaat upseerit ja alle 40-vuotiaat aliupseerit sekä miehistö. " +
+        "Yli kuukauden kestäneissä harjoituksissa suomalaisten puolustuskyky -ja tahto lujittuivat " +
+        "ennen kuin toinen maailmansota Suomessa alkoi.\n\nLähde: Ylimääräinen harjoitus kokoaa armeijan rajalle. Artikkeli. yle.fi";
 
-        drawUIsingleButton(image, text, centerButtonLabel, this);
+
+        drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },
 
     centerButtonHandler: function () {
