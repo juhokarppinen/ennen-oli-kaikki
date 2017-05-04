@@ -42,55 +42,55 @@ var death_state = {
             causeOfDeathText = "Sairastut tuberkuloosiin, joka koituu kohtaloksesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "pilkkukuume") {
-            var text = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
+            causeOfDeathText = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
             +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "vuosalmi") {
-            var text = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
+            causeOfDeathText = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
             +"Kaaduit Neuvostoliiton tykistötulessa Vuosalmella. " + ripText;
         }
         if(PLAYER.causeofdeath === "taliihantala") {
-            var text = "Kesäkuun loppuun mennessä yli puolet divisioonasi miehistä oli kaatunut, haavoittunut tai kadonnut. "
+            causeOfDeathText = "Kesäkuun loppuun mennessä yli puolet divisioonasi miehistä oli kaatunut, haavoittunut tai kadonnut. "
             +"Sinä selvisit heinäkuun alkuun asti, mutta kaaduit lopulta Tali-Ihantalan taisteluissa. " + ripText;
         }
         if(PLAYER.causeofdeath === "karkuri") {
-            var text = "Sinut teloitettiin rintamakarkurina. " + ripText;
+            causeOfDeathText = "Sinut teloitettiin rintamakarkurina. " + ripText;
         }
         if(PLAYER.causeofdeath === "luoti") {
-            var text = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
+            causeOfDeathText = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
             +"joukkosidontapaikalle. " + ripText;
         }
         if(PLAYER.causeofdeath === "influenssa") {
-            var text = "Vuosia jatkunut nälkä oli heikentänyt kehosi alttiiksi tartuntataudeille. Sairastuit ärhäkkään influenssaan, joka vei henkesi. " + ripText;
+            causeOfDeathText = "Vuosia jatkunut nälkä oli heikentänyt kehosi alttiiksi tartuntataudeille. Sairastuit ärhäkkään influenssaan, joka vei henkesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "rakennus") {
-            var text = "Olit muuraamassa kaksikerroksisen talon savupiippua. Jalkasi lipesi rakennustelineeltä ja putosit. " + ripText;
+            causeOfDeathText = "Olit muuraamassa kaksikerroksisen talon savupiippua. Jalkasi lipesi rakennustelineeltä ja putosit. " + ripText;
         }
         if(PLAYER.causeofdeath === "auto") {
-            var text = "Olit palaamassa kotiin Vähittäiskaupan Keskusliiton kokouksesta. Olit väsynyt ja kiukkuinen, sillä et ollut saanut ajatuksillesi kannatusta. "
+            causeOfDeathText = "Olit palaamassa kotiin Vähittäiskaupan Keskusliiton kokouksesta. Olit väsynyt ja kiukkuinen, sillä et ollut saanut ajatuksillesi kannatusta. "
             +"Ajoit liian lujaa sateen liukastamaan mutkaan. Autosi suistui tieltä ja törmäsi puuhun. Menehdyit välittömästi. " + ripText;
             infoText = "Vuonna 1965 tieliikenneonnettomuuksissa kuoli 1 049 ihmistä ja loukkaantui 15 914 ihmistä. Vastaavat luvut vuonna 2015 olivat 270 ja 6 408.";
         }
         if(PLAYER.causeofdeath === "syopa") {
-            var text = "Kuolit Jyväskylän keskussairaalassa. " + ripText;
+            causeOfDeathText = "Kuolit Jyväskylän keskussairaalassa. " + ripText;
         }
         if(PLAYER.causeofdeath === "alzheimer") {
-            var text = "Vietit viimeiset vuotesi vanhainkodin vuodeosastolla. " + ripText;
+            causeOfDeathText = "Vietit viimeiset vuotesi vanhainkodin vuodeosastolla. " + ripText;
         }
         if(PLAYER.causeofdeath === "rintakipu") {
-            var text = "Vaimosi soitti hädissään ambulanssin, mutta oli jo liian myöhäistä. " + ripText;
+            causeOfDeathText = "Vaimosi soitti hädissään ambulanssin, mutta oli jo liian myöhäistä. " + ripText;
         }
         if(PLAYER.causeofdeath === "vatsa") {
-            var text = "Kuolet Jyväskylän keskussairaalassa juuri ennen 60-vuotissyntymäpäivääsi. "+ ripText;
+            causeOfDeathText = "Kuolet Jyväskylän keskussairaalassa juuri ennen 60-vuotissyntymäpäivääsi. "+ ripText;
         }
         if(PLAYER.causeofdeath === "piha") {
-            var text = "Vaimosi löysi sinut tuupertuneena pihalta. " + ripText;
+            causeOfDeathText = "Vaimosi löysi sinut tuupertuneena pihalta. " + ripText;
         }
         if(PLAYER.causeofdeath === "aivot") {
-            var text = "Hoito ei auttanut. Kuolit Jyväskylän keskussairaalassa 74-vuotiaana. " + ripText;
+            causeOfDeathText = "Hoito ei auttanut. Kuolit Jyväskylän keskussairaalassa 74-vuotiaana. " + ripText;
         }
         if(PLAYER.causeofdeath === "aivot2") {
-            var text = "Hoito ei auttanut. Kuolit Jyväskylän keskussairaalassa 69-vuotiaana. " + ripText;
+            causeOfDeathText = "Hoito ei auttanut. Kuolit Jyväskylän keskussairaalassa 69-vuotiaana. " + ripText;
         }
 
         var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
