@@ -231,7 +231,9 @@ function drawBackground(image) {
 
 
 function showPreviousBackground() {
-    return GAME.add.sprite(0, 0, PREVIOUS_BACKGROUND); 
+    var previousBackground = GAME.add.sprite(0, 0, PREVIOUS_BACKGROUND); 
+    GAME.add.tween(previousBackground).to({alpha:0}, 500, Phaser.Easing.Linear.None, true, 1000);
+    return previousBackground;
 }
 
 

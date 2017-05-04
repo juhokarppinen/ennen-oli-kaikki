@@ -24,6 +24,7 @@ var map1_state = {
                 tweenDelayConst + tweenLength * tweenDelayScalar++);
         });
 
+
         var text = "Suomi menetti sodassa Karjalan.";
                 
         var centerButtonLabel = "Jatka";
