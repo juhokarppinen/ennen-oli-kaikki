@@ -4,8 +4,7 @@ var citywork3_state = {
         PLAYER.age = 14;
         var text = "Luku- ja laskutaidottomana sinun ei ole helppoa löytää töitä kaupungista. "
         +"Aikasi kuluu kaupungin kaduilla norkoillen ja satunnaisia juoksupojan töitä tehden. "
-        +"Vaneritehtaalla työskentelevä tuttavasi tietää kertoa, että tehtaalla saattaisi olla "
-        +"hanttihommia tarjolla ja hän lupaa suositella sinua tehtävään.";
+        +"Onneksi kuulet että leipomossa tarvitaan juoksupoikaa, ja vikkelänä poikana saat paikan.";
 
         var image               = 'citybackground';
         var centerButtonLabel   = "Jatka";
@@ -15,6 +14,6 @@ var citywork3_state = {
 
     centerButtonHandler: function () {
         this.backgroundSound.stop();
-        GAME.state.start('citywork4');
+        GAME.state.start('youthwork3');
     }
 }
