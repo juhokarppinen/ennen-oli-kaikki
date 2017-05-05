@@ -6,7 +6,7 @@ var newchoice3_state = {
                 PLAYER.age = 29;
                 var image = 'constructionbackground';
                 var text = "Maaseudulla tarjolla olevat työt vähenevät vuosi vuodelta. Vaikka elintarvikesäännöstely on jo loppunut, "
-                +"perheenne kärsii edelleen pulasta. Pakkaatte vaimosi kanssa lapsenne ja pienen omaisuutenne ja Jyväskylään paremman elämän toivossa.";
+                +"perheenne kärsii edelleen pulasta. Pakkaatte vaimosi kanssa lapsenne ja pienen omaisuutenne ja lähdette Jyväskylään paremman elämän toivossa.";
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 33;
                 var image = 'youthworkcountrybackground';

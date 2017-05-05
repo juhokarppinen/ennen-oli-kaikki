@@ -4,7 +4,7 @@ var newchoice1_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 var image = 'constructionbackground';
-                var text = "Rakennustöitä ei kotikulmillasi kuitenkaan riitä loputtomiin, mutta Pohjois-Suomessa niitä riittäisi. Lähdetkö?";
+                var text = "Rakennustöitä ei kotikulmillasi kuitenkaan riitä loputtomiin, mutta Pohjois-Suomessa niitä olisi lisää. Lähdetkö?";
                 var leftButtonLabel  = "Lähde";
                 var rightButtonLabel  = "Jää";
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {

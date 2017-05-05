@@ -44,7 +44,7 @@ var oldyears1_state = {
                 +"heidän vanhempiensa ollessa töissä. Molemmat lapsesi puolisoineen ovat töissä tehtaalla.";
             } else if(PLAYER.lotta === true) {
                 image = "lottawarbackground";
-                PLAYER.age = 63;
+                PLAYER.age = 65;
                 text = "Jäätyäsi eläkkeelle olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen olevan normaalia vanhuuden höperyyttä. " +
                     "Mainitset kuitenkin asiasta ohi mennen lääkärillesi. Hän ottaa asian vakavasti ja passittaa sinut muistitesteihin. Diagnoosi on "
                 +"Alzheimerin tauti.";
@@ -93,6 +93,7 @@ var oldyears1_state = {
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 GAME.state.start('oldyears2');
             } else if(PLAYER.lotta === true) {
+                PLAYER.age = 70;
                 PLAYER.causeofdeath = "alzheimer";
                 GAME.state.start('death');
             } else if(PLAYER.widowboss === true) {

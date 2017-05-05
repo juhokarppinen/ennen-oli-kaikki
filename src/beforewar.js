@@ -18,7 +18,7 @@ var beforewar_state = {
         } else if(PLAYER.movedtocity === true) {
             var text = "Kaupungin kadut hiljenevät lokakuussa 1939, kun kaikki reserviläiset "
             +"kutsutaan ylimääräisiin kertaushajoituksiin. Myös vuokranantajasi poika saa kutsun. "
-            +"Yrität lohduttaa pojan nyyhkyttävää äitiään parhaasi mukaan.";
+            +"Yrität lohduttaa nyyhkyttävää rouvaa parhaasi mukaan.";
         } else {
             var text = "Kylän raitilla on hiljaista lokakuussa 1939, sillä lähes kaikki seudun miehet kaikkein nuorimpia "
             +"ja vanhimpia lukuunottamatta on kutsuttu ylimääräisiin kertausharjoituksiin. Kotiin jääneiden ilmeet ovat vakavia.";

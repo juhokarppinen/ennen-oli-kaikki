@@ -5,7 +5,7 @@ var warend3_state = {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
                 var image = 'constructionbackground';
                 var text = "Palaat rintamalta kotiin ristiriitaisin tuntein. Vaimo ja lapset tuntuvat vierailta, etkä saa sodan kauhuja "
-                +"pyyhittyä mielestäsi. Rengin töitä sinulle ei enää ole tarjolla, mutta läheiseltä rakennustyömaalta löytyy sinulle töitä.";
+                +"pyyhittyä mielestäsi. Rengin töitä sinulle ei enää ole tarjolla, mutta löydät hommia läheiseltä rakennustyömaalta.";
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'youthworkcountrybackground';
                 var text = "Vaikka oletkin perinyt tilan vanhemmiltasi, on pikkuveljesi ottanut ohjat tilanhoidossa. Hän vastaa peltotöistä "

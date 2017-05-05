@@ -23,10 +23,12 @@ var wartime4_state = {
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';
             if(PLAYER.university === true) {
-                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin. "
-                +"Karjalasta kotoisin olevat haavoittuneet odottavat malttamattomina pääsyä takaisin kotikonnuilleen.";
+                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja. Uutiset Viipurin takaisin " +
+                    "valloittamisesta saavat tunnelman kohoamaan myös Keski-Suomessa. Karjalasta kotoisin olevat " +
+                    "haavoittuneet odottavat malttamattomina pääsyä takaisin kotiin.";
             } else {
-                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin. "
+                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin " +
+                    "valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin. "
                 +"Karjalan evakot suunnittelevat muuttoa takaisin kotikonnuilleen.";
             }
         } else {

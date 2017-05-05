@@ -5,9 +5,10 @@ var newchoice4_state = {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 PLAYER.age = 30;
                 var image = 'constructionbackground';
-                var text = "Saat töitä Rautpohjan tehtaalta, entiseltä Valtion tykkitehtaalta, jossa valmistetaan tätä nykyä sotakorvaustuotteita Neuvostoliitolle. "
-                +"Rintamakaverisi on työskennellyt tehtaalla jo välirauhan aikana, ja hän suosittelee sinua tehtävään, vaikkei sinulla olekaan kokemusta raskaasta teollisuudesta. "
-                +"Saatte katon päänne päälle tehtaan kupeeseen rakennetuista parakeista.";
+                var text = "Saat töitä Valmetin tehtaalta, jossa valmistetaan sotakorvaustuotteita Neuvostoliitolle. " +
+                    "Rintamatoverisi on työskennellyt tehtaalla jo välirauhan aikana, ja hän suosittelee sinua tehtävään, " +
+                    "vaikkei sinulla olekaan kokemusta raskaasta teollisuudesta. Saatte katon päänne päälle tehtaan " +
+                    "kupeeseen rakennetuista parakeista.";
             } else {
                 PLAYER.age = 35;
                 var image = 'youthworkcountrybackground';
