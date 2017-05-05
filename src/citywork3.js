@@ -15,4 +15,4 @@ var citywork3_state = {
     centerButtonHandler: function () {
         GAME.state.start('youthwork3');
     }
-}
+};

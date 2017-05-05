@@ -16,4 +16,4 @@ var countrywork1_state = {
     centerButtonHandler: function () {
         GAME.state.start('conscript');
     }
-}
+};

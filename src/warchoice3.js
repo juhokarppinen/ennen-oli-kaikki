@@ -14,4 +14,4 @@ var warchoice3_state = {
     centerButtonHandler: function () {
         GAME.state.start('warend1');
     }
-}
+};

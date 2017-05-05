@@ -24,4 +24,4 @@ var wartime5_state = {
     centerButtonHandler: function () {
         GAME.state.start('wartime6');
     }
-}
+};

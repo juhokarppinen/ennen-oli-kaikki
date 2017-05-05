@@ -33,4 +33,4 @@ var barn1_state = {
             GAME.state.start('barn4');
         }
     }
-}
+};

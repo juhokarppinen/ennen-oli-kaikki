@@ -72,4 +72,4 @@ var prewar1_state = {
             GAME.state.start('beginwar2');
         }
     }
-}
+};

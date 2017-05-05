@@ -1,29 +1,33 @@
 var studies2_state = {
 
     create: function() {
+        var image;
+        var text;
+        var leftButtonLabel;
+        var rightButtonLabel;
         if (PLAYER.gender === "male") {
             PLAYER.age = 16;
-            var image     = 'studies1background';
-            var text = "Onneksi olkoon, tuore ylioppilas! ";
+            image     = 'studies1background';
+            text = "Onneksi olkoon, tuore ylioppilas! ";
                 if(PLAYER.location.name === "Jyväskylä") {
                     text += "Jatkatko isäsi jalanjäljissä ja menet Jyväskylän kasvatusopilliseen korkeakouluun jatkamaan opintojasi vai "
                     +"seuraatko sydäntäsi ja haet Helsingin yliopistoon opiskelemaan lääketiedettä?";
-                    var leftButtonLabel  = "Kasvatusoppi";
-                    var rightButtonLabel = "Lääketiede";
+                    leftButtonLabel  = "Kasvatusoppi";
+                    rightButtonLabel = "Lääketiede";
                 } else {
                     text += "Vanhempasi toivovat sinun jatkavan isäsi jalanjäljissä, mikä "
                     +"vaatisi korkeakouluopintoja Helsingissä. Lähdetkö vai jäätkö?";
-                    var leftButtonLabel  = "Lähdet";
-                    var rightButtonLabel = "Jäät";
+                    leftButtonLabel  = "Lähdet";
+                    rightButtonLabel = "Jäät";
             }
         } else {
             PLAYER.age = 18;
-            var image     = 'studieswomenbackground';
-            var text = "Valmistut oppikoulusta parhain arvosanoin ja haaveilet sairaanhoitajan ammatista. "
+            image     = 'studieswomenbackground';
+            text = "Valmistut oppikoulusta parhain arvosanoin ja haaveilet sairaanhoitajan ammatista. "
             +"Opiskellaksesi sairaanhoitajaksi sinun pitäisi muuttaa Kuopioon, mutta vanhempasi toivoisivat sinun jäävän kotiin. "
             +"Lähdetkö vai jäätkö?";
-            var leftButtonLabel  = "Sairaanhoitajaksi";
-            var rightButtonLabel = "Kotiin";
+            leftButtonLabel  = "Sairaanhoitajaksi";
+            rightButtonLabel = "Kotiin";
         }
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
@@ -52,4 +56,4 @@ var studies2_state = {
             }
         }
     }
-}
+};

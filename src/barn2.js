@@ -30,4 +30,4 @@ var barn2_state = {
             GAME.state.start('weddingcountry');
         }
     }
-}
+};

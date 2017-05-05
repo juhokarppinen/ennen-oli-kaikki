@@ -1,13 +1,15 @@
 var peacesoldier2_state = {
 
     create: function() {
+        var text;
+        var image;
         if(PLAYER.amputation === true) {
-            var image = 'countrybackground';
-            var text = "Menetetty jalka surettaa sinua yhä vähemmän, kun pääset palaamaan kotikylääsi ja tapaat rintamalta kotiutettuja vanhoja tuttujasi, "
+            image = 'countrybackground';
+            text = "Menetetty jalka surettaa sinua yhä vähemmän, kun pääset palaamaan kotikylääsi ja tapaat rintamalta kotiutettuja vanhoja tuttujasi, "
             +"jotka ovat kuin varjoja entisestään. Kylällä puhutaan “tärähtäneistä”, jotka säikkyvät pienintäkin kolahdusta eikä monesta tunnu olevan enää töihin.";
         } else {
-            var image = 'warbackground';
-            var text = "Lähdette vetäytymään kohti uusia rajoja. Rauhansopimuksesta huolimatta sotatilalaki on edelleen voimassa. "
+            image = 'warbackground';
+            text = "Lähdette vetäytymään kohti uusia rajoja. Rauhansopimuksesta huolimatta sotatilalaki on edelleen voimassa. "
             +"Joukkoja lomautetaan ja kotiutetaan pikkuhiljaa.";
             if ("undefined" !== typeof PLAYER.spouse) {
                 text += " Koska olet perheellinen, olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
@@ -37,4 +39,4 @@ var peacesoldier2_state = {
             GAME.state.start('peacesoldier3');
         }
     }
-}
+};

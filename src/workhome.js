@@ -25,4 +25,4 @@ var workhome_state = {
             GAME.state.start('beforewar');
         }
     }
-}
+};

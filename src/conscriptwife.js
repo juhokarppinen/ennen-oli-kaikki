@@ -14,4 +14,4 @@ var conscriptwife_state = {
     centerButtonHandler: function () {
         GAME.state.start('conscriptwife2');
     }
-}
+};

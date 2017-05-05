@@ -107,4 +107,4 @@ var warend3_state = {
             }
         }
     }
-}
+};

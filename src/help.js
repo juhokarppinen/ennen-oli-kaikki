@@ -7,7 +7,6 @@ var help_state = {
         var helpContents = {
             page:        2,
             subPage:     0,
-            btnLHandler: function() { this.turnPage(helpContents); },
             btnRHandler: function() {
                 GAME.state.start('menu');
             },
@@ -29,7 +28,7 @@ var help_state = {
                      "\n\n" +
                      "Voit tarvittaessa hiljentää äänet, mutta saadaksesi parhaan " +
                      "pelikokemuksen ne kannattaa pitää päällä."],
-                btnL: "Seuraava sivu",
+                btnL: "Seuraava sivu"
             },
             help3: {
                 txt: ["Peli saattaa joskus päättyä heti alkuunsa, " +
@@ -43,7 +42,7 @@ var help_state = {
                      "Tausta-aineistona on käytetty muun muassa aikalaisten " +
                      "muistelmia ja elämäkertoja, joiden tarinoita on yhdistelty " +
                      "sopiviksi kokonaisuuksiksi."],
-                btnL: "Seuraava sivu",
+                btnL: "Seuraava sivu"
             }
         };        
         this.turnPage(helpContents);
@@ -60,7 +59,6 @@ var help_state = {
         }
         var buttons;
         var helpButton;
-        var startButton;
 
         if (hC.page === 2) {
             hC.magnifyButton = this.drawButton(75, 100, 'toggleUIbutton');
@@ -97,15 +95,15 @@ var help_state = {
                     },
                     this);
 
-            var startButton = {x: RIGHT_BUTTON.x, y: RIGHT_BUTTON.y + 100};
+            var startButtonCoords = {x: RIGHT_BUTTON.x, y: RIGHT_BUTTON.y + 100};
         } else {
-            var startButton = {x: CENTER_BUTTON.x, y: CENTER_BUTTON.y + 100};
+            var startButtonCoords = {x: CENTER_BUTTON.x, y: CENTER_BUTTON.y + 100};
         }
 
         var startButton =
             createButton(
-                startButton.x, 
-                startButton.y, 
+                startButtonCoords.x,
+                startButtonCoords.y,
                 hC.btnR, 
                 hC.btnRHandler,
                 this);

@@ -48,4 +48,4 @@ var peacesoldier3_state = {
             GAME.state.start('peaceend1');
         }
     }
-}
+};

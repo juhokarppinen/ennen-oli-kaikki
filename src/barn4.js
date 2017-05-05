@@ -24,4 +24,4 @@ var barn4_state = {
     rightButtonHandler: function () {
         GAME.state.start('workhome');
     }
-}
+};

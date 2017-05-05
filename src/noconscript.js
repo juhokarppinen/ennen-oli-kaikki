@@ -23,4 +23,4 @@ var noconscript_state = {
     centerButtonHandler: function () {
         GAME.state.start('beforewar');
     }
-}
+};

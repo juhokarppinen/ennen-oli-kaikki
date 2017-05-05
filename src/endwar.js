@@ -23,4 +23,4 @@ var endwar_state = {
             GAME.state.start('peacetime1');
         }
     }
-}
+};

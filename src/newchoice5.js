@@ -39,7 +39,6 @@ var newchoice5_state = {
                 GAME.state.start('death');
             }
         } else {
-            var image = "youthworkcountrybackground";
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('sixties');
             } else {
@@ -47,4 +46,4 @@ var newchoice5_state = {
             }
         }
     }
-}
+};

@@ -82,4 +82,4 @@ var sixties_state = {
             GAME.state.start('oldyears1');
         }
     }
-}
+};

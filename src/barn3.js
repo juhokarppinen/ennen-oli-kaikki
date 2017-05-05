@@ -15,4 +15,4 @@ var barn3_state = {
     centerButtonHandler: function () {
         GAME.state.start('beforewar');
     }
-}
+};

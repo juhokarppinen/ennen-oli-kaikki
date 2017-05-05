@@ -27,4 +27,4 @@ var studies8_state = {
             GAME.state.start('conscript');
         }
     }
-}
+};

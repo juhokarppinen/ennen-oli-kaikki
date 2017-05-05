@@ -17,4 +17,4 @@ var warromance2_state = {
     centerButtonHandler: function () {
         GAME.state.start('war5');
     }
-}
+};

@@ -19,4 +19,4 @@ var beginwar_state = {
             GAME.state.start('wartime1');
         }
     }
-}
+};

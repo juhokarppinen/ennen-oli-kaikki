@@ -11,9 +11,8 @@ var warend1_state = {
         var tweenLength = 1000;
         var tweenDelayScalar = 0;
         var tweenDelayConst = 0;
-        var tweenLengthAddition = 0;
 
-        images.forEach(img => { 
+        images.forEach(function(img) {
             img.alpha = 0; 
             GAME.add.tween(img).to(
                 {alpha: 1}, 
@@ -39,4 +38,4 @@ var warend1_state = {
     centerButtonHandler: function () {
         GAME.state.start('warend2');
     }
-}
+};

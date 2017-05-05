@@ -19,4 +19,4 @@ var warcrush4_state = {
         PLAYER.spouse = PLAYER.crush;
         GAME.state.start('wartime6');
     }
-}
+};

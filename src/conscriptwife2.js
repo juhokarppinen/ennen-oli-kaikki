@@ -19,4 +19,4 @@ var conscriptwife2_state = {
     centerButtonHandler: function () {
         GAME.state.start('beginwar');
     }
-}
+};

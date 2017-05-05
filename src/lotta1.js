@@ -18,4 +18,4 @@ var lotta1_state = {
     rightButtonHandler: function () {
         GAME.state.start('studies9');
     }
-}
+};

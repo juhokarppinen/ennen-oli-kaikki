@@ -14,4 +14,4 @@ var peacecrush3_state = {
     centerButtonHandler: function () {
         GAME.state.start('peaceend1');
     }
-}
+};

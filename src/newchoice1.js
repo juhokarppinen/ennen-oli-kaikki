@@ -51,4 +51,4 @@ var newchoice1_state = {
         GAME.state.start('death');
         GAME.state.start('newchoice3');
     }
-}
+};

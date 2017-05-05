@@ -22,4 +22,4 @@ var peaceend2_state = {
             GAME.state.start('war3');
         }
     }
-}
+};

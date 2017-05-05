@@ -21,4 +21,4 @@ var peacesoldier1_state = {
     centerButtonHandler: function () {
         GAME.state.start('endwar');
     }
-}
+};

@@ -65,4 +65,4 @@ var school2_state = {
             }
         }        
     }
-}
+};

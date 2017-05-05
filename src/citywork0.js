@@ -20,4 +20,4 @@ var citywork0_state = {
     rightButtonHandler: function () {
         GAME.state.start('citywork2');
     }
-}
+};

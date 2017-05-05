@@ -26,4 +26,4 @@ var oldyears3_state = {
             GAME.state.start('oldyears4');
         }
     }
-}
+};

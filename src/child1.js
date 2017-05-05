@@ -49,4 +49,4 @@ var child1_state = {
         }
         }
     }
-}
+};

@@ -31,4 +31,4 @@ var war4_state = {
             GAME.state.start('war5');
         }
     }
-}
+};

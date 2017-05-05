@@ -15,4 +15,4 @@ var peacecrush2_state = {
         PLAYER.spouse = PLAYER.crush;
         GAME.state.start('peaceend1');
     }
-}
+};

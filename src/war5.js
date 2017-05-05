@@ -59,4 +59,4 @@ var war5_state = {
             GAME.state.start('war6');
         }
     }
-}
+};

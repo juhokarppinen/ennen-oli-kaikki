@@ -18,4 +18,4 @@ var peacecrush1_state = {
     rightButtonHandler: function () {
         GAME.state.start('peacecrush3');
     }
-}
+};

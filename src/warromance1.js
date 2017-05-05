@@ -21,4 +21,4 @@ var warromance1_state = {
     rightButtonHandler: function () {
         GAME.state.start('warromance3');
     }
-}
+};

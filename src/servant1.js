@@ -17,4 +17,4 @@ var servant1_state = {
     centerButtonHandler: function () {
       GAME.state.start('servant4');
     }
-}
+};

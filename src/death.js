@@ -93,20 +93,13 @@ var death_state = {
             causeOfDeathText = "Hoito ei auttanut. Kuolit Jyväskylän keskussairaalassa 69-vuotiaana. " + ripText;
         }
 
-        var numberTexts = ["yksi","kaksi","kolme","neljä","viisi","kuusi",
-                           "seitsemän","kahdeksan","yhdeksän","kymmenen"];
-
-        if (PLAYER.age === 0) var ageOfDeathText = "vain muutaman kuukauden ikäinen.";
-        else if (PLAYER.age <= 10) var ageOfDeathText = numberTexts[PLAYER.age - 1] + "vuotias.";
-        else var ageOfDeathText = PLAYER.age + "-vuotias.";
-
         var text = "Kuolit... " + causeOfDeathText;
 
         var image            = "deathbackground";
         var rightButtonLabel = "Valikkoon";
-        
-        if(PLAYER.gender === "female") var leftButtonLabel = "Pelaa poikana";
-        else var leftButtonLabel = "Pelaa tyttönä";
+        var leftButtonLabel;
+        if(PLAYER.gender === "female") leftButtonLabel = "Pelaa poikana";
+        else leftButtonLabel = "Pelaa tyttönä";
 
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, infoText);
@@ -130,4 +123,4 @@ var death_state = {
         else if (odds <= 4.1) return 1 + Math.floor(Math.random());
         else return Math.floor(Math.random());
     }
-}
+};

@@ -17,4 +17,4 @@ var school0_state = {
     centerButtonHandler: function () {
         GAME.state.start('youthwork1');
     }
-}
+};

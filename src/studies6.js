@@ -32,4 +32,4 @@ var studies6_state = {
             GAME.state.start('conscript');
         }
     }
-}
+};

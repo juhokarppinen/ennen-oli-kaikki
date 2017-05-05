@@ -27,4 +27,4 @@ var servant0_state = {
             GAME.state.start('servant3');
         }
     }
-}
+};

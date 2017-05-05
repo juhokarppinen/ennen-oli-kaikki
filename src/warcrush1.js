@@ -20,4 +20,4 @@ var warcrush1_state = {
     rightButtonHandler: function () {
         GAME.state.start('warcrush3');
     }
-}
+};

@@ -66,11 +66,13 @@ var beginning_state = {
             GAME.state.start('school1');
         }
     }
-}
+};
 
 function createPlayerStats(gender, diedInChildhood, previousClass) {
     //gets rid of possible "ghosts"
-    for (var member in PLAYER) delete PLAYER[member];
+    for (var member in PLAYER) { //noinspection JSUnfilteredForInLoop
+        delete PLAYER[member];
+    }
     PLAYER.gender = gender;
     PLAYER.diedInChildhood = diedInChildhood;
     PLAYER.name = pickName(PLAYER.gender);
@@ -91,19 +93,4 @@ function createPlayerStats(gender, diedInChildhood, previousClass) {
         } while (PLAYER.class === previousClass);
     }
     PLAYER.previousClass = PLAYER.class;
-}
-
-
-//todo: fix this; right now it sometimes gives undefined
-function calculateOdds(weights, results) {
-    var num = Math.random(),
-    s = 0,
-    lastIndex = weights.length - 1;
-
-    for (var i = 0; i < lastIndex; ++i) {
-        s += weights[i];
-        if (num < s) {
-            return results[i];
-        }
-    }
 }

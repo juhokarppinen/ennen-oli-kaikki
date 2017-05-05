@@ -34,4 +34,4 @@ var youthwork1_state = {
             GAME.state.start('citywork3');
         }
     }
-}
+};

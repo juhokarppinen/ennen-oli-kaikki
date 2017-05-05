@@ -18,4 +18,4 @@ var studies0_state = {
     rightButtonHandler: function () {
         GAME.state.start('homechores0');
     }
-}
+};

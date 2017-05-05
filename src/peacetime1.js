@@ -57,4 +57,4 @@ var peacetime1_state = {
             }
         }
     }
-}
+};

@@ -19,7 +19,7 @@ var citywork1_state = {
                     "perustettiin ruuti-, kivääri- ja tykkitehdas. Vuonna 1936 perustettu Rautpohjan tykkitehdas tunnetaan " +
                     "nykyään Valmet tehtaana. Valmet tunnetaan yhtenä Keski-Suomen suurimmista työllistäjistä.\n\n" +
                     "Lähteet: 1) Keski-Suomen suurimmat työllistäjät. Artikkeli. Keskisuomalainen. 2) Jäppinen J., " +
-                    "Voutilainen H., Keski-Suomen museo: Markkinapaikasta mainio kaupunki. jkl.fi"
+                    "Voutilainen H., Keski-Suomen museo: Markkinapaikasta mainio kaupunki. jkl.fi";
                     PLAYER.job = "riflefactory";
                 } else {
                     var image     = 'homeassistantbackground';
@@ -57,4 +57,4 @@ var citywork1_state = {
             GAME.state.start('beforewar');
         }
     }
-}
+};

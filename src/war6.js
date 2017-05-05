@@ -35,4 +35,4 @@ var war6_state = {
             GAME.state.start('death');
         }
     }
-}
+};

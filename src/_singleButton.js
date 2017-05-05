@@ -1,4 +1,5 @@
-var unnamed_state = { 
+//noinspection JSUnusedGlobalSymbols
+var unnamed_state = {
 
     create: function() {
         PLAYER.age = 0; // Optional age update; can be removed
@@ -14,4 +15,4 @@ var unnamed_state = {
     centerButtonHandler: function () {
         GAME.state.start("");
     }
-}
+};

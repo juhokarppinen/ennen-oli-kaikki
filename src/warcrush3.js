@@ -13,4 +13,4 @@ var warcrush3_state = {
     centerButtonHandler: function () {
         GAME.state.start('wartime6');
     }
-}
+};

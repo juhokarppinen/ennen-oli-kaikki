@@ -74,4 +74,4 @@ var wartime6_state = {
             GAME.state.start('wartime7');
         }
     }
-}
+};

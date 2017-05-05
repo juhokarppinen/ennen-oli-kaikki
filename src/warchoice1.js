@@ -18,4 +18,4 @@ var warchoice1_state = {
     rightButtonHandler: function () {
         GAME.state.start('warchoice3');
     }
-}
+};

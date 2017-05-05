@@ -32,4 +32,4 @@ var torppa2_state = {
     rightButtonHandler: function () {
         GAME.state.start('citywork1');
     }
-}
+};

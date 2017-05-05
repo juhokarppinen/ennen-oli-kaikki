@@ -51,4 +51,4 @@ var newchoice2_state = {
             GAME.state.start('sixties');
         }
     }
-}
+};

@@ -13,4 +13,4 @@ var conscript5_state = {
     centerButtonHandler: function () {
         GAME.state.start('beginwar');
     }
-}
+};

@@ -12,4 +12,4 @@ var beginwar2_state = {
     centerButtonHandler: function () {
         GAME.state.start('peaceend2');
     }
-}
+};

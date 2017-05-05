@@ -37,4 +37,4 @@ var beforewar_state = {
     centerButtonHandler: function () {
         GAME.state.start('beginwar');
     }
-}
+};

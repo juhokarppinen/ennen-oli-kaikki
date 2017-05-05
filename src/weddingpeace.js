@@ -19,4 +19,4 @@ var weddingpeace_state = {
     centerButtonHandler: function () {
         GAME.state.start('peaceend1');
     }
-}
+};

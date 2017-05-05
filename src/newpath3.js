@@ -26,4 +26,4 @@ var newpath3_state = {
             GAME.state.start('sixties');
         }
     }
-}
+};

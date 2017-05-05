@@ -16,4 +16,4 @@ var torppa3_state = {
     centerButtonHandler: function () {
         GAME.state.start('torppa4');
     }
-}
+};

@@ -14,4 +14,4 @@ var newpath4_state = {
     centerButtonHandler: function () {
         GAME.state.start('sixties');
     }
-}
+};

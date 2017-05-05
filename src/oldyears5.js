@@ -15,4 +15,4 @@ var oldyears5_state = {
         PLAYER.causeofdeath = "alzheimer";
         GAME.state.start('death');
     }
-}
+};

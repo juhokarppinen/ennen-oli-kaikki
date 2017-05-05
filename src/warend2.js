@@ -13,4 +13,4 @@ var warend2_state = {
     centerButtonHandler: function () {
         GAME.state.start('warend3');
     }
-}
+};

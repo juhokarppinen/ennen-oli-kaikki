@@ -25,4 +25,4 @@ var homechores1_state = {
     rightButtonHandler: function () {
         GAME.state.start('youthwork3');
     }
-}
+};

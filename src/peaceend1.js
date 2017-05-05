@@ -35,4 +35,4 @@ var peaceend1_state = {
             GAME.state.start('beginwar2');
         }
     }
-}
+};

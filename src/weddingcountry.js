@@ -38,4 +38,4 @@ var weddingcountry_state = {
             }
         }
     }
-}
+};

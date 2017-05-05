@@ -29,4 +29,4 @@ var youthwork3_state = {
             GAME.state.start('beforewar');
         }
     }   
-}
+};

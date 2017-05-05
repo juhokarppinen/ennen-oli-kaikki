@@ -1,3 +1,5 @@
+// Branch not in use!
+//noinspection JSUnusedGlobalSymbols
 var studies9_state = {
 
     create: function() {
@@ -14,4 +16,4 @@ var studies9_state = {
     centerButtonHandler: function() {
         GAME.state.start('peaceend1');
     }
-}
+};

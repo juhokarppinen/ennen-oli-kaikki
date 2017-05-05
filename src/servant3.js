@@ -17,7 +17,6 @@ var servant3_state = {
         +"Jäätkö odottamaan vai lähdetkö etsimään töitä Jyväskylästä, josta moni on palannut kotiin entistä köyhempänä?";
 
         var image             = 'youthworkcountrybackground';
-        var centerButtonLabel = "Jatka";
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this);
     },
@@ -29,4 +28,4 @@ var servant3_state = {
     rightButtonHandler: function () {
         GAME.state.start('citywork1');
     }
-}
+};

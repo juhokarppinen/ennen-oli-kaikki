@@ -16,4 +16,4 @@ var school1_state = {
     centerButtonHandler: function() {
         GAME.state.start('school2');
     }
-}
+};

@@ -31,4 +31,4 @@ var studies7_state = {
             GAME.state.start('studies8');
         }
     }
-}
+};

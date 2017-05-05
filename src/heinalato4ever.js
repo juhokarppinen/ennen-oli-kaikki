@@ -26,4 +26,4 @@ var heinalato4ever_state = {
     rightButtonHandler: function () {
         GAME.state.start('menu');
     }
-}
+};

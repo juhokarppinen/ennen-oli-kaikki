@@ -20,4 +20,4 @@ var studies5_state = {
     centerButtonHandler: function() {
         GAME.state.start('studies2');
     }
-}
+};
