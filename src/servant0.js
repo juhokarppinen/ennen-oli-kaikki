@@ -12,8 +12,8 @@ var servant0_state = {
 
         var text = "Vaikka olet tottunut kovaan työhön pienestä pitäen, "+gendertext +
                    " oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan. " +
-                   "Paljoa et ehdi kovaa kohtaloasi surkutella, sillä iltaisin, kun " + 
-                   "olet saanut päivän työt tehtyä, nukahdat samoin tein.";
+                   "Paljoa et ehdi kohtaloasi surkutella. Nukahdat samoin tein " +
+                   "iltaisin, kun olet saanut päivän työt tehtyä.";
 
         var centerButtonLabel = "Jatka";
 

@@ -9,20 +9,20 @@ var war5_state = {
         } else if(PLAYER.job === "plywoodfactory" || PLAYER.job === "riflefactory") {
             if("undefined" !== typeof PLAYER.spouse) {
                 var text = "Rintamalle kantautuu tietoja länsiliittoutuneiden hyökkäyksestä Saksaa vastaan Pohjois-Ranskassa. "
-                +"Neuvostoliiton oletetaan hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä "
-                +"on toivuttava nopeasti, kun rintamilla alkaa jytistä toden teolla kesäkuun yhdeksäntenä.";
+                +"Neuvostoliiton oletetaan hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä " +
+                    "on toivuttava nopeasti. Rintamalla alkaa jytistä 9. kesäkuuta.";
             } else if(PLAYER.location.name === "Jyväskylä") {
                 var text = "Sota on jatkunut miltei kolme vuotta, kun Neuvostoliitto aloittaa suurhyökkäyksen kesäkuun yhdeksäntenä. "
                 +"Juhannukseen mennessä joukkonne on menettänyt useita miehiä.";
             } else {
                 var text = "Rintamalle kantautuu tietoja länsiliittoutuneiden hyökkäyksestä Saksaa vastaan Pohjois-Ranskassa. "
                 +"Neuvostoliiton oletetaan hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. "
-                +"Yllätyksestä on toivuttava nopeasti, kun rintamilla alkaa jytistä todenteolla kesäkuun yhdeksäntenä.";
+                +"Yllätyksestä on toivuttava nopeasti. Rintamalla alkaa jytistä 9. kesäkuuta.";
             }
         } else if(PLAYER.improvement === true) {
             var text = "Rintamalle kantautuu tietoja länsiliittoutuneiden hyökkäyksestä Saksaa vastaan Pohjois-Ranskassa. "
-            +"Neuvostoliiton oletetaan hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä on toivuttava nopeasti, "
-            +"kun rintamilla alkaa jytistä todenteolla kesäkuun yhdeksäntenä.";
+            +"Neuvostoliiton oletetaan hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä on " +
+                "toivuttava nopeasti. Rintamalla alkaa jytistä 9. kesäkuuta.";
         } else if("undefined" !== typeof PLAYER.spouse) {
             var text = "Kuopuksesi täyttää pian kolme vuotta, mutta et ole nähnyt häntä kuin muutaman kerran. Olet palvellut rintamalla "
                 +"niin kauan, ettet edes muista, millaista elämäsi siviilissä oli. Vaimosi kuitenkin yrittää pitää sinut ajan tasalla "

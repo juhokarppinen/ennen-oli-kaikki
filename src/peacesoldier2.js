@@ -14,7 +14,7 @@ var peacesoldier2_state = {
             if ("undefined" !== typeof PLAYER.spouse) {
                 text += " Koska olet perheellinen, olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";
             } else if(PLAYER.class !== "rich" && PLAYER.location.name === "Jyväskylä" || PLAYER.movedtocity === true) {
-                text += " Koska kotiuttamisjärjestyksessä otetaan huomioon teollisuuden työvoiman tarpeet, pääset kotimatkalle huhtikuun puolivälissä.";
+                text += " Pääset kotimatkalle huhtikuun puolivälissä, koska kotiuttamisjärjestyksessä otetaan huomioon teollisuuden työvoiman tarpeet.";
             } else if(PLAYER.class !== "rich" && PLAYER.location.name !== "Jyväskylä") {
                 text += " Kotona maaseudulla tarvitaan kipeästi työvoimaa, sillä kevätkylvöt alkavat pian, "
                 +"joten olet etusijalla ja pääset kotimatkalle huhtikuun alussa.";

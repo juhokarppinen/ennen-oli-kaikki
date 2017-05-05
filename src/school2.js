@@ -23,7 +23,7 @@ var school2_state = {
                 }
                 centerButtonLabel = "Töihin";
                 text += "Opettajasi kannustaa sinua jatkamaan oppikouluun, johon saisit vapaapaikan. "
-                +"Vanhemmillasi ei kuitenkaan ole varaa elättää sinua, ja sinut lähetetään "+gendertext+" Kartanoon, jonka mailla asutte.";
+                +"Vanhemmillasi ei kuitenkaan ole varaa elättää sinua. Sinut lähetetään "+gendertext+" Kartanoon, jonka mailla asutte.";
             } else if(PLAYER.class === "middle") {
                centerButtonLabel = "Jatka";
                if(PLAYER.gender === "female") {

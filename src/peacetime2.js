@@ -23,8 +23,8 @@ var peacetime2_state = {
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Leskirouva on edelleen huonona, vaikka hänen poikansa palasi sodasta vahingoittumattomana. "
-            +"Teet kovasti töitä hankkiaksesi hyviä raaka-aineita, jotta saat valmistettua "
-            +"rouvalle ravitsevaa ruokaa elintarvikepulasta huolimatta. Hankit ylimääräisiä maito- ja voiannoksia mustasta pörssistä.";
+            +"Teet kovasti töitä, jotta leskirouva saa ravitsevaa ruokaa huolimatta elintarvikepulasta. " +
+                "Hankit ylimääräisiä maito- ja voiannoksia mustasta pörssistä.";
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';
             var text = "Velvollisuutesi lottana jatkuvat rauhan aikana. Rintamalta siirryt töihin Jyväskylän sotasairaalaan, jossa "

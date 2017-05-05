@@ -10,8 +10,7 @@ var war6_state = {
             +"sen pohjoispuolella Portinhoikassa. Olette jäädä saarroksiin ja ammuksenne ovat loppumaisillaan, mutta vetäytymislupaa ei heru.";
         } else if("undefined" !== typeof PLAYER.spouse) {
             var text = "Rintamalle kantautuu tietoja länsiliittoutuneiden hyökkäyksestä Saksaa vastaan Pohjois-Ranskassa. Neuvostoliiton oletetaan "
-            +"hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä on toivuttava nopeasti, kun rintamilla alkaa jytistä "
-            +"toden teolla kesäkuun yhdeksäntenä.";
+            +"hyökkäävän toisesta suunnasta, mutta ette usko uhan kohdistuvan teihin. Yllätyksestä on toivuttava nopeasti. Rintamalla alkaa jytistä 9. kesäkuuta.";
         } else {
             var text = "Kesäkuun loppuun mennessä hermosi ovat riekaleina. Et ole päässyt lepäämään viikkokausiin eikä pääsi enää toimi kunnolla. "
             +"Harhailet yksin metsässä, etkä tiedä, miten ja milloin olet joutunut eroon joukkueestasi. Kun sinut löydetään, joudut kenttäoikeuteen.";

@@ -45,8 +45,8 @@ var oldyears1_state = {
             } else if(PLAYER.lotta === true) {
                 image = "lottawarbackground";
                 PLAYER.age = 63;
-                text = "Jäätyäsi eläkkeelle olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen olevan normaalia vanhuuden höperyyttä, "
-                +"etkä ole moksiskaan. Mainitset kuitenkin asiasta ohi mennen lääkärillesi. Hän ottaa asian vakavasti ja passittaa sinut muistitesteihin. Diagnoosi on "
+                text = "Jäätyäsi eläkkeelle olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen olevan normaalia vanhuuden höperyyttä. " +
+                    "Mainitset kuitenkin asiasta ohi mennen lääkärillesi. Hän ottaa asian vakavasti ja passittaa sinut muistitesteihin. Diagnoosi on "
                 +"Alzheimerin tauti, joka näyttää etenevän vauhdilla.";
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {

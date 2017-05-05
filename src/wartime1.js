@@ -25,7 +25,7 @@ var wartime1_state = {
             PLAYER.widowboss = false;
         } else if(PLAYER.widowboss === true) {
             image = 'homeassistantbackground';
-            text = "Huoli rintamalla olevasta pojasta saa leskirouvan suunniltaan, eikä hän enää välitä ruoan laadusta eikä valita solmussa olevista maton hapsuista. "
+            text = "Huoli rintamalla olevasta pojasta saa leskirouvan suunniltaan. Rouva ei enää valita ruuan laadusta tai solmussa olevista maton hapsuista. "
             +"Uusi iltarutiinisi on lukea hänelle raamattua iltaisin. Se rauhoittaa sinua itseäsikin.";
         } else if(PLAYER.lotta === true) {
             image = 'lottawarbackground';

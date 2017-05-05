@@ -8,9 +8,9 @@ var newpath1_state = {
             +"sillä hän on saanut ylennyksen, ja pärjäätte kyllä hänen palkallaan.";
         } else {
             var image = "helsinkiunibackground";
-            var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Yhtäkkiä teitä lottia, joita ennen ylistettiin työstänne "
-            +"isänmaan puolesta, hyljeksitään. Pahat kielet vihjailevat kaikenlaista lottien ja saksalaissotilaiden suhteista. Poltat lottapukusi ja kaikki paperit, "
-            +"jotka kertovat kuuluneesi lottajärjestöön. Viisi vuotta historiaasi palaa papereiden mukana.";
+            var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Teistä ylistetyistä lotista" +
+                "tuli hyljeksittyjä. Pahat kielet vihjailevat kaikenlaista lottien ja saksalaissotilaiden suhteista. Poltat lottapukusi " +
+                "ja lottajärjestöön liittyvät paperit. Viisi vuotta historiaasi palaa papereiden mukana.";
         }
                 
         var centerButtonLabel = "Jatka";

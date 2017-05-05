@@ -9,8 +9,7 @@ var peacesoldier1_state = {
         } else {
             var image = 'warbackground';
             var text = "Olet lepovuorossa korsussa ja havahdut hiljaisuuteen, kun tykkituli katkeaa 13.3.1940. "
-            +"Moskovan rauhansopimus on astunut voimaan. Vaikka rauhanehdot kirvelevät, päällimmäisenä "
-            +"mielessäsi on helpotus: olet selvinnyt hengissä.";
+            +"Moskovan rauhansopimus on astunut voimaan. Rauhanehdot kirvelevät, mutta olet helpottunut. Selvisit hengissä sodasta.";
         }
                 
         var centerButtonLabel = "Jatka";

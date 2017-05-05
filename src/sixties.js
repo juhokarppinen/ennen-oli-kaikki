@@ -45,7 +45,7 @@ var sixties_state = {
                     var image = "lottawarbackground";
                     var text = "Olet opiskellut venäjää omaksi iloksesi Jyväskylän kansalaisopistossa. Se osoittautuu hyödylliseksi myös töissä, "
                     +"ja sinusta tulee olennainen osa matkaseuruetta, joka käy Neuvostoliitossa hieromassa puutavarakauppaa. Et osallistu virallisiin "
-                    +"neuvotteluihin, mutta seurustelutaitojasi tarvitaan niiden ulkopuolella. Suolakurkut ja vodkaryypyt tulevat vuosien mittaan tutuiksi.";
+                    +"neuvotteluihin, mutta seurustelutaitojasi tarvitaan niiden ulkopuolella.";
                 }
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
