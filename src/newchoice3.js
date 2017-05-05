@@ -31,7 +31,8 @@ var newchoice3_state = {
                 +"Haluaisit ajokortin, jotta voisit käydä asioilla miehesi uudella Mossella, mutta hän vastustelee.";
                 var infoText = "Vuonna 1955 Suomen ajoneuvorekisterissä oli noin 85 000 henkilöautoa, ja viisitoista vuotta myöhemmin, " +
                 "vuonna 1970 niitä oli jo yli 700 000. Itäautot, kärjessään neuvostoliittolainen Moskvitš eli Mosse, olivat sotien " +
-                "jälkeisinä vuosina suomalaisten suosiossa niiden muita paremman saatavuuden vuoksi.\n\nLähde: ";
+                "jälkeisinä vuosina suomalaisten suosiossa niiden muita paremman saatavuuden vuoksi.\n\nLähteet: 1) Tilastokeskus, moottoriajoneuvokanta. " +
+                "2) Häggman, K., Markkola, P., Kuisma, M. & Pulma, P. (toim.). Suomalaisen arjen suuri tarina.";
             } else {
                 var image = "youthworkcountrybackground";
                 PLAYER.age = 29;

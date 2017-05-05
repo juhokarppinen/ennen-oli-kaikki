@@ -14,8 +14,9 @@ var newchoice5_state = {
                 +"Olet Suomen Kaupunkien Vähittäiskauppiasliiton aktiivijäsen, ja politiikka kiinnostaa sinua yhä enemmän. "
                 +"Kiidät uudella Mossellasi kokouksissa ympäri Suomen.";
                 var infoText = "Vuonna 1955 Suomen ajoneuvorekisterissä oli noin 85 000 henkilöautoa, ja viisitoista vuotta myöhemmin, " +
-                "vuonna 1970 niitä oli jo yli 700 000. Itäautot, kärjessään neuvostoliittolainen Moskvitš eli Mosse, olivat sotien " +
-                "jälkeisinä vuosina suomalaisten suosiossa niiden muita paremman saatavuuden vuoksi.\n\nLähde: ";
+                    "vuonna 1970 niitä oli jo yli 700 000. Itäautot, kärjessään neuvostoliittolainen Moskvitš eli Mosse, olivat sotien " +
+                    "jälkeisinä vuosina suomalaisten suosiossa niiden muita paremman saatavuuden vuoksi.\n\nLähteet: 1) Tilastokeskus, moottoriajoneuvokanta. " +
+                    "2) Häggman, K., Markkola, P., Kuisma, M. & Pulma, P. (toim.). Suomalaisen arjen suuri tarina.";
             }
         } else {
             var image = "citybackground";

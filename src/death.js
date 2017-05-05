@@ -13,7 +13,7 @@ var death_state = {
             +"Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli Pohjoismaiden suurin. " +
                        "Kouluikään mennessä lapsista oli kuollut jo noin 18 prosenttia. Imeväiskuolleisuus " +
-                       "oli 11,2 prosenttia.";
+                       "oli 11,2 prosenttia.\n\nLähde: Suomessa Pohjolan sairaimmat lapset. Artikkeli. ylppo.fi";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         if(PLAYER.causeofdeath === "espanjantauti") {
@@ -22,7 +22,7 @@ var death_state = {
             + "Kuolemasi ei ollut poikkeuksellinen, sillä lähes viidennes ikäluokastasi menehtyi alle kouluikäisenä.";
             infoText = "Vasta itsenäistyneen Suomen lapsikuolleisuus oli Pohjoismaiden suurin. " +
                        "Kouluikään mennessä lapsista oli kuollut jo noin 18 prosenttia. Imeväiskuolleisuus " +
-                       "oli 11,2 prosenttia.";
+                       "oli 11,2 prosenttia.\n\nLähde: Suomessa Pohjolan sairaimmat lapset. Artikkeli. ylppo.fi";
             PLAYER.age = this.getChildhoodDeathAge();
         }
         // War death
