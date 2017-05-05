@@ -52,7 +52,7 @@ var oldyears1_state = {
                 if("undefined" !== typeof PLAYER.spouse) {
                     image = "citybackground";
                     PLAYER.age = 50;
-                    text = "Miehesi rintakivut sen sijaan tulevat yllätyksenä. Lauantaisaunan jälkeen ne yltyvät sietämättömiksi, ja joudut kutsumaan ambulanssin. "
+                    text = "Miehesi rintakivut sen sijaan tulevat yllätyksenä. Lauantaisaunan jälkeen ne yltyvät sietämättömiksi. Joudut kutsumaan ambulanssin. "
                     +"Se on kuitenkin liian myöhäistä. Jäit leskeksi 50-vuotiaana.";
                 } else {
                     image = "citybackground";

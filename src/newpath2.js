@@ -21,7 +21,7 @@ var newpath2_state = {
                 var image = "citybackground";
                 PLAYER.age = 35;
                 var text = "Kun kuopuksesi on päässyt vaipoistaan, palaat pikkuhiljaa töihin, sillä haluat tienata edes vähän omaa rahaa. "
-                +"Naapurustossa on useita kotiäitejä, joten lastenhoitoapua järjestyy helposti. Olet onnellinen juuri näin etkä halua uskoa korviasi, "
+                +"Naapurustossa on useita kotiäitejä, joten lastenhoitoapua järjestyy helposti. Olet onnellinen juuri näin. Et halua uskoa korviasi, "
                 +"kun miehesi ilmoittaa hyväksyneensä työtarjouksen Helsingistä.";
             } else {
                 PLAYER.age = 33;

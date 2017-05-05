@@ -4,8 +4,8 @@ var warcrush4_state = {
         
         var image = 'barnbackground';
         var text = PLAYER.crush+" lupaa anoa ensitöikseen avioitumislomaa, kun hän pääsee takaisin asemiinsa. "
-        +"Kun kerrot leskirouvalle kihlauksesta, hän lupaa, että saat penkoa hänen vanhoista "
-        +"vaatteistaan itsellesi jotakin hääpuvuksi sopivaa.";
+        +"Kun kerrot leskirouvalle kihlauksesta, saat luvan penkoa rouvan vanhoista vaatteista itsellesi sopivaa " +
+            "hääpukua.";
                 
         var centerButtonLabel = "Jatka";
         var infoText = "Sota-aikana avioliittoja solmittiin runsaasti, sillä sotilaan vaimo sai kuukausipalkkaa " +

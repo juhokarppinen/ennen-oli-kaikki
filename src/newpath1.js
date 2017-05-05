@@ -5,7 +5,7 @@ var newpath1_state = {
             PLAYER.age = 28;
             var image = "citybackground";
             var text = "Vaikka olet viimeisilläsi raskaana, käyt siivoamassa tehtaanjohtajan taloa. Miehesi haluaa sinun jäävän kotiin, "
-            +"sillä hän on saanut ylennyksen, ja pärjäätte kyllä hänen palkallaan.";
+            +"sillä hän on saanut ylennyksen. Pärjäätte kyllä hänen palkallaan.";
         } else {
             var image = "helsinkiunibackground";
             var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Teistä ylistetyistä lotista" +

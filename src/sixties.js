@@ -51,8 +51,8 @@ var sixties_state = {
                 if("undefined" !== typeof PLAYER.spouse) {
                     var image = "citybackground";
                     var text = "Miestäsi ei juuri kotona näy, ja hän hyvittää poissaoloaan hemmottelemalla sinua ja lapsianne tavaroilla. "
-                    +"Vaatteenne ovat kuin muotilehtien sivuilta ja keittiönne on Pohjois-Haagan parhaiten varusteltu. Olet huolissasi miehesi jatkuvasta stressistä. "
-                    +"Hän on valitellut hengenahdistusta muutamaan kertaan, muttei ole suostunut lääkäriin patisteluistasi huolimatta.";
+                    +"Vaatteenne ovat kuin muotilehtien sivuilta ja keittiönne on Pohjois-Haagan parhaiten varusteltu. Miehesi on valitellut " +
+                        "hengenahdistusta muutamaan kertaan, muttei ole suostunut lääkäriin.";
                 } else {
                     var image = "citybackground";
                     var text = "Terveyden lisäksi tanssilavalta löytyi lopulta puolisokin. Sinua muutaman vuoden vanhempi "+pickName("male")+" menetti edellisen vaimonsa jatkosodan aikana "

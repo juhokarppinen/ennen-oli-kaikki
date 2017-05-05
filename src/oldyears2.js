@@ -33,9 +33,9 @@ var oldyears2_state = {
             } else {
                 var image = "citybackground";
                 PLAYER.age = 60;
-                var text = "Haaveilit pitkään muuttavasi eläkepäiviksi takaisin Jyväskylään, mutta lastesi lennettyä pesästä tajuat, ettet tunne sieltä oikeastaan ketään. "
-                +"Muutat pienempään asuntoon samaan pihapiiriin. Miehesi oli ehtinyt maksaa vanhan asuntolainan kokonaan, joten sinulle jää pieni pesämuna paikkaamaan "
-                +"kotirouvavuosien kuihduttamaa eläkettäsi.";
+                var text = "Haaveilit pitkään muuttavasi eläkepäiviksi takaisin Jyväskylään, mutta tajuat, että et tunne sieltä enää ketään. "
+                    +"Muutat pienempään asuntoon samaan pihapiiriin. Miehesi oli ehtinyt maksaa vanhan asuntolainan kokonaan, joten sinulle jää pieni pesämuna paikkaamaan "
+                    +"kotirouvavuosien kuihduttamaa eläkettäsi.";
             }
         }
                 

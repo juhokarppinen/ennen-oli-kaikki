@@ -11,7 +11,7 @@ var wartime6_state = {
             if("undefined" !== typeof PLAYER.spouse) {
                 var text = "Sota jatkuu jo kolmatta vuotta. Leskirouva menehtyi pian häittenne jälkeen, "
                 +"mutta onneksi sait jäädä toistaiseksi asumaan palvelijan huoneeseesi. Erilaiset talkootyöt pitävät sinut kiireisenä ja saat pientä "
-                +"sotapalkkaa mentyäsi naimisiin rintamalla palvelevan miehen kanssa. Ikävä on kova eikä avioliitto ilman yhteistä kotia ja arkea tunnu avioliitolta ollenkaan.";
+                +"sotapalkkaa mentyäsi naimisiin rintamalla palvelevan miehen kanssa. Ikävä on silti kova.";
             } else {
                 var text = "Sota jatkuu jo kolmatta vuotta ja poikkeustilasta on tullut uusi normaali. Arjesta on "
                 +"vain selviydyttävä ja tulevaisuuteen on uskottava. Leskirouva menehtyi keväällä 1942 ja jouduit "
