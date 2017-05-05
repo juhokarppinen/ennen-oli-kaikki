@@ -33,6 +33,9 @@ authors["lottawarbackground"]          = prefix+"Väinö Kannisto (Helsingin kau
 authors["constructionbackground"]      = prefix+"Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["shopbackground"]              = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["empty"]                       = "Grafiikka: Pauliina Karjalainen";
+authors["articlewinterwar2"]           = "Keskisuomalainen";
+authors["articlepeace2"]               = "Keskisuomalainen";
+authors["articlecontinuationwar2"]     = "Keskisuomalainen";
 
 
 /*load.js contains a state-object called load_state

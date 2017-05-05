@@ -1,3 +1,4 @@
+// This state is not used.
 var peaceend2_state = {
 
     create: function() {

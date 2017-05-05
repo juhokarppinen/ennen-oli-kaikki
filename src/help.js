@@ -21,12 +21,12 @@ var help_state = {
             help2: {
                 txt: ["Klikkaamalla suurennuslasia pääset katsomaan taustakuvaa " +
                      "tarkemmin ilman tekstiä. Klikkaamalla uudelleen pääset " +
-                     "takaisin peliin." +
-                     "\n\n" + 
+                     "takaisin peliin.",
+
                      "Tämän merkin takaa pääset lukemaan lisätietoja pelin " +
-                     "käänteisiin liittyvistä historiallisista tapahtumista." +
-                     "\n\n" +
-                     "Voit tarvittaessa mykistää taustamusiikin."],
+                     "käänteisiin liittyvistä historiallisista tapahtumista.",
+
+                     "Tästä napista voit halutessasi mykistää taustamusiikin."],
                 btnL: "Seuraava sivu"
             },
             help3: {
@@ -51,10 +51,15 @@ var help_state = {
     turnPage: function(hC, finished = false) {
         var helpText = hC["help" + hC.page].txt[hC.subPage];
         if (hC.page === 2) {
-            hC.textObj = this.drawText(helpText, 150);
-            hC.textObj.wordWrapWidth = 1070;
+            hC.textObj = [
+                this.drawText(hC.help2.txt[0], 150, 100),
+                this.drawText(hC.help2.txt[1], 150, 310),
+                this.drawText(hC.help2.txt[2], 150, 440)];
+            hC.textObj.forEach(function(item) {
+                item.wordWrapWidth = 1070;
+            });
         } else {
-            hC.textObj = this.drawText(helpText);
+            hC.textObj = [(this.drawText(helpText))];
         }
         var buttons;
         var helpButton;
@@ -62,7 +67,7 @@ var help_state = {
         if (hC.page === 2) {
             hC.magnifyButton = this.drawButton(75, 100, 'toggleUIbutton');
             hC.infoButton = this.drawButton(75, 310, 'infoButton');
-            hC.muteButton = this.drawButton(75, 470, 'soundOnButton');
+            hC.muteButton = this.drawButton(75, 440, 'soundOnButton');
         }
         if (hC.page === 3) {
             hC.magnifyButton.forEach(function(e) {e.destroy();});
@@ -77,7 +82,9 @@ var help_state = {
                     LEFT_BUTTON.y + 100, 
                     hC["help" + hC.page].btnL, 
                     function() {
-                        hC.textObj.destroy();
+                        hC.textObj.forEach(function(item) {
+                            item.destroy();
+                        });
                         buttons.forEach(function(e) {
                             e.forEach(function(el) {
                                 el.destroy();
@@ -125,12 +132,12 @@ var help_state = {
     drawButton: function(x, y, buttonSprite) {
         var gfx = GAME.add.graphics(0, 0);
         gfx.beginFill(0xffffff, 0.25);
-        gfx.drawCircle(x, y, 80);
+        gfx.drawCircle(x, y + 37, 80);
         gfx.endFill();
 
         var btn = GAME.add.sprite(x, y, buttonSprite);
         btn.scale.setTo(0.1);
-        btn.anchor.setTo(0.5);
+        btn.anchor.setTo(0.5, 0);
         btn.tint = 0x000000;
         btn.alpha = 0;
 

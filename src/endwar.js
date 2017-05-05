@@ -2,11 +2,12 @@ var endwar_state = {
 
     create: function() {
         PLAYER.age = 23;
-        var image            = 'conscriptbackground';
-        var article          = 'articlepeace';
+        var image          = 'articlepeace2';
         var centerButtonLabel = "Jatka";
+        var text = "Moskovan rauhansopimuksen ehtojen mukaan Suomen on luovutettava noin kymmenesosa pinta-alastaan " +
+            "Neuvostoliitolle. Yli 400 000 karjalaista menettää kotinsa.";
 
-        drawUIsingleButtonArticle(image, article, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {

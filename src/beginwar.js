@@ -3,11 +3,11 @@ var beginwar_state = {
     create: function() {
         PLAYER.age = 22;
         
-        var image            = 'conscriptbackground';
-        var article          = 'articlewinterwar';
+        var image          = 'articlewinterwar2';
         var centerButtonLabel = "Jatka";
+        var text = "Neuvostoliitto hyökkää Suomeen marraskuun viimeisenä aamuna 1939. Presidentti Kyösti Kallio julistaa Suomen sotatilaan kello 13.30";
 
-        drawUIsingleButtonArticle(image, article, centerButtonLabel, this);
+        drawUIsingleButton(image, text, centerButtonLabel, this);
     },
 
     centerButtonHandler: function () {
