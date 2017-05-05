@@ -26,8 +26,7 @@ var help_state = {
                      "Tämän merkin takaa pääset lukemaan lisätietoja pelin " +
                      "käänteisiin liittyvistä historiallisista tapahtumista." +
                      "\n\n" +
-                     "Voit tarvittaessa hiljentää äänet, mutta saadaksesi parhaan " +
-                     "pelikokemuksen ne kannattaa pitää päällä."],
+                     "Voit tarvittaessa mykistää taustamusiikin."],
                 btnL: "Seuraava sivu"
             },
             help3: {
