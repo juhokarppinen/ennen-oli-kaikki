@@ -21,11 +21,12 @@ var wartime7_state = {
                 +"Työtaakkasi helpottaa hieman, kun osa rintamamiehistä lomautetaan armeijasta paikkaamaan maaseudun työvoimapulaa.";
             }
         } else if(PLAYER.lotta === true) {
-            var image = 'lottawarbackground';
             if(PLAYER.university === true) {
+                var image = 'lottawarbackground';
                 var text = "Pitkään kestänyt rauhallisempi jakso päättyy kesällä, ja pian vuodepaikat ovat taas täynnä. "
                 +"Haavoittuneet kertovat ennenkokemattomasta tulimerestä ja osa heistä on edelleen kauhun vallassa, vaikka ovat päässeet turvaan.";
             } else {
+                var image = 'lottabackground';
                 var text = "Idästä alkaa tulvia lannistavia uutisia. Neuvostoliitto on aloittanut suurhyökkäyksen Karjalankannaksella, ja "
                 +"suomalaisjoukot ovat joutuneet vetäytymään. Viipuri on evakuoitu jälleen, mikä tietää lisätöitä kotirintamalla.";
             }

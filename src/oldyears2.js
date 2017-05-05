@@ -31,7 +31,7 @@ var oldyears2_state = {
                 +"jota on vuosien mittaan remontoitu ja varusteltu uusilla mukavuuksilla. Olet "
                 +"saanut joululahjaksi oman pyykkikoneen. Et oikein tiedä, mihin käyttäisit kaiken kotitöiltä koneiden myötä säästyvän ajan.";
             } else {
-                var image = "citybackground";
+                var image = "helsinkibackground";
                 PLAYER.age = 60;
                 var text = "Haaveilit pitkään muuttavasi eläkepäiviksi takaisin Jyväskylään, mutta tajuat, että et tunne sieltä enää ketään. "
                     +"Muutat pienempään asuntoon samaan pihapiiriin. Miehesi oli ehtinyt maksaa vanhan asuntolainan kokonaan, joten sinulle jää pieni pesämuna paikkaamaan "
@@ -47,6 +47,7 @@ var oldyears2_state = {
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
+                PLAYER.age = 83;
                 PLAYER.causeofdeath = "alzheimer";
                 GAME.state.start('death');
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {

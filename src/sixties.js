@@ -13,7 +13,7 @@ var sixties_state = {
                 +"Paasaat hänelle sukusi historiaa. Sitä, kuinka oma isäsi on raivannut suon pelloksi ja raatanut niska limassa tarjotakseen jälkipolvilleen "
                 +"paremman elintason. Välinne viilenevät, sillä et voi ymmärtää, miksei hän halua jatkaa isänsä ja isoisänsä työtä.";
             } else if(PLAYER.helsinki === true) {
-                var image = 'youthworkcountrybackground';
+                var image = 'helsinkibackground';
                 var text = "Jäljet vuosikymmenien tauottomasta raatamisesta alkavat näkyä kehossasi. Et ole sitä tyyppiä, joka kieltäytyisi etenemismahdollisuuksista "
                 +"ja ylitöistä. Tärkeintä on, että pystyt tarjoamaan lapsillesi paremmat lähtökohdat elämälle kuin mitä itse sait.";
             } else {
@@ -50,7 +50,7 @@ var sixties_state = {
                 }
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
-                    var image = "citybackground";
+                    var image = "helsinkibackground";
                     var text = "Miestäsi ei juuri kotona näy, ja hän hyvittää poissaoloaan hemmottelemalla sinua ja lapsianne tavaroilla. "
                     +"Vaatteenne ovat kuin muotilehtien sivuilta ja keittiönne on Pohjois-Haagan parhaiten varusteltu. Miehesi on valitellut " +
                         "hengenahdistusta muutamaan kertaan, muttei ole suostunut lääkäriin.";

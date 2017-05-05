@@ -1,6 +1,6 @@
 var oldyears4_state = {
     create: function() {
-        var image = "citybackground";
+        var image = "helsinkibackground";
         PLAYER.age = 64;
         var text = "Elämäsi valo ovat lapsenlapsesi, jotka käyvät silloin tällöin katsomassa mummiaan. "
         +"Pidät huolta, että sinulla on aina tarjota heille Pandan lakritsia, vaikka ei olisikaan karkkipäivä.";

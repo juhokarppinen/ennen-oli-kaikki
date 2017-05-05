@@ -1,6 +1,6 @@
 var oldyears5_state = {
     create: function() {
-        var image = "citybackground";
+        var image = "helsinkibackground";
         PLAYER.age = 74;
         var text = "Olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen kuuluvan vanhuuteen, etkä ole moksiskaan. "
         +"Tyttäresi passittaa sinut kuitenkin lääkärin vastaanotolle sen jälkeen, kun olet aiheuttanut useamman palohälytyksen unohtamalla ruoat liedelle käryämään. "
@@ -12,6 +12,7 @@ var oldyears5_state = {
     },
 
     centerButtonHandler: function () {
+        PLAYER.age = 76;
         PLAYER.causeofdeath = "alzheimer";
         GAME.state.start('death');
     }

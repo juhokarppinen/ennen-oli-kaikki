@@ -2,7 +2,7 @@ var newpath3_state = {
 
     create: function() {
         if("undefined" !== typeof PLAYER.spouse) {
-            var image = "citybackground";
+            var image = "helsinkibackground";
             PLAYER.age = 36;
             var text = "Muutatte vastavalmistuneeseen kerrostaloon Helsingin Pohjois-Haagaan. Asunnossa on kaikki mukavuudet, kuten sisävessa, oma kylpyhuone ja sähköhella. "
             +"Uutuudenviehätyksen laimetessa alat kuitenkin ikävöidä kotiin.";

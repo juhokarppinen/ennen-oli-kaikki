@@ -33,10 +33,12 @@ authors["lottawarbackground"]          = prefix+"Väinö Kannisto (Helsingin kau
 authors["constructionbackground"]      = prefix+"Antti Pänkäläinen (Keski-Suomen Museo)";
 authors["shopbackground"]              = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["wardeathbackground"]          = prefix+"Pauliina Karjalainen";
+authors["lottabackground"]             = prefix+"J. Sihvo (SA-kuva-arkisto)";
+authors["helsinkibackground"]          = prefix+"Fred Runeberg (Helsingin kaupunginmuseo)";
 authors["empty"]                       = "Grafiikka: Pauliina Karjalainen";
-authors["articlewinterwar2"]           = "Keskisuomalainen";
-authors["articlepeace2"]               = "Keskisuomalainen";
-authors["articlecontinuationwar2"]     = "Keskisuomalainen";
+authors["articlewinterwar2"]           = "Keskisuomalainen 1.12.1939";
+authors["articlepeace2"]               = "Keskisuomalainen 14.3.1940";
+authors["articlecontinuationwar2"]     = "Keskisuomalainen 24.6.1941";
 
 
 /*load.js contains a state-object called load_state
@@ -91,6 +93,8 @@ var load_state = {
         GAME.load.image('constructionbackground', 'assets/img/construction.jpg');
         GAME.load.image('shopbackground', 'assets/img/shop.jpg');
         GAME.load.image('wardeathbackground', 'assets/img/wardeath.jpg');
+        GAME.load.image('lottabackground', 'assets/img/lotta.jpg');
+        GAME.load.image('helsinkibackground', 'assets/img/helsinki.jpg');
         //articles
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');

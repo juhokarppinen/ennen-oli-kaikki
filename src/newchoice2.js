@@ -15,7 +15,7 @@ var newchoice2_state = {
             } else {
                 PLAYER.age = 30;
                 PLAYER.helsinki = true;
-                var image = 'plywoodfactorybackground';
+                var image = 'helsinkibackground';
                 var text = "Muutatte Helsingin Pohjois-Haagaan, vastavalmistuneeseen taloon, jossa on kaikki mukavuudet sisävessasta ja omasta kylpyhuoneesta lähtien. "
                 +"Esikoisesi aloittaa koulutiensä muutamaa vuotta myöhemmin, ja olet ylpeä, kun se tapahtuu pääkapungissa. Odotat hänestä suvun ensimmäistä ylioppilasta.";
             }
@@ -41,11 +41,13 @@ var newchoice2_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 PLAYER.causeofdeath = "rakennus";
                 GAME.state.start('death');
-            } else {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('newchoice5');
+            } else {
+                GAME.state.start('sixties');
             }
         } else {
             GAME.state.start('sixties');

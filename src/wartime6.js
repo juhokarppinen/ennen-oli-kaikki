@@ -36,11 +36,12 @@ var wartime6_state = {
             var text = "Sota jatkuu jo kolmatta vuotta. Elintarvikepulan syventyessä miehesi laittomat liiketoiminnat kukoistavat. "
             +"Kansanhuoltolautakunnan tarkastajista on tullut oikea riesa, sillä he epäilevät vilunkipeliä. On oltava tarkkana.";
         } else if(PLAYER.lotta === true) {
-            var image = 'lottawarbackground';
             if(PLAYER.university === true) {
+                var image = 'lottawarbackground';
                 var text = "Sota jatkuu jo kolmatta vuotta. Poikkeustilasta on tullut uusi normaali, ja arjesta on vain selviydyttävä. "
                 +"Olet palannut välillä opintojesi pariin Helsinkiin tullaksesi taas takaisin Keski-Suomeen auttamaan sotasairaalassa.";
             } else {
+                var image = 'lottabackground';
                 var text = "Sota jatkuu jo kolmatta vuotta. Suurin osa Karjalan evakoista on palannut takaisin koteihinsa rintamalinjan "
                 +"siirryttyä Itä-Karjalaan. Olet hankkiutunut palkkatöihin kansanhuoltotoimistoon, jossa tehtäviisi kuuluu muun muassa ostokorttien jakelu.";
             }

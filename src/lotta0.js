@@ -7,7 +7,7 @@ var lotta0_state = {
         +"Lottatyö vie suurimman ajastasi, sillä lääkintäjaoston tehtävien lisäksi osallistut viikoittain pakollisiin ompeluiltoihin. "
         +"Niissä ommellaan ja korjataan paikallisten suojeluskuntalaisten varusteita.";
         
-        var image = "homechorescitybackground";
+        var image = "lottabackground";
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

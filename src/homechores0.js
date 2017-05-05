@@ -8,7 +8,7 @@ var homechores0_state = {
         +"Pitkästyt kuitenkin pian ja haet lottajärjestöön. Koeajan päättyessä tiedät valinneesi oikean "
         +"tien ja annat lottalupauksen.";
         
-        var image = "homechores1background";
+        var image = "lottabackground";
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

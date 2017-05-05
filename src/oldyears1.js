@@ -15,7 +15,7 @@ var oldyears1_state = {
                 +"alunperin kuuluneen perunamaan itsellenne, sillä sinulle on kunnia-asia pysyä mahdollisimman omavaraisena. Vaimosi varoittelee sinua rehkimästä "
                 +"liikaa, mutta olet itsepäinen.";
             } else if(PLAYER.helsinki === true) {
-                image = 'youthworkcountrybackground';
+                image = 'helsinkibackground';
                 PLAYER.age = 58;
                 text = "Olet alkanut kärsiä hengenahdistuksesta silloin tällöin, muttet anna sen hidastaa tahtia. Onhan teillä hissi - niin konttorilla kuin kotonakin. "
                 +"Lisäksi olet tuntenut silloin tällöin pientä rintakipua, joka yltyy lauantaisaunan jälkeen sietämättömäksi.";
@@ -50,7 +50,7 @@ var oldyears1_state = {
                 +"Alzheimerin tauti.";
             } else if(PLAYER.widowboss === true) {
                 if("undefined" !== typeof PLAYER.spouse) {
-                    image = "citybackground";
+                    image = "helsinkibackground";
                     PLAYER.age = 50;
                     text = "Miehesi rintakivut sen sijaan tulevat yllätyksenä. Lauantaisaunan jälkeen ne yltyvät sietämättömiksi. Joudut kutsumaan ambulanssin. "
                     +"Se on kuitenkin liian myöhäistä. Jäit leskeksi 50-vuotiaana.";

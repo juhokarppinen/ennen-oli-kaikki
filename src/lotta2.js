@@ -6,7 +6,7 @@ var lotta2_state = {
         +"osa evakoista on joutunut jättämään kaiken omaisuutensa rajan taakse. Vietät seuraavat kuukaudet "
         +"järjestäen evakoille huonekaluja ja vaatteita.";
         
-        var image = "homechorescitybackground";
+        var image = "lottabackground";
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);

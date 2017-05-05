@@ -38,7 +38,7 @@ var warend3_state = {
                     var text = "Olet palannut jälleen Helsinkiin. Arki yliopistokampuksella on varsin erilaista kuin ennen, kun rintamalla palvelleet sotilaat ovat "
                     +"palanneet myös opintojensa pariin.";
                 } else {
-                    var image = "lottawarbackground";
+                    var image = "lottabackground";
                     var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Teistä ylistetyistä lotista" +
                         "tuli hyljeksittyjä. Pahat kielet vihjailevat kaikenlaista lottien ja saksalaissotilaiden suhteista. Poltat lottapukusi " +
                         "ja lottajärjestöön liittyvät paperit. Viisi vuotta historiaasi palaa papereiden mukana.";
