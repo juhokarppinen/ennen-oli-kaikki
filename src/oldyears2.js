@@ -6,7 +6,7 @@ var oldyears2_state = {
                 PLAYER.age = 83;
                 var text = "Olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen kuuluvan vanhuuteen, etkä ole moksiskaan. "
                 +"Vaimosi passittaa sinut kuitenkin lääkärin vastaanotolle sen jälkeen, kun olet hukannut autosi useampaan otteeseen asioidessasi keskustassa. "
-                +"Diagnoosi on Alzheimerin tauti, joka näyttää etenevän vauhdilla.";
+                +"Diagnoosi on Alzheimerin tauti.";
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'countrybackground';
                 PLAYER.age = 81;
@@ -63,7 +63,7 @@ var oldyears2_state = {
             } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 GAME.state.start('oldyears3');
             } else {
-                GAME.state.start('oldyears3');
+                GAME.state.start('oldyears4'); // Changed from oldyears3 due to repeating text.
             }
         }
     }
