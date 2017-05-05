@@ -3,7 +3,7 @@ var peaceend1_state = {
     create: function() {
         PLAYER.age = 24;
         var text = "Euroopassa riehuva sota ei näytä laantumisen merkkejä. Saksa ja Neuvostoliitto "
-        +"ovat vallanneet uusia alueita, ja "
+        +"ovat vallanneet uusia alueita. "
         +"Suomen asema kahden suurvallan välissä alkaa olla tukala. Maailmalla liikkuu huhuja, joiden mukaan "
         +"Saksa suunnittelee hyökkäystä Neuvostoliittoon. Huhut voimistuvat kevään mittaan.";
 

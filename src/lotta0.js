@@ -4,8 +4,8 @@ var lotta0_state = {
         PLAYER.age = 19;
 
         var text = "Vaikka et päätynytkään opiskelemaan sairaanhoitajaksi asti, pääset lottatyön kautta opettelemaan hoivataitoja. "
-        +"Lottatyö vie suurimman ajastasi, sillä lääkintäjaoston tehtävien lisäksi osallistut viikoittain pakollisiin ompeluiltoihin, "
-        +"joissa ommellaan ja korjataan paikallisten suojeluskuntalaisten varusteita.";
+        +"Lottatyö vie suurimman ajastasi, sillä lääkintäjaoston tehtävien lisäksi osallistut viikoittain pakollisiin ompeluiltoihin. "
+        +"Niissä ommellaan ja korjataan paikallisten suojeluskuntalaisten varusteita.";
         
         var image = "homechorescitybackground";
         var centerButtonLabel = "Jatka";

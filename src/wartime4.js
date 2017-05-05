@@ -26,8 +26,8 @@ var wartime4_state = {
                 var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin. "
                 +"Karjalasta kotoisin olevat haavoittuneet odottavat malttamattomina pääsyä takaisin kotikonnuilleen.";
             } else {
-                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin, "
-                +"ja Karjalan evakot suunnittelevat muuttoa takaisin kotikonnuilleen.";
+                var text = "Suomalaiset etenevät idässä nopeasti kohti vanhoja rajoja ja uutiset Viipurin takaisin valloittamisesta saavat tunnelman kohoamaan Keski-Suomessakin. "
+                +"Karjalan evakot suunnittelevat muuttoa takaisin kotikonnuilleen.";
             }
         } else {
             var image = 'candyfactorybackground';
