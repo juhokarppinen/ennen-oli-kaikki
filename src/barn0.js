@@ -5,7 +5,7 @@ var barn0_state = {
         PLAYER.crush = pickName("female");
         var text = "Naapurin keittiöapulainen "+PLAYER.crush+" on herättänyt kiinnostuksesi. Olet tanssittanut häntä pariin otteeseen iltamissa "
         +"ja olet päässyt saatillekin. Pyydätkö häntä vaimoksesi?";
-        var image            = 'barnbackground';
+        var image            = 'barn2background';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

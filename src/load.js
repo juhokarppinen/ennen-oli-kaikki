@@ -21,6 +21,7 @@ authors["gunpowderfactorybackground"]  = prefix+"Pietinen (Museovirasto)";
 authors["bakerybackground"]            = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["homeassistantbackground"]     = prefix+"Pietinen (Museovirasto)";
 authors["barnbackground"]              = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
+authors["barn2background"]              = prefix+"F.E. Fremling (Museovirasto)";
 authors["weddingbackground"]           = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["familybackground"]            = prefix+"Tuntematon (Museovirasto)";
 authors["teacherschoolbackground"]     = prefix+"Pietinen (Museovirasto)";
@@ -81,6 +82,7 @@ var load_state = {
         GAME.load.image('bakerybackground', 'assets/img/bakery.jpg');
         GAME.load.image('homeassistantbackground', 'assets/img/homeassistant.jpg');
         GAME.load.image('barnbackground', 'assets/img/barn.jpg');
+        GAME.load.image('barn2background', 'assets/img/barn2.jpg');
         GAME.load.image('weddingbackground', 'assets/img/wedding.jpg');
         GAME.load.image('familybackground', 'assets/img/family.jpg');
         GAME.load.image('teacherschoolbackground', 'assets/img/teacherschool.jpg');

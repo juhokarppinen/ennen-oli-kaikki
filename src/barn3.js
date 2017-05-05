@@ -5,7 +5,7 @@ var barn3_state = {
         var text = "Ladossa vietetty hetki kaduttaa, ja olet vältellyt heilaasi sen jälkeen. "
         +"Huhut yhteisestä retkestänne ovat kiirineet vanhempien piikojen korviin, ja he "
         +"antavat sinun kuulla kunniasi. Pelkäät kuollaksesi olevasi raskaana, mutta tällä kertaa kävi tuuri.";
-        var image = 'barnbackground';
+        var image = 'barn2background';
         
         var centerButtonLabel = "Jatka";
 

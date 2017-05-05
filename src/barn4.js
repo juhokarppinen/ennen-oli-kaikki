@@ -10,7 +10,7 @@ var barn4_state = {
         }
 
         var text = gendertext + PLAYER.crush+" tulee kertomaan sinulle tunteistaan. " + gendertext2;
-        var image            = 'barnbackground';
+        var image            = 'barn2background';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 

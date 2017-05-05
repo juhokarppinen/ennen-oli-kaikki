@@ -4,7 +4,7 @@ var barn5_state = {
 
         var text = "Et saa renkiä mielestäsi ja haaveilet salaa yhteisestä tulevaisuudesta hänen kanssaan. "
         +"Seuraavissa tansseissa hän kuitenkin tanssittaa jo naapuritalon keittiöpiikaa.";
-        var image = 'barnbackground';
+        var image = 'barn2background';
         
         var centerButtonLabel = "Jatka";
 

@@ -13,7 +13,7 @@ var barn2_state = {
             +"jos ette mene naimisiin. Sinun on suostuttava rengin kosintaan.";
         }
 
-        var image            = 'barnbackground';
+        var image            = 'barn2background';
         var centerButtonLabel  = "Jatka";
         var infoText = "Aviottomien lasten asema parani vuonna 1922, kun eduskunta vahvisti " +
         "lain avioliiton ulkopuolella syntyneistä lapsista. Sen mukaan kuntien oli perustettava " +

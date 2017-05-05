@@ -11,7 +11,7 @@ var barn1_state = {
             +"sillä hän ehdottaa lepotaukoa kotimatkanne varrella sijaitsevassa ladossa. Suostutko ehdotukseen?";
         }
 
-        var image            = 'barnbackground';
+        var image            = 'barn2background';
         var leftButtonLabel  = "Kyllä";
         var rightButtonLabel = "Ei";
 
