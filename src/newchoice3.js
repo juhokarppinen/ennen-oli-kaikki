@@ -23,14 +23,14 @@ var newchoice3_state = {
                 var text = "Raataminen työmiehen haalareissa tehtaalla jatkuu. Vapaa-ajallasi saat kuitenkin opiskeltua työväenopistossa.";
             }
         } else {
-            var image = "youthworkcountrybackground";
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 30;
+                var image = "shopbackground";
                 var text = "Miehesi on rakennuttanut teille uuden kodin. Talo on suorastaan hulppea verrattuna torppaan, jossa asuitte "
-                +"avioliittonne ensimmäiset vuodet. Siellä on kaikki modernit mukavuudet, kuten juokseva vesi, sisävessa, sähköhella ja jääkaappi. "
+                +"ennen. Siellä on kaikki modernit mukavuudet, kuten juokseva vesi, sisävessa, sähköhella ja jääkaappi. "
                 +"Haluaisit ajokortin, jotta voisit käydä asioilla miehesi uudella Mossella, mutta hän vastustelee.";
                 var infoText = "Vuonna 1955 Suomen ajoneuvorekisterissä oli noin 85 000 henkilöautoa, ja viisitoista vuotta myöhemmin, " +
-                "vuonna 1970 niitä oli jo yli 700 000. Itäautot, kärjessään neuvostoliittolainen Moskvitš eli Mosse, olivat sotien " +
+                "vuonna 1970 niitä oli jo yli 700 000. Itäautot, kärjessään neuvostoliittolainen Moskvits eli Mosse, olivat sotien " +
                 "jälkeisinä vuosina suomalaisten suosiossa niiden muita paremman saatavuuden vuoksi.\n\nLähteet: 1) Tilastokeskus, moottoriajoneuvokanta. " +
                 "2) Häggman, K., Markkola, P., Kuisma, M. & Pulma, P. (toim.). Suomalaisen arjen suuri tarina.";
             } else {

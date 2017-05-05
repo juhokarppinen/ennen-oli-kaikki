@@ -8,6 +8,9 @@ var studies5_state = {
             +"Pakenet yksinäisyyttä ja koti-ikävää kirjojen maailmaan ja alat haaveilla yliopisto-opinnoista.";
         } else {
             var image     = 'studieswomenbackground';
+            if(PLAYER.location.name !== "Jyväskylä") {
+                PLAYER.movedtocity = true;
+            }
             var text = "Ahkera opiskelusi tuottaa tuloksia ja pääset kuin pääsetkin jatkamaan opintiellä. Aloitat oppikoulun "
             +"Jyväskylän tyttökoulussa.";
         }

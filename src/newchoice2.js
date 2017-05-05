@@ -22,7 +22,7 @@ var newchoice2_state = {
         } else {
             var image = "youthworkcountrybackground";
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-                PLAYER.age = 29;
+                PLAYER.age = 30;
                 var image = "shopbackground";
                 var text = "Vastoin miehesi toiveita otat yhä enemmän vastuuta kaupasta hänen poissaollessaan. Välillenne syntyy riita, kun ilmoitat haluavasi alkaa nostaa palkkaa itsellesi.";
             } else {

@@ -25,6 +25,7 @@ var newchoice1_state = {
         } else {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = "shopbackground";
+                PLAYER.age = 29;
                 var text = "Yritys menestyy, ja voit halutessasi ryhtyä täysipäiväiseksi kotirouvaksi, mikä olisi miehesi mieleen. "
                 +"Olette muuttaneet uuteen taloon, ja kotona kieltämättä riittäisi tekemistä, mutta toisaalta viihdyt kaupalla. "
                 +"Jatkatko töissä vai panostatko kodinhoitoon?";

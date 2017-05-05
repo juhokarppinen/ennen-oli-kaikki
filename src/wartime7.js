@@ -3,6 +3,7 @@ var wartime7_state = {
     create: function() {
         PLAYER.age = 26;
         if(PLAYER.widowboss === true) {
+            var image = 'citybackground';
             if("undefined" !== typeof PLAYER.spouse) {
                 var text = "Tilanne itärintamalla on muuttunut, ja suomalaisjoukot ovat joutuneet vetäytymään useita kymmeniä kilometrejä. Viipuri on menetetty "
                 +"jälleen ja miestappiot ovat kovia. Kirjeet kulkevat huonosti, etkä tiedä, missä "+PLAYER.spouse+" on tai että onko hän ylipäätään hengissä.";
@@ -11,6 +12,7 @@ var wartime7_state = {
                 +"jälleen ja miestappiot ovat kovia. Kirjeet kulkevat huonosti, ja pelkäät läheistesi puolesta.";
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
+            var image = 'homechorescountrybackground';
             if("undefined" !== typeof PLAYER.spouse) {
                 var text = "Tilanne itärintamalla on muuttunut, ja suomalaisjoukot ovat joutuneet vetäytymään useita kymmeniä kilometrejä. Viipuri on menetetty "
                 +"jälleen ja miestappiot ovat kovia. Kirjeet kulkevat huonosti, etkä tiedä, missä "+PLAYER.spouse+" on tai että onko hän ylipäätään hengissä.";
