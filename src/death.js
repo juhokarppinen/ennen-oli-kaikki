@@ -69,7 +69,8 @@ var death_state = {
         if(PLAYER.causeofdeath === "auto") {
             causeOfDeathText = "Olit palaamassa kotiin Vähittäiskaupan Keskusliiton kokouksesta. Olit väsynyt ja kiukkuinen, sillä et ollut saanut ajatuksillesi kannatusta. "
             +"Ajoit liian lujaa sateen liukastamaan mutkaan. Autosi suistui tieltä ja törmäsi puuhun. Menehdyit välittömästi. " + ripText;
-            infoText = "Vuonna 1965 tieliikenneonnettomuuksissa kuoli 1 049 ihmistä ja loukkaantui 15 914 ihmistä. Vastaavat luvut vuonna 2015 olivat 270 ja 6 408.";
+            infoText = "Vuonna 1965 tieliikenneonnettomuuksissa kuoli 1 049 ihmistä ja loukkaantui 15 914 ihmistä. Vastaavat luvut vuonna 2015 olivat 270 ja 6 408." +
+                "\n\nLähde: Tilastokeskus, tieliikenneonnettomuudet";
         }
         if(PLAYER.causeofdeath === "syopa") {
             causeOfDeathText = "Kuolit Jyväskylän keskussairaalassa. " + ripText;
