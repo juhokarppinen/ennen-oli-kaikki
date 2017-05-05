@@ -16,8 +16,7 @@ var beginning_state = {
                        "runsas pientilojen määrä ja viljelyalojen rehuvoittoisuus. ";
             if (PLAYER.class === "poor") { 
                 classText = "mäkitupalaiseksi ";
-                infoText += "\n\nMäkitupalainen omisti omalla tai vuokraamaallaan aluellaan mökin, mutta hän sai tavallisesti elantonsa muualta kuin mökistään.\n\n" + 
-                           "Lähteet: 1) Jokipii M. Keski-Suomen historia. 2) Elkelä K. Maaseutuväestön historian sanastoa";
+                infoText += "\n\nLähde: Jokipii M. Keski-Suomen historia.";
             }
             else if (PLAYER.class === "middle") {
                 classText = "torpparin esikoiseksi ";
