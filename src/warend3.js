@@ -6,7 +6,7 @@ var warend3_state = {
                 var image = 'constructionbackground';
                 var text = "Palaat rintamalta kotiin ristiriitaisin tuntein. Vaimo ja lapset tuntuvat vierailta, etkä saa sodan kauhuja "
                 +"pyyhittyä mielestäsi. Rengin töitä sinulle ei enää ole tarjolla, mutta läheiseltä rakennustyömaalta löytyy sinulle töitä.";
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'youthworkcountrybackground';
                 var text = "Vaikka oletkin perinyt tilan vanhemmiltasi, on pikkuveljesi ottanut ohjat tilanhoidossa. Hän vastaa peltotöistä "
                 +"ja vaimosi hoitaa kotieläimiä. Sodanaikaiset liiketoimintasi ovat koulineet sinusta taitavan kauppiaan, ja nyt haluaisit "
@@ -75,7 +75,7 @@ var warend3_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
                 GAME.state.start('newchoice1');
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('newchoice1');
             } else {
                 GAME.state.start('newpath1');

@@ -7,7 +7,7 @@ var newchoice2_state = {
                 var image = 'constructionbackground';
                 var text = "Painajaiset eivät jätä sinua rauhaan ja lääkitset itseäsi alkoholilla. Vaimo ja lapset ovat kaukana, joten saat juoda rauhassa. "
                 +"Et pääse enää aamuisin liikkeelle ilman krapularyyppyä.";
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 PLAYER.age = 37;
                 var image = "shopbackground";
                 var text = "Riski kannatti, sillä kauppa lähtee pyörimään jopa paremmin kuin olit laskeskellut. "

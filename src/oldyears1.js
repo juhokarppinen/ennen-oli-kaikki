@@ -8,7 +8,7 @@ var oldyears1_state = {
                 PLAYER.age = 63;
                 text = "80-luvun alussa pääset viimein viettämään ansaittuja eläkepäiviäsi. "
                 +"Yhdistystoiminnasta et kuitenkaan luovu, ja houkuttelet vaimosikin mukaan Valmetin eläkeläisten tapahtumiin.";
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 image = 'youthworkcountrybackground';
                 PLAYER.age = 60;
                 text = "Koska tilalle ei löytynyt jatkajaa voimiesi ehtyessä, myit metsätilkkusi ja peltosi pois. Jätitte kuitenkin torppanne kylkeen siihen "
@@ -77,7 +77,7 @@ var oldyears1_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 GAME.state.start('oldyears2');
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('oldyears2');
             } else if(PLAYER.helsinki === true) {
                 PLAYER.causeofdeath = "rintakipu";

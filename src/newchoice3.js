@@ -50,7 +50,7 @@ var newchoice3_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
                 GAME.state.start('newchoice4');
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('newchoice4');
             } else {
                 GAME.state.start('sixties');

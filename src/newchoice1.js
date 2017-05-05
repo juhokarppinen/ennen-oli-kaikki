@@ -7,7 +7,7 @@ var newchoice1_state = {
                 var text = "Rakennustöitä ei kotikulmillasi kuitenkaan riitä loputtomiin, mutta Pohjois-Suomessa niitä riittäisi. Lähdetkö?";
                 var leftButtonLabel  = "Lähde";
                 var rightButtonLabel  = "Jää";
-            } else if (PLAYER.window.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
+            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'youthworkcountrybackground';
                 var text = "Kauppaa varten tarvitsisit lainaa. Sen vakuudeksi kävisi maillanne oleva mökki. Uskallatko ottaa riskin?";
                 var leftButtonLabel  = "Kyllä";
