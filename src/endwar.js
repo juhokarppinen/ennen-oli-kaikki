@@ -1,6 +1,7 @@
 var endwar_state = {
 
     create: function() {
+        PLAYER.age = 23;
         var image            = 'conscriptbackground';
         var article          = 'articlepeace';
         var centerButtonLabel = "Jatka";

@@ -19,7 +19,7 @@ var wartime1_state = {
             }
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
             image = 'homechorescountrybackground';
-            text = "Veljesi ovat rintamalla ja vanheneva isäsi kärsii rintakivuista. Äitisi tarvitsee apuasi "
+            text = "Veljesi ovat rintamalla, ja vanheneva isäsi kärsii rintakivuista. Äitisi tarvitsee apuasi "
             +"kotitilan töissä, joten hyvästelet työnantajasi ja palaat maaseudulle.";
             PLAYER.movedtocity = false;
             PLAYER.widowboss = false;
