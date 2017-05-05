@@ -90,6 +90,9 @@ var load_state = {
         GAME.load.image('articlewinterwar', 'assets/img/articlewinterwar.jpg');
         GAME.load.image('articlepeace', 'assets/img/articlepeace.jpg');
         GAME.load.image('articlecontinuationwar', 'assets/img/articlecontinuationwar.jpg');
+        GAME.load.image('articlewinterwar2', 'assets/img/articlewinterwar2.png');
+        GAME.load.image('articlepeace2', 'assets/img/articlepeace2.png');
+        GAME.load.image('articlecontinuationwar2', 'assets/img/articlecontinuationwar2.png');
         //music
         GAME.load.audio('music-Bittersweet', 'assets/music/Bittersweet.mp3');
         /*  Bittersweet Kevin MacLeod (incompetech.com)
