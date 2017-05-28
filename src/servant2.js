@@ -10,8 +10,7 @@ var servant2_state = {
         }
 
         var text = "Vaikka olet tottunut kovaan työhön pienestä pitäen, "+gendertext +
-                   " oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan. " +
-                   "Olet silti tyytyväinen valintaasi, ja saat lähetettyä kotiinkin muutaman lantin.";
+                   " oleminen on raskaampaa kuin olisit koskaan voinut kuvitellakaan.";
         
         var image             = 'youthworkcountrybackground';
         var centerButtonLabel = "Jatka";

@@ -14,7 +14,7 @@ var servant4_state = {
             +"Pääset tanssittamaan tyttöä juhannusjuhlilla, ja myöhemmin kesällä karkaatte kuutamouinnille yhdessä.";
         }
         
-        var image             = 'youthworkcountrybackground';
+        var image             = 'barn2background';
         var centerButtonLabel = "Jatka";
 
         drawUIsingleButton(image, text, centerButtonLabel, this);
