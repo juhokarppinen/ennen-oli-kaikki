@@ -2,7 +2,7 @@ var prefix = "Kuvaaja: ";
 // Add photo authors here as you add more background photographs.
 var authors = {};
 authors["menubackground"]              = prefix+"Hugo Simberg (Kansallisgalleria)";
-authors["genderbackground"]            = "";
+authors["genderbackground"]            = "Kuvaajat, vasen: Tuntematon, oikea: Iffland Heinrich (Museovirasto)";
 authors["schoolbackground"]            = prefix+"Signe Brander (Helsingin kaupunginmuseo)";
 authors["homechorescountrybackground"] = prefix+"Hugo Simberg (Kansallisgalleria)";
 authors["studies1background"]          = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
@@ -20,7 +20,7 @@ authors["gunpowderfactorybackground"]  = prefix+"Pietinen (Museovirasto)";
 authors["bakerybackground"]            = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["homeassistantbackground"]     = prefix+"Pietinen (Museovirasto)";
 authors["barnbackground"]              = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
-authors["barn2background"]              = prefix+"F.E. Fremling (Museovirasto)";
+authors["barn2background"]             = prefix+"F.E. Fremling (Museovirasto)";
 authors["weddingbackground"]           = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["familybackground"]            = prefix+"Tuntematon (Museovirasto)";
 authors["teacherschoolbackground"]     = prefix+"Pietinen (Museovirasto)";

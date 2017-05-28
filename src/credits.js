@@ -10,8 +10,9 @@ var credits_state = {
             "Pauliina Karjalainen: graafinen suunnittelu, kuvien haku ja editointi\n" +
             "Juho Karppinen: ohjelmointi, äänisuunnittelu\n" +
             "Elina Rantalainen: käsikirjoitus, taustatutkimus\n" +
-            "Roope Visuri: taustatutkimus\n\n" +
-            "Taustakuvat: Kansallisgalleria, Helsingin Kaupunginmuseo, Museovirasto, SA-kuva-arkisto, Keski-Suomen museo, Keskisuomalainen\n\n" +
+            "Roope Visuri: taustatutkimus\n" +
+            "Yhteistyökumppani: Keski-Suomen museo\n\n" +
+            "Taustakuvat: Keski-Suomen museo, Kansallisgalleria, Helsingin Kaupunginmuseo, Museovirasto, SA-kuva-arkisto, Keskisuomalainen\n" +
             "Taustamusiikki: Bittersweet (Kevin MacLeod, incompetech.com, CC BY 3.0)");
         [text].concat(backButton).forEach(function(element) {
             GAME.add.tween(element).to({ alpha: 1 }, 500, Phaser.Easing.Linear.None, true, 0);

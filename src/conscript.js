@@ -17,7 +17,9 @@ var conscript_state = {
         var centerButtonLabel = "Jatka";
         var infoText = "Kutsu asepalvelukseen tuli sinä vuonna, kun täytti 20. Asepalvelus kesti 350 päivää. " +
         "Aseettomana oli mahdotonta palvella ennen vuotta 1969, jolloin siviilipalveluksen mahdollistanut laki " +
-        "tuli voimaan.\n\nLähteet: 1) Helsingin kaupunginkirjasto, kysy.fi 2) Arkistojen Portti. Palvelus armeijassa. wiki.narc.fi";
+        "tuli voimaan."
+        +"\n\nLähteet: 1) Helsingin kaupunginkirjasto, kysy.fi 2) Varusmiespalvelusajan muutokset ja niiden taustat Suomessa vuosina 1932 ja 1950, kandidaatintutkielma "
+        +"3) Kalemaa, K. (2014). Sankareita vai pelkureita: Suomalaisen aseistakieltäytymisen historia. Helsinki: Tammi.";
 
         drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
     },

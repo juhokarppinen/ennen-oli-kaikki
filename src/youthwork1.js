@@ -14,11 +14,10 @@ var youthwork1_state = {
                 + "Hankkiudutko "+gendertext+" naapuritilalle vai lähdetkö kaupunkiin etsimään töitä?";
         var leftButtonLabel  = "Tilalle";
         var rightButtonLabel = "Kaupunkiin";
-        var infoText = "Huutolaisella tarkoitetaan koditonta tai orpoa, joka kunta huutokauppasi " +
-        "vähiten korvausta vaativan ihmisen huollettavaksi. Uusi köyhäinhoitolaki astui voimaan " +
-        "vuonna 1923, mutta osa kunnista jatkoi toimintaa Suomessa vielä 1930-luvulla." +
-        "\n\nLähteet: 1) Tiesitkö tämän vaietun asian historiasta? Suomessa myytiin lapsia orjiksi. Artikkeli, studio55.fi " +
-        "2) Kielitoimiston sanakirja";
+        var infoText = "Huutolaisella tarkoitetaan koditonta tai orpoa, jonka kunta huutokauppasi vähiten korvausta vaativan "
+        +"ihmisen huollettavaksi. Vuoden 1923 uusi köyhäinhoitolaki kielsi huutokaupat, mutta osa kunnista jatkoi toimintaa jonkin aikaa, "
+        +"sillä he eivät pystyneet heti rakentamaan hoitokoteja." +
+        "\n\nLähteet: 1) Halmekoski, J. (2011). Orjamarkkinat: Huutolaislasten kohtaloita Suomessa. [Helsinki]: Ajatus-kirjat. 2) Kielitoimiston sanakirja";
 
         drawUItwoButtons(image, text, leftButtonLabel, rightButtonLabel, this, infoText);
     },

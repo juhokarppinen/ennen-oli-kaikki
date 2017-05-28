@@ -14,7 +14,7 @@ var noconscript_state = {
         "Aseettomana oli mahdotonta palvella ennen vuotta 1969, jolloin siviilipalveluksen mahdollistanut laki " +
         "tuli voimaan. Viidesosa ikäluokasta hylättiin asepalveluksesta kutsunnoissa. Taustalla olivat pääosin " +
         "terveydelliset syyt. Luku oli korkeampi kuin muissa Pohjoismaissa." +
-        "\n\nLähteet: 1) Helsingin kaupunginkirjasto, kysy.fi 2) Arkistojen Portti. Palvelus armeijassa. wiki.narc.fi " +
+        "\nLähteet: 1) Helsingin kaupunginkirjasto, kysy.fi 2) Varusmiespalvelusajan muutokset ja niiden taustat Suomessa vuosina 1932 ja 1950, kandidaatintutkielma " +
         "3) Suomalaisten elintaso koheni itsenäisyyden kahdella ensimmäisellä vuosikymmenellä. Artikkeli. itsenaisyys100.fi";
 
         drawUIsingleButton(image, text, centerButtonLabel, this, infoText);
