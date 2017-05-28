@@ -21,7 +21,7 @@ var war1_state = {
             PLAYER.causeofdeath = "sota1";
             GAME.state.start('death');
         } else {
-            if(PLAYER.location !== "Jyväskylä" && PLAYER.class === "middle" && PLAYER.movedtocity !== true) {
+            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle" && PLAYER.movedtocity !== true) {
                 PLAYER.amputation = true;
                 GAME.state.start('war2');
             } else {
