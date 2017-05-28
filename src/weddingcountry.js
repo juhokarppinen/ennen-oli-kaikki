@@ -8,7 +8,7 @@ var weddingcountry_state = {
                 text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
                 PLAYER.spouse = PLAYER.crush;
             } else {
-                text += "muutatte asumaan pieneen mökkiin isäsi tontin laidalle.";
+                text += "nuorikkosi muuttaa torppaanne häiden jälkeen.";
                 PLAYER.spouse = PLAYER.crush;
             }
         } else {
@@ -16,7 +16,7 @@ var weddingcountry_state = {
                 text += "muutatte työnantajasi teille osoittamaan mökkiin lähelle palvelusväen aittoja.";
                 PLAYER.spouse = PLAYER.crush;
             } else {
-                text += "muutatte asumaan pieneen mökkiin isäsi tontin laidalle.";
+                text += "muutat miehen perheen torppaan häiden jälkeen.";
                 PLAYER.spouse = PLAYER.crush;
             }
         }

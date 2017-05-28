@@ -60,7 +60,7 @@ var death_state = {
             causeOfDeathText = "Sinut teloitettiin rintamakarkurina. " + ripText;
         }
         if(PLAYER.causeofdeath === "luoti") {
-            causeOfDeathText = "Haavoitut vihollisen luodista ja sydämesi pysähtyy ennen kuin sinut ehditään kuljettaa "
+            causeOfDeathText = "Haavoituit vihollisen luodista ja sydämesi pysähtyi ennen kuin sinut ehdittiin kuljettaa "
             +"joukkosidontapaikalle. " + ripText;
             image = "wardeathbackground";
         }

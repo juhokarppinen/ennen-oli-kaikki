@@ -4,13 +4,13 @@ var sixties_state = {
         if(PLAYER.gender === "male") {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor" && PLAYER.movedtocity !== true) {
                 var image = 'citybackground';
-                var text = "Olette saaneet taas lisää neliöitä ympärillenne. Nykyisessä asunnossanne on myös lämminvesiboileri, mutta suihkua ei vieläkään ole, "
-                +"ja pesulla on käytävä talon yhteisessä saunassa. Olet innostunut ammattiyhdistyspolitiikasta ja vähästä vapaa-ajastasi kuluu leijonanosa "
+                var text = "Olette saaneet taas lisää neliöitä ympärillenne. Nykyisessä asunnossanne on myös lämminvesiboileri, mutta suihkua ei vielä ole, "
+                +"ja pesulla on käytävä talon yhteisessä saunassa. Olet innostunut ammattiyhdistyspolitiikasta ja vapaa-aikasi kuluu "
                 +"paikallisten sosiaalidemokraattien kokouksissa.";
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 var image = 'youthworkcountrybackground';
                 var text = "Toivoisit metsätaloustiedettä opiskelevan esikoisesi ottavan enemmän vastuuta tilasta, mutta hänellä on muita suunnitelmia. "
-                +"Paasaat hänelle sukusi historiaa. Sitä, kuinka oma isäsi on raivannut suon pelloksi ja raatanut niska limassa tarjotakseen jälkipolvilleen "
+                +"Paasaat hänelle sukusi historiaa. Sitä, kuinka isäsi on raatanut tarjotakseen jälkipolvilleen "
                 +"paremman elintason. Välinne viilenevät, sillä et voi ymmärtää, miksei hän halua jatkaa isänsä ja isoisänsä työtä.";
             } else if(PLAYER.helsinki === true) {
                 var image = 'helsinkibackground';

@@ -1,7 +1,7 @@
 var war5_state = {
 
     create: function() {
-        PLAYER.age = 26;
+        PLAYER.age = 27;
         var image = 'warbackground';
         if(PLAYER.location.name === "Jyväskylä" && PLAYER.class === "rich") {
             var text = "Sota on jatkunut miltei kolme vuotta, kun Neuvostoliitto aloittaa suurhyökkäyksen kesäkuun yhdeksäntenä. "

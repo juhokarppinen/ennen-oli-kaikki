@@ -6,15 +6,15 @@ var newchoice4_state = {
                 PLAYER.age = 30;
                 var image = 'constructionbackground';
                 var text = "Saat töitä Valmetin tehtaalta, jossa valmistetaan sotakorvaustuotteita Neuvostoliitolle. " +
-                    "Rintamatoverisi on työskennellyt tehtaalla jo välirauhan aikana, ja hän suosittelee sinua tehtävään, " +
-                    "vaikkei sinulla olekaan kokemusta raskaasta teollisuudesta. Saatte katon päänne päälle tehtaan " +
+                    "Rintamatoverisi suosittelee sinua tehtävään, " +
+                    "vaikka sinulla ei olekaan kokemusta raskaasta teollisuudesta. Saatte katon päänne päälle tehtaan " +
                     "kupeeseen rakennetuista parakeista.";
             } else {
                 PLAYER.age = 35;
                 var image = 'youthworkcountrybackground';
-                var text = "Onnistut hankkimaan lisää peltoalaa ja palan metsää hieman kauempaa. Kaunasi Karjalan evakkoja kohtaan laimenee jopa siinä määrin, "
-                +"että hankitte yhteisen traktorin. Suunnittelette paikallisen maamiesseuran voimin myös yhteisen leikkuupuimurin hankintaa. "
-                +"Lasket, että koneet maksavat itsensä takaisin, kun talkooväkeä tarvitaan niiden myötä vähemmän.";
+                var text = "Onnistut hankkimaan lisää peltoalaa ja palan metsää hieman kauempaa. Kaunasi Karjalan evakkoja kohtaan laimenee ja "
+                +"hankitte yhteisen traktorin. Suunnittelette paikallisen maamiesseuran voimin yhteisen leikkuupuimurin hankintaa. "
+                +"Lasket, että koneet maksavat itsensä takaisin, kun talkooväkeä tarvitaan vähemmän.";
             }
         } else {
                 var image = "citybackground";

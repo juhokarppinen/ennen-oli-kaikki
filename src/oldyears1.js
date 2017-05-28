@@ -11,8 +11,8 @@ var oldyears1_state = {
             } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 image = 'youthworkcountrybackground';
                 PLAYER.age = 60;
-                text = "Koska tilalle ei löytynyt jatkajaa voimiesi ehtyessä, myit metsätilkkusi ja peltosi pois. Jätitte kuitenkin torppanne kylkeen siihen "
-                +"alunperin kuuluneen perunamaan itsellenne, sillä sinulle on kunnia-asia pysyä mahdollisimman omavaraisena. Vaimosi varoittelee sinua rehkimästä "
+                text = "Koska tilalle ei löytynyt jatkajaa voimiesi ehtyessä, myit metsätilkkusi ja peltosi pois. Jätitte kuitenkin torppanne kylkeen "
+                +"kuuluneen perunamaan itsellenne, sillä sinulle on kunnia-asia pysyä mahdollisimman omavaraisena. Vaimosi varoittelee sinua rehkimästä "
                 +"liikaa, mutta olet itsepäinen.";
             } else if(PLAYER.helsinki === true) {
                 image = 'helsinkibackground';
@@ -56,12 +56,14 @@ var oldyears1_state = {
                     +"Se on kuitenkin liian myöhäistä. Jäit leskeksi 50-vuotiaana.";
                 } else {
                     image = "citybackground";
+                    PLAYER.age = 58;
                     text = "Olet kärsinyt jo jonkin aikaa vatsakivuista, mutta et ole tottunut valittamaan pienistä etkä viitsi vaivata lääkäriä moisella asialla. "
                     +"Miehesi patistaa sinut kuitenkin vastaanotolle, koska hän on sitä mieltä, että olet laihtunut liikaa. Saat huonoja uutisia. Kyseessä on vatsasyöpä, "
                     +"jota ei voida parantaa.";
                 }
             } else {
                 image = "citybackground";
+                PLAYER.age = 58;
                 text = "Olet kärsinyt jo jonkin aikaa vatsakivuista, mutta et ole tottunut valittamaan pienistä etkä viitsi vaivata lääkäriä moisella asialla. "
                 +"Miehesi patistaa sinut kuitenkin vastaanotolle, koska hän on sitä mieltä, että olet laihtunut liikaa. Saat huonoja uutisia. Kyseessä on vatsasyöpä, "
                 +"jota ei voida parantaa.";
@@ -100,10 +102,12 @@ var oldyears1_state = {
                 if("undefined" !== typeof PLAYER.spouse) {
                     GAME.state.start('oldyears2');
                 } else {
+                    PLAYER.age = 59;
                     PLAYER.causeofdeath = "vatsa";
                     GAME.state.start('death');
                 }
             } else {
+                PLAYER.age = 59;
                 PLAYER.causeofdeath = "vatsa";
                 GAME.state.start('death');
             }

@@ -7,7 +7,7 @@ var prewar2_state = {
             +"ja juo sen tyhjäksi yhdeltä istumalta. Seuraavana päivänä hän pakkaa reppunsa ja lähtee.";
         } else {
             image = "countrybackground";
-            var text = "Suunnitelmiin tulee muutos, kun sinut määrätään ylimääräisiin kertausharjoituksiin vain muutamaa päivää ennen juhannusta.";
+            var text = "Suunnitelmiin tulee muutos, kun sinut määrätään ylimääräisiin kertausharjoituksiin vain muutama päivä ennen juhannusta.";
         }
                 
         var centerButtonLabel = "Jatka";

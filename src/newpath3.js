@@ -9,7 +9,7 @@ var newpath3_state = {
         } else {
             PLAYER.age = 33;
             var image = "citybackground";
-            var text = "Siivoaminen ja kuuraaminen aiheuttavat sinulle jatkuvia selkäkipuja. Vaikka olet vielä nuori, ja pelkäät menettäväsi työkykysi ennen aikojaan. "
+            var text = "Siivoaminen ja kuuraaminen aiheuttavat sinulle jatkuvia selkäkipuja. "
             +"Apu löytyy kuitenkin yllättävästä paikasta. Työtoverisi houkuttelee sinut tansseihin, joita saa taas sodanaikaisen tanssikiellon jälkeen järjestää. "
             +"Et tiedä, onko se liikunnan vai tanssin tuoman ilon ansiota, mutta kivut alkavat hellittää.";
         }

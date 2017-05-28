@@ -51,7 +51,7 @@ var warend3_state = {
                 } else {
                     PLAYER.age = 33;
                     var image = "citybackground";
-                    var text = "Työsi toimistolla vähenevät sitä mukaa, kun elintarvikepula alkaa helpottaa ja loppuvat kokonaan, kun kansanhuoltoministeriö lakkautetaan vuonna 1950. "
+                    var text = "Menetät työpaikkasi toimistolla, kun kansanhuoltoministeriö lakkautetaan vuonna 1950. "
                     +"Yhtäkkiä uuden työn löytäminen onkin hankalaa, sillä maatalouden koneistumisen myötä työvoimantarve siellä on vähentynyt, ja entiset piiat ja rengit kilpailevat "
                     +"nyt kanssasi samoista työpaikoista.";
                 }
@@ -73,13 +73,7 @@ var warend3_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
-            if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "poor") {
-                GAME.state.start('newchoice1');
-            } else if (PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-                GAME.state.start('newchoice1');
-            } else {
-                GAME.state.start('newpath1');
-            }
+            GAME.state.start('newchoice1');
         } else {
             if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
                 GAME.state.start('newchoice1');
