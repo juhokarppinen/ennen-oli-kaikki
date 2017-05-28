@@ -30,7 +30,7 @@ var death_state = {
             if(PLAYER.gender === "female") {
                 causeOfDeathText = "Jyväskylä on vasta toipumassa parin päivän takaisista pommituksista, kun vihollisen "
                 +"koneet tulevat taas. Olet kaupungilla asioilla etkä ehdi suojaan ennen kuin pommit putoavat. "
-                +"Menetät henkesi uudenvuoden aattona 1939. "+ ripText;
+                +"Menetit henkesi uudenvuoden aattona 1939. "+ ripText;
             } else {
                 causeOfDeathText = "Pataljoonanne oli siirtymässä linjojen takaa reservistä etulinjaan, kun "
                 +"jouduitte ankaran kranaattitulituksen kohteeksi. Heittäydyit maahan liian myöhään. "
@@ -44,7 +44,7 @@ var death_state = {
         }
         if(PLAYER.causeofdeath === "pilkkukuume") {
             causeOfDeathText = "Sinulla ei ollut enää vakituista asuntoa ja vietit yösi köyhille tarkoitetuissa hätämajoitustiloissa. "
-            +"Sairastuit täin levittämään pilkkukuumeeseen ja menetät henkesi. " + ripText;
+            +"Sairastuit täin levittämään pilkkukuumeeseen ja menetit henkesi. " + ripText;
         }
         if(PLAYER.causeofdeath === "vuosalmi") {
             causeOfDeathText = "Kesäkuu oli vaihtunut heinäkuuksi, ja joukkueenne oli siirtynyt Vuoksen pohjoispuolelle. "
@@ -86,7 +86,7 @@ var death_state = {
             causeOfDeathText = "Vaimosi soitti hädissään ambulanssin, mutta oli jo liian myöhäistä. " + ripText;
         }
         if(PLAYER.causeofdeath === "vatsa") {
-            causeOfDeathText = "Kuolet Jyväskylän keskussairaalassa juuri ennen 60-vuotissyntymäpäivääsi. "+ ripText;
+            causeOfDeathText = "Nukuit pois Jyväskylän keskussairaalassa juuri ennen 60-vuotissyntymäpäivääsi. "+ ripText;
         }
         if(PLAYER.causeofdeath === "piha") {
             causeOfDeathText = "Vaimosi löysi sinut tuupertuneena pihalta. " + ripText;

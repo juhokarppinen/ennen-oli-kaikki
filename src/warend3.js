@@ -81,8 +81,9 @@ var warend3_state = {
                 if("undefined" !== typeof PLAYER.spouse) {
                     GAME.state.start('newchoice1');
                 } else {
+                    PLAYER.age = 29;
                     PLAYER.causeofdeath = "influenssa";
-                    GAME.state.start('sixties');
+                    GAME.state.start('death');
                 }
             } else if(PLAYER.lotta === true) {
                 if(PLAYER.university === true) {
@@ -97,7 +98,7 @@ var warend3_state = {
                     GAME.state.start('newpath2');
                 }
             } else {
-                GAME.state.start('sixties');
+                GAME.state.start('newpath2');
             }
         }
     }

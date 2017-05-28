@@ -25,7 +25,7 @@ var wartime1_state = {
             PLAYER.widowboss = false;
         } else if(PLAYER.widowboss === true) {
             image = 'homeassistantbackground';
-            text = "Huoli rintamalla olevasta pojasta saa leskirouvan suunniltaan. Rouva ei enää valita ruuan laadusta tai solmussa olevista maton hapsuista. "
+            text = "Huoli rintamalla olevasta pojasta saa leskirouvan suunniltaan. Rouva ei enää valita ruoan laadusta tai solmussa olevista maton hapsuista. "
             +"Uusi iltarutiinisi on lukea hänelle raamattua iltaisin. Se rauhoittaa sinua itseäsikin.";
         } else if(PLAYER.lotta === true) {
             image = 'lottawarbackground';
@@ -38,7 +38,7 @@ var wartime1_state = {
             +"Teet käytännössä kahta työtä, mutta et valita, sillä haluat tehdä kaiken voitavasi isänmaasi hyväksi.";
         } else {
             image = 'candyfactorybackground';
-            text = "Arki tehtaalla jatkuu sodasta huolimatta melkein kuten ennenkin. Suurin osa miehistä tosin puuttuu, ja paras työkaverisi Martta on saanut lisää vastuuta harteilleen entisen työnjohtajan jouduttua rintamalle.";
+            text = "Arki tehtaalla jatkuu sodasta huolimatta melkein kuten ennenkin. Suurin osa miehistä tosin puuttuu, ja työkaverisi Martta on saanut lisää vastuuta harteilleen entisen työnjohtajan jouduttua rintamalle.";
         }
                 
         var centerButtonLabel = "Jatka";
@@ -48,15 +48,15 @@ var wartime1_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male") {
-            GAME.state.start('endwar');
+            GAME.state.start('peacetime1');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.movedtocity !== true && PLAYER.class === "poor") {
-            GAME.state.start('endwar');
+            GAME.state.start('peacetime1');
         } else if(PLAYER.location.name !== "Jyväskylä" && PLAYER.class === "middle") {
-            GAME.state.start('endwar');
+            GAME.state.start('peacetime1');
         } else if(PLAYER.widowboss === true) {
             GAME.state.start('wartime2');
         } else if(PLAYER.lotta === true) {
-            GAME.state.start('endwar');
+            GAME.state.start('peacetime1');
         } else if(PLAYER.nurse === true) {
             PLAYER.causeofdeath = "sota1";
             GAME.state.start('death');

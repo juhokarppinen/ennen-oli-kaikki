@@ -27,13 +27,13 @@ var newpath2_state = {
                 PLAYER.age = 33;
                 var image = "citybackground";
                 var text = "Leskirouvan poika työskentelee työnjohtajana Valmetilla ja hommaa sinulle siivoojan paikan tehtaalta. "
-                +"Saat vuokra-asunnon Valimonmäeltä, tehtaan kupeesta. Rouvan luona asuessasi oli tottunut mukavuuksiin, jotka uudesta kodistasi puuttuvat. "
+                +"Saat vuokra-asunnon Valimonmäeltä, tehtaan kupeesta. Rouvan luona asuessasi olit tottunut mukavuuksiin, jotka uudesta kodistasi puuttuvat. "
                 +"Onneksi asunnossa on kuitenkin juokseva vesi.";
             }
         } else {
             var image = "candyfactorybackground";
             PLAYER.age = 33;
-            var text = "Vuosien seisomatyö tehtaalla alkaa tuntua kolotuksena selässä ja hartioissa. Vaikka olet vielä nuori, ja pelkäät menettäväsi työkykysi ennen aikojaan. "
+            var text = "Vuosien seisomatyö tehtaalla alkaa tuntua kolotuksena selässä ja hartioissa. "
             +"Apu löytyy kuitenkin yllättävästä paikasta. Työtoverisi houkuttelee sinut tansseihin, joita saa taas sodanaikaisen tanssikiellon jälkeen järjestää. "
             +"Et tiedä, onko se liikunnan vai tanssin tuoman ilon ansiota, mutta kivut alkavat hellittää.";
         }

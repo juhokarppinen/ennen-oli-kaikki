@@ -12,17 +12,9 @@ var endwar_state = {
 
     centerButtonHandler: function () {
         if(PLAYER.gender === "male" && PLAYER.noconscript !== true) {
-            if(PLAYER.gender === "female") {
-                GAME.state.start('peacetime2');
-            } else {
-                if(PLAYER.noconscript === true) {
-                    GAME.state.start('peacetime2');
-                } else {
-                    GAME.state.start('peacesoldier2');
-                }
-            }
+            GAME.state.start('peacesoldier2');
         } else {
-            GAME.state.start('peacetime1');
+            GAME.state.start('peacetime2');
         }
     }
 };

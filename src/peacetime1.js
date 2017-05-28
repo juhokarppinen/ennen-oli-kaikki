@@ -23,7 +23,7 @@ var peacetime1_state = {
         } else if(PLAYER.widowboss === true) {
             var image = 'homeassistantbackground';
             var text = "Olet pesemässä pyykkiä saunan padassa, kun kuulet pihalta melua. Ohi juokseva pikkupoika kertoo sodan päättyneen. "
-            +"Sisällä leskirouva on juuri avannut radion. Olette onnellisia rauhasta, mutta Sen hinta eli Karjalankannaksen menettäminen tuntuu kohtuuttomalta.";
+            +"Sisällä leskirouva on juuri avannut radion. Olette onnellisia rauhasta, mutta sen hinta eli Karjalankannaksen menettäminen tuntuu kohtuuttomalta.";
         } else if(PLAYER.lotta === true) {
             var image = 'lottawarbackground';
             var text = "Kenttäsairaala sijaitsee niin lähellä rintamalinjaa, että olet jo tottunut tykkitulen pauhuun. "
@@ -46,14 +46,6 @@ var peacetime1_state = {
     },
 
     centerButtonHandler: function () {
-        if(PLAYER.gender === "female") {
-            GAME.state.start('peacetime2');
-        } else {
-            if(PLAYER.noconscript === true) {
-                GAME.state.start('peacetime2');
-            } else {
-                GAME.state.start('peacesoldier2');
-            }
-        }
+        GAME.state.start('endwar');
     }
 };

@@ -7,7 +7,7 @@ var newpath3_state = {
             var text = "Muutatte vastavalmistuneeseen kerrostaloon Helsingin Pohjois-Haagaan. Asunnossa on kaikki mukavuudet, kuten sisävessa, oma kylpyhuone ja sähköhella. "
             +"Uutuudenviehätyksen laimetessa alat kuitenkin ikävöidä kotiin.";
         } else {
-            PLAYER.age = 33;
+            PLAYER.age = 35;
             var image = "citybackground";
             var text = "Siivoaminen ja kuuraaminen aiheuttavat sinulle jatkuvia selkäkipuja. "
             +"Apu löytyy kuitenkin yllättävästä paikasta. Työtoverisi houkuttelee sinut tansseihin, joita saa taas sodanaikaisen tanssikiellon jälkeen järjestää. "
