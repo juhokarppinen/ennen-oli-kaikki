@@ -41,6 +41,10 @@ var peacetime2_state = {
     },
 
     centerButtonHandler: function () {
-        GAME.state.start('peaceend1');
+        if(PLAYER.lotta === true) {
+            GAME.state.start('lotta1');
+        } else {
+            GAME.state.start('peaceend1');
+        }
     }
 };

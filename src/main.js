@@ -63,6 +63,7 @@ function preload() {
     GAME.state.add('studies6', studies6_state);
     GAME.state.add('studies7', studies7_state);
     GAME.state.add('studies8', studies8_state);
+    GAME.state.add('studies9', studies9_state);
     GAME.state.add('servant0', servant0_state);
     GAME.state.add('servant1', servant1_state);
     GAME.state.add('servant2', servant2_state);

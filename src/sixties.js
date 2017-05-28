@@ -38,7 +38,11 @@ var sixties_state = {
                 +"lämmittämiseen, mutta pesulla ja pyykkäämässä on edelleen käytävä talon yhteistiloissa.";
             } else if(PLAYER.lotta === true) {
                 if(PLAYER.university === true) {
-                    var image = "countrybackground";
+                    if(PLAYER.location.name === "Jyväskylä") {
+                        var image = "citybackground";
+                    } else {
+                        var image = "countrybackground";
+                    }
                     var text = "Olet kärsinyt jo jonkin aikaa omituisista alavatsankivuista, mutta et ole tottunut valittamaan pienistä etkä viitsi "
                     +"vaivata lääkäriä moisella asialla. Miehesi patistaa sinut kuitenkin vastaanotolle, koska hän on sitä mieltä, että olet laihtunut liikaa. "
                     +"Saat huonoja uutisia. Sinulla on kohdunkaulansyöpä, joka on ehtinyt jo levitä.";

@@ -5,7 +5,6 @@ authors["menubackground"]              = prefix+"Hugo Simberg (Kansallisgalleria
 authors["genderbackground"]            = "";
 authors["schoolbackground"]            = prefix+"Signe Brander (Helsingin kaupunginmuseo)";
 authors["homechorescountrybackground"] = prefix+"Hugo Simberg (Kansallisgalleria)";
-authors["homechores1background"]       = prefix+"Väinö Kannisto (Helsingin kaupunginmuseo)";
 authors["studies1background"]          = prefix+"Tuntematon (Helsingin kaupunginmuseo)";
 authors["studieswomenbackground"]      = prefix+"Pietinen (Museovirasto)";
 authors["youthworkcitybackground"]     = prefix+"P. Jänis (SA-kuva-arkisto)";
@@ -66,7 +65,6 @@ var load_state = {
         GAME.load.image('genderbackground', 'assets/img/gender.jpg');
         GAME.load.image('schoolbackground', 'assets/img/school.jpg');
         GAME.load.image('homechorescountrybackground', 'assets/img/homechorescountry.jpg');
-        GAME.load.image('homechores1background', 'assets/img/homechores1.jpg');
         GAME.load.image('studies1background', 'assets/img/studies1.jpg');
         GAME.load.image('studieswomenbackground', 'assets/img/studieswomen.jpg');
         GAME.load.image('youthworkcitybackground', 'assets/img/youthworkcity.jpg');

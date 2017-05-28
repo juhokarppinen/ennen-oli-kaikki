@@ -77,7 +77,7 @@ var death_state = {
                 "\n\nLähde: Tilastokeskus, tieliikenneonnettomuudet";
         }
         if(PLAYER.causeofdeath === "syopa") {
-            causeOfDeathText = "Kuolit Jyväskylän keskussairaalassa. " + ripText;
+            causeOfDeathText = "Nukuit pois Jyväskylän keskussairaalassa. " + ripText;
         }
         if(PLAYER.causeofdeath === "alzheimer") {
             causeOfDeathText = "Vietit viimeiset vuotesi vanhainkodin vuodeosastolla. " + ripText;

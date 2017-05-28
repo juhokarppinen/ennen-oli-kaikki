@@ -1,5 +1,3 @@
-// Branch not in use!
-//noinspection JSUnusedGlobalSymbols
 var studies9_state = {
 
     create: function() {
