@@ -39,7 +39,7 @@ var warend3_state = {
                     +"palanneet myös opintojensa pariin.";
                 } else {
                     var image = "lottabackground";
-                    var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Teistä ylistetyistä lotista" +
+                    var text = "Rauhanehtojen mukaan niin suojeluskunnat kuin lottajärjestökin tuli lakkauttaa. Teistä ylistetyistä lotista " +
                         "tuli hyljeksittyjä. Pahat kielet vihjailevat kaikenlaista lottien ja saksalaissotilaiden suhteista. Poltat lottapukusi " +
                         "ja lottajärjestöön liittyvät paperit. Viisi vuotta historiaasi palaa papereiden mukana.";
                 }

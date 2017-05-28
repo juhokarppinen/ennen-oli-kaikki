@@ -43,7 +43,7 @@ var oldyears1_state = {
                 text = "Olet vuosien varrella onnistunut haalimaan itsellesi siivoustöitä sieltä täältä, mutta nykyisin huolehdit lastenlapsistasi "
                 +"heidän vanhempiensa ollessa töissä. Molemmat lapsesi puolisoineen ovat töissä tehtaalla.";
             } else if(PLAYER.lotta === true) {
-                image = "lottawarbackground";
+                image = "citybackground";
                 PLAYER.age = 65;
                 text = "Jäätyäsi eläkkeelle olet alkanut unohdella asioita, hukata avaimia ja sen sellaista. Ajattelet sen olevan normaalia vanhuuden höperyyttä. " +
                     "Mainitset kuitenkin asiasta ohi mennen lääkärillesi. Hän ottaa asian vakavasti ja passittaa sinut muistitesteihin. Diagnoosi on "

@@ -43,7 +43,7 @@ var sixties_state = {
                     +"vaivata lääkäriä moisella asialla. Miehesi patistaa sinut kuitenkin vastaanotolle, koska hän on sitä mieltä, että olet laihtunut liikaa. "
                     +"Saat huonoja uutisia. Sinulla on kohdunkaulansyöpä, joka on ehtinyt jo levitä.";
                 } else {
-                    var image = "lottawarbackground";
+                    var image = "citybackground";
                     var text = "Olet opiskellut venäjää omaksi iloksesi Jyväskylän kansalaisopistossa. Se osoittautuu hyödylliseksi myös töissä, "
                     +"ja sinusta tulee olennainen osa matkaseuruetta, joka käy Neuvostoliitossa hieromassa puutavarakauppaa. Et osallistu virallisiin "
                     +"neuvotteluihin, mutta seurustelutaitojasi tarvitaan niiden ulkopuolella.";
