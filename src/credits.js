@@ -13,14 +13,15 @@ var credits_state = {
             "Roope Visuri: taustatutkimus\n" +
             "Yhteistyökumppani: Keski-Suomen museo\n\n" +
             "Taustakuvat: Keski-Suomen museo, Kansallisgalleria, Helsingin Kaupunginmuseo, Museovirasto, SA-kuva-arkisto, Keskisuomalainen\n" +
-            "Taustamusiikki: Bittersweet (Kevin MacLeod, incompetech.com, CC BY 3.0)");
+            "Taustamusiikki: Bittersweet (Kevin MacLeod, incompetech.com, CC BY 3.0)\n"
+            +"Peli toteutettu Phaser-kirjastoa käyttäen. https://phaser.io/download/license");
         [text].concat(backButton).forEach(function(element) {
             GAME.add.tween(element).to({ alpha: 1 }, 500, Phaser.Easing.Linear.None, true, 0);
         });
     },
 
     drawText: function(txt, x = 50, y = 50) {
-        var text = GAME.add.text(x, y, txt, HELP_STYLE);
+        var text = GAME.add.text(x, y, txt, CREDIT_STYLE);
         text.alpha = 0;
         text.addColor(HELP_STYLE.fill, 0);
         return text;
