@@ -1,4 +1,4 @@
-# newsgame-1
+# Ennen oli kaikki...
 
 JOUS045 Uutispeliprojekti / Newsgame project
 
